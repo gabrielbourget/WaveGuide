@@ -3,7 +3,7 @@ import styles from './MiddleContentCradle.module.scss';
 
 const MiddleContentCradle = (props) => {
 	return (
-		<div className={ styles.middleContentContainer }>
+		<div className={ styles.cradle }>
 			{ props.children }
 		</div>
 	);

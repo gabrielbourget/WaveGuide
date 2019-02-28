@@ -1,7 +1,18 @@
-@import "../../../../GlobalStyles/colours.module.scss";
+@import "../../../GlobalStyles/colors.css";
 
-.middleContentCradle {
+.cradle {
+	display: grid;
 	grid-column: 2 / -2;
 	justify-items: center;
-	min-height: 100%;
+	align-items: center;
+	height: 100%;
+	border: 2px solid blue;
+}
+
+.darkTheme {
+	background: var(--c_lowContrastDarkMode);
+}
+
+.lightTheme {
+	background: var(--c_lowContrastLightMode);
 }

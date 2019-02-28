@@ -1,28 +1,30 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import OutlineButton  from './Components/Buttons/OutlineButton/OutlineButton.js';
+import ColumnWithPaddingPageCradle 
+  from './Components/Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle.js';
+import MiddleContentCradle from './Components/Cradles/MiddleContentCradle/MiddleContentCradle.js';
 
 class App extends Component {
+
+  handleClick() {
+    alert('sup');
+    console.log('boop');
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+      <ColumnWithPaddingPageCradle>
+        <MiddleContentCradle>
+          <OutlineButton
+            buttonText="SEND"
+            onClick={ this.handleClick }
+          />
+        </MiddleContentCradle>
+      </ColumnWithPaddingPageCradle>
+    ); // return
+  }; // render()
 }
 
 export default App;

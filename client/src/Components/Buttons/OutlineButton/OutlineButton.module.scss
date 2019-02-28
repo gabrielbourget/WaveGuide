@@ -1,0 +1,28 @@
+@import "../../../GlobalStyles/colors.css";
+
+.button {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  border: 1.25px solid black;
+  border-radius: 0px;
+  font-family: Helvetica;
+  font-size: 10pt;
+  transition: all 0.25s ease-in-out;
+  padding: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: var(--c_light);
+}
+
+.button:link, .button:visited, .button:hover, .button:active {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: var(--c_dark);
+}  
+
