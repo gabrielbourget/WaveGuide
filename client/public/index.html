@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
+  <style> 
+    html {
+      box-sizing: border-box; /* Include padding and border as part of element width and height */
+      font-size: 62.5%; /* Font sizes in REM are now base ten => 1.2 rem = 12px */
+      height: 100%;
+    }
+
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+
+    body, #root {
+      height: 100%;
+    }
+  </style>
+
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -26,7 +43,7 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body>    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

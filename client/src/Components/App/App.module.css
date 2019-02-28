@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+.app {
+  min-height: 100%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .App-logo {
