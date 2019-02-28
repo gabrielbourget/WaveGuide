@@ -1,0 +1,7 @@
+@import "../../../../GlobalStyles/colours.module.scss";
+
+.middleContentCradle {
+	grid-column: 2 / -2;
+	justify-items: center;
+	min-height: 100%;
+}
