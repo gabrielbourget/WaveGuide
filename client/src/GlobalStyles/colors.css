@@ -6,7 +6,8 @@
 	--silver: #C0C0C0	;
 	--gray: #A9A9A9	;
 	--darkGrey: #808080	;
-	--veryDarkGrey: #404040	;
+	--veryDarkGrey: #515151;
+	--veryveryDarkGrey: #404040	;
 	--black: #000000	;
 	--leafyGreen: #319606;
 	--strongRed: #b73434;
@@ -21,8 +22,8 @@
 	--c_error: var(--strongRed);
 	--c_light: var(--white);
 	--c_lowContrastLightMode: var(--lightGrey);
-	--c_lowContrastDarkMode: var(--darkGrey);
-	--c_highContrastLightMode: var(--darkGrey);
+	--c_lowContrastDarkMode: var(--veryDarkGrey);
+	--c_highContrastLightMode: var(--veryDarkGrey);
 	--c_highContrastDarkMode: var(--lightGrey);
 	--c_dark: var(--veryDarkGrey);
 	--c_interactionLightest: var(--lightestInteractive);
