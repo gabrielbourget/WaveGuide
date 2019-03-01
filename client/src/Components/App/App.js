@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
 import styles from './App.module.css';
+import { ThemeContext } from '../../ThemeContext';
+import * as config from '../../clientConfig';
 import OutlineButton  from '../Buttons/OutlineButton/OutlineButton.js';
 import ColumnWithPaddingPageCradle 
   from '../Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle.js';
@@ -14,16 +16,19 @@ class App extends Component {
 
   render() {
     return (
-      <div className={ styles.app }>
-        <ColumnWithPaddingPageCradle>
-          <MiddleContentCradle>
-            <OutlineButton
-              buttonText="SEND"
-              onClick={ this.handleClick }
-            />
-          </MiddleContentCradle>
-        </ColumnWithPaddingPageCradle>
-      </div>      
+      <ThemeContext.Provider value={ config.CURR_THEME }>
+        <div className={ styles.app }>
+          <ColumnWithPaddingPageCradle>
+            <MiddleContentCradle>
+              <OutlineButton
+                buttonText="SEND"
+                onClick={ this.handleClick }
+              />
+            </MiddleContentCradle>
+          </ColumnWithPaddingPageCradle>
+        </div> 
+      </ThemeContext.Provider>
+     
     ); // return
   }; // render()
 }
