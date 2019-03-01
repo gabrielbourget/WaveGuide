@@ -20,10 +20,7 @@ class App extends Component {
         <div className={ styles.app }>
           <ColumnWithPaddingPageCradle>
             <MiddleContentCradle>
-              <OutlineButton
-                buttonText="SEND"
-                onClick={ this.handleClick }
-              />
+              
             </MiddleContentCradle>
           </ColumnWithPaddingPageCradle>
         </div> 

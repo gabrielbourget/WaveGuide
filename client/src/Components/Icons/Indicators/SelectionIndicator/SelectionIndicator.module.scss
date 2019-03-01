@@ -1,0 +1,109 @@
+.outside {
+
+	height: 15px;
+	width: 15px;
+
+	&.square {
+		border-radius: 0px;
+
+		&.lightTheme {
+			border: 2px solid var(--black);
+		}
+		&.darkTheme {
+			border: 2px solid var(--white);
+		}
+	}
+	&.roundedSquare {
+		border-radius: 10px;
+
+		&.lightTheme {
+			border: 2px solid var(--black);
+		}
+		&.darkTheme {
+			border: 2px solid var(--white);
+		}
+	}
+	&.round {
+		border-radius: 100%;
+
+		&.lightTheme {
+			border: 2px solid var(--black);
+		}
+		&.darkTheme {
+			border: 2px solid var(--white);
+		}
+	}
+}
+
+.border {
+	
+	height: 10px;
+	width: 10px;
+
+	&.square {
+		border-radius: 0px;
+
+		&.lightTheme {
+			border: 2px solid var (--black);
+		}
+		&.darkTheme {
+			border: 2px solid var(--white);
+		}
+	}
+	&.roundedSquare {
+		border-radius: 10px;
+
+		&.lightTheme {
+			border: 2px solid var(--black);
+		}
+		&.darkTheme {
+			border: 2px solid var(--white);
+		}
+	}
+	&.round {
+		border-radius: 100%;
+
+		&.lightTheme {
+			border: 2px solid var(--black);
+		}
+		&.darkTheme {
+			border: 2px solid var(--white);
+		}
+	}
+}
+
+.inside {
+
+	height: 8px;
+	width: 8px;
+
+	&.square {
+		border-radius: 0px;
+		&.lightTheme {
+			background: var(--black);
+		}
+		&.darkTheme {
+			background: var(--white);
+		}
+	}
+	&.roundedSquare {
+		border-radius: 10px;
+
+		&.lightTheme {
+			background: var(--black);
+		}
+		&.darkTheme {
+			background: var(--white);
+		}
+	}
+	&.round {
+		border-radius: 100%;
+
+		&.lightTheme {
+			background: var(--black);
+		}
+		&.darkTheme {
+			background: var(--white);
+		}
+	}
+}
