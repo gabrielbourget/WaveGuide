@@ -10,8 +10,6 @@ class ColumnWithPaddingPageCradle extends React.Component {
 		// console.log(this.context);
 
 		const classes = classNames(styles.cradle, ((this.context === 'dark') ? styles.darkTheme : styles.lightTheme));
-		
-		// const classes = classNames(styles.cradle, styles.darkTheme);
 
 		return (
 			<div className={ classes }>
