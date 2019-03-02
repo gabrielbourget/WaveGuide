@@ -1,18 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 
 import styles from './OutlineButton.module.scss';
 
 
-class OutlineButton extends Component {
+class OutlineButton extends React.Component {
 
 	handleClick = () => (
 		this.props.onClick()
 	);
 
-	render() {
+	static propTypes = {
+		text: PropTypes.string.isRequired
+	};
 
+	render() {
 		// - Probe for important render-time information
 		const shapeClass = (this.props.shape === 'rounded') ? styles.rounded : null;
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
@@ -23,7 +27,7 @@ class OutlineButton extends Component {
 
 		return (
 			<button 
-				className= { buttonClassNames } 
+				className={ buttonClassNames } 
 				onClick={ this.handleClick }
 			>
 				<span className={ buttonTextClassNames }>

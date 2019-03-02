@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 
 import styles from './FilledButton.module.scss';
@@ -8,6 +9,10 @@ class FilledButton extends React.Component {
 
 	handleClick = () => {
 		this.props.onClick();
+	};
+
+	static propTypes = {
+		text: PropTypes.string.isRequired
 	};
 
 	render() {
