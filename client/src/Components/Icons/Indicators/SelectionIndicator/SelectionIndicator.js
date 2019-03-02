@@ -28,11 +28,12 @@ class SelectionIndicator extends React.Component {
 
 	render() {
 		
+		// - Probe for important render-time information.
 		const selectedClass = this.state.selected ? styles.selected : null;
 		const shapeClass = this.determineShapeClass();
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
 		
-
+		// - Put together class lists for pieces of the component.
 		const borderClassNames = classNames(selectedClass, styles.border, shapeClass, themeClass);
 		const insideClassNames = classNames(selectedClass, styles.inside , shapeClass, themeClass);
 

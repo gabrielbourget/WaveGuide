@@ -5,8 +5,7 @@
 	padding: 0;
 	
 	display: grid;
-	justify-items: center;
-	align-items: center;
+	place-items: center;
 
 	&.square { border-radius: 0px; }
 	&.roundedSquare { border-radius: 2px }

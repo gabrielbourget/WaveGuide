@@ -17,11 +17,11 @@ class App extends Component {
   // config.CURR_THEME 
   render() {
     return (
-      <ThemeContext.Provider value='dark'>
+      <ThemeContext.Provider value='light'>
         <div className={ styles.app }>
           <ColumnWithPaddingPageCradle>
             <MiddleContentCradle>
-              <OutlineButton text='SEND' />
+              <OutlineButton text='SEND' shape=''/>
             </MiddleContentCradle>
           </ColumnWithPaddingPageCradle> 
         </div> 

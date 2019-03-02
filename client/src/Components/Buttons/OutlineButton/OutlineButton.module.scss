@@ -20,9 +20,10 @@
   };
 
   transition: all 0.25s ease-in-out;
-
-  &.lightTheme { background: var(--black); }
+  
   &.darkTheme { background: var(--white); }
+  &.lightTheme { background: var(--black); }
+  
 
   &:hover { cursor: pointer; }
   &:link, &:visited, &:hover, &:active {
@@ -30,4 +31,19 @@
     text-decoration: none;
     outline: none;
   }  
+}
+
+.buttonText {
+  &.lightTheme { text-color: var(--white); }
+  &.darkTheme { text-color: var(--black); }
+}
+
+.darkTheme {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.lightTheme {
+  background-color: var(--black);
+  color: var(--white);
 }
