@@ -1,22 +1,90 @@
 @import "../../../GlobalStyles/generalVars.scss";
 @import "../../../GlobalStyles/colors.css";
 
-/* Giving agency to overall grid container to size cards appropriately. */
+/* Overall container for card. */
 .twoSizeCard {
-	height: 100%
+	/* Giving agency to overall grid container to size cards appropriately. */
+	height: 100%;
 	width: 100%;
+	border: 1px solid red;
 
 	transition: all 0.75s ease-in-out;
 
+	/* Grid display will allow for one column, 
+	   and then two rows, sized at a 1:4 ratio
+	   for the card header and body. Header row
+	   can be a fraction of remaining space, up to
+	   50px. */
 	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50px 1fr;
 
+	&.lightTheme { background: var(--lightGrey); }
+	&.darkTheme { background: var(--veryDarkGrey); }
 
+	&.takeOneSpot { grid-row: span 1; }
+	&.takeTwoSpots { grid-row: span 2; }
+}
 
-	&.lightTheme {
-		background: var(--lightGrey);
+.header {
+	width: 100%;
+	height: 100%;
+
+	/* Grid container to hold elements that go into header. */
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr;
+
+	&.lightTheme { 
+		background: var(--white); 
+		color: var(--black);
 	}
 
-	&.darkTheme {
-		background: var(--veryDarkGrey);
+	&.darkTheme { 
+		background: var(--black); 
+		color: var(--lightGrey);
+	}
+
+	& .cardTitle {
+
+		border: 1px solid red;
+
+		height: 100%;
+		width: auto;
+		padding: 2.5px 10px;
+
+		display: grid;
+		justify-items: start;
+		align-items: center;
+
+		& h3 {
+			font: {
+				family: var(--sansSerifStack);
+				size: 1.5rem; 
+			}
+		}
+	}
+}
+
+.body {
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+	justify-items: center;
+	align-items: center;
+
+	overflow-y: auto;
+
+	grid-template-rows: repeat(auto-fill, 1fr);
+
+	.imageContainer {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.linkListContainer {
+		
 	}
 }

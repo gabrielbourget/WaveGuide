@@ -1,7 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
-import PropTypes from 'proptypes';
-import { ThemeContext } from '../../ThemeContext';
+import PropTypes from 'prop-types';
+import { ThemeContext } from '../../../ThemeContext';
 
 import styles from './ProfileImage.module.scss';
 
@@ -14,10 +14,10 @@ class ProfileImage extends React.Component {
 
 	render() {
 		return (
-			<div className="container">
+			<div className={ styles.container }>
 				<img 
-					src={ this.props.src } 
-					alt={ this.props.image }
+					src={ this.props.imagePath } 
+					alt={ this.props.title }
 				/>
 			</div>
 		);

@@ -8,7 +8,7 @@ import styles from './TwoSizeCardGallery.module.scss';
 class TwoSizeCardGallery extends React.Component {
 
 	assignClasses = () => {
-		const themeClass = (this.theme === 'dark') ? styles.darkTheme : styles.lightTheme;
+		const themeClass = (this.context === 'dark' ? styles.darkTheme : styles.lightTheme);
 		const galleryClasses = ClassNames(styles.gallery, themeClass);
 
 		return galleryClasses;
@@ -16,7 +16,7 @@ class TwoSizeCardGallery extends React.Component {
 
 	render() {
 		return (
-			<div className={ this.galleryClasses() }>
+			<div className={ this.assignClasses() }>
 				{ this.props.children }
 			</div>
 		);

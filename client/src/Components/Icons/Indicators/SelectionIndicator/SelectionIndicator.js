@@ -2,6 +2,9 @@ import React from 'react';
 import classNames from 'classnames';
 import { ThemeContext } from '../../../../ThemeContext';
 
+// - EX: -> Importing SVGs wrapped as React components. 
+import { ReactComponenet as RoundUnselected } from './SVG/roundUnselected.svg';
+
 import styles from './SelectionIndicator.module.scss';
 
 class SelectionIndicator extends React.Component {
