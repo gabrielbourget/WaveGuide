@@ -1,15 +1,22 @@
 import React from 'react';
 import classNames from 'classnames';
-import ThemeContext from '../../../../ThemeContext';
+import { ThemeContext } from '../../../../ThemeContext';
 
 import styles from './SelectionIndicator.module.scss';
 
 class SelectionIndicator extends React.Component {
 
+	state = {
+		selected: false
+	};
+
+	handleClick = () => {
+		this.setState({
+			selected: !(this.state.selected)
+		});
+	};
+
 	// - Helper function to assign a geometry to the selection indicator.
-	//   Assigns a shape class from the style module in accordance with 
-	//   the shape provided in the component's props structure. If no 
-	//   shape prop is provided, the indicator defaults to rounded square. 
 	determineShapeClass = () => {
 		switch (this.props.shape) {
 			case 'square': return styles.square;
@@ -20,38 +27,23 @@ class SelectionIndicator extends React.Component {
 	};
 
 	render() {
-
+		
+		const selectedClass = this.state.selected ? styles.selected : null;
 		const shapeClass = this.determineShapeClass();
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
+		
 
-		const withOutside = (
-			<div className="outside">
-				<div className="border">
-					<div className="inside">
-
-					</div>
-				</div>
-			</div>
-		);
-
-		const noOutside = (
-			<div className="border">
-				<div className="inside">
-
-				</div>
-			</div>
-		);
+		const borderClassNames = classNames(selectedClass, styles.border, shapeClass, themeClass);
+		const insideClassNames = classNames(selectedClass, styles.inside , shapeClass, themeClass);
 
 		return (
-			<div className="outside">
-				<div className="border">
-					<div className="inside">
-						
-					</div>
-				</div>
+			<div className={ borderClassNames } onClick={ this.handleClick }>
+				<div className={ insideClassNames }/>
 			</div>
 		);
 	}
 }
 
 SelectionIndicator.contextType = ThemeContext;
+
+export default SelectionIndicator;

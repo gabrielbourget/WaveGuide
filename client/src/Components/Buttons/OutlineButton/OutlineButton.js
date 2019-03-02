@@ -14,7 +14,9 @@ class OutlineButton extends Component {
 				className={ styles.button } 
 				onClick={ this.handleClick }
 			>
-				{ this.props.buttonText }
+				<span className={ styles.buttonText }>
+					{ this.props.text }
+				</span>
 			</button>
 		);
 	}

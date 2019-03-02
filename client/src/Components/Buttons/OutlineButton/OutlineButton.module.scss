@@ -1,29 +1,33 @@
 @import "../../../GlobalStyles/colors.css";
+@import "../../../GlobalStyles/fonts.scss";
 
 .button {
   height: auto;
   width: auto;
-  padding: 10px;
+  padding: 8px;
+
   display: grid;
   place-items: center;
-  border: 3px solid black;
-  border-radius: 10px;
-  font-family: Helvetica;
-  font-weight: bold;
-  font-size: 1.2rem;
+
+  
+  border: 3px solid black;  
+  &.rounded { border-radius: 10px; }
+
+  font: {
+    family: var(--sansSerifStack);
+    weight: bold;
+    size: 1.2rem;
+  };
+
   transition: all 0.25s ease-in-out;
-  padding: 5px;
+
+  &.lightTheme { background: var(--black); }
+  &.darkTheme { background: var(--white); }
+
+  &:hover { cursor: pointer; }
+  &:link, &:visited, &:hover, &:active {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+  }  
 }
-
-.button:hover {
-  cursor: pointer;
-  background: var(--c_light);
-}
-
-.button:link, .button:visited, .button:hover, .button:active {
-  cursor: pointer;
-  text-decoration: none;
-  outline: none;
-  color: var(--c_dark);
-}  
-

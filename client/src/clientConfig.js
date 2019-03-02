@@ -1,1 +1,1 @@
-export const CURR_THEME = "dark";
+export const CURR_THEME = "light";
