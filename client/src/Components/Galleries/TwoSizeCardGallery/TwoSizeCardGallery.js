@@ -6,9 +6,19 @@ import { ThemeContext } from '../../../ThemeContext';
 import styles from './TwoSizeCardGallery.module.scss';
 
 class TwoSizeCardGallery extends React.Component {
+
+	assignClasses = () => {
+		const themeClass = (this.theme === 'dark') ? styles.darkTheme : styles.lightTheme;
+		const galleryClasses = ClassNames(styles.gallery, themeClass);
+
+		return galleryClasses;
+	};
+
 	render() {
 		return (
-
+			<div className={ this.galleryClasses() }>
+				{ this.props.children }
+			</div>
 		);
 	}
 }

@@ -1,7 +1,10 @@
+@import "../../../GlobalStyles/colors.css";
+@import "../../../GlobalStyles/generalVars.scss";
+
 .gallery {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-template-rows: repeat(auto-fill, 275px);
+	grid-template-columns: repeat(auto-fit, minmax(var(--cardWidth), 1fr));
+	grid-template-rows: repeat(auto-fill, var(--cardHeight));
 	grid-gap: 1rem;
 	grid-auto-flow: dense;
 

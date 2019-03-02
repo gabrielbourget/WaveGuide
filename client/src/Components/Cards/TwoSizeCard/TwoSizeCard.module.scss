@@ -1,0 +1,22 @@
+@import "../../../GlobalStyles/generalVars.scss";
+@import "../../../GlobalStyles/colors.css";
+
+/* Giving agency to overall grid container to size cards appropriately. */
+.twoSizeCard {
+	height: 100%
+	width: 100%;
+
+	transition: all 0.75s ease-in-out;
+
+	display: grid;
+
+
+
+	&.lightTheme {
+		background: var(--lightGrey);
+	}
+
+	&.darkTheme {
+		background: var(--veryDarkGrey);
+	}
+}

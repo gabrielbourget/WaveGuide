@@ -16,7 +16,7 @@ class App extends React.Component {
   handleClick() {
     console.log('boop');
   }
-  // config.CURR_THEME 
+  // config.CURR_THEME <-- read this into initial state that goes into redux store cretion eventually
   render() {
     return (
       <ThemeContext.Provider value='dark'>
