@@ -30,7 +30,7 @@ class App extends React.Component {
               <OutlineButton 
                 onClick={ this.handleClick } 
                 text='SUBMIT INFORMATION' 
-                shape=''/>   
+                shape='rounded'/>   
               <Paragraph>
                 
               </Paragraph>             
