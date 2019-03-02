@@ -25,7 +25,7 @@
 	--c_lowContrastDarkMode: var(--veryDarkGrey);
 	--c_highContrastLightMode: var(--veryDarkGrey);
 	--c_highContrastDarkMode: var(--lightGrey);
-	--c_dark: var(--veryDarkGrey);
+	--c_dark: var(--veryveryDarkGrey);
 	--c_interactionLightest: var(--lightestInteractive);
 	--c_interactionLight: var(--lighterInteractive);
 	--c_interaction: var(--covenantPurple);

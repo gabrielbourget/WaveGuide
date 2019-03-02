@@ -1,0 +1,37 @@
+@import '../../../GlobalStyles/colors.css';
+@import '../../../GlobalStyles/fonts.scss';
+
+.button {
+	height: auto;
+	width: auto;
+	padding: 8px;
+	border: none;
+
+	display: grid;
+	place-items: center;
+
+	&.rounded { border-radius: 10px; }
+
+	transition: all 0.25s ease-in-out;
+  
+  &:hover { cursor: pointer; }
+  &:link, &:visited, &:hover, &:active {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+  }
+
+	&.darkTheme { background-color: var(--lightGrey); }
+	&.lightTheme { background-color: var(--black); }
+}
+
+.buttonText {
+	&.darkTheme { color: var(--veryveryDarkGrey); }
+	&.lightTheme { color: var(--white); }
+	
+	font: {
+		family: var(--sansSerifStack);
+		weight: bold;
+		size: 1.4rem;
+	}
+}

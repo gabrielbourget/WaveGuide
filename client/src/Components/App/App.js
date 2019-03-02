@@ -4,6 +4,7 @@ import styles from './App.module.css';
 import { ThemeContext } from '../../ThemeContext';
 import * as config from '../../clientConfig';
 import OutlineButton  from '../Buttons/OutlineButton/OutlineButton';
+import FilledButton from '../Buttons/FilledButton/FilledButton';
 import ColumnWithPaddingPageCradle 
   from '../Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle';
 import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
@@ -17,11 +18,18 @@ class App extends Component {
   // config.CURR_THEME 
   render() {
     return (
-      <ThemeContext.Provider value='light'>
+      <ThemeContext.Provider value='dark'>
         <div className={ styles.app }>
           <ColumnWithPaddingPageCradle>
             <MiddleContentCradle>
-              <OutlineButton text='SEND' shape=''/>
+              <FilledButton 
+                onClick={ this.handleClick } 
+                text='SUBMIT INFORMATION' 
+                shape='rounded'/>
+              <OutlineButton 
+                onClick={ this.handleClick } 
+                text='SUBMIT INFORMATION' 
+                shape=''/>                
             </MiddleContentCradle>
           </ColumnWithPaddingPageCradle> 
         </div> 

@@ -4,25 +4,14 @@
 .button {
   height: auto;
   width: auto;
-  padding: 8px;
+  padding: 6px;
 
   display: grid;
   place-items: center;
 
-  
-  border: 3px solid black;  
   &.rounded { border-radius: 10px; }
 
-  font: {
-    family: var(--sansSerifStack);
-    weight: bold;
-    size: 1.2rem;
-  };
-
   transition: all 0.25s ease-in-out;
-  
-  &.darkTheme { background: var(--white); }
-  &.lightTheme { background: var(--black); }
   
 
   &:hover { cursor: pointer; }
@@ -31,19 +20,26 @@
     text-decoration: none;
     outline: none;
   }  
+
+  &.darkTheme {
+    background-color: var(--veryveryDarkGrey);
+    border: 3px solid var(--lightGrey);
+  }
+
+  &.lightTheme {
+    background-color: var(--white);
+    border: 3px solid var(--black);
+  }
 }
 
 .buttonText {
-  &.lightTheme { text-color: var(--white); }
-  &.darkTheme { text-color: var(--black); }
-}
 
-.darkTheme {
-  background-color: var(--white);
-  color: var(--black);
-}
+  &.darkTheme { color: var(--lightGrey); }
+  &.lightTheme { color: var(--black); }
 
-.lightTheme {
-  background-color: var(--black);
-  color: var(--white);
+  font: {
+    family: var(--sansSerifStack);
+    weight: bold;
+    size: 1.4rem;
+  };  
 }

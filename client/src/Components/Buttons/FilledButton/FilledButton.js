@@ -1,29 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import { ThemeContext } from '../../../ThemeContext';
 
-import styles from './OutlineButton.module.scss';
+import styles from './FilledButton.module.scss';
 
+class FilledButton extends React.Component {
 
-class OutlineButton extends Component {
-
-	handleClick = () => (
-		this.props.onClick()
-	);
+	handleClick = () => {
+		this.props.onClick();
+	};
 
 	render() {
-
-		// - Probe for important render-time information
-		const shapeClass = (this.props.shape === 'rounded') ? styles.rounded : null;
+		// - Probe for important render-time information.
+		const shapeClass = (this.props.shape === 'rounded') ? styles.rounded : null
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
 
-		// - Put together class lists for pieces of the component
+		// - Put together class lists for pieces of the component.
 		const buttonClassNames = classNames(styles.button, shapeClass, themeClass);
 		const buttonTextClassNames = classNames(styles.buttonText, themeClass);
 
 		return (
-			<button 
-				className= { buttonClassNames } 
+			<button
+				className={ buttonClassNames }
 				onClick={ this.handleClick }
 			>
 				<span className={ buttonTextClassNames }>
@@ -34,6 +32,6 @@ class OutlineButton extends Component {
 	}
 }
 
-OutlineButton.contextType = ThemeContext;
+FilledButton.contextType = ThemeContext;
 
-export default OutlineButton;
+export default FilledButton;
