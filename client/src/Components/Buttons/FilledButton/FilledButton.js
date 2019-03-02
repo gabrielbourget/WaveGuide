@@ -16,21 +16,31 @@ class FilledButton extends React.Component {
 		onClick: PropTypes.func.isRequired
 	};
 
-	render() {
+	assignClasses = () => {
 		// - Probe for important render-time information.
-		const shapeClass = (this.props.shape === 'rounded') ? styles.rounded : null
+		const shapeClass = (this.props.shape === 'rounded') ? styles.rounded : null;
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
 
 		// - Put together class lists for pieces of the component.
-		const buttonClassNames = ClassNames(styles.button, shapeClass, themeClass);
-		const buttonTextClassNames = ClassNames(styles.buttonText, themeClass);
+		const buttonClasses = ClassNames(styles.button, shapeClass, themeClass);
+		const buttonTextClasses = ClassNames(styles.buttonText, themeClass);	
+
+		return {
+			buttonClasses,
+			buttonTextClasses
+		};
+	};
+
+	render() {
+
+		const classAssignments = this.assignClasses();
 
 		return (
 			<button
-				className={ buttonClassNames }
+				className={ classAssignments.buttonClasses }
 				onClick={ this.handleClick }
 			>
-				<span className={ buttonTextClassNames }>
+				<span className={ classAssignments.buttonTextClasses }>
 					{ this.props.text }
 				</span>
 			</button>

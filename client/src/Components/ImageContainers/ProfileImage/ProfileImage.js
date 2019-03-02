@@ -5,9 +5,13 @@ import { ThemeContext } from '../../ThemeContext';
 
 import styles from './ProfileImage.module.scss';
 
-
-
 class ProfileImage extends React.Component {
+
+	// - TODO -> Create fallback SVG icon for missing src scenario.
+	// static defaultProps = {
+	// 	src: 'boop'
+	// };
+
 	render() {
 		return (
 			<div className="container">
@@ -18,11 +22,6 @@ class ProfileImage extends React.Component {
 			</div>
 		);
 	}
-}
-
-// - TODO -> Create fallback SVG icon for missing src scenario.
-ProfileImage.defaultProps = {
-	src: 'boop'
 }
 
 ProfileImage.contextType = ThemeContext;
