@@ -1,0 +1,11 @@
+.paragraph {
+	font: {
+		size: 1.5rem;
+		family: Helvetica;
+	}
+
+	line-height: 1.5;
+
+	&.lightTheme { color: var(--black); }
+	&.darkTheme { color: var(--lightGrey); }
+}

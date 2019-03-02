@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from '../../logo.svg';
 import styles from './App.module.css';
 import { ThemeContext } from '../../ThemeContext';
@@ -9,8 +9,9 @@ import ColumnWithPaddingPageCradle
   from '../Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle';
 import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 import SelectionIndicator from '../Icons/Indicators/SelectionIndicator/SelectionIndicator';
+import Paragraph from '../TextLayout/Paragraph/Paragraph';
 
-class App extends Component {
+class App extends React.Component {
 
   handleClick() {
     console.log('boop');
@@ -29,7 +30,10 @@ class App extends Component {
               <OutlineButton 
                 onClick={ this.handleClick } 
                 text='SUBMIT INFORMATION' 
-                shape=''/>                
+                shape=''/>   
+              <Paragraph>
+                
+              </Paragraph>             
             </MiddleContentCradle>
           </ColumnWithPaddingPageCradle> 
         </div> 

@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import ClassNames from 'classnames';
 import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 
@@ -12,7 +12,8 @@ class FilledButton extends React.Component {
 	};
 
 	static propTypes = {
-		text: PropTypes.string.isRequired
+		text: PropTypes.string.isRequired,
+		onClick: PropTypes.func.isRequired
 	};
 
 	render() {
@@ -21,8 +22,8 @@ class FilledButton extends React.Component {
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
 
 		// - Put together class lists for pieces of the component.
-		const buttonClassNames = classNames(styles.button, shapeClass, themeClass);
-		const buttonTextClassNames = classNames(styles.buttonText, themeClass);
+		const buttonClassNames = ClassNames(styles.button, shapeClass, themeClass);
+		const buttonTextClassNames = ClassNames(styles.buttonText, themeClass);
 
 		return (
 			<button
