@@ -14,8 +14,8 @@ import ColumnWithPaddingPageCradle
 import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 
 const testArtist = {
-  title: 'Hoodie',
-  imagePath: process.env.PUBLIC_URL + '/Images/Hoodie.jpg',
+  title: 'Barnacle Boi',
+  imagePath: process.env.PUBLIC_URL + '/Images/BarnacleBoi.jpg',
   socialURLs: {
     soundCloud: 'https://soundcloud.com/hoodiegen',
     instagram: 'https://instagram.com/hoodiegen',
@@ -42,9 +42,20 @@ class App extends React.Component {
           </ColumnWithPaddingPageCradle> */}
           <TwoSizeCardGallery>
             <TwoSizeCard
+              shape='round'
               title={ testArtist.title }
               imagePath={ testArtist.imagePath }
               socialURLS={ testArtist.socialURLs }/>
+            <TwoSizeCard
+              shape='round'
+              title={ testArtist.title }
+              imagePath={ testArtist.imagePath }
+              socialURLS={ testArtist.socialURLs }/>
+            <TwoSizeCard
+              shape='round'
+              title={ testArtist.title }
+              imagePath={ testArtist.imagePath }
+              socialURLS={ testArtist.socialURLs }/>                            
           </TwoSizeCardGallery>
         </div> 
       </ThemeContext.Provider>

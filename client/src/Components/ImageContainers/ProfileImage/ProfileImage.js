@@ -14,12 +14,10 @@ class ProfileImage extends React.Component {
 
 	render() {
 		return (
-			<div className={ styles.container }>
-				<img 
-					src={ this.props.imagePath } 
-					alt={ this.props.title }
-				/>
-			</div>
+			<img 
+				src={ this.props.imagePath } 
+				alt={ this.props.title }
+			/>
 		);
 	}
 }

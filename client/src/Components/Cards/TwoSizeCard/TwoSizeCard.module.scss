@@ -1,12 +1,13 @@
 @import "../../../GlobalStyles/generalVars.scss";
 @import "../../../GlobalStyles/colors.css";
 
+/*******************************/
 /* Overall container for card. */
+/*******************************/
 .twoSizeCard {
 	/* Giving agency to overall grid container to size cards appropriately. */
 	height: 100%;
 	width: 100%;
-	border: 1px solid red;
 
 	transition: all 0.75s ease-in-out;
 
@@ -19,35 +20,47 @@
 	grid-template-columns: 1fr;
 	grid-template-rows: 50px 1fr;
 
-	&.lightTheme { background: var(--lightGrey); }
-	&.darkTheme { background: var(--veryDarkGrey); }
+	&.lightTheme { 
+		background: var(--lightGrey); 
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	}
+	&.darkTheme { 
+		background: var(--veryDarkGrey); 
+		box-shadow: 0 5px 28px rgba(255,255,255,0.15);
+	}
 
-	&.takeOneSpot { grid-row: span 1; }
 	&.takeTwoSpots { grid-row: span 2; }
+
+	&.rounded { border-radius: 5px; }
 }
 
+/**********/
+/* HEADER */
+/**********/
 .header {
 	width: 100%;
 	height: 100%;
+
+	&.rounded { border-radius: 5px 5px 0px 0px; }
 
 	/* Grid container to hold elements that go into header. */
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 1fr;
+	justify-content: space-between;
 
 	&.lightTheme { 
-		background: var(--white); 
+		background: var(--lightGrey); 
 		color: var(--black);
 	}
 
 	&.darkTheme { 
 		background: var(--black); 
-		color: var(--lightGrey);
+		color: var(--white);
 	}
 
+	/* TITLE */
 	& .cardTitle {
-
-		border: 1px solid red;
 
 		height: 100%;
 		width: auto;
@@ -64,8 +77,20 @@
 			}
 		}
 	}
+
+	/* TOP CARD BUTTONS */
+	& .topCardButtons {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 1fr);
+		grid-template-rows: 1fr;
+		justify-items: right;
+		padding: 2.5px 10px 2.5px 0px;
+	}
 }
 
+/*************/
+/* CARD BODY */
+/*************/
 .body {
 	width: 100%;
 	height: 100%;
@@ -78,13 +103,10 @@
 
 	grid-template-rows: repeat(auto-fill, 1fr);
 
-	.imageContainer {
+	.linkListContainer {
 		width: 100%;
 		height: 100%;
-		overflow: hidden;
-	}
 
-	.linkListContainer {
-		
+
 	}
 }

@@ -7,6 +7,16 @@ import ProfileImage from '../../ImageContainers/ProfileImage/ProfileImage';
 
 import styles from './TwoSizeCard.module.scss';
 
+/* Wrap SVG Icons as functional components to be placed into the markup. */
+import { ReactComponent as CircleExpandIconDarkTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_DarkTheme.svg';
+import { ReactComponent as CircleExpandIconLighTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_LightTheme.svg';
+import { ReactComponent as CircleExpandIconHighlighted } from './SVG/CircleExpandIcon/CircleExpandIcon_Highlighted.svg';
+import { ReactComponent as CircleDownIconDarkTheme } from './SVG/CircleDownIcon/CircleDownIcon_DarkTheme.svg';
+import { ReactComponent as CircleDownIconLightTheme } from './SVG/CircleDownIcon/CircleDownIcon_LightTheme.svg';
+import { ReactComponent as CircleDownIconHighlighted } from './SVG/CircleDownIcon/CircleDownIcon_Highlighted.svg';
+import { ReactComponent as CircleUpIconDarkTheme } from './SVG/CircleUpIcon/CircleUpIcon_DarkTheme.svg';
+import { ReactComponent as CircleUpIconLightTheme } from './SVG/CircleUpIcon/CircleUpIcon_LightTheme.svg';
+import { ReactComponent as CircleUpIconHighlighted } from './SVG/CircleUpIcon/CircleUpIcon_Highlighted.svg';
 
 /**
  * Built right now to fit into gallery that intends to have the cards expand vertically
@@ -32,10 +42,12 @@ class TwoSizeCard extends React.Component {
 
 	assignClasses = () => {
 		const themeClass = (this.context === 'dark' ? styles.darkTheme : styles.lightTheme);
+		const expandedClass = (this.state.expanded) ? styles.takeTwoSpots : null;
 		const expansionDirClass = this.parseExpansionDirection(this.props.expansionDir);
+		const shapeClass = (this.props.shape) ? styles.rounded : null;
 		
-		const twoSizeCardClasses = ClassNames(styles.twoSizeCard, themeClass);
-		const headerClasses = ClassNames(styles.header, themeClass, expansionDirClass);
+		const twoSizeCardClasses = ClassNames(styles.twoSizeCard, themeClass, shapeClass, expandedClass);
+		const headerClasses = ClassNames(styles.header, themeClass, expansionDirClass, shapeClass);
 		const bodyClasses = ClassNames(styles.body, themeClass, expansionDirClass);
 		const cardTitleClasses = ClassNames(styles.cardTitle, themeClass);
 		const linkListContainerClasses = ClassNames(styles.linkListContainer, themeClass);
@@ -61,19 +73,17 @@ class TwoSizeCard extends React.Component {
 					</div>
 				</div>
 				<div className={ classAssignments.bodyClasses }>
-					<div className="imageContainer">
-						<ProfileImage
-							imagePath={ this.props.imagePath }
-							shape='square'
-						/>
-					</div>
+					<ProfileImage
+						imagePath={ this.props.imagePath }
+						title={ this.props.title }
+					/>
 					{
 						this.state.expanded ?
 						<div className="linkListContainer">
 							{
-								this.props.socialURLs.map((URL) => {
+								// this.props.socialURLs.map((URL) => {
 
-								})
+								// })
 							}
 						</div> :
 						null
