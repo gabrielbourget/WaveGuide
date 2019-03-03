@@ -27,3 +27,12 @@ TwoSizeCardGallery.contextType = ThemeContext;
 
 export default TwoSizeCardGallery;
 
+// - Seed
+//       <TwoSizeCardGallery>
+//          <TwoSizeCard
+//            shape='round'
+//            title={ testArtist.title }
+//            imagePath={ testArtist.imagePath }
+//            socialURLS={ testArtist.socialURLs }
+//          />                                                                                   
+//        </TwoSizeCardGallery>

@@ -67,16 +67,19 @@ class TwoSizeCard extends React.Component {
 		};
 	};
 
+	// - Trigger a card expansion.
 	handleDownIconClick = () => {
 		this.setState({ expanded: true });
 	};
 
+	// - Trigger a card retraction.
 	handleUpIconClick = () => {
 		this.setState({ expanded: false });
 	};
 
+	// - Trigger a modal toggle.
 	handleExpandIconClick = () => {
-		
+		// - TODO -> Hook this up to a modal component eventually.
 	};
 
 	render() {
@@ -125,7 +128,7 @@ class TwoSizeCard extends React.Component {
 						this.state.expanded ?
 						<div className={ classAssignments.cardBottomClasses }>
 							<div className={ styles.title }>
-								<h4>Social Media</h4>
+								<h4>LINKS</h4>
 							</div>
 							<div className={ styles.linkListContainer }>
 
@@ -142,6 +145,3 @@ class TwoSizeCard extends React.Component {
 TwoSizeCard.contextType = ThemeContext;
 
 export default TwoSizeCard;
-/*
-
-						*/

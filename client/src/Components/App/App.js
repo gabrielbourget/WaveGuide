@@ -13,8 +13,8 @@ import TwoSizeCard from '../Cards/TwoSizeCard/TwoSizeCard';
 // import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 
 const testArtist = {
-  title: 'Fyoomz',
-  imagePath: process.env.PUBLIC_URL + '/Images/Fyoomz.jpg',
+  title: 'Cashforgold',
+  imagePath: process.env.PUBLIC_URL + '/Images/Cashforgold.jpg',
   socialURLs: {
     soundCloud: 'https://soundcloud.com/hoodiegen',
     instagram: 'https://instagram.com/hoodiegen',
@@ -32,7 +32,7 @@ class App extends React.Component {
   // config.CURR_THEME <-- read this into initial state that goes into redux store cretion eventually
   render() {
     return (
-      <ThemeContext.Provider value='dark'>
+      <ThemeContext.Provider value='light'>
         <div className={ styles.app }>
 {/*          <ColumnWithPaddingPageCradle>
             <MiddleContentCradle>
