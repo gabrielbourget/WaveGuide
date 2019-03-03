@@ -43,7 +43,8 @@ class CircleButton extends React.Component {
 			else icon = this.props.lightTheme;			
 		}		
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
-		const buttonClasses = ClassNames(styles.button, themeClass);
+		const sizeClass = (this.props.size === 'large') ? styles.large : styles.small;
+		const buttonClasses = ClassNames(styles.button, themeClass, sizeClass);
 
 		// console.log(icon);
 

@@ -54,6 +54,7 @@ class TwoSizeCard extends React.Component {
 		const cardTitleClasses = ClassNames(styles.cardTitle, themeClass);
 		const linkListContainerClasses = ClassNames(styles.linkListContainer, themeClass);
 		const topCardButtonClasses = ClassNames(styles.topCardButtons, themeClass);
+		const cardBottomClasses = ClassNames(styles.cardBottom, shapeClass, themeClass);
 
 		return {
 			twoSizeCardClasses,
@@ -61,7 +62,8 @@ class TwoSizeCard extends React.Component {
 			bodyClasses,
 			cardTitleClasses,
 			linkListContainerClasses,
-			topCardButtonClasses
+			topCardButtonClasses,
+			cardBottomClasses
 		};
 	};
 
@@ -91,12 +93,14 @@ class TwoSizeCard extends React.Component {
 						{
 							this.state.expanded ?
 							<CircleButton 
+								size='small'
 								highlighted={ <CircleUpIconHighlighted/> }
 								darkTheme={ <CircleUpIconDarkTheme/> }
 								lightTheme={ <CircleUpIconLightTheme/> }
 								onClick={ this.handleUpIconClick }
 							/> :
 							<CircleButton 
+								size='small'
 								highlighted={ <CircleDownIconHighlighted/> }
 								darkTheme={ <CircleDownIconDarkTheme/> }
 								lightTheme={ <CircleDownIconLightTheme/> }
@@ -104,6 +108,7 @@ class TwoSizeCard extends React.Component {
 							/>
 						}
 						<CircleButton
+							size='small'
 							highlighted={ <CircleExpandIconHighlighted/> }
 							darkTheme={ <CircleExpandIconDarkTheme/> }
 							lightTheme={ <CircleExpandIconLightTheme/> }
@@ -118,12 +123,13 @@ class TwoSizeCard extends React.Component {
 					/>
 					{
 						this.state.expanded ?
-						<div className="linkListContainer">
-							{
-								// this.props.socialURLs.map((URL) => {
+						<div className={ classAssignments.cardBottomClasses }>
+							<div className={ styles.title }>
+								<h4>Social Media</h4>
+							</div>
+							<div className={ styles.linkListContainer }>
 
-								// })
-							}
+							</div>
 						</div> :
 						null
 					}

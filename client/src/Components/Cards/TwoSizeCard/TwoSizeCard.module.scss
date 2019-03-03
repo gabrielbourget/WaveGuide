@@ -110,15 +110,69 @@
 
 	grid-template-rows: 200px;
 
-	&.expanded{ grid-template-rows: 200px 200px; }
+	&.expanded{ grid-template-rows: 200px 250px; }
 
-	/* LINK LIST CONTAINER */
-	.linkListContainer {
+	&.lightTheme { 
+		background: var(--white); 
+		color: var(--black);
+	}
+
+	&.darkTheme { 
+		background: var(--black); 
+		color: var(--white);
+	}	
+
+
+}
+
+	/* EXPANDED CARD BOTTOM */
+	.cardBottom {
 		width: 100%;
 		height: 100%;
+		
+		&.rounded { border-radius: 5px; }
 
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 50px 1fr; 
+
+		/* TITLE */
+		& .title {
+			height: 100%;
+			width: 100%;
+			padding: 2.5px 0px 2.5px 10px;
+
+			display: grid;
+			justify-items: start;
+			align-items: center;
+
+			& h4 {
+				font: {
+					family: var(--sansSerifStack);
+					size: 1.2rem;
+				}
+				text-transform: uppercase;
+			}
+		}
+
+		/* LINK ICON GRID */
+		& .linkListContainer {
+
+		}
+
+		&.lightTheme { 
+			background: var(--white); 
+			color: var(--black);
+		}
+
+		&.darkTheme { 
+			background: var(--black); 
+			color: var(--white);
+		}			
 	}
-}
+
+
+
+
+
+
