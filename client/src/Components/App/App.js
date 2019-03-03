@@ -32,7 +32,7 @@ class App extends React.Component {
   // config.CURR_THEME <-- read this into initial state that goes into redux store cretion eventually
   render() {
     return (
-      <ThemeContext.Provider value='light'>
+      <ThemeContext.Provider value='dark'>
         <div className={ styles.app }>
 {/*          <ColumnWithPaddingPageCradle>
             <MiddleContentCradle>

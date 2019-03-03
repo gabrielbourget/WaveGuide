@@ -2,9 +2,11 @@ import React from 'react';
 import ClassNames from 'classnames';
 //import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
+import SocialMediaIconComponents from '../../../Helpers/socialMediaIconComponents';
 
 import ProfileImage from '../../ImageContainers/ProfileImage/ProfileImage';
 import CircleButton from '../../Buttons/CircleButton/CircleButton';
+import HorizontalDivider from '../../Dividers/HorizontalDivider/HorizontalDivider';
 
 import styles from './TwoSizeCard.module.scss';
 
@@ -55,6 +57,7 @@ class TwoSizeCard extends React.Component {
 		const linkListContainerClasses = ClassNames(styles.linkListContainer, themeClass);
 		const topCardButtonClasses = ClassNames(styles.topCardButtons, themeClass);
 		const cardBottomClasses = ClassNames(styles.cardBottom, shapeClass, themeClass);
+
 
 		return {
 			twoSizeCardClasses,
@@ -128,10 +131,13 @@ class TwoSizeCard extends React.Component {
 						this.state.expanded ?
 						<div className={ classAssignments.cardBottomClasses }>
 							<div className={ styles.title }>
-								<h4>LINKS</h4>
+								<h3>LINKS</h3>
+							</div>
+							<div className={ styles.hDividerCradle }>
+								<HorizontalDivider height='3px'/>
 							</div>
 							<div className={ styles.linkListContainer }>
-
+	
 							</div>
 						</div> :
 						null
@@ -145,3 +151,9 @@ class TwoSizeCard extends React.Component {
 TwoSizeCard.contextType = ThemeContext;
 
 export default TwoSizeCard;
+
+							// {
+							// 		this.props.socialURLs.map((URL) => {
+							// 			const svgIcon = 
+							// 		})
+							// 	}

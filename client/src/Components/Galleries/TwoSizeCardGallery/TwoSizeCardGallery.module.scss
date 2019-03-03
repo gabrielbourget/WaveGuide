@@ -4,7 +4,7 @@
 .gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, var(--cardWidth));
-	grid-template-rows: repeat(auto-fill, var(--cardHeight));
+	grid-template-rows: repeat(auto-fit, var(--cardHeight));
 	justify-content: center;
 	justify-items: center;
 	grid-gap: 1rem;

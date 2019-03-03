@@ -1,0 +1,13 @@
+@import '../../../GlobalStyles/colors.css';
+
+.horizontalDivider {
+
+	border: none;
+
+	&.darkTheme {
+		background: var(--white);
+	}
+	&.lightTheme {
+		background: var(--black);
+	}
+}
