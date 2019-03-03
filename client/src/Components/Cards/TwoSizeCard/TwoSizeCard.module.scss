@@ -9,7 +9,7 @@
 	height: 100%;
 	width: 100%;
 
-	transition: all 0.75s ease-in-out;
+	transition: all 2s ease-in-out;
 
 	/* Grid display will allow for one column, 
 	   and then two rows, sized at a 1:4 ratio
@@ -21,12 +21,12 @@
 	grid-template-rows: 50px 1fr;
 
 	&.lightTheme { 
-		background: var(--lightGrey); 
-		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		background: var(--white); 
+		box-shadow: var(--boxShadowLightTheme);
 	}
 	&.darkTheme { 
 		background: var(--veryDarkGrey); 
-		box-shadow: 0 5px 28px rgba(255,255,255,0.15);
+		box-shadow: var(--boxShadowDarkTheme);
 	}
 
 	&.takeTwoSpots { grid-row: span 2; }
@@ -45,12 +45,12 @@
 
 	/* Grid container to hold elements that go into header. */
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 2.5fr 1fr;
 	grid-template-rows: 1fr;
 	justify-content: space-between;
 
 	&.lightTheme { 
-		background: var(--lightGrey); 
+		background: var(--white); 
 		color: var(--black);
 	}
 
@@ -64,7 +64,7 @@
 
 		height: 100%;
 		width: auto;
-		padding: 2.5px 10px;
+		padding: 2.5px 0px 2.5px 10px;
 
 		display: grid;
 		justify-items: start;
@@ -80,11 +80,18 @@
 
 	/* TOP CARD BUTTONS */
 	& .topCardButtons {
+		height: 100%;
+		width: 100%;
+		// padding: 10px 10px 2.5px 0px;
+
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 1fr);
-		grid-template-rows: 1fr;
-		justify-items: right;
-		padding: 2.5px 10px 2.5px 0px;
+		grid-auto-flow: column;
+		// grid-template-rows: 1fr;
+		justify-items: center;
+		align-items: center;
+		//justify-content: right;
+		
 	}
 }
 
@@ -101,7 +108,9 @@
 
 	overflow-y: auto;
 
-	grid-template-rows: repeat(auto-fill, 1fr);
+	grid-template-rows: 1fr;
+
+	&.expanded{ grid-template-rows: calc(50% - 10px) calc(50% + 10px); }
 
 	.linkListContainer {
 		width: 100%;

@@ -14,8 +14,8 @@ import ColumnWithPaddingPageCradle
 import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 
 const testArtist = {
-  title: 'Barnacle Boi',
-  imagePath: process.env.PUBLIC_URL + '/Images/BarnacleBoi.jpg',
+  title: 'Hoodie',
+  imagePath: process.env.PUBLIC_URL + '/Images/Hoodie.jpg',
   socialURLs: {
     soundCloud: 'https://soundcloud.com/hoodiegen',
     instagram: 'https://instagram.com/hoodiegen',
@@ -33,7 +33,7 @@ class App extends React.Component {
   // config.CURR_THEME <-- read this into initial state that goes into redux store cretion eventually
   render() {
     return (
-      <ThemeContext.Provider value='dark'>
+      <ThemeContext.Provider value='light'>
         <div className={ styles.app }>
 {/*          <ColumnWithPaddingPageCradle>
             <MiddleContentCradle>
@@ -45,17 +45,7 @@ class App extends React.Component {
               shape='round'
               title={ testArtist.title }
               imagePath={ testArtist.imagePath }
-              socialURLS={ testArtist.socialURLs }/>
-            <TwoSizeCard
-              shape='round'
-              title={ testArtist.title }
-              imagePath={ testArtist.imagePath }
-              socialURLS={ testArtist.socialURLs }/>
-            <TwoSizeCard
-              shape='round'
-              title={ testArtist.title }
-              imagePath={ testArtist.imagePath }
-              socialURLS={ testArtist.socialURLs }/>                            
+              socialURLS={ testArtist.socialURLs }/>                         
           </TwoSizeCardGallery>
         </div> 
       </ThemeContext.Provider>

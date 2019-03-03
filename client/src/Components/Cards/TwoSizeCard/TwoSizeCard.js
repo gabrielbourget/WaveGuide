@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 
 import ProfileImage from '../../ImageContainers/ProfileImage/ProfileImage';
+import CircleButton from '../../Buttons/CircleButton/CircleButton';
 
 import styles from './TwoSizeCard.module.scss';
 
 /* Wrap SVG Icons as functional components to be placed into the markup. */
 import { ReactComponent as CircleExpandIconDarkTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_DarkTheme.svg';
-import { ReactComponent as CircleExpandIconLighTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_LightTheme.svg';
+import { ReactComponent as CircleExpandIconLightTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_LightTheme.svg';
 import { ReactComponent as CircleExpandIconHighlighted } from './SVG/CircleExpandIcon/CircleExpandIcon_Highlighted.svg';
 import { ReactComponent as CircleDownIconDarkTheme } from './SVG/CircleDownIcon/CircleDownIcon_DarkTheme.svg';
 import { ReactComponent as CircleDownIconLightTheme } from './SVG/CircleDownIcon/CircleDownIcon_LightTheme.svg';
@@ -29,7 +30,7 @@ import { ReactComponent as CircleUpIconHighlighted } from './SVG/CircleUpIcon/Ci
 class TwoSizeCard extends React.Component {
 
 	state = {
-		expanded: false
+		expanded: true
 	};
 
 	parseExpansionDirection = (expansionDir) => {
@@ -41,24 +42,39 @@ class TwoSizeCard extends React.Component {
 	};
 
 	assignClasses = () => {
-		const themeClass = (this.context === 'dark' ? styles.darkTheme : styles.lightTheme);
+		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
 		const expandedClass = (this.state.expanded) ? styles.takeTwoSpots : null;
+		const expandedBodyClass = (this.state.expanded) ? styles.expanded : null;
 		const expansionDirClass = this.parseExpansionDirection(this.props.expansionDir);
 		const shapeClass = (this.props.shape) ? styles.rounded : null;
 		
 		const twoSizeCardClasses = ClassNames(styles.twoSizeCard, themeClass, shapeClass, expandedClass);
 		const headerClasses = ClassNames(styles.header, themeClass, expansionDirClass, shapeClass);
-		const bodyClasses = ClassNames(styles.body, themeClass, expansionDirClass);
+		const bodyClasses = ClassNames(styles.body, themeClass, expansionDirClass, expandedBodyClass);
 		const cardTitleClasses = ClassNames(styles.cardTitle, themeClass);
 		const linkListContainerClasses = ClassNames(styles.linkListContainer, themeClass);
+		const topCardButtonClasses = ClassNames(styles.topCardButtons, themeClass);
 
 		return {
 			twoSizeCardClasses,
 			headerClasses,
 			bodyClasses,
 			cardTitleClasses,
-			linkListContainerClasses
+			linkListContainerClasses,
+			topCardButtonClasses
 		};
+	};
+
+	handleDownIconClick = () => {
+		this.setState({ expanded: true });
+	};
+
+	handleUpIconClick = () => {
+		this.setState({ expanded: false });
+	};
+
+	handleExpandIconClick = () => {
+		
 	};
 
 	render() {
@@ -70,6 +86,29 @@ class TwoSizeCard extends React.Component {
 				<div className={ classAssignments.headerClasses }>
 					<div className={ classAssignments.cardTitleClasses }>
 						<h3>{ this.props.title }</h3>
+					</div>
+					<div className={ classAssignments.topCardButtonClasses }>
+						{
+							this.state.expanded ?
+							<CircleButton 
+								highlighted={ <CircleUpIconHighlighted/> }
+								darkTheme={ <CircleUpIconDarkTheme/> }
+								lightTheme={ <CircleUpIconLightTheme/> }
+								onClick={ this.handleUpIconClick }
+							/> :
+							<CircleButton 
+								highlighted={ <CircleDownIconHighlighted/> }
+								darkTheme={ <CircleDownIconDarkTheme/> }
+								lightTheme={ <CircleDownIconLightTheme/> }
+								onClick={ this.handleDownIconClick }
+							/>
+						}
+						<CircleButton
+							highlighted={ <CircleExpandIconHighlighted/> }
+							darkTheme={ <CircleExpandIconDarkTheme/> }
+							lightTheme={ <CircleExpandIconLightTheme/> }
+							onClick={ this.handleExpandIconClick }
+						/>
 					</div>
 				</div>
 				<div className={ classAssignments.bodyClasses }>
