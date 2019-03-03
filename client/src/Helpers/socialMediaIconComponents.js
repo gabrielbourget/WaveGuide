@@ -9,6 +9,8 @@ import React from 'react';
 // - Spotify
 // - Bandcamp
 // - Soundcloud
+// - vk
+// - 
 // -> Finish this list and use it as a reference for icons 
 //    that still need to be made/found. 
 

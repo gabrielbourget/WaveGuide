@@ -1,6 +1,6 @@
 @import '../../../GlobalStyles/colors.css';
 
-.horizontalDivider {
+.verticalDivider {
 	border: none;
 	&.darkTheme { background: var(--white); }
 	&.lightTheme { background: var(--black); }
