@@ -1,21 +1,20 @@
 import React from 'react';
-import logo from '../../logo.svg';
 import styles from './App.module.css';
 import { ThemeContext } from '../../ThemeContext';
-import * as config from '../../clientConfig';
-import OutlineButton  from '../Buttons/OutlineButton/OutlineButton';
-import FilledButton from '../Buttons/FilledButton/FilledButton';
-import SelectionIndicator from '../Icons/Indicators/SelectionIndicator/SelectionIndicator';
-import Paragraph from '../TextLayout/Paragraph/Paragraph';
+//import * as config from '../../clientConfig';
+// import OutlineButton  from '../Buttons/OutlineButton/OutlineButton';
+// import FilledButton from '../Buttons/FilledButton/FilledButton';
+// import SelectionIndicator from '../Icons/Indicators/SelectionIndicator/SelectionIndicator';
+// import Paragraph from '../TextLayout/Paragraph/Paragraph';
 import TwoSizeCardGallery from '../Galleries/TwoSizeCardGallery/TwoSizeCardGallery';
 import TwoSizeCard from '../Cards/TwoSizeCard/TwoSizeCard';
-import ColumnWithPaddingPageCradle 
-  from '../Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle';
-import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
+// import ColumnWithPaddingPageCradle 
+//   from '../Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle';
+// import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 
 const testArtist = {
-  title: 'Hoodie',
-  imagePath: process.env.PUBLIC_URL + '/Images/Hoodie.jpg',
+  title: 'Fyoomz',
+  imagePath: process.env.PUBLIC_URL + '/Images/Fyoomz.jpg',
   socialURLs: {
     soundCloud: 'https://soundcloud.com/hoodiegen',
     instagram: 'https://instagram.com/hoodiegen',
@@ -45,7 +44,38 @@ class App extends React.Component {
               shape='round'
               title={ testArtist.title }
               imagePath={ testArtist.imagePath }
-              socialURLS={ testArtist.socialURLs }/>                         
+              socialURLS={ testArtist.socialURLs }
+            />
+            <TwoSizeCard
+              shape='round'
+              title={ testArtist.title }
+              imagePath={ testArtist.imagePath }
+              socialURLS={ testArtist.socialURLs }
+            />
+            <TwoSizeCard
+              shape='round'
+              title={ testArtist.title }
+              imagePath={ testArtist.imagePath }
+              socialURLS={ testArtist.socialURLs }
+            />
+            <TwoSizeCard
+              shape='round'
+              title={ testArtist.title }
+              imagePath={ testArtist.imagePath }
+              socialURLS={ testArtist.socialURLs }
+            />
+            <TwoSizeCard
+              shape='round'
+              title={ testArtist.title }
+              imagePath={ testArtist.imagePath }
+              socialURLS={ testArtist.socialURLs }
+            />
+            <TwoSizeCard
+              shape='round'
+              title={ testArtist.title }
+              imagePath={ testArtist.imagePath }
+              socialURLS={ testArtist.socialURLs }
+            />                                                                                     
           </TwoSizeCardGallery>
         </div> 
       </ThemeContext.Provider>

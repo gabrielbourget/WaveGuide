@@ -1,6 +1,6 @@
 import React from 'react';
 import ClassNames from 'classnames';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 
 import ProfileImage from '../../ImageContainers/ProfileImage/ProfileImage';
@@ -30,7 +30,7 @@ import { ReactComponent as CircleUpIconHighlighted } from './SVG/CircleUpIcon/Ci
 class TwoSizeCard extends React.Component {
 
 	state = {
-		expanded: true
+		expanded: false
 	};
 
 	parseExpansionDirection = (expansionDir) => {
@@ -136,3 +136,6 @@ class TwoSizeCard extends React.Component {
 TwoSizeCard.contextType = ThemeContext;
 
 export default TwoSizeCard;
+/*
+
+						*/
