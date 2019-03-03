@@ -10,6 +10,8 @@ import HorizontalDivider from '../../Dividers/HorizontalDivider/HorizontalDivide
 
 import styles from './TwoSizeCard.module.scss';
 
+import { assignClasses } from './helpers';
+
 /* Wrap SVG Icons as functional components to be placed into the markup. */
 import { ReactComponent as CircleExpandIconDarkTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_DarkTheme.svg';
 import { ReactComponent as CircleExpandIconLightTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_LightTheme.svg';
@@ -35,41 +37,6 @@ class TwoSizeCard extends React.Component {
 		expanded: false
 	};
 
-	parseExpansionDirection = (expansionDir) => {
-		switch(expansionDir) {
-			case 'horizontal': return styles.horizontal;
-			case 'vertical': return styles.vertical;
-			default: return styles.horizontal;
-		}
-	};
-
-	assignClasses = () => {
-		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
-		const expandedClass = (this.state.expanded) ? styles.takeTwoSpots : null;
-		const expandedBodyClass = (this.state.expanded) ? styles.expanded : null;
-		const expansionDirClass = this.parseExpansionDirection(this.props.expansionDir);
-		const shapeClass = (this.props.shape) ? styles.rounded : null;
-		
-		const twoSizeCardClasses = ClassNames(styles.twoSizeCard, themeClass, shapeClass, expandedClass);
-		const headerClasses = ClassNames(styles.header, themeClass, expansionDirClass, shapeClass);
-		const bodyClasses = ClassNames(styles.body, themeClass, expansionDirClass, expandedBodyClass);
-		const cardTitleClasses = ClassNames(styles.cardTitle, themeClass);
-		const linkListContainerClasses = ClassNames(styles.linkListContainer, themeClass);
-		const topCardButtonClasses = ClassNames(styles.topCardButtons, themeClass);
-		const cardBottomClasses = ClassNames(styles.cardBottom, shapeClass, themeClass);
-
-
-		return {
-			twoSizeCardClasses,
-			headerClasses,
-			bodyClasses,
-			cardTitleClasses,
-			linkListContainerClasses,
-			topCardButtonClasses,
-			cardBottomClasses
-		};
-	};
-
 	// - Trigger a card expansion.
 	handleDownIconClick = () => {
 		this.setState({ expanded: true });
@@ -87,7 +54,7 @@ class TwoSizeCard extends React.Component {
 
 	render() {
 	
-		const classAssignments = this.assignClasses();
+		const classAssignments = assignClasses(this.context, this.state, this.props, styles);
 
 		return (
 			<div className={ classAssignments.twoSizeCardClasses }>
