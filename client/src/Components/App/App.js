@@ -13,8 +13,8 @@ import TwoSizeCard from '../Cards/TwoSizeCard/TwoSizeCard';
 // import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 
 const testArtist = {
-  title: 'Cashforgold',
-  imagePath: process.env.PUBLIC_URL + '/Images/Cashforgold.jpg',
+  title: 'Juche',
+  imagePath: process.env.PUBLIC_URL + '/Images/Juche.jpg',
   socialURLs: {
     soundCloud: 'https://soundcloud.com/hoodiegen',
     instagram: 'https://instagram.com/hoodiegen',
@@ -45,7 +45,7 @@ class App extends React.Component {
               title={ testArtist.title }
               imagePath={ testArtist.imagePath }
               socialURLS={ testArtist.socialURLs }
-            />                                                                                   
+            /> 
           </TwoSizeCardGallery>
         </div> 
       </ThemeContext.Provider>

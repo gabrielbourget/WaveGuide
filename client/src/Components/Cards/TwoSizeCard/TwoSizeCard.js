@@ -1,5 +1,4 @@
 import React from 'react';
-import ClassNames from 'classnames';
 //import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 import SocialMediaIconComponents from '../../../Helpers/socialMediaIconComponents';
@@ -36,6 +35,10 @@ class TwoSizeCard extends React.Component {
 	state = {
 		expanded: false
 	};
+
+	// - TODO -> Write and then call a helper here to figure out which social media
+	//   icons the card will need to render based on the links in the 
+	//   artist profile.
 
 	// - Trigger a card expansion.
 	handleDownIconClick = () => {
