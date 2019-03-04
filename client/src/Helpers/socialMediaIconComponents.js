@@ -19,23 +19,91 @@ import { ReactComponent as SpotifyIconDarkTheme } from '../Icons/SocialMediaIcon
 import { ReactComponent as SpotifyIconLightTheme } from '../Icons/SocialMediaIcons/Spotify/SpotifyIconLightTheme.svg';
 import { ReactComponent as SpotifyIconHighlighted } from '../Icons/SocialMediaIcons/Spotify/SpotifyIconHighlighted.svg';
 // - Bandcamp
-//import { ReactComponent as }
-
-// - Facebook --> DONE
-// - Instagram --> DONE 
-// - Twitter --> DONE
-// - Spotify --> DONE
-// - Bandcamp --> DONE
-// - Soundcloud --> DONE
-// - vk --> DONE
-// - Youtube --> DONE
-// - Snapchat --> DONE
-// -> Finish this list and use it as a reference for icons 
-//    that still need to be made/found. 
+import { ReactComponent as BandcampIconDarkTheme } from '../Icons/SocialMediaIcons/Bandcamp/BandcampIconDarkTheme.svg';
+import { ReactComponent as BandcampIconLightTheme } from '../Icons/SocialMediaIcons/Bandcamp/BandcampIconLightTheme.svg';
+import { ReactComponent as BandcampIconHighlighted } from '../Icons/SocialMediaIcons/Bandcamp/BandcampIconHighlighted.svg';
+// - Soundcloud
+import { ReactComponent as SoundcloudIconDarkTheme } from '../Icons/SocialMediaIcons/Soundcloud/SoundcloudIconDarkTheme.svg';
+import { ReactComponent as SoundcloudIconLightTheme } from '../Icons/SocialMediaIcons/Soundcloud/SoundcloudIconLightTheme.svg';
+import { ReactComponent as SoundcloudIconHighlighted } from '../Icons/SocialMediaIcons/Soundcloud/SoundcloudIconHighlighted.svg';
+// - vk
+import { ReactComponent as VKIconDarkTheme } from '../Icons/SocialMediaIcons/VK/VKIconDarkTheme.svg';
+import { ReactComponent as VKIconLightTheme } from '../Icons/SocialMediaIcons/VK/VKIconLightTheme.svg';
+import { ReactComponent as VKIconHighlighted } from '../Icons/SocialMediaIcons/VK/VKIconHighlighted.svg';
+// - Youtube
+import { ReactComponent as YoutubeIconDarkTheme } from '../Icons/SocialMediaIcons/Youtube/YoutubeIconDarkTheme.svg';
+import { ReactComponent as YoutubeIconLightTheme } from '../Icons/SocialMediaIcons/Youtube/YoutubeIconLightTheme.svg';
+import { ReactComponent as YoutubeIconHighlighted } from '../Icons/SocialMediaIcons/Youtube/YoutubeIconHighlighted.svg';
+// - Snapchat
+import { ReactComponent as SnapchatIconDarkTheme } from '../Icons/SocialMediaIcons/Snapchat/SnapchatIconDarkTheme.svg';
+import { ReactComponent as SnapchatIconLightTheme } from '../Icons/SocialMediaIcons/Snapchat/SnapchatIconLightTheme.svg';
+import { ReactComponent as SnapchatIconHighlighted } from '../Icons/SocialMediaIcons/Snapchat/SnapchatIconHighlighted.svg'; 
+// - Apple Music
+import { ReactComponent as AppleMusicIconDarkTheme } from '../Icons/SocialMediaIcons/Apple/AppleMusicIconDarkTheme.svg';
+import { ReactComponent as AppleMusicIconLightTheme } from '../Icons/SocialMediaIcons/Apple/AppleMusicIconLightTheme.svg';
+import { ReactComponent as AppleMusicIconHighlighted } from '../Icons/SocialMediaIcons/Apple/AppleMusicIconHighlighted.svg';
+// - Personal website
+import { ReactComponent as PersonalWebsiteIconDarkTheme } from '../Icons/SocialMediaIcons/PersonalWebsite/PersonalWebsiteIconDarkTheme.svg';
+import { ReactComponent as PersonalWebsiteIconLightTheme } from '../Icons/SocialMediaIcons/PersonalWebsite/PersonalWebsiteIconLightTheme.svg';
+import { ReactComponent as PersonalWebsiteIconHighlighted } from '../Icons/SocialMediaIcons/PersonalWebsite/PersonalWebsiteIconHighlighted.svg';
 
 // - Stick them all into an object.
 const socialMediaIcons = {
-
+	facebook: {
+		FacebookIconDarkTheme,
+		FacebookIconLightTheme,
+		FacebookIconHighlighted
+	},
+	instagram: {
+		InstagramIconDarkTheme,
+		InstagramIconLightTheme,
+		InstagramIconHighlighted
+	},
+	twitter: {
+		TwitterIconDarkTheme,
+		TwitterIconLightTheme,
+		TwitterIconHighlighted
+	},
+	spotify: {
+		SpotifyIconDarkTheme,
+		SpotifyIconLightTheme,
+		SpotifyIconHighlighted
+	},
+	bandcamp: {
+		BandcampIconDarkTheme,
+		BandcampIconLightTheme,
+		BandcampIconHighlighted
+	},
+	soundCloud: {
+		SoundcloudIconDarkTheme,
+		SoundcloudIconLightTheme,
+		SoundcloudIconHighlighted
+	},
+	vk: {
+		VKIconDarkTheme,
+		VKIconLightTheme,
+		VKIconHighlighted
+	},
+	youtube: {
+		YoutubeIconDarkTheme,
+		YoutubeIconLightTheme,
+		YoutubeIconHighlighted
+	},
+	snapchat: {
+		SnapchatIconDarkTheme,
+		SnapchatIconLightTheme,
+		SnapchatIconHighlighted
+	},
+	apple: {
+		AppleMusicIconDarkTheme,
+		AppleMusicIconLightTheme,
+		AppleMusicIconHighlighted
+	},
+	personalWebsite: {
+		PersonalWebsiteIconDarkTheme,
+		PersonalWebsiteIconLightTheme,
+		PersonalWebsiteIconHighlighted
+	}
 };
 
 // - Export an object that contains them all.
