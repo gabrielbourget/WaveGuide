@@ -181,6 +181,8 @@
 			grid-template-columns: repeat(auto-fit, 55px);
 			//grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
 			grid-template-rows: repeat(auto-fit, 55px);
+
+			&.rounded { border-radius: 0px 0px 5px 5px; }
 		}
 	}
 }

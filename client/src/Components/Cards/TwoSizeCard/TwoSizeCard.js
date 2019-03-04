@@ -59,7 +59,6 @@ class TwoSizeCard extends React.Component {
 	
 		const classAssignments = assignClasses(this.context, this.state, this.props, styles);
 		const cardSocialLinks = prepareLinkGallery(this.props, SocialMediaIconComponents);
-		console.log(cardSocialLinks);
 
 		return (
 			<div className={ classAssignments.twoSizeCardClasses }>

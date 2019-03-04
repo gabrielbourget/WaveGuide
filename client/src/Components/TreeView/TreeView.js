@@ -3,12 +3,16 @@ import ClassNames from 'classnames';
 import PropTypes from 'prop-types';
 import { ThemeContext } from '../../ThemeContext';
 
-class ContentTree extends React.Component {
-
+class TreeView extends React.Component {
+	render() {
+		return(
+			
+		);
+	}
 }
 
-ContentTree.contextType = ThemeContext;
+TreeView.contextType = ThemeContext;
 
-export default ContentTree;
+export default TreeView;
 
 // - Nucleation point -> https://medium.com/@davidtranwd/implement-tree-view-component-with-reactjs-and-styled-components-5eea3b1603cf
