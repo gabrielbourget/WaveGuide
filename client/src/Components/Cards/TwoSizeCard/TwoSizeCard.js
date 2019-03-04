@@ -9,7 +9,7 @@ import HorizontalDivider from '../../Dividers/HorizontalDivider/HorizontalDivide
 
 import styles from './TwoSizeCard.module.scss';
 
-import { assignClasses } from './helpers';
+import { assignClasses, prepareLinkGallery } from './helpers';
 
 /* Wrap SVG Icons as functional components to be placed into the markup. */
 import { ReactComponent as CircleExpandIconDarkTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_DarkTheme.svg';
@@ -58,6 +58,8 @@ class TwoSizeCard extends React.Component {
 	render() {
 	
 		const classAssignments = assignClasses(this.context, this.state, this.props, styles);
+		const cardSocialLinks = prepareLinkGallery(this.props, SocialMediaIconComponents);
+		console.log(cardSocialLinks);
 
 		return (
 			<div className={ classAssignments.twoSizeCardClasses }>
@@ -107,7 +109,25 @@ class TwoSizeCard extends React.Component {
 								<HorizontalDivider height='3px'/>
 							</div>
 							<div className={ styles.linkListContainer }>
-	
+  						{
+								cardSocialLinks.map((LinkInfo,index) => (
+									<a 
+										key={ index }
+										href={ LinkInfo.link } 
+										target='_blank'
+										rel='noopener noreferrer' 
+									>											
+										<CircleButton
+											key={ index }
+											size='large'
+											darkTheme={ LinkInfo.icons['darkTheme']() }
+											highlighted={ LinkInfo.icons['highlighted']() }
+											lightTheme={ LinkInfo.icons['lightTheme']() }
+											onClick={ () => {} }
+										/>
+									</a>													
+								))
+							}
 							</div>
 						</div> :
 						null
@@ -122,8 +142,9 @@ TwoSizeCard.contextType = ThemeContext;
 
 export default TwoSizeCard;
 
-							// {
-							// 		this.props.socialURLs.map((URL) => {
-							// 			const svgIcon = 
-							// 		})
-							// 	}
+/**
+
+								
+ */
+
+

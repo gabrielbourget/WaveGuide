@@ -50,59 +50,59 @@ import { ReactComponent as PersonalWebsiteIconHighlighted } from '../Icons/Socia
 // - Stick them all into an object.
 const socialMediaIcons = {
 	facebook: {
-		FacebookIconDarkTheme,
-		FacebookIconLightTheme,
-		FacebookIconHighlighted
+		darkTheme: FacebookIconDarkTheme,
+		lightTheme: FacebookIconLightTheme,
+		highlighted: FacebookIconHighlighted
 	},
 	instagram: {
-		InstagramIconDarkTheme,
-		InstagramIconLightTheme,
-		InstagramIconHighlighted
+		darkTheme: InstagramIconDarkTheme,
+		lightTheme: InstagramIconLightTheme,
+		highlighted: InstagramIconHighlighted
 	},
 	twitter: {
-		TwitterIconDarkTheme,
-		TwitterIconLightTheme,
-		TwitterIconHighlighted
+		darkTheme: TwitterIconDarkTheme,
+		lightTheme: TwitterIconLightTheme,
+		highlighted: TwitterIconHighlighted
 	},
 	spotify: {
-		SpotifyIconDarkTheme,
-		SpotifyIconLightTheme,
-		SpotifyIconHighlighted
+		darkTheme: SpotifyIconDarkTheme,
+		lightTheme: SpotifyIconLightTheme,
+		highlighted: SpotifyIconHighlighted
 	},
 	bandcamp: {
-		BandcampIconDarkTheme,
-		BandcampIconLightTheme,
-		BandcampIconHighlighted
+		darkTheme: BandcampIconDarkTheme,
+		lightTheme: BandcampIconLightTheme,
+		highlighted: BandcampIconHighlighted
 	},
 	soundCloud: {
-		SoundcloudIconDarkTheme,
-		SoundcloudIconLightTheme,
-		SoundcloudIconHighlighted
+		darkTheme: SoundcloudIconDarkTheme,
+		lightTheme:  SoundcloudIconLightTheme,
+		highlighted: SoundcloudIconHighlighted
 	},
 	vk: {
-		VKIconDarkTheme,
-		VKIconLightTheme,
-		VKIconHighlighted
+		darkTheme: VKIconDarkTheme,
+		lightTheme: VKIconLightTheme,
+		highlighted: VKIconHighlighted
 	},
 	youtube: {
-		YoutubeIconDarkTheme,
-		YoutubeIconLightTheme,
-		YoutubeIconHighlighted
+		darkTheme: YoutubeIconDarkTheme,
+		lightTheme: YoutubeIconLightTheme,
+		highlighted: YoutubeIconHighlighted
 	},
 	snapchat: {
-		SnapchatIconDarkTheme,
-		SnapchatIconLightTheme,
-		SnapchatIconHighlighted
+		darkTheme: SnapchatIconDarkTheme,
+		lightTheme: SnapchatIconLightTheme,
+		highlighted: SnapchatIconHighlighted
 	},
 	apple: {
-		AppleMusicIconDarkTheme,
-		AppleMusicIconLightTheme,
-		AppleMusicIconHighlighted
+		darkTheme: AppleMusicIconDarkTheme,
+		lightTheme: AppleMusicIconLightTheme,
+		highlighted: AppleMusicIconHighlighted
 	},
 	personalWebsite: {
-		PersonalWebsiteIconDarkTheme,
-		PersonalWebsiteIconLightTheme,
-		PersonalWebsiteIconHighlighted
+		darkTheme: PersonalWebsiteIconDarkTheme,
+		lightTheme: PersonalWebsiteIconLightTheme,
+		highlighted: PersonalWebsiteIconHighlighted
 	}
 };
 

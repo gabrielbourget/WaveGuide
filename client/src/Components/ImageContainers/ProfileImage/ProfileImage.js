@@ -17,6 +17,7 @@ class ProfileImage extends React.Component {
 			<img 
 				src={ this.props.imagePath } 
 				alt={ this.props.title }
+				className={ styles.image }
 			/>
 		);
 	}

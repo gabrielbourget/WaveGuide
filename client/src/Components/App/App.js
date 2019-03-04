@@ -13,13 +13,14 @@ import TwoSizeCard from '../Cards/TwoSizeCard/TwoSizeCard';
 // import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 
 const testArtist = {
-  title: 'Juche',
-  imagePath: process.env.PUBLIC_URL + '/Images/Juche.jpg',
+  title: 'Hoodie',
+  imagePath: process.env.PUBLIC_URL + '/Images/Hoodie.jpg',
   socialURLs: {
     soundCloud: 'https://soundcloud.com/hoodiegen',
     instagram: 'https://instagram.com/hoodiegen',
     twitter: 'https://twitter.com/hoodiegen',
-    spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA'
+    spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA',
+    personalWebsite: 'https://hoodiegen.com'
   }
 };
 
@@ -44,7 +45,7 @@ class App extends React.Component {
               shape='round'
               title={ testArtist.title }
               imagePath={ testArtist.imagePath }
-              socialURLS={ testArtist.socialURLs }
+              socialURLs={ testArtist.socialURLs }
             /> 
           </TwoSizeCardGallery>
         </div> 
