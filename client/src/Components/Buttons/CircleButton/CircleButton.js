@@ -1,6 +1,6 @@
 import React from 'react';
 import ClassNames from 'classnames';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 
 import styles from './CircleButton.module.scss';
@@ -16,6 +16,14 @@ class CircleButton extends React.Component {
 
 	state = {
 		highlighted: false
+	};
+
+	static propTypes = {
+		size: PropTypes.string
+	};
+
+	static defaultProps = {
+		size: '25px'
 	};
 
 	handleMouseEnter = (e) => {
@@ -43,14 +51,17 @@ class CircleButton extends React.Component {
 			else icon = this.props.lightTheme;			
 		}		
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
-		const sizeClass = (this.props.size === 'large') ? styles.large : styles.small;
-		const buttonClasses = ClassNames(styles.button, themeClass, sizeClass);
+		const buttonClasses = ClassNames(styles.button, themeClass);
 
-		// console.log(icon);
+		const style = {
+			width: this.props.size,
+			height: this.props.size
+		};
 
 		return (
 			<button 
 				className={ buttonClasses }
+				style={ style }
 				onMouseEnter={ this.handleMouseEnter }
 				onMouseLeave={ this.handleMouseLeave }
 				onClick={ this.handleMouseClick }

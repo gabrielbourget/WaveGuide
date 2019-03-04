@@ -70,14 +70,14 @@ class TwoSizeCard extends React.Component {
 						{
 							this.state.expanded ?
 							<CircleButton 
-								size='small'
+								size='25px'
 								highlighted={ <CircleUpIconHighlighted/> }
 								darkTheme={ <CircleUpIconDarkTheme/> }
 								lightTheme={ <CircleUpIconLightTheme/> }
 								onClick={ this.handleUpIconClick }
 							/> :
 							<CircleButton 
-								size='small'
+								size='25px'
 								highlighted={ <CircleDownIconHighlighted/> }
 								darkTheme={ <CircleDownIconDarkTheme/> }
 								lightTheme={ <CircleDownIconLightTheme/> }
@@ -85,7 +85,7 @@ class TwoSizeCard extends React.Component {
 							/>
 						}
 						<CircleButton
-							size='small'
+							size='25px'
 							highlighted={ <CircleExpandIconHighlighted/> }
 							darkTheme={ <CircleExpandIconDarkTheme/> }
 							lightTheme={ <CircleExpandIconLightTheme/> }
@@ -118,7 +118,7 @@ class TwoSizeCard extends React.Component {
 									>											
 										<CircleButton
 											key={ index }
-											size='large'
+											size='50px'
 											darkTheme={ LinkInfo.icons['darkTheme']() }
 											highlighted={ LinkInfo.icons['highlighted']() }
 											lightTheme={ LinkInfo.icons['lightTheme']() }
