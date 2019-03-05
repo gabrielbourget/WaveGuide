@@ -33,35 +33,62 @@ import { ReactComponent as FileHighlighted } from '../SVG/File/FileHighlighted.s
 
 class TreeNode extends React.Component {
 
-	getNodeLabel = (node) => (last(node.path.split('/')));
+	static propTypes = {
+	  node: PropTypes.object.isRequired,
+	  getChildNodes: PropTypes.func.isRequired,
+	  level: PropTypes.number.isRequired,
+	  onToggle: PropTypes.func.isRequired,
+	  onNodeSelect: PropTypes.func.isRequired,
+	  r_mrgn: PropTypes.string
+	};
 
+	static defaultProps = {
+		r_mrgn: '10',
+		level: 0
+	};
+
+	getNodeLabel = (node) => (last(node.path.split('/')));
+	
 	getPaddingLeft = (level, type) => {
 	  let paddingLeft = level * 20;
 	  if (type === 'file') paddingLeft += 20;
 	  return paddingLeft;
-	};r
+	};
 
 	render() {
 
 		const { node, getChildNodes, level, onToggle, onNodeSelect } = this.props;
 
+		const treeNodeStyle = {
+			paddingLeft: this.getPaddingLeft(level, node.type) + 'px'
+		};
+
+		const nodeIconStyle = {
+			marginRight: this.props.r_mrgn + 'px'
+		};
+
 		return (
 			<React.Fragment>
-				<div className={ styles.treeNode } level={ level } type={ node.type }>
+				<div 
+					style={ treeNodeStyle }
+					className={ styles.treeNode } 
+					level={ level } 
+					type={ node.type }
+				>
 					<div>
 						{/* If the node is a folder, is it open or not. */}
 						{
 							node.type === 'folder' && (
 								node.isOpen ? 
 								<CircleButton 
-									size='10px'
+									size='8px'
 									darkTheme={ <ChevronDownDarkTheme/> }
 									lightTheme={ <ChevronDownLightTheme/> }
 									highlighted={ <ChevronDownHighlighted/> }
 									onClick={ () => {} }
 								/> :
 								<CircleButton
-									size='10px'
+									size='8px'
 									darkTheme={ <ChevronRightDarkTheme/> }
 									lightTheme={ <ChevronRightLightTheme/> }
 									highlighted={ <ChevronRightHighlighted/> }
@@ -70,7 +97,11 @@ class TreeNode extends React.Component {
 							)
 						}
 					</div>
-					<div className={ styles.nodeIcon } marginRight={ 10 }>
+					<div 
+						style={ nodeIconStyle }
+						className={ styles.nodeIcon } 
+						r_mrgn={ 10 }
+					>
 						{/* File */}
 						{ 
 							node.type === 'file'  
@@ -86,7 +117,7 @@ class TreeNode extends React.Component {
 						{
 							node.type === 'folder' && node.isOpen && (
 								<CircleButton
-									size='10px'
+									size='13px'
 									darkTheme={ <FolderOpenDarkTheme/> }
 									lightTheme={ <FolderOpenLightTheme/> }
 									highlighted={ <FolderOpenHighlighted/> }
@@ -98,7 +129,7 @@ class TreeNode extends React.Component {
 						{
 							node.type === 'folder' && !node.isOpen && (
 								<CircleButton 
-									size='10px'
+									size='13px'
 									darkTheme={ <FolderClosedDarkTheme/> }
 									lightTheme={ <FolderClosedLightTheme/> }
 									highlighted={ <FolderClosedHighlighted/> }
@@ -108,10 +139,12 @@ class TreeNode extends React.Component {
 						}
 					</div>
 
+					{/* Grab name at the end of that node's path. */}
 					<span role="button">
 						{ this.getNodeLabel(node) }
 					</span>
-
+	
+					{/* If the node is open, recursively generate each child node. */}
 					{
 						node.isOpen && getChildNodes(node).map((childNode, index) => (
 							<TreeNode

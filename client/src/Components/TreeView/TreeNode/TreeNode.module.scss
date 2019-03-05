@@ -1,0 +1,30 @@
+.treeNode {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-items: left;
+	padding: 5px;
+	grid-gap: 1rem
+	// - Left padding determined at run time by the component, 
+	//   based on nesting level within the tree structure.
+	&:hover {
+		background: var(--lightGray);
+	}
+}
+
+.nodeIcon {
+	font: {
+		family: var(--sansSerifStack);
+		size: 1.2rem;
+		padding: 0 5px;
+		// - Margin right determined at run time by the component. 
+	}
+}
+
+.darkTheme {
+	color: var(--white);
+}
+
+.lightTheme {
+	color: var(--black);
+}
