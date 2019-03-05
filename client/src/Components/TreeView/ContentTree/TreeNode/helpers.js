@@ -5,8 +5,6 @@ export const prepareComponent = (context, props, styles) => {
 
 	const themeClass = (context === 'dark') ? styles.darkTheme : styles.lightTheme;
 
-	const nodeRowClasses = ClassNames(styles.nodeRow, themeClass);
-
 	const treeNodeStyle = {
 		paddingLeft: getPaddingLeft(props.level, props.node.type) + 'px'
 	};
@@ -31,6 +29,6 @@ export const getNodeLabel = (node) => (last(node.path.split('/')));
 
 const getPaddingLeft = (level, type) => {
   let paddingLeft = level * 20;
-  if (type === 'file') paddingLeft += 20;
+  //if (type === 'file') paddingLeft += 20;
   return paddingLeft;
 };

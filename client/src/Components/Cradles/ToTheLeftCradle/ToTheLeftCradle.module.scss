@@ -1,0 +1,10 @@
+@import '../../../GlobalStyles/colors.css';
+
+.cradle {
+	display: grid;
+	align-items: start;
+	justify-items: start;
+
+	&.darkTheme{ background: var(--veryveryDarkGrey); }
+	&.lightTheme{ background: var(--white); }
+}

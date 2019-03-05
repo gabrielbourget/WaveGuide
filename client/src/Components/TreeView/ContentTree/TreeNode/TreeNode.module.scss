@@ -3,7 +3,8 @@
 .treeNode {
   display: grid;
   align-items: center;
-  justify-items: left;
+  justify-content: left;
+  grid-gap: 1rem;
   grid-auto-flow: column;
   align-items: center;
   padding: 5px 8px;
@@ -34,4 +35,10 @@
 
 .lightTheme {
 	color: var(--black);
+}
+
+.nodeSpan {
+	&:hover { 
+		cursor: pointer; 
+	}
 }
