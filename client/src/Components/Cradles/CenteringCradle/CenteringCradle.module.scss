@@ -1,0 +1,11 @@
+@import '../../../GlobalStyles/colors.css';
+
+.cradle {
+	display: grid;
+	place-items: center;
+	place-content: center;
+}
+
+
+.lightTheme { background: var(--white); }
+.darkTheme { background: var(--veryveryDarkGrey); }
