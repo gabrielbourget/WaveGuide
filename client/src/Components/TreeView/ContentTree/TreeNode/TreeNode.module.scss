@@ -1,14 +1,21 @@
+@import '../../../../GlobalStyles/colors.css';
+
 .treeNode {
-	display: grid;
-	grid-auto-flow: column;
-	align-items: center;
-	justify-items: left;
-	padding: 5px;
-	grid-gap: 1rem
+  display: grid;
+  align-items: center;
+  justify-items: left;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 5px 8px;
 	// - Left padding determined at run time by the component, 
 	//   based on nesting level within the tree structure.
 	&:hover {
-		background: var(--lightGray);
+		&.darkTheme {
+			background: var(--veryDarkGrey);
+		}
+		&.lightTheme {
+			background: var(--lightGrey);
+		}
 	}
 }
 
@@ -16,7 +23,7 @@
 	font: {
 		family: var(--sansSerifStack);
 		size: 1.2rem;
-		padding: 0 5px;
+		// padding: 0 5px;
 		// - Margin right determined at run time by the component. 
 	}
 }

@@ -1,12 +1,12 @@
 import React from 'react';
-import ClassNames from 'classnames';
 import PropTypes from 'prop-types';
-import last from 'lodash/last';
-import { ThemeContext } from '../../../ThemeContext';
+import { ThemeContext } from '../../../../ThemeContext';
 
 import styles from './TreeNode.module.scss';
 
-import CircleButton from '../../Buttons/CircleButton/CircleButton';
+import { prepareComponent, getNodeLabel } from './helpers.js';
+
+import CircleButton from '../../../Buttons/CircleButton/CircleButton';
 
 // --- Icons ---
 
@@ -47,31 +47,17 @@ class TreeNode extends React.Component {
 		level: 0
 	};
 
-	getNodeLabel = (node) => (last(node.path.split('/')));
-	
-	getPaddingLeft = (level, type) => {
-	  let paddingLeft = level * 20;
-	  if (type === 'file') paddingLeft += 20;
-	  return paddingLeft;
-	};
-
 	render() {
 
 		const { node, getChildNodes, level, onToggle, onNodeSelect } = this.props;
 
-		const treeNodeStyle = {
-			paddingLeft: this.getPaddingLeft(level, node.type) + 'px'
-		};
-
-		const nodeIconStyle = {
-			marginRight: this.props.r_mrgn + 'px'
-		};
+		const initObject = prepareComponent(this.context, this.props, styles);
 
 		return (
 			<React.Fragment>
 				<div 
-					style={ treeNodeStyle }
-					className={ styles.treeNode } 
+					style={ initObject.treeNodeStyle }
+					className={ initObject.treeNodeClasses } 
 					level={ level } 
 					type={ node.type }
 				>
@@ -85,21 +71,21 @@ class TreeNode extends React.Component {
 									darkTheme={ <ChevronDownDarkTheme/> }
 									lightTheme={ <ChevronDownLightTheme/> }
 									highlighted={ <ChevronDownHighlighted/> }
-									onClick={ () => {} }
+									onClick={ () => { onToggle(node) } }
 								/> :
 								<CircleButton
 									size='8px'
 									darkTheme={ <ChevronRightDarkTheme/> }
 									lightTheme={ <ChevronRightLightTheme/> }
 									highlighted={ <ChevronRightHighlighted/> }
-									onClick={ () => {} }
+									onClick={ () => { onToggle(node) } }
 								/>
 							)
 						}
 					</div>
 					<div 
-						style={ nodeIconStyle }
-						className={ styles.nodeIcon } 
+						style={ initObject.nodeIconStyle }
+						className={ initObject.nodeIconClasses } 
 						r_mrgn={ 10 }
 					>
 						{/* File */}
@@ -140,22 +126,25 @@ class TreeNode extends React.Component {
 					</div>
 
 					{/* Grab name at the end of that node's path. */}
-					<span role="button">
-						{ this.getNodeLabel(node) }
+					<span 
+						role="button"
+						onClick={ () => { onNodeSelect(node) }}
+					>
+						{ getNodeLabel(node) }
 					</span>
-	
-					{/* If the node is open, recursively generate each child node. */}
-					{
-						node.isOpen && getChildNodes(node).map((childNode, index) => (
-							<TreeNode
-								key={ index }
-								{ ...this.props }
-								node={ childNode }
-								level={ level + 1 }
-							/>
-						))
-					}
-				</div>
+				</div>	
+
+				{/* If the node is open, recursively generate each child node. */}
+				{
+					node.isOpen && getChildNodes(node).map((childNode, index) => (
+						<TreeNode
+							key={ index }
+							{ ...this.props }
+							node={ childNode }
+							level={ level + 1 }
+						/>
+					))
+				}
 			</React.Fragment>
 		);
 	}

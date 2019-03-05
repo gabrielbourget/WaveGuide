@@ -12,7 +12,7 @@ import TwoSizeCard from '../Cards/TwoSizeCard/TwoSizeCard';
 //   from '../Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle';
 // import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 import CenteringCradle from '../Cradles/CenteringCradle/CenteringCradle';
-import TreeView from '../TreeView/TreeView';
+import ContentTree from '../TreeView/ContentTree/ContentTree';
 
 const testArtists = [
   {
@@ -131,7 +131,7 @@ class App extends React.Component {
   // config.CURR_THEME <-- read this into initial state that goes into redux store cretion eventually
   render() {
     return (
-      <ThemeContext.Provider value='dark'>
+      <ThemeContext.Provider value='light'>
         <div className={ styles.app }>
 {/*          <ColumnWithPaddingPageCradle>
             <MiddleContentCradle>
@@ -158,7 +158,7 @@ class App extends React.Component {
             /> 
           </TwoSizeCardGallery>*/}
           <CenteringCradle>
-            <TreeView onSelect={() => {} }/>
+            <ContentTree onSelect={() => {} }/>
           </CenteringCradle>
         </div> 
       </ThemeContext.Provider>
