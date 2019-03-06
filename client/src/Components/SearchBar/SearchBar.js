@@ -21,37 +21,45 @@ class SearchBar extends React.Component {
 		defaultText: PropTypes.string.isRequired
 	};
 
+	defaultProps = {
+		defaultText: 'Search by artist name.'
+	};
+
 	render() {
 
 		const initObject = prepareComponent(this.context, this.props, styles, this.state);
 
-		return(
-			<div className={ initObject.searchBarClasses }>
-				<form className={ styles.searchField }>
-					<input 
-						type="text" 
-						className={ initObject.searchInputClasses }
-						placeholder='Search by artist name.'
+		return (
+			<div className={ initObject.searchBarClasses }>			
+				{
+					(this.state.expanded) ?
+						<form className={ styles.searchField }>
+							<input 
+								type="text" 
+								className={ initObject.searchInputClasses }
+								placeholder='Search by artist name.'
+							/>
+						</form> :
+						null
+				}
+				<div className={ styles.searchButton }>
+					<CircleButton
+						size='40px'
+						highlighted={ <MagnifyingGlassHighlighted/> }
+						darkTheme={ <MagnifyingGlassDarkTheme/> }
+						lightTheme={ <MagnifyingGlassLightTheme/> }
+						onClick= { () => {
+							// - Pass state in through function param.
+							//   setState() is not synchronous,
+							//   cannot rely on state read to be precise,
+							//   pass in copy instead. 
+							const prevState = this.state;
+							this.setState((prevState) => (
+								{ active: !prevState.active }
+							))
+						}}
 					/>
-					<div className={ styles.searchButton }>
-						<CircleButton
-							size='40px'
-							highlighted={ <MagnifyingGlassHighlighted/> }
-							darkTheme={ <MagnifyingGlassDarkTheme/> }
-							lightTheme={ <MagnifyingGlassLightTheme/> }
-							onClick= { () => {
-								// - Pass state in through function param.
-								//   setState() is not synchronous,
-								//   cannot rely on state read to be precise,
-								//   pass in copy instead. 
-								const prevState = this.state;
-								this.setState((prevState) => (
-									{ active: !prevState.active }
-								))
-							}}
-						/>
-					</div>
-				</form>
+				</div>				
 			</div>
 		);
 	}
