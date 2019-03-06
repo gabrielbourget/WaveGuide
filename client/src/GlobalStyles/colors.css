@@ -7,7 +7,8 @@
 	--grey: #A9A9A9	;
 	--darkGrey: #808080	;
 	--veryDarkGrey: #515151;
-	--veryveryDarkGrey: #404040	;
+	/*--veryveryDarkGrey: #404040	;*/ /* Old one */
+	--veryveryDarkGrey: #333333;
 	--black: #000000	;
 	--leafyGreen: #319606;
 	--strongRed: #b73434;
