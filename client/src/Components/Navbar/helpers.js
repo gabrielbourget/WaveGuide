@@ -7,7 +7,13 @@ export const prepareComponent = (context, props, styles, state) => {
 
 	const navbarClasses = ClassNames(styles.navbar, themeClass, activeClass);
 
+	const sideMenuButtonClasses = ClassNames(styles.sideMenuButton, themeClass);
+
+	const rightNavClasses = ClassNames(styles.rightNav, themeClass);
+
 	return {
-		navbarClasses
+		navbarClasses,
+		sideMenuButtonClasses,
+		rightNavClasses
 	};
 };

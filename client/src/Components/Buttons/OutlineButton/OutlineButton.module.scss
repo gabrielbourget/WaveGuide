@@ -34,7 +34,7 @@
 
 .buttonText {
 
-  &.darkTheme { color: var(--lightGrey); }
+  &.darkTheme { color: var(--white); }
   &.lightTheme { color: var(--black); }
 
   font: {
@@ -42,4 +42,70 @@
     weight: bold;
     size: 1.4rem;
   };  
+}
+
+a {
+
+  // width: auto;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+
+  display: grid;
+  place-items: center;
+
+  &:link {
+    text-decoration: none;
+
+    &:active { color: none; }
+  }
+
+  &:visited {
+    text-decoration: none;
+
+    &:active { color: none; }
+  }
+
+  .button {
+    height: auto;
+    width: auto;
+    padding: 6px;
+
+    display: grid;
+    place-items: center;
+
+    &.rounded { border-radius: 10px; }
+
+    transition: all 0.25s ease-in-out;
+    
+
+    &:hover { cursor: pointer; }
+    &:link, &:visited, &:hover, &:active {
+      cursor: pointer;
+      text-decoration: none;
+      outline: none;
+    }  
+
+    &.darkTheme {
+      background-color: var(--veryveryDarkGrey);
+      border: 3px solid var(--lightGrey);
+    }
+
+    &.lightTheme {
+      background-color: var(--white);
+      border: 3px solid var(--black);
+    }
+  }
+
+  .buttonText {
+
+    &.darkTheme { color: var(--lightGrey); }
+    &.lightTheme { color: var(--black); }
+
+    font: {
+      family: var(--sansSerifStack);
+      weight: bold;
+      size: 1.4rem;
+    };  
+  }
 }

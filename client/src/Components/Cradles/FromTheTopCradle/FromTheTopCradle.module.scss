@@ -1,0 +1,10 @@
+.cradle {
+	display: grid;
+	align-content: start;
+
+	&.darkTheme{ background: var(--veryveryDarkGrey); }
+	&.lightTheme{ background: var(--white); }
+
+	height: 100%;
+	width: 100%;
+}

@@ -21,9 +21,29 @@ class SearchBar extends React.Component {
 		defaultText: PropTypes.string.isRequired
 	};
 
-	defaultProps = {
+	static defaultProps = {
 		defaultText: 'Search by artist name.'
 	};
+
+	searchInputRef = React.createRef();
+	
+	handleSearchButtonClick = () => {
+		const prevState = this.state;
+		
+		this.setState((prevState) => (
+			{ active: !prevState.active }
+		));
+
+
+		// - Unsolved problem. Ref coming back as undefined, can't use it.
+		//   React syntax seems to be ok, not sure what the issue is. 
+		//console.log(this.searchInputRef);
+		//this.searchInputRef.current.focus();
+	};
+
+	handleSearchSubmit = () => {
+
+	}
 
 	render() {
 
@@ -32,10 +52,14 @@ class SearchBar extends React.Component {
 		return (
 			<div className={ initObject.searchBarClasses }>			
 				{
-					(this.state.expanded) ?
-						<form className={ styles.searchField }>
+					(this.state.active) ?
+						<form 
+							className={ styles.searchField }
+							onSubmit={ this.handleSearchSubmit }
+						>
 							<input 
-								type="text" 
+								type='text'
+								ref={ this.searchInputRef }
 								className={ initObject.searchInputClasses }
 								placeholder='Search by artist name.'
 							/>
@@ -44,20 +68,11 @@ class SearchBar extends React.Component {
 				}
 				<div className={ styles.searchButton }>
 					<CircleButton
-						size='40px'
+						size='20px'
 						highlighted={ <MagnifyingGlassHighlighted/> }
 						darkTheme={ <MagnifyingGlassDarkTheme/> }
 						lightTheme={ <MagnifyingGlassLightTheme/> }
-						onClick= { () => {
-							// - Pass state in through function param.
-							//   setState() is not synchronous,
-							//   cannot rely on state read to be precise,
-							//   pass in copy instead. 
-							const prevState = this.state;
-							this.setState((prevState) => (
-								{ active: !prevState.active }
-							))
-						}}
+						onClick= { this.handleSearchButtonClick }
 					/>
 				</div>				
 			</div>

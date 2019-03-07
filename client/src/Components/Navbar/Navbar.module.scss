@@ -8,6 +8,7 @@
 	grid-auto-flow: column;
 	grid-template-columns: 1fr 8fr 2fr;
 	align-items: center;
+	grid-gap: 1rem;
 }
 
 .sideMenuButton {
@@ -27,6 +28,7 @@
 	display: grid;
 	align-items: center;
 	justify-items: center;
+	grid-auto-flow: column;
 	justify-content: end;
-	grid-gap: 2rem;
+	grid-gap: 1.5rem;
 }

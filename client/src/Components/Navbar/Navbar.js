@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'react';
+import PropTypes from 'prop-types';
 import { ThemeContext } from '../../ThemeContext';
 
 import styles from './Navbar.module.scss';
@@ -25,13 +25,20 @@ class Navbar extends React.Component {
 
 	static propTypes = {
 		onSideMenuButtonClick: PropTypes.func.isRequired
-	}
+	};
 
 	// - Expect onClick function for side menu which will dispatch
 	// 	 an action to the store to change the side menu's state from 
-	// 	 closed to open.
+	// 	 closed to open. That function passed in from somewhere else
+	// 	 will handle all responsibilities associated with the side menu.
+	// 	 All the navbar cares about it what icon to show. 
 	handleSideMenuButtonClick = () => {
 		this.props.onSideMenuButtonClick(this.state.menuActive);
+		// - For now, simulate click by toggling menuActive manually.
+		const prevState = this.state;
+		this.setState((prevState) => (
+			{ menuActive: !prevState.menuActive }
+		));
 	};
 
 	render() {
@@ -44,24 +51,24 @@ class Navbar extends React.Component {
 					{
 						this.state.menuActive ?
 						<CircleButton 
-							size='40px'
-							darkTheme={ <HamburgerMenuDarkTheme/> }
-							lightTheme={ <HamburgerMenuLightTheme/> }
-							highlighted={ <HamburgerMenuHighlighted/> }
-							onClick={ this.handleSideMenuButtonClick() }
-						/> :
-						<CircleButton 
-							size='40px'
+							size='20px'
 							darkTheme={ <XIconDarkTheme/> }
 							lightTheme={ <XIconLightTheme/> }
 							highlighted={ <XIconHighlighted/> }
-							onClick={ this.handleSideMenuButtonClick() }
-						/>
+							onClick={ this.handleSideMenuButtonClick }
+						/> :
+						<CircleButton 
+							size='20px'
+							darkTheme={ <HamburgerMenuDarkTheme/> }
+							lightTheme={ <HamburgerMenuLightTheme/> }
+							highlighted={ <HamburgerMenuHighlighted/> }
+							onClick={ this.handleSideMenuButtonClick }
+						/>						
 					}
 
 				</div>
 				<SearchBar defaultText='Search by artist name.'/>
-				<div className={ initObject.rightNav }>
+				<div className={ initObject.rightNavClasses }>
 					{/* Once routing is set up, put link to documentation here. */}
 					<OutlineButton text='Documentation'/>
 
@@ -69,13 +76,13 @@ class Navbar extends React.Component {
 					<OutlineButton text='About'/>
 
 					{/* Link to personal website */}
-					<a 
+{/*					<a 
 						href='https://www.gabrielbourget.com'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
 						<OutlineButton text='Personal Website'/>
-					</a>
+					</a>*/}
 				</div>
 			</div>
 		);
