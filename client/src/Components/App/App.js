@@ -6,17 +6,21 @@ import { ThemeContext } from '../../ThemeContext';
 // import FilledButton from '../Buttons/FilledButton/FilledButton';
 // import SelectionIndicator from '../Icons/Indicators/SelectionIndicator/SelectionIndicator';
 // import Paragraph from '../TextLayout/Paragraph/Paragraph';
-import TwoSizeCardGallery from '../Galleries/TwoSizeCardGallery/TwoSizeCardGallery';
-import TwoSizeCard from '../Cards/TwoSizeCard/TwoSizeCard';
+// import TwoSizeCardGallery from '../Galleries/TwoSizeCardGallery/TwoSizeCardGallery';
+// import TwoSizeCard from '../Cards/TwoSizeCard/TwoSizeCard';
 // import ColumnWithPaddingPageCradle 
 //   from '../Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle';
 // import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
-// import CenteringCradle from '../Cradles/CenteringCradle/CenteringCradle';
+import CenteringCradle from '../Cradles/CenteringCradle/CenteringCradle';
 // import ToTheLeftCradle from '../Cradles/ToTheLeftCradle/ToTheLeftCradle';
 // import TreeView from '../TreeView/TreeView';
 
-import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
-import Navbar from '../Navbar/Navbar';
+// import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
+// import Navbar from '../Navbar/Navbar';
+
+import ThemeSlider from '../Toggles/ThemeSlider/ThemeSlider';
+
+import Switch from 'react-ios-switch';
 
 class App extends React.Component {
 
@@ -32,7 +36,7 @@ class App extends React.Component {
   // config.CURR_THEME <-- read this into initial state that goes into redux store cretion eventually
   render() {
     return (
-      <ThemeContext.Provider value='light'>
+      <ThemeContext.Provider value='dark'>
         <div className={ styles.app }>
 {/*          <ToTheLeftCradle>
             <TreeView/>
@@ -61,11 +65,15 @@ class App extends React.Component {
               socialURLs={ testArtists[0].socialURLs }
             /> 
           </TwoSizeCardGallery>*/}
-{/*          <CenteringCradle>
-              
-          </CenteringCradle>*/}
+          <CenteringCradle>
+            <Switch 
+              checked={ (this.context === 'dark') }
+              onColor='rgb(0,0,0)'
+              onChange={ () => console.log('toggled switch') }
+            />
+          </CenteringCradle>
 
-          <FromTheTopCradle>
+{/*          <FromTheTopCradle>
             <Navbar onSideMenuButtonClick={ this.sideMenuToggle }/>
             <TwoSizeCardGallery>
               {
@@ -80,7 +88,7 @@ class App extends React.Component {
                 ))
               }              
             </TwoSizeCardGallery>
-          </FromTheTopCradle>
+          </FromTheTopCradle>*/}
 
         </div> 
       </ThemeContext.Provider>

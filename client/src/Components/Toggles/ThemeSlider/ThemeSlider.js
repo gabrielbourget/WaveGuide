@@ -14,9 +14,15 @@ import { ReactComponent as MoonIconLightTheme } from './SVG/MoonIcon/MoonIconLig
 import { ReactComponent as MoonIconHighlighted } from './SVG/MoonIcon/MoonIconHighlighted.svg';
 
 class ThemeSlider extends React.Component {
+
+	state = {
+		currChoice: (this.context === 'dark') ? 'dark' : 'light'
+	}
+
 	render() {
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
 		const sliderCradleClasses = ClassNames(styles.sliderCradle, themeClass);
+		
 
 		return (
 			<div className={ sliderCradleClasses }>
@@ -30,7 +36,7 @@ class ThemeSlider extends React.Component {
 				</div>
 				<div className={ styles.option2 }>
 					<IconDisplay 
-						size='15px'
+						size='10px'
 						darkTheme={ <MoonIconDarkTheme/> }
 						lightTheme={ <MoonIconLightTheme/> }
 						highlighted={ <MoonIconHighlighted/> }
