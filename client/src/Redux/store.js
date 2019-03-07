@@ -3,7 +3,8 @@
 const initialState = {
 	settings: {
 		theme: 'dark',
-		language: 'english'
+		language: 'english',
+		defaultResultsView: 'grid'
 	},
 	artists: {
 
