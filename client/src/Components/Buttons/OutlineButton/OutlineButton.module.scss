@@ -22,12 +22,12 @@
   }  
 
   &.darkTheme {
-    background-color: var(--veryveryDarkGrey);
-    border: 3px solid var(--lightGrey);
+    background-color: transparent;
+    border: 3px solid var(--white);
   }
 
   &.lightTheme {
-    background-color: var(--white);
+    background-color: transparent;
     border: 3px solid var(--black);
   }
 }
@@ -87,19 +87,19 @@ a {
     }  
 
     &.darkTheme {
-      background-color: var(--veryveryDarkGrey);
-      border: 3px solid var(--lightGrey);
+      // background-color: var(--veryveryDarkGrey);
+      border: 3px solid var(--white);
     }
 
     &.lightTheme {
-      background-color: var(--white);
+      // background-color: var(--white);
       border: 3px solid var(--black);
     }
   }
 
   .buttonText {
 
-    &.darkTheme { color: var(--lightGrey); }
+    &.darkTheme { color: var(--white); }
     &.lightTheme { color: var(--black); }
 
     font: {
