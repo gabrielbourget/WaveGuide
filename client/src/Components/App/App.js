@@ -15,8 +15,8 @@ import CenteringCradle from '../Cradles/CenteringCradle/CenteringCradle';
 // import ToTheLeftCradle from '../Cradles/ToTheLeftCradle/ToTheLeftCradle';
 // import TreeView from '../TreeView/TreeView';
 
-// import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
-// import Navbar from '../Navbar/Navbar';
+import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
+import Navbar from '../Navbar/Navbar';
 
 import ThemeSlider from '../Toggles/ThemeSlider/ThemeSlider';
 
@@ -65,17 +65,13 @@ class App extends React.Component {
               socialURLs={ testArtists[0].socialURLs }
             /> 
           </TwoSizeCardGallery>*/}
-          <CenteringCradle>
-            <Switch 
-              checked={ (this.context === 'dark') }
-              onColor='rgb(0,0,0)'
-              onChange={ () => console.log('toggled switch') }
-            />
-          </CenteringCradle>
+{/*          <CenteringCradle>
 
-{/*          <FromTheTopCradle>
+          </CenteringCradle>*/}
+
+          <FromTheTopCradle>
             <Navbar onSideMenuButtonClick={ this.sideMenuToggle }/>
-            <TwoSizeCardGallery>
+{/*            <TwoSizeCardGallery>
               {
                 testArtists.map((artist, index) => (
                   <TwoSizeCard
@@ -87,8 +83,8 @@ class App extends React.Component {
                   />
                 ))
               }              
-            </TwoSizeCardGallery>
-          </FromTheTopCradle>*/}
+            </TwoSizeCardGallery>*/}
+          </FromTheTopCradle>
 
         </div> 
       </ThemeContext.Provider>
