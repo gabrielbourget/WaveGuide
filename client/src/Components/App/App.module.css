@@ -3,7 +3,7 @@
   overflow-y: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fit,1fr);
+  /*grid-template-rows: repeat(auto-fit,1fr);*/
   /* With this positioning, elements like modals and notifications 
      and menus can be absolutely positioned on the overall app viewport. */
   position: relative; 

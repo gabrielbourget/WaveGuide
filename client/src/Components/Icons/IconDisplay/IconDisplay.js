@@ -34,7 +34,7 @@ class IconDisplay extends React.Component {
 				className={ displayClasses }
 				style={ style }
 			>
-				
+				{ icon }	
 			</div>
 		);
 	}

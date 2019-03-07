@@ -32,7 +32,7 @@ class App extends React.Component {
   // config.CURR_THEME <-- read this into initial state that goes into redux store cretion eventually
   render() {
     return (
-      <ThemeContext.Provider value='dark'>
+      <ThemeContext.Provider value='light'>
         <div className={ styles.app }>
 {/*          <ToTheLeftCradle>
             <TreeView/>
@@ -67,7 +67,7 @@ class App extends React.Component {
 
           <FromTheTopCradle>
             <Navbar onSideMenuButtonClick={ this.sideMenuToggle }/>
-{/*            <TwoSizeCardGallery>
+            <TwoSizeCardGallery>
               {
                 testArtists.map((artist, index) => (
                   <TwoSizeCard
@@ -79,7 +79,7 @@ class App extends React.Component {
                   />
                 ))
               }              
-            </TwoSizeCardGallery>*/}
+            </TwoSizeCardGallery>
           </FromTheTopCradle>
 
         </div> 
