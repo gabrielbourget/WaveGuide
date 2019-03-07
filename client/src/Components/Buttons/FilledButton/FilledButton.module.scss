@@ -21,12 +21,12 @@
     outline: none;
   }
 
-	&.darkTheme { background-color: var(--lightGrey); }
+	&.darkTheme { background-color: var(--white); }
 	&.lightTheme { background-color: var(--black); }
 }
 
 .buttonText {
-	&.darkTheme { color: var(--veryveryDarkGrey); }
+	&.darkTheme { color: var(--black); }
 	&.lightTheme { color: var(--white); }
 	
 	font: {
@@ -78,12 +78,12 @@ a {
 	    outline: none;
 	  }
 
-		&.darkTheme { background-color: var(--lightGrey); }
+		&.darkTheme { background-color: var(--white); }
 		&.lightTheme { background-color: var(--black); }
 	}
 
 	.buttonText {
-		&.darkTheme { color: var(--veryveryDarkGrey); }
+		&.darkTheme { color: var(--black); }
 		&.lightTheme { color: var(--white); }
 		
 		font: {

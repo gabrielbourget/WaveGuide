@@ -69,18 +69,19 @@ class Navbar extends React.Component {
 				</div>
 				<SearchBar defaultText='Search by artist name.'/>
 				<div className={ initObject.rightNavClasses }>
-					{/* Once routing is set up, put link to documentation here. */}
-					<OutlineButton 
-						text='Documentation'
-						onClick={ () => {} }
-					/>
-
 				  {/* Once routing is set up, put link to about section here. */}
 					<OutlineButton 
 						text='About'
 						onClick={ () => {} }
+						shape='rounded'
 					/>
 
+					{/* Once routing is set up, put link to documentation here. */}
+					<OutlineButton 
+						text='Documentation'
+						onClick={ () => {} }
+						shape='rounded'
+					/>
 					{/* Link to personal website */}
 {/*					<a 
 						href='https://www.gabrielbourget.com'

@@ -16,10 +16,10 @@
 	align-items: center;
 	justify-content: end;
 	grid-template-columns: 40px;
-	grid-gap: 1rem;
+	grid-gap: 0.5rem;
 
 	&.active {
-		grid-template-columns: 1fr 40px;
+		grid-template-columns: 6fr 0.75fr 40px;
 	}
 }
 
@@ -59,6 +59,14 @@
 	&:focus {
 		outline: none;
 	}
+}
+
+.searchConfirmButton {
+	height: 100%;
+	width: 100%;
+
+	display: grid;
+	place-items: center;
 }
 
 .searchButton {
