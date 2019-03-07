@@ -25,7 +25,7 @@ class SearchBar extends React.Component {
 		defaultText: 'Search by artist name.'
 	};
 
-	searchInputRef = React.createRef();
+	searchInputRef = React.createRef();f
 	
 	handleSearchButtonClick = () => {
 		const prevState = this.state;
