@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './App.module.css';
 import { ThemeContext } from '../../ThemeContext';
+
+import testArtists from '../../Datasets/testArtists';
+
 //import * as config from '../../clientConfig';
 // import OutlineButton  from '../Buttons/OutlineButton/OutlineButton';
 // import FilledButton from '../Buttons/FilledButton/FilledButton';
@@ -17,24 +20,43 @@ import CenteringCradle from '../Cradles/CenteringCradle/CenteringCradle';
 
 import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
 import Navbar from '../Navbar/Navbar';
-
-import ThemeSlider from '../Toggles/ThemeSlider/ThemeSlider';
-
-import Switch from 'react-ios-switch';
+import SideMenu from '../SideMenu/SideMenu';
+import Backdrop from '../CoverBackdrop/CoverBackdrop';
 
 class App extends React.Component {
 
+  // - TODO -> Move this into Redux flow once that's set up.
+  state = {
+    sideMenuOpen: false,
+    backdropOpen: false
+  };
+ 
+  // - TODO -> setState call should be a store dispatch when redux is set up.
   sideMenuToggle = (active) => {
     if (active) console.log('Closing menu');
     else console.log('Opening menu');
+    const prevState = this.state;
+    this.setState((prevState) => (
+      { sideMenuOpen: !prevState.sideMenuOpen }
+    ));
   };
 
-  handleClick() {
-    console.log('boop');
+  // - TODO -> setState call should be a store dispatch when redux is set up.
+  backdropClickHandler = () => {
+    this.setState({ 
+      sideMenuOpen: false,
+      backdropOpen: false
+    });
   }
-
-  // config.CURR_THEME <-- read this into initial state that goes into redux store cretion eventually
+  
   render() {
+
+    // - TODO -> setState call should be a store dispatch when redux is set up.
+    let backdrop;
+    if (this.state.sideMenuOpen) {
+      backdrop = <Backdrop onClick={ this.backdropClickHandler }/>
+    }
+
     return (
       <ThemeContext.Provider value='dark'>
         <div className={ styles.app }>
@@ -85,7 +107,9 @@ class App extends React.Component {
               }              
             </TwoSizeCardGallery>*/}
           </FromTheTopCradle>
-
+        {/* SideMenu goes here */}
+        <SideMenu open={ this.state.sideMenuOpen } />
+        { backdrop }
         </div> 
       </ThemeContext.Provider>
      
@@ -95,100 +119,6 @@ class App extends React.Component {
 
 export default App;
 
-
-const testArtists = [
-  {
-    title: 'Cashforgold',
-    imagePath: process.env.PUBLIC_URL + '/Images/Cashforgold.jpg',
-    socialURLs: {
-      soundCloud: 'https://soundcloud.com/hoodiegen',
-      instagram: 'https://instagram.com/hoodiegen',
-      twitter: 'https://twitter.com/hoodiegen',
-      spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA',
-      personalWebsite: 'https://hoodiegen.com',
-      //bandCamp: 'https://hoodie1.bandcamp.com/releases'
-      // appleMusic: 'https://itunes.apple.com/us/artist/hoodie/1286330076'  
-    }  
-  },
-  {
-    title: 'Arael',
-    imagePath: process.env.PUBLIC_URL + '/Images/Arael.png',
-    socialURLs: {
-      soundCloud: 'https://soundcloud.com/hoodiegen',
-      instagram: 'https://instagram.com/hoodiegen',
-      twitter: 'https://twitter.com/hoodiegen',
-      spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA',
-      personalWebsite: 'https://hoodiegen.com',
-      //bandCamp: 'https://hoodie1.bandcamp.com/releases'
-      // appleMusic: 'https://itunes.apple.com/us/artist/hoodie/1286330076'     
-    }
-  },
-  {
-    title: 'Barnacle Boi',
-    imagePath: process.env.PUBLIC_URL + '/Images/BarnacleBoi.jpg',
-    socialURLs: {
-      soundCloud: 'https://soundcloud.com/hoodiegen',
-      instagram: 'https://instagram.com/hoodiegen',
-      twitter: 'https://twitter.com/hoodiegen',
-      spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA',
-      personalWebsite: 'https://hoodiegen.com',
-      //bandCamp: 'https://hoodie1.bandcamp.com/releases'
-      // appleMusic: 'https://itunes.apple.com/us/artist/hoodie/1286330076'     
-    }   
-  },
-  {
-    title: 'Kavern',
-    imagePath: process.env.PUBLIC_URL + '/Images/Kavern.jpg',
-    socialURLs: {
-      soundCloud: 'https://soundcloud.com/hoodiegen',
-      instagram: 'https://instagram.com/hoodiegen',
-      twitter: 'https://twitter.com/hoodiegen',
-      spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA',
-      personalWebsite: 'https://hoodiegen.com',
-      //bandCamp: 'https://hoodie1.bandcamp.com/releases'
-      // appleMusic: 'https://itunes.apple.com/us/artist/hoodie/1286330076'     
-    }    
-  },
-  {
-    title: 'Kyddiekafka',
-    imagePath: process.env.PUBLIC_URL + '/Images/Kyddiekafka.jpg',
-    socialURLs: {
-      soundCloud: 'https://soundcloud.com/hoodiegen',
-      instagram: 'https://instagram.com/hoodiegen',
-      twitter: 'https://twitter.com/hoodiegen',
-      spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA',
-      personalWebsite: 'https://hoodiegen.com',
-      //bandCamp: 'https://hoodie1.bandcamp.com/releases'
-      // appleMusic: 'https://itunes.apple.com/us/artist/hoodie/1286330076'     
-    }    
-  },
-  {
-    title: 'Fyoomz',
-    imagePath: process.env.PUBLIC_URL + '/Images/Fyoomz.jpg',
-    socialURLs: {
-      soundCloud: 'https://soundcloud.com/hoodiegen',
-      instagram: 'https://instagram.com/hoodiegen',
-      twitter: 'https://twitter.com/hoodiegen',
-      spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA',
-      personalWebsite: 'https://hoodiegen.com',
-      //bandCamp: 'https://hoodie1.bandcamp.com/releases'
-      // appleMusic: 'https://itunes.apple.com/us/artist/hoodie/1286330076'     
-    }     
-  },
-  {
-    title: 'Sidewalks and Skeletons',
-    imagePath: process.env.PUBLIC_URL + '/Images/SidewalksAndSkeletons.png',
-    socialURLs: {
-      soundCloud: 'https://soundcloud.com/hoodiegen',
-      instagram: 'https://instagram.com/hoodiegen',
-      twitter: 'https://twitter.com/hoodiegen',
-      spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA',
-      personalWebsite: 'https://hoodiegen.com',
-      //bandCamp: 'https://hoodie1.bandcamp.com/releases'
-      // appleMusic: 'https://itunes.apple.com/us/artist/hoodie/1286330076'     
-    }     
-  }  
-];
 
 // const testArtist = {
 //   title: 'Cashforgold',
