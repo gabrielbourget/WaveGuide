@@ -1,16 +1,24 @@
 import React from 'react';
-import ClassNames from 'classnames';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../../ThemeContext';
 
 import styles from './TopBar.module.scss';
 import { prepareComponent } from './helpers';
 import CircleButton from '../../../Buttons/CircleButton/CircleButton';
+import { sortCriteriaEnum } from '../../../../Helpers/generalDataStructures';
 
 // - Sort Icon
 import { ReactComponent as SortIconDarkTheme } from './SVG/SortIcon/SortIconDarkTheme.svg';
 import { ReactComponent as SortIconLightTheme } from './SVG/SortIcon/SortIconLightTheme.svg';
 import { ReactComponent as SortIconHighlighted } from './SVG/SortIcon/SortIconHighlighted.svg';
+// - Ascending Alphapbetical Sort
+import { ReactComponent as AscAlphaIconDarkTheme } from './SVG/AscAlphaIcon/AscAlphaIconDarkTheme.svg';
+import { ReactComponent as AscAlphaIconLightTheme } from './SVG/AscAlphaIcon/AscAlphaIconLightTheme.svg';
+import { ReactComponent as AscAlphaIconHighlighted } from './SVG/AscAlphaIcon/AscAlphaIconHighlighted.svg';
+// - Descending Alphabetical Sort
+import { ReactComponent as DescAlphaIconDarkTheme } from './SVG/DescAlphaIcon/DescAlphaIconDarkTheme.svg';
+import { ReactComponent as DescAlphaIconLightTheme } from './SVG/DescAlphaIcon/DescAlphaIconLightTheme.svg';
+import { ReactComponent as DescAlphaIconHighlighted } from './SVG/DescAlphaIcon/DescAlphaIconHighlighted.svg';
 // - List View 
 import { ReactComponent as ListViewIconDarkTheme } from './SVG/ListViewIcon/ListViewIconDarkTheme.svg';
 import { ReactComponent as ListViewIconLightTheme } from './SVG/ListViewIcon/ListViewIconLightTheme.svg';
@@ -35,7 +43,7 @@ class TopBar extends React.Component {
 		sortMenuOpen: false
 	};
 
-	handleSortButtonClick = () => {
+	handleSortMenuClick = () => {
 		// - Call some sort of toggleMenu function. Span out sort options into 
 		//   the horizontal space to the left or into a vertical dropdown menu.
 		this.toggleMenu();
@@ -48,10 +56,20 @@ class TopBar extends React.Component {
 		));
 	};
 
+	// - TODO -> Call a handler function passed down from container component.
+	// 					 It should dispatch action to reducer.
+	handleSortButtonClick = (direction) => {
+		this.props.onClick(direction);
+	};
+
+	// - TODO -> Call a handler function passed down from container component.
+	// 					 It should dispatch action to reducer.
 	handleListDisplayButton = () => {
 		console.log('List Display button');
 	};
 
+	// - TODO -> Call a handler function passed down from container component.
+	// 					 It should dispatch action to reducer.
 	handleGalleryDisplayButton = () => {
 		console.log('Gallery Display button');
 	};
@@ -70,8 +88,20 @@ class TopBar extends React.Component {
 					{
 						this.state.sortMenuOpen ?
 						<React.Fragment>
-							<p>Z > A</p>
-							<p>A > Z</p> 
+							<CircleButton
+								size='25px'
+								darkTheme={ <AscAlphaIconDarkTheme/> }
+								lightTheme={ <AscAlphaIconLightTheme/> }
+								highlighted={ <AscAlphaIconHighlighted/> }
+								onClick={ () => this.props.onClick(sortCriteriaEnum.ALPHABETICAL) }
+							/>
+							<CircleButton
+								size='25px'
+								darkTheme={ <DescAlphaIconDarkTheme/> }
+								lightTheme={ <DescAlphaIconLightTheme/> }
+								highlighted={ <DescAlphaIconHighlighted/> }
+								onClick={ () => this.props.onClick(sortCriteriaEnum.REVERSE_ALPHABETICAL) }
+							/>
 						</React.Fragment>	:
 						null
 					}				
@@ -81,7 +111,7 @@ class TopBar extends React.Component {
 						darkTheme={ <SortIconDarkTheme/> }
 						lightTheme={ <SortIconLightTheme/> }
 						highLighted={ <SortIconHighlighted/> }
-						onClick={ this.handleSortButtonClick }
+						onClick={ this.handleSortMenuClick }
 					/>
 					{/* List Display Button */}
 					<CircleButton
