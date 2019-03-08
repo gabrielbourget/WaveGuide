@@ -4,6 +4,7 @@ import { ThemeContext } from '../../../ThemeContext';
 import TopBar from './TopBar/TopBar';
 import TwoSizeCardGallery from '../../Galleries/TwoSizeCardGallery/TwoSizeCardGallery';
 import TwoSizeCard from '../../Cards/TwoSizeCard/TwoSizeCard';
+import ArtistTable from '../../Tables/ArtistTable/ArtistTable';
 
 import styles from './ArtistProfileDisplay.module.scss';
 import { prepareComponent } from './helpers';
@@ -13,7 +14,8 @@ import { sortCriteriaEnum } from '../../../Helpers/generalDataStructures'
 class ArtistProfileDisplay extends React.Component {
 		
 	state = {
-		artists: testArtists
+		displayMode: this.props.displayMode,
+		artists: testArtists // - Eventually bring this in from mapped props when Redux is hooked up. 
 	};
 
 	// - Move this logic into a reducer once Redux is hooked up. 
@@ -37,14 +39,11 @@ class ArtistProfileDisplay extends React.Component {
 			}
 			default: break;
 		}		
-	}
+	};
 
-	render() {
-		const initObject = prepareComponent(this.context, this.props, styles, this.state);
-
-		return (
-			<div className={ initObject.artistProfileDisplayClasses }>
-				<TopBar onClick={ this.sortArtists }/>
+	resolveDisplayMode = () => {
+		if (this.props.displayMode === 'gallery') {
+			return (
 				<TwoSizeCardGallery> 
           {
             this.state.artists.map((artist, index) => (
@@ -58,6 +57,24 @@ class ArtistProfileDisplay extends React.Component {
             ))
           }					
 				</TwoSizeCardGallery>
+			);
+		}
+		else if (this.props.displayMode === 'list') {
+			return (
+				<ArtistTable/>
+			);
+		}
+	};
+
+	render() {
+		const initObject = prepareComponent(this.context, this.props, styles, this.state);
+
+		return (
+			<div className={ initObject.artistProfileDisplayClasses }>
+				<TopBar onClick={ this.sortArtists }/>
+				{/* Either  */}
+				{ this.resolveDisplayMode() }
+
 			</div>
 		);
 	}

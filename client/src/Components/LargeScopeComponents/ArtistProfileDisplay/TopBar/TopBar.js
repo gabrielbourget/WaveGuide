@@ -4,8 +4,8 @@ import { ThemeContext } from '../../../../ThemeContext';
 
 import styles from './TopBar.module.scss';
 import { prepareComponent } from './helpers';
-import CircleButton from '../../../Buttons/CircleButton/CircleButton';
 import { sortCriteriaEnum } from '../../../../Helpers/generalDataStructures';
+import CircleButton from '../../../Buttons/CircleButton/CircleButton';
 
 // - Sort Icon
 import { ReactComponent as SortIconDarkTheme } from './SVG/SortIcon/SortIconDarkTheme.svg';

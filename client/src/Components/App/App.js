@@ -60,7 +60,7 @@ class App extends React.Component {
     }
 
     return (
-      <ThemeContext.Provider value='light'>
+      <ThemeContext.Provider value='dark'>
         <div className={ styles.app }>
 {/*          <ToTheLeftCradle>
             <TreeView/>
@@ -95,20 +95,7 @@ class App extends React.Component {
 
           <FromTheTopCradle>
             <Navbar onSideMenuButtonClick={ this.sideMenuToggle }/>
-            <ArtistProfileDisplay />
-{/*            <TwoSizeCardGallery>
-              {
-                testArtists.map((artist, index) => (
-                  <TwoSizeCard
-                    key={ index }
-                    shape='round'
-                    title={ artist.title }
-                    imagePath={ artist.imagePath }
-                    socialURLs={ artist.socialURLs }
-                  />
-                ))
-              }              
-            </TwoSizeCardGallery>*/}
+            <ArtistProfileDisplay displayMode='gallery'/>
           </FromTheTopCradle>
         {/* SideMenu goes here */}
         <SideMenu open={ this.state.sideMenuOpen } />
