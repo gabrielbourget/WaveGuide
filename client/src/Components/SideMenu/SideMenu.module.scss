@@ -10,7 +10,7 @@
 	z-index: var(--floatingElementZIndex);
 
 	height: calc(100% - 100px); // - Make up for top shift and take away 15 more pixels
-	width: 350px;								//   so that menu doesn't sit flush with bottom of page.
+	width: 300px;								//   so that menu doesn't sit flush with bottom of page.
 	padding: 15px 15px;
 	border-radius: 3px;
 	transform: translateX(-120%);

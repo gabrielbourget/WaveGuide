@@ -1,0 +1,21 @@
+.artistProfileDisplay {
+	width: 100%;
+	height: 100%;
+	padding: 0px 30px;
+
+	display: grid;
+	grid-gap: 2rem;
+	// grid-template-columns: 1fr;
+
+	background: transparent;
+
+	&.darkTheme { color: var(--white); }
+	&.lightTheme { color: var(--black); }	
+
+	& h3 {
+		font: {
+			family: var(--sansSerifStack);
+			size: 2rem;
+		}
+	}	
+}

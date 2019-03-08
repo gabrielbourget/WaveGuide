@@ -2,6 +2,10 @@
 @import "../../../GlobalStyles/generalVars.scss";
 
 .gallery {
+
+	width: 100%;
+	height: 100%;
+
 	display: grid;
 	grid-template-columns: repeat(auto-fill, var(--cardWidth));
 	grid-template-rows: repeat(auto-fit, var(--cardHeight));
@@ -10,7 +14,6 @@
 	grid-gap: 1rem;
 	grid-auto-flow: dense;
 	overflow-y: auto;
-	padding: 10px;
 
 	&.darkTheme {
 		background: var(--veryveryDarkGrey);

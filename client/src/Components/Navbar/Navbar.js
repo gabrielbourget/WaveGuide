@@ -9,13 +9,18 @@ import CircleButton from '../Buttons/CircleButton/CircleButton';
 import OutlineButton from '../Buttons/OutlineButton/OutlineButton';
 import SearchBar from '../SearchBar/SearchBar';
 
+// - Hamburger Menu Icon
 import { ReactComponent as HamburgerMenuDarkTheme } from './SVG/HamburgerMenu/HamburgerIconDarkTheme.svg';
 import { ReactComponent as HamburgerMenuLightTheme } from './SVG/HamburgerMenu/HamburgerIconLightTheme.svg';
 import { ReactComponent as HamburgerMenuHighlighted } from './SVG/HamburgerMenu/HamburgerIconHighlighted.svg';
-
+// - X Icon
 import { ReactComponent as XIconDarkTheme } from './SVG/XIcon/XIconDarkTheme.svg';
 import { ReactComponent as XIconLightTheme } from './SVG/XIcon/XIconLightTheme.svg';
 import { ReactComponent as XIconHighlighted } from './SVG/XIcon/XIconHighlighted.svg';
+// - Home Icon
+import { ReactComponent as HomeIconDarkTheme } from './SVG/HomeIcon/HomeIconDarkTheme.svg';
+import { ReactComponent as HomeIconLightTheme } from './SVG/HomeIcon/HomeIconLightTheme.svg';
+import { ReactComponent as HomeIconHighlighted } from './SVG/HomeIcon/HomeIconHighlighted.svg';
 
 class Navbar extends React.Component {
 
@@ -69,6 +74,14 @@ class Navbar extends React.Component {
 				</div>
 				<SearchBar defaultText='Search by artist name.'/>
 				<div className={ initObject.rightNavClasses }>
+					{/* Once routing is set up, put link to home page here */}
+					<CircleButton
+						size='25px'
+						darkTheme={ <HomeIconDarkTheme/> }
+						lightTheme={ <HomeIconLightTheme/> }
+						highlighted={ <HomeIconHighlighted/> }
+						onClick={ () => {} } 
+					/>
 				  {/* Once routing is set up, put link to about section here. */}
 					<OutlineButton 
 						text='About'
