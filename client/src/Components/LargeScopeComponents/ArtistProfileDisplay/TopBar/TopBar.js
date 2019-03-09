@@ -93,14 +93,14 @@ class TopBar extends React.Component {
 								darkTheme={ <AscAlphaIconDarkTheme/> }
 								lightTheme={ <AscAlphaIconLightTheme/> }
 								highlighted={ <AscAlphaIconHighlighted/> }
-								onClick={ () => this.props.onClick(sortCriteriaEnum.ALPHABETICAL) }
+								onClick={ () => this.props.onSortClick(sortCriteriaEnum.ALPHABETICAL) }
 							/>
 							<CircleButton
 								size='25px'
 								darkTheme={ <DescAlphaIconDarkTheme/> }
 								lightTheme={ <DescAlphaIconLightTheme/> }
 								highlighted={ <DescAlphaIconHighlighted/> }
-								onClick={ () => this.props.onClick(sortCriteriaEnum.REVERSE_ALPHABETICAL) }
+								onClick={ () => this.props.onSortClick(sortCriteriaEnum.REVERSE_ALPHABETICAL) }
 							/>
 						</React.Fragment>	:
 						null
@@ -119,7 +119,7 @@ class TopBar extends React.Component {
 						darkTheme={ <ListViewIconDarkTheme/> }
 						lightTheme={ <ListViewIconLightTheme/> }
 						highlighted={ <ListViewIconHighlighted/> }
-						onClick={ this.handleListDisplayButton }
+						onClick={ () => this.props.onSwitchViewModeClick('list') }
 					/>
 					{/* Gallery Display Button */}
 					<CircleButton 
@@ -127,7 +127,7 @@ class TopBar extends React.Component {
 						darkTheme={ <GalleryViewIconDarkTheme/> }
 						lightTheme={ <GalleryViewIconLightTheme/> }
 						highlighted={ <GalleryViewIconHighlighted/> }
-						onClick={ this.handleGalleryDisplayButton }
+						onClick={ () => this.props.onSwitchViewModeClick('gallery') }
 					/>
 				</div>
 			</div>

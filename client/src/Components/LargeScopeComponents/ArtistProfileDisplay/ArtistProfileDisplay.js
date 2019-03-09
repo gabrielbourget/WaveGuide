@@ -41,8 +41,12 @@ class ArtistProfileDisplay extends React.Component {
 		}		
 	};
 
+	switchViewMode = (displayMode) => {
+		this.setState({displayMode});
+	}
+
 	resolveDisplayMode = () => {
-		if (this.props.displayMode === 'gallery') {
+		if (this.state.displayMode === 'gallery') {
 			return (
 				<TwoSizeCardGallery> 
           {
@@ -59,9 +63,12 @@ class ArtistProfileDisplay extends React.Component {
 				</TwoSizeCardGallery>
 			);
 		}
-		else if (this.props.displayMode === 'list') {
+		else if (this.state.displayMode === 'list') {
 			return (
-				<ArtistTable/>
+				<ArtistTable
+					// - This itself will eventually be props mapped in from the connect redux function. 
+					artists={ this.state.artists }
+				/>
 			);
 		}
 	};
@@ -71,8 +78,11 @@ class ArtistProfileDisplay extends React.Component {
 
 		return (
 			<div className={ initObject.artistProfileDisplayClasses }>
-				<TopBar onClick={ this.sortArtists }/>
-				{/* Either  */}
+				<TopBar 
+					onSortClick={ this.sortArtists }
+					onSwitchViewModeClick={ this.switchViewMode }
+				/>
+				{/* Method below renders out gallery or list, based on mapped state props */}
 				{ this.resolveDisplayMode() }
 
 			</div>

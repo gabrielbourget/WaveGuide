@@ -1,0 +1,11 @@
+-- SECTIONS -- 
+
+-> State Management
+	-> Redux
+-> Front End 
+	-> React
+-> Server
+-> Database
+	-> Neo4J
+-> Accessibility
+	-> Semantic HTML

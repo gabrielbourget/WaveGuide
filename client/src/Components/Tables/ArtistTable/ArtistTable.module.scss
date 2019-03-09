@@ -5,6 +5,9 @@
 	display: grid;
 	grid-template-columns: 1fr; // Full width items, just stack them on top of eachother with their own custom heights.
 
+	border-collapse: collapse;
+
+
 	&.darkTheme {
 		background: var(--black);
 		color: var(--white);
@@ -17,4 +20,18 @@
 		box-shadow: var(--boxShadowLightTheme);
 	}
 
+}
+
+.tableHeader {
+	display: grid;
+}
+
+.tableBody {
+	display: grid;
+	vertical-align: none;
+	
+}
+
+.tableFooter {
+	display: grid;
 }

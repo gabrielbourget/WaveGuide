@@ -95,7 +95,7 @@ class App extends React.Component {
 
           <FromTheTopCradle>
             <Navbar onSideMenuButtonClick={ this.sideMenuToggle }/>
-            <ArtistProfileDisplay displayMode='gallery'/>
+            <ArtistProfileDisplay displayMode='list'/>
           </FromTheTopCradle>
         {/* SideMenu goes here */}
         <SideMenu open={ this.state.sideMenuOpen } />

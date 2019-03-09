@@ -22,7 +22,27 @@ class ArtistTable extends React.Component {
 
 		return (
 			<table className={ initObject.artistTableClasses }>
-				
+				{
+					this.state.hasHeader ?
+					<thead className={ initObject.tableHeaderClasses }>
+						{/* Put whatever header body stuff you want in here. */}
+					</thead> :
+					null
+				}
+				<tbody className={ initObject.tableBodyClasses }>
+					{
+						this.props.artists.map((artist,index) => (
+							<TableItem key={ index } artist={ artist }/> // - DEV NOTE -> Will eventually need props, don't forget. 
+						))
+					}
+				</tbody>
+				{
+					this.state.hasFooter ?
+					<tfoot className={ initObject.tableFooterClasses }>
+						{/* Put whatever footer body stuff you want in here. */}
+					</tfoot> : 
+					null
+				}
 			</table>			
 		);
 	}
