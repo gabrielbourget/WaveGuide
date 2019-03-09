@@ -21,8 +21,8 @@ class TableItem extends React.Component {
 				<td className={ initObject.profileImageClasses }>
 					<div className={ initObject.imageCradleClasses }>
 						<ProfileImage
-							src={ this.props.imagePath }
-							alt={ this.props.title }
+							imagePath={ this.props.imagePath }
+							title={ this.props.title }
 						/>
 					</div>
 				</td>

@@ -9,11 +9,6 @@
 	border-collapse: collapse;
 	border-radius: 4px;
 
-	&:first-child {
-		&.darkTheme { border-top: 1.5px solid var(--veryDarkGrey); }
-		&.lightTheme { border-top: 1.5px solid var(--lightGrey); }
-	}
-
 	&.darkTheme {
 		background: var(--black);
 		color: var(--white);
