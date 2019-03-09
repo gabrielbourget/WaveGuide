@@ -5,6 +5,7 @@ import { ThemeContext } from '../../../../ThemeContext';
 
 import styles from './TableItem.module.scss';
 import { prepareComponent } from './helpers';
+import SocialMediaIconComponents from '../../../../Helpers/socialMediaIconComponents';
 
 import ProfileImage from '../../../ImageContainers/ProfileImage/ProfileImage';
 
@@ -24,7 +25,7 @@ class TableItem extends React.Component {
 					</div>
 				</td>
 				<td className={ initObject.titleClasses }>
-					
+					<p>{ this.props.artist.title }</p>
 				</td>
 				<td className={ initObject.socialLinksClasses }>
 					

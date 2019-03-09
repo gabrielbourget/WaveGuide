@@ -9,3 +9,15 @@
 	-> Neo4J
 -> Accessibility
 	-> Semantic HTML
+-> Future Improvement
+	-> GraphQL vs. Redux. 
+	-> UI Improvements
+		-> Mobile Integration
+			-> Nav bar losing top right buttons at certain width.
+			-> Table Items wrapping into a two row item, flow social media buttons into bottom row. 
+			-> Unexpected behavior from React's SVG wrapper components, maybe just switch to splicing them inline
+				 from props to another presentational template component.
+		-> Refactoring to React Native application
+		-> Wrapping the application with Electron and running out of the browser.
+	-> Ability to add upcoming events into the application and have them pop up on a map and in different components.
+	-> 
