@@ -8,37 +8,11 @@ import ArtistTable from '../../Tables/ArtistTable/ArtistTable';
 
 import styles from './ArtistProfileDisplay.module.scss';
 import { prepareComponent } from './helpers';
-import testArtists from '../../../Datasets/testArtists';
-import { sortCriteriaEnum } from '../../../Helpers/generalDataStructures'
 
 class ArtistProfileDisplay extends React.Component {
 		
 	state = {
 		displayMode: this.props.displayMode,
-		artists: testArtists // - Eventually bring this in from mapped props when Redux is hooked up. 
-	};
-
-	// - Move this logic into a reducer once Redux is hooked up. 
-	sortArtists = (direction) => {
-		switch (direction) {
-			case sortCriteriaEnum.ALPHABETICAL: {
-				// - Action will be dispatched here when redux is hooked up.
-				const newArtists = this.state.artists.slice().sort((a,b) => a.title > b.title ? 1 : -1);
-				this.setState({ 
-					artists: newArtists
-				});
-				break;
-			}
-			case sortCriteriaEnum.REVERSE_ALPHABETICAL: {
-				// - Action will be dispatched here when redux is hooked up.
-				const newArtists = this.state.artists.slice().sort((a,b) => a.title > b.title ? -1 : 1);
-				this.setState({ 
-					artists: newArtists
-				});
-				break;
-			}
-			default: break;
-		}		
 	};
 
 	switchViewMode = (displayMode) => {
@@ -50,7 +24,7 @@ class ArtistProfileDisplay extends React.Component {
 			return (
 				<TwoSizeCardGallery> 
           {
-            this.state.artists.map((artist, index) => (
+            this.props.artists.map((artist, index) => (
               <TwoSizeCard
                 key={ index }
                 shape='round'
@@ -67,7 +41,7 @@ class ArtistProfileDisplay extends React.Component {
 			return (
 				<ArtistTable
 					// - This itself will eventually be props mapped in from the connect redux function. 
-					artists={ this.state.artists }
+					artists={ this.props.artists }
 				/>
 			);
 		}
@@ -79,7 +53,7 @@ class ArtistProfileDisplay extends React.Component {
 		return (
 			<div className={ initObject.artistProfileDisplayClasses }>
 				<TopBar 
-					onSortClick={ this.sortArtists }
+					onSortClick={ this.props.onSortClick }
 					onSwitchViewModeClick={ this.switchViewMode }
 				/>
 				{/* Method below renders out gallery or list, based on mapped state props */}

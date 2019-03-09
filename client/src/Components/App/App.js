@@ -25,10 +25,13 @@ import Backdrop from '../CoverBackdrop/CoverBackdrop';
 
 import ArtistProfileDisplay from '../LargeScopeComponents/ArtistProfileDisplay/ArtistProfileDisplay';
 
+import { sortCriteriaEnum } from '../../Helpers/generalDataStructures'
+
 class App extends React.Component {
 
   // - TODO -> Move this into Redux flow once that's set up.
   state = {
+    artists: testArtists,
     sideMenuOpen: false,
     backdropOpen: false
   };
@@ -50,6 +53,29 @@ class App extends React.Component {
       backdropOpen: false
     });
   }
+
+  // - Move this logic into a reducer once Redux is hooked up. 
+  sortArtists = (direction) => {
+    switch (direction) {
+      case sortCriteriaEnum.ALPHABETICAL: {
+        // - Action will be dispatched here when redux is hooked up.
+        const newArtists = this.state.artists.slice().sort((a,b) => a.title > b.title ? 1 : -1);
+        this.setState({ 
+          artists: newArtists
+        });
+        break;
+      }
+      case sortCriteriaEnum.REVERSE_ALPHABETICAL: {
+        // - Action will be dispatched here when redux is hooked up.
+        const newArtists = this.state.artists.slice().sort((a,b) => a.title > b.title ? -1 : 1);
+        this.setState({ 
+          artists: newArtists
+        });
+        break;
+      }
+      default: break;
+    }   
+  };
   
   render() {
 
@@ -62,44 +88,48 @@ class App extends React.Component {
     return (
       <ThemeContext.Provider value='dark'>
         <div className={ styles.app }>
-{/*          <ToTheLeftCradle>
-            <TreeView/>
-          </ToTheLeftCradle>*/}
-{/*          <ColumnWithPaddingPageCradle>
-            <MiddleContentCradle>
+  {/*          <ToTheLeftCradle>
+              <TreeView/>
+            </ToTheLeftCradle>*/}
+  {/*          <ColumnWithPaddingPageCradle>
+              <MiddleContentCradle>
 
-            </MiddleContentCradle>
-          </ColumnWithPaddingPageCradle> */}
-{/*          <TwoSizeCardGallery>
-              {
-                testArtists.map((artist, index) => (
-                  <TwoSizeCard
-                    key={ index }
-                    shape='round'
-                    title={ artist.title }
-                    imagePath={ artist.imagePath }
-                    socialURLs={ artist.socialURLs }
-                  />
-                ))
-              }
-            <TwoSizeCard
-              shape='round'
-              title={ testArtists[0].title }
-              imagePath={ testArtists[0].imagePath }
-              socialURLs={ testArtists[0].socialURLs }
-            /> 
-          </TwoSizeCardGallery>*/}
-{/*          <CenteringCradle>
+              </MiddleContentCradle>
+            </ColumnWithPaddingPageCradle> */}
+  {/*          <TwoSizeCardGallery>
+                {
+                  testArtists.map((artist, index) => (
+                    <TwoSizeCard
+                      key={ index }
+                      shape='round'
+                      title={ artist.title }
+                      imagePath={ artist.imagePath }
+                      socialURLs={ artist.socialURLs }
+                    />
+                  ))
+                }
+              <TwoSizeCard
+                shape='round'
+                title={ testArtists[0].title }
+                imagePath={ testArtists[0].imagePath }
+                socialURLs={ testArtists[0].socialURLs }
+              /> 
+            </TwoSizeCardGallery>*/}
+  {/*          <CenteringCradle>
 
-          </CenteringCradle>*/}
+            </CenteringCradle>*/}
 
-          <FromTheTopCradle>
-            <Navbar onSideMenuButtonClick={ this.sideMenuToggle }/>
-            <ArtistProfileDisplay displayMode='list'/>
-          </FromTheTopCradle>
-        {/* SideMenu goes here */}
-        <SideMenu open={ this.state.sideMenuOpen } />
-        { backdrop }
+            <FromTheTopCradle>
+              <Navbar onSideMenuButtonClick={ this.sideMenuToggle }/>
+              <ArtistProfileDisplay 
+                displayMode='list'
+                onSortClick={ this.sortArtists }
+                artists={ this.state.artists }
+              />
+            </FromTheTopCradle>
+          {/* SideMenu goes here */}
+          <SideMenu open={ this.state.sideMenuOpen } />
+          { backdrop }
         </div> 
       </ThemeContext.Provider>
      
