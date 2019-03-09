@@ -58,7 +58,7 @@ class TwoSizeCard extends React.Component {
 	render() {
 	
 		const classAssignments = assignClasses(this.context, this.state, this.props, styles);
-		const cardSocialLinks = prepareLinkGallery(this.props, SocialMediaIconComponents);
+		const artistSocialLinks = prepareLinkGallery(this.props, SocialMediaIconComponents);
 
 		return (
 			<div className={ classAssignments.twoSizeCardClasses }>
@@ -109,7 +109,7 @@ class TwoSizeCard extends React.Component {
 							</div>
 							<div className={ styles.linkListContainer }>
   						{
-								cardSocialLinks.map((LinkInfo,index) => (
+								artistSocialLinks.map((LinkInfo,index) => (
 									<a 
 										key={ index }
 										href={ LinkInfo.link } 

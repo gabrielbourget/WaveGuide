@@ -33,7 +33,12 @@ class ArtistTable extends React.Component {
 				<tbody className={ initObject.tableBodyClasses }>
 					{
 						this.props.artists.map((artist,index) => (
-							<TableItem key={ index } artist={ artist }/> // - DEV NOTE -> Will eventually need props, don't forget. 
+							<TableItem 
+								key={ index } 
+								title={ artist.title }
+								imagePath={ artist.imagePath }
+								socialURLs={ artist.socialURLs }
+							/> 
 						))
 					}
 				</tbody>

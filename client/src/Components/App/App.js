@@ -88,7 +88,7 @@ class App extends React.Component {
     }
 
     return (
-      <ThemeContext.Provider value='light'>
+      <ThemeContext.Provider value='dark'>
         <div className={ styles.app }>
   {/*          <ToTheLeftCradle>
               <TreeView/>

@@ -9,6 +9,7 @@
 	display: grid;
 	grid-auto-flow: column;
 	grid-template-columns: 0.75fr 2fr 5fr; 
+	grid-gap: 2rem;
 	
 	&.darkTheme {
 		// border-top: 1.5px solid var(--veryDarkGrey); 
@@ -63,6 +64,7 @@
 
 	display: grid;
 	grid-auto-flow: column;
-	grid-gap: 1rem
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, 50px);
 
 }
