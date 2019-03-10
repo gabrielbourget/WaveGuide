@@ -92,6 +92,16 @@ class App extends React.Component {
     }
   };
   
+  // - Dispatch initial API call to the Neo4J database here
+  componentWillMount() {
+
+    // - Probably dispatch this out as an action eventually once Redux is hooked up.
+    const clientDateTime = new Date();
+    const hour = clientDateTime.getHours();
+    (hour < 12) ? this.setState({ theme:'dark' }) : this.setState({ theme:'light'})
+    const isDay = false; // - Call function which grabs
+  }
+
   render() {
 
     // - TODO -> setState call should be a store dispatch when Redux is set up.

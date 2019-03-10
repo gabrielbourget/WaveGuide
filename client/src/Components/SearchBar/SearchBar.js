@@ -28,6 +28,9 @@ class SearchBar extends React.Component {
 	};
 
 	searchInputRef = React.createRef();
+
+	// - Temporary until ref issue is fixed.
+	searchInput = document.getElementById('searchInput');
 	
 	handleSearchButtonClick = () => {
 		const prevState = this.state;
@@ -41,6 +44,10 @@ class SearchBar extends React.Component {
 		//   React syntax seems to be ok, not sure what the issue is. 
 		//console.log(this.searchInputRef);
 		//this.searchInputRef.current.focus();
+		
+		// - Temporary until ref issue is fixed.
+		// this.searchInput.focus();
+		//document.getElementById('searchInput').focus();
 	};
 
 	handleSearchSubmit = (e) => {
@@ -63,6 +70,7 @@ class SearchBar extends React.Component {
 								<input 
 									type='text'
 									ref={ this.searchInputRef }
+									id='searchInput' // - Temporary until ref issue fixed.
 									className={ initObject.searchInputClasses }
 									placeholder='Search by artist name.'
 								/>

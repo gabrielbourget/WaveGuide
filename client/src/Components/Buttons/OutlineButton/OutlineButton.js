@@ -20,9 +20,10 @@ class OutlineButton extends React.Component {
 		// - Probe for important render-time information
 		const shapeClass = (this.props.shape === 'rounded') ? styles.rounded : null;
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
+		const floatClass = (this.props.float) ? styles.float : null;
 
 		// - Put together class lists for pieces of the component
-		const buttonClassNames = classNames(styles.button, shapeClass, themeClass);
+		const buttonClassNames = classNames(styles.button, shapeClass, themeClass, floatClass);
 		const buttonTextClassNames = classNames(styles.buttonText, themeClass);
 
 		return (

@@ -42,7 +42,14 @@
     weight: bold;
     size: 1.4rem;
   };  
+
+  &.float {
+    &.darkTheme { box-shadow: var(--boxShadowDarkTheme); }
+    &.lightTheme { box-shadow: var(--boxShadowLightTheme); }
+  }  
 }
+
+
 
 a {
 
@@ -107,5 +114,10 @@ a {
       weight: bold;
       size: 1.4rem;
     };  
+  
+    &.float {
+      &.darkTheme { box-shadow: var(--boxShadowDarkTheme); }
+      &.lightTheme { box-shadow: var(--boxShadowLightTheme); }
+    }      
   }
 }

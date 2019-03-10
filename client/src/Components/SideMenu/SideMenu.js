@@ -16,6 +16,8 @@ class SideMenu extends React.Component {
 		const openClass = (this.props.open) ? styles.open : null;
 		const sideMenuClasses = ClassNames(styles.sideMenu, themeClass, openClass);
 
+		//console.log(getComputedStyle(document.documentElement).getPropertyValue('--boxShadowDarkTheme'));
+
 		return (
 			<div className={ sideMenuClasses } >
 				<h3 className={ themeClass }>Settings</h3>

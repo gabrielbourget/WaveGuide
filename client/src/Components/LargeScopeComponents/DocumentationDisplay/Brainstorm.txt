@@ -2,13 +2,24 @@
 
 -> State Management
 	-> Redux
+	-> Some local state for certain components
+	-> Redux-Thunk for async connection to API server
 -> Front End 
 	-> React
+	-> SCSS Modules
+	-> Render-time helper functions
+		-> ClassNames
 -> Server
+	-> Express
 -> Database
 	-> Neo4J
+	-> Query
 -> Accessibility
 	-> Semantic HTML
+-> ColorTheme
+	-> Context API
+	-> autoTheme assignment based on local time when app mounts
+
 -> Future Improvement
 	-> GraphQL vs. Redux. 
 	-> UI Improvements
@@ -20,4 +31,5 @@
 		-> Refactoring to React Native application
 		-> Wrapping the application with Electron and running out of the browser.
 	-> Ability to add upcoming events into the application and have them pop up on a map and in different components.
-	-> 
+
+
