@@ -19,9 +19,11 @@
 -> ColorTheme
 	-> Context API
 	-> autoTheme assignment based on local time when app mounts
+-> Testing
+	-> Enzyme, Jest
 
 -> Future Improvement
-	-> GraphQL vs. Redux. 
+	-> GraphQL vs. Redux, limitations of a REST API eventually. 
 	-> UI Improvements
 		-> Mobile Integration
 			-> Nav bar losing top right buttons at certain width.
