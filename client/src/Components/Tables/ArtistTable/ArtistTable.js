@@ -19,7 +19,6 @@ class ArtistTable extends React.Component {
 	render() {
 
 		const initObject = prepareComponent(this.context, this.props, styles, this.state);
-		console.log(initObject);
 
 		return (
 			<table className={ initObject.artistTableClasses }>

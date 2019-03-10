@@ -12,9 +12,9 @@ import styles from './TwoSizeCard.module.scss';
 import { assignClasses, prepareLinkGallery } from './helpers';
 
 /* Wrap SVG Icons as functional components to be placed into the markup. */
-import { ReactComponent as CircleExpandIconDarkTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_DarkTheme.svg';
-import { ReactComponent as CircleExpandIconLightTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_LightTheme.svg';
-import { ReactComponent as CircleExpandIconHighlighted } from './SVG/CircleExpandIcon/CircleExpandIcon_Highlighted.svg';
+// import { ReactComponent as CircleExpandIconDarkTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_DarkTheme.svg';
+// import { ReactComponent as CircleExpandIconLightTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_LightTheme.svg';
+// import { ReactComponent as CircleExpandIconHighlighted } from './SVG/CircleExpandIcon/CircleExpandIcon_Highlighted.svg';
 import { ReactComponent as CircleDownIconDarkTheme } from './SVG/CircleDownIcon/CircleDownIcon_DarkTheme.svg';
 import { ReactComponent as CircleDownIconLightTheme } from './SVG/CircleDownIcon/CircleDownIcon_LightTheme.svg';
 import { ReactComponent as CircleDownIconHighlighted } from './SVG/CircleDownIcon/CircleDownIcon_Highlighted.svg';
@@ -84,13 +84,13 @@ class TwoSizeCard extends React.Component {
 								onClick={ this.handleDownIconClick }
 							/>
 						}
-						<CircleButton
+{/*						<CircleButton
 							size='25px'
 							highlighted={ <CircleExpandIconHighlighted/> }
 							darkTheme={ <CircleExpandIconDarkTheme/> }
 							lightTheme={ <CircleExpandIconLightTheme/> }
 							onClick={ this.handleExpandIconClick }
-						/>
+						/>*/}
 					</div>
 				</div>
 				<div className={ classAssignments.bodyClasses }>

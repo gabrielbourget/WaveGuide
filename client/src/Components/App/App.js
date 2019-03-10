@@ -25,7 +25,7 @@ import Backdrop from '../CoverBackdrop/CoverBackdrop';
 
 import ArtistProfileDisplay from '../LargeScopeComponents/ArtistProfileDisplay/ArtistProfileDisplay';
 
-import { sortCriteriaEnum } from '../../Helpers/generalDataStructures'
+import { sortCriteriaEnum, themeEnum } from '../../Helpers/generalDataStructures'
 
 class App extends React.Component {
 
@@ -33,13 +33,12 @@ class App extends React.Component {
   state = {
     artists: testArtists,
     sideMenuOpen: false,
-    backdropOpen: false
+    backdropOpen: false,
+    theme: 'light'
   };
  
   // - TODO -> setState call should be a store dispatch when redux is set up.
   sideMenuToggle = (active) => {
-    if (active) console.log('Closing menu');
-    else console.log('Opening menu');
     const prevState = this.state;
     this.setState((prevState) => (
       { sideMenuOpen: !prevState.sideMenuOpen }
@@ -52,7 +51,7 @@ class App extends React.Component {
       sideMenuOpen: false,
       backdropOpen: false
     });
-  }
+  };
 
   // - Move this logic into a reducer once Redux is hooked up. 
   sortArtists = (direction) => {
@@ -77,18 +76,33 @@ class App extends React.Component {
     }   
   };
 
-  component
+  // - Move this logic into a reducer once Redux is hooked up.
+  switchTheme = (theme) => {
+    console.log('In theme switch function');
+    switch (theme) {
+      case 'dark': {
+        this.setState({ theme: 'dark' });
+        break;
+      }
+      case 'light': {
+        this.setState({ theme: 'light' });
+        break;
+      }
+      default: break;
+    }
+  };
   
   render() {
 
-    // - TODO -> setState call should be a store dispatch when redux is set up.
+    // - TODO -> setState call should be a store dispatch when Redux is set up.
     let backdrop;
     if (this.state.sideMenuOpen) {
       backdrop = <Backdrop onClick={ this.backdropClickHandler }/>
     }
 
     return (
-      <ThemeContext.Provider value='light'>
+      // - Draw this from mapped props once redux is set up.
+      <ThemeContext.Provider value={ this.state.theme }> 
         <div className={ styles.app }>
   {/*          <ToTheLeftCradle>
               <TreeView/>
@@ -124,13 +138,18 @@ class App extends React.Component {
             <FromTheTopCradle>
               <Navbar onSideMenuButtonClick={ this.sideMenuToggle }/>
               <ArtistProfileDisplay 
-                displayMode='list'
+                displayMode='gallery'
                 onSortClick={ this.sortArtists }
                 artists={ this.state.artists }
               />
+              {/* <Footer/> <- When it's ready... */}
             </FromTheTopCradle>
           {/* SideMenu goes here */}
-          <SideMenu open={ this.state.sideMenuOpen } />
+          <SideMenu 
+            currTheme={ this.state.theme }
+            open={ this.state.sideMenuOpen } 
+            onThemeSwitch={ this.switchTheme }
+          />
           { backdrop }
         </div> 
       </ThemeContext.Provider>

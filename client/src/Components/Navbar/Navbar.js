@@ -24,6 +24,8 @@ import { ReactComponent as HomeIconHighlighted } from './SVG/HomeIcon/HomeIconHi
 
 class Navbar extends React.Component {
 
+	// - Once this depends on redux state, the menu and x icon button will sync up
+	// 	 to clicking the backdrop to close the menu. 
 	state = {
 		menuActive: false
 	};
