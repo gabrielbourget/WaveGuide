@@ -4,19 +4,43 @@ import PropTypes from 'prop-types';
 import { ThemeContext } from '../../ThemeContext';
 
 import styles from './SideMenu.module.scss';
+import { communityLinks } from './Data/communityLinks'
 
 import HorizontalDivider from '../Dividers/HorizontalDivider/HorizontalDivider';
 import OutlineButton from '../Buttons/OutlineButton/OutlineButton';
+import CircleButton from '../Buttons/CircleButton/CircleButton';
+import CommunityLinks from './CommunityLinks/CommunityLinks';
+
+// - Circle Down Icon
+import { ReactComponent as CircleDownIconDarkTheme } from './SVG/CircleDownIcon/CircleDownIcon_DarkTheme.svg';
+import { ReactComponent as CircleDownIconLightTheme } from './SVG/CircleDownIcon/CircleDownIcon_LightTheme.svg';
+import { ReactComponent as CircleDownIconHighlighted } from './SVG/CircleDownIcon/CircleDownIcon_Highlighted.svg';
+// - Circle Up Icon
+import { ReactComponent as CircleUpIconDarkTheme } from './SVG/CircleUpIcon/CircleUpIcon_DarkTheme.svg';
+import { ReactComponent as CircleUpIconLightTheme } from './SVG/CircleUpIcon/CircleUpIcon_LightTheme.svg';
+import { ReactComponent as CircleUpIconHighlighted } from './SVG/CircleUpIcon/CircleUpIcon_Highlighted.svg';
 
 class SideMenu extends React.Component {
+
+	state = {
+		communityLinksExpanded: false
+	};
+
+	// - Trigger a card expansion.
+	handleDownIconClick = () => {
+		this.setState({ communityLinksExpanded: true });
+	};
+
+	// - Trigger a card retraction.
+	handleUpIconClick = () => {
+		this.setState({ communityLinksExpanded: false });
+	};	
 
 	render() {
 
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
 		const openClass = (this.props.open) ? styles.open : null;
 		const sideMenuClasses = ClassNames(styles.sideMenu, themeClass, openClass);
-
-		//console.log(getComputedStyle(document.documentElement).getPropertyValue('--boxShadowDarkTheme'));
 
 		return (
 			<div className={ sideMenuClasses } >
@@ -65,84 +89,36 @@ class SideMenu extends React.Component {
 						onClick={ () => {} }
 					/>	
 				</div>
-				<h3 className={ themeClass }>Community Links</h3>
+				<div className={ styles.communityLinksTitleBar }>
+					<h3 className={ themeClass }>Community Links</h3>
+					<div className={ styles.expandCollapseButton }>
+						{
+							this.state.communityLinksExpanded ?
+							<CircleButton 
+								size='25px'
+								highlighted={ <CircleUpIconHighlighted/> }
+								darkTheme={ <CircleUpIconDarkTheme/> }
+								lightTheme={ <CircleUpIconLightTheme/> }
+								onClick={ this.handleUpIconClick }
+							/> :
+							<CircleButton 
+								size='25px'
+								highlighted={ <CircleDownIconHighlighted/> }
+								darkTheme={ <CircleDownIconDarkTheme/> }
+								lightTheme={ <CircleDownIconLightTheme/> }
+								onClick={ this.handleDownIconClick }
+							/>
+						}
+					</div>
+				</div>
 				<div className={ styles.hDividerCradle }>
 					<HorizontalDivider height='3px'/>
 				</div>
-				<div className={ styles.communityLinks }>
-					<div className={ styles.linkItem }>
-						<div className={ styles.button }>
-							<a
-								href='https://www.facebook.com/groups/wav.city/'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<OutlineButton
-									text='Wave City'
-									shape='rounded'
-									onClick={ () => {} }
-								/>
-							</a>
-						</div>
-						<div className={ styles.label }>
-							<h4 className={ themeClass }>Facebook Group</h4>
-						</div>
-					</div>
-					<div className={ styles.linkItem }>
-						<div className={ styles.button }>
-							<a
-								href='https://www.reddit.com/r/wavepool'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<OutlineButton
-									text='/r/wavepool'
-									shape='rounded'
-									onClick={ () => {} }
-								/>
-							</a>
-						</div>
-						<div className={ styles.label }>
-							<h4 className={ themeClass }>Reddit Group</h4>
-						</div>
-					</div>					
-					<div className={ styles.linkItem }>
-						<div className={ styles.button }>
-							<a
-								href='https://discordapp.com/invite/YFNVcyG'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<OutlineButton
-									text='Wavepool'
-									shape='rounded'
-									onClick={ () => {} }
-								/>
-							</a>
-						</div>
-						<div className={ styles.label }>
-							<h4 className={ themeClass }>Discord Server</h4>
-						</div>
-					</div>
-					<div className={ styles.linkItem }>
-						<div className={ styles.button }>
-							<a
-								href='https://discordapp.com/invite/theaccidentalpoet'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<OutlineButton
-									text='The Accidental Poet'
-									shape='rounded'
-									onClick={ () => {} }
-								/>
-							</a>
-						</div>
-						<div className={ styles.label }>
-							<h4 className={ themeClass }>Discord Server</h4>
-						</div>
-					</div>					
-				</div>
+				{
+					this.state.communityLinksExpanded ?
+						<CommunityLinks communityLinks={ communityLinks }/>	:
+						null
+				}
 			</div>
 		);
 	}

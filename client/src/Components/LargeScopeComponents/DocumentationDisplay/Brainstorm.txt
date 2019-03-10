@@ -21,6 +21,8 @@
 	-> autoTheme assignment based on local time when app mounts
 -> Testing
 	-> Enzyme, Jest
+-> Cybersec
+	-> rel="noopen noreferrer" on anchor links
 
 -> Future Improvement
 	-> GraphQL vs. Redux, limitations of a REST API eventually. 
