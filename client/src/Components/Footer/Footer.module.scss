@@ -1,0 +1,43 @@
+.footer {
+	padding: 25px 15px;
+	height: 100%;
+	width: 100%;
+
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 2fr 4fr;
+
+	&.darkTheme {
+		background: var(--black);
+		color: var(--white);
+	}
+
+	&.lightTheme {
+		background: var(--white);
+		color: var(--black);
+	}
+
+	& .logo {
+		height: 100%;
+		width: 100%;
+		display: grid;
+		place-items: center;
+		padding: 15px;
+	}
+
+	& .footerInfo {
+		height: 100%;
+		width: 100%;
+		display: grid;
+
+		& .description {
+			height: 100%;
+			width: 100%;
+		}
+
+		& .links {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

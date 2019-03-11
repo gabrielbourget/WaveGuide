@@ -87,6 +87,7 @@
 }
 
 .buttonGrid {
+	margin: 15px;
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

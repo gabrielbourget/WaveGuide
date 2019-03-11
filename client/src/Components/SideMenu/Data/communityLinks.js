@@ -7,7 +7,7 @@ export const communityLinks = [
 	{
 		link: 'https://www.reddit.com/r/wavepool',
 		buttonText: '/r/wavepool',
-		description: 'Reddit Group'
+		description: 'Subreddit'
 	},
 	{
 		link: 'https://discordapp.com/invite/YFNVcyG',
@@ -38,6 +38,11 @@ export const communityLinks = [
 		link: 'https://www.youtube.com/user/sesaeo',
 		buttonText: 'The Games We Play',
 		description: 'Youtube Channel'
+	},
+	{ 
+		link: 'https://wavenights.com',
+		buttonText: 'Wave Nights',
+		description: 'Events Page'
 	},
 	{
 		link :'https://soundcloud.com/yusoul',
