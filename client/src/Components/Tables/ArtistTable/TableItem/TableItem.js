@@ -21,13 +21,13 @@ class TableItem extends React.Component {
 				<td className={ initObject.profileImageClasses }>
 					<div className={ initObject.imageCradleClasses }>
 						<ProfileImage
-							imagePath={ this.props.imagePath }
-							title={ this.props.title }
+							imagePath={ this.props.imageURL }
+							name={ this.props.name }
 						/>
 					</div>
 				</td>
 				<td className={ initObject.titleClasses }>
-					<p>{ this.props.title }</p>
+					<p>{ this.props.name }</p>
 				</td>
 				<td className={ initObject.socialLinksClasses }>
 					{
@@ -42,8 +42,8 @@ class TableItem extends React.Component {
 									key={ index }
 									size='30px'
 									darkTheme={ LinkInfo.icons['darkTheme']() }
-									highlighted={ LinkInfo.icons['highlighted']() }
 									lightTheme={ LinkInfo.icons['lightTheme']() }
+									highlighted={ LinkInfo.icons['highlighted']() }
 									onClick={ () => {} }
 								/>
 							</a>													

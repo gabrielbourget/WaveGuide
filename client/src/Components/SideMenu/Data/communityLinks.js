@@ -42,7 +42,7 @@ export const communityLinks = [
 	{ 
 		link: 'https://wavenights.com',
 		buttonText: 'Wave Nights',
-		description: 'Events Page'
+		description: 'Events/Community Info'
 	},
 	{
 		link :'https://soundcloud.com/yusoul',

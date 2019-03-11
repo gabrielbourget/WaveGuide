@@ -1,10 +1,12 @@
 .artistProfileDisplay {
+	//height: calc(100vh - 75px - 350px);
 	width: 100%;
-	height: 100%;
-	padding: 0px 30px;
+	min-height: 100%;
+	padding: 0px 30px; //30px 30px;
 
 	display: grid;
 	grid-gap: 2rem;
+	align-content: start;
 	// grid-template-columns: 1fr;
 
 	background: transparent;

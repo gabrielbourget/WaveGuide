@@ -34,8 +34,8 @@ class ArtistTable extends React.Component {
 						this.props.artists.map((artist,index) => (
 							<TableItem 
 								key={ index } 
-								title={ artist.title }
-								imagePath={ artist.imagePath }
+								name={ artist.name }
+								imageURL={ artist.imageURL }
 								socialURLs={ artist.socialURLs }
 							/> 
 						))

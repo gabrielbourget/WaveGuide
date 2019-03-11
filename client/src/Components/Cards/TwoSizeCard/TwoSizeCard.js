@@ -66,7 +66,7 @@ class TwoSizeCard extends React.Component {
 			<div className={ classAssignments.twoSizeCardClasses }>
 				<div className={ classAssignments.headerClasses }>
 					<div className={ classAssignments.cardTitleClasses }>
-						<h3>{ this.props.title }</h3>
+						<h3>{ this.props.name }</h3>
 					</div>
 					<div className={ classAssignments.topCardButtonClasses }>
 						{
@@ -98,7 +98,7 @@ class TwoSizeCard extends React.Component {
 				<div className={ classAssignments.bodyClasses }>
 					<ProfileImage
 						imagePath={ this.props.imagePath }
-						title={ this.props.title }
+						title={ this.props.name }
 					/>
 					{
 						this.state.expanded ?

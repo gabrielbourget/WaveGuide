@@ -1,6 +1,6 @@
 .footer {
-	padding: 25px 15px;
-	height: 100%;
+	padding: 35px 15px;
+	min-height: 350px;
 	width: 100%;
 
 	display: grid;
@@ -13,7 +13,7 @@
 	}
 
 	&.lightTheme {
-		background: var(--white);
+		background: var(--lightGrey);
 		color: var(--black);
 	}
 
@@ -22,7 +22,6 @@
 		width: 100%;
 		display: grid;
 		place-items: center;
-		padding: 15px;
 	}
 
 	& .footerInfo {
@@ -38,6 +37,10 @@
 		& .links {
 			height: 100%;
 			width: 100%;
+			display: grid;
+			grid-template-columns: 200px;
+			justify-content: center;
+			grid-gap: 1rem;
 		}
 	}
 }

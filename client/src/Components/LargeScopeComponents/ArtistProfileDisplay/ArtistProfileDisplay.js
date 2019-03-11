@@ -28,8 +28,8 @@ class ArtistProfileDisplay extends React.Component {
               <TwoSizeCard
                 key={ index }
                 shape='round'
-                title={ artist.title }
-                imagePath={ artist.imagePath }
+                name={ artist.name }
+                imagePath={ artist.imageURL }
                 socialURLs={ artist.socialURLs }
               />
             ))

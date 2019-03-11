@@ -1,12 +1,19 @@
 import React from 'react';
 import ClassNames from 'classnames';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 
 import styles from './Paragraph.module.scss';
 
 class Paragraph extends React.Component {
 
+	static propTypes = {
+		fontSize: PropTypes.string
+	}
+
+	static defaultProps = {
+		fontSize: '1.5rem'
+	}
 
 	render() {
 
@@ -15,11 +22,16 @@ class Paragraph extends React.Component {
 		// - Build class list for component's markup.
 		const paragraphClasses = ClassNames(styles.paragraph, themeClass);
 
+		const style = {
+			fontSize: this.props.fontSize
+		}
+
 		return (
-			<p className={ paragraphClasses }>
-				Does this work well? <br/>
-				Do the line <br/>
-				breaks look nice?
+			<p 
+				className={ paragraphClasses }
+				style={ style }
+			>
+				{ this.props.children }
 			</p>
 		);
 	}

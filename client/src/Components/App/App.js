@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './App.module.css';
 import { ThemeContext } from '../../ThemeContext';
 
-import testArtists from '../../Datasets/testArtists';
+import artists from '../../Datasets/artists';
 
 //import * as config from '../../clientConfig';
 // import OutlineButton  from '../Buttons/OutlineButton/OutlineButton';
@@ -22,8 +22,8 @@ import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
 import Navbar from '../Navbar/Navbar';
 import SideMenu from '../SideMenu/SideMenu';
 import Backdrop from '../CoverBackdrop/CoverBackdrop';
-
 import ArtistProfileDisplay from '../LargeScopeComponents/ArtistProfileDisplay/ArtistProfileDisplay';
+import Footer from '../Footer/Footer';
 
 import { sortCriteriaEnum, themeEnum } from '../../Helpers/generalDataStructures'
 
@@ -31,7 +31,7 @@ class App extends React.Component {
 
   // - TODO -> Move this into Redux flow once that's set up.
   state = {
-    artists: testArtists,
+    artists: artists,
     sideMenuOpen: false,
     backdropOpen: false,
     theme: 'light'
@@ -58,7 +58,7 @@ class App extends React.Component {
     switch (direction) {
       case sortCriteriaEnum.ALPHABETICAL: {
         // - Action will be dispatched here when redux is hooked up.
-        const newArtists = this.state.artists.slice().sort((a,b) => a.title > b.title ? 1 : -1);
+        const newArtists = this.state.artists.slice().sort((a,b) => a.name > b.name ? 1 : -1);
         this.setState({ 
           artists: newArtists
         });
@@ -66,7 +66,7 @@ class App extends React.Component {
       }
       case sortCriteriaEnum.REVERSE_ALPHABETICAL: {
         // - Action will be dispatched here when redux is hooked up.
-        const newArtists = this.state.artists.slice().sort((a,b) => a.title > b.title ? -1 : 1);
+        const newArtists = this.state.artists.slice().sort((a,b) => a.name > b.name ? -1 : 1);
         this.setState({ 
           artists: newArtists
         });
@@ -151,7 +151,7 @@ class App extends React.Component {
                 onSortClick={ this.sortArtists }
                 artists={ this.state.artists }
               />
-              {/* <Footer/> <- When it's ready... */}
+              <Footer/>
             </FromTheTopCradle>
           {/* SideMenu goes here */}
           <SideMenu 
