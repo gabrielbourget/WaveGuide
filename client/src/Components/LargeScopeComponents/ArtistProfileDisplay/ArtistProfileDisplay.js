@@ -11,7 +11,7 @@ import { prepareComponent } from './helpers';
 class ArtistProfileDisplay extends React.Component {
 		
 	state = {
-		displayMode: this.props.displayMode,
+		displayMode: this.props.displayMode
 	};
 
 	switchViewMode = (displayMode) => {

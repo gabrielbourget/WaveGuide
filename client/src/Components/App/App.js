@@ -121,25 +121,6 @@ class App extends React.Component {
 
               </MiddleContentCradle>
             </ColumnWithPaddingPageCradle> */}
-  {/*          <TwoSizeCardGallery>
-                {
-                  testArtists.map((artist, index) => (
-                    <TwoSizeCard
-                      key={ index }
-                      shape='round'
-                      title={ artist.title }
-                      imagePath={ artist.imagePath }
-                      socialURLs={ artist.socialURLs }
-                    />
-                  ))
-                }
-              <TwoSizeCard
-                shape='round'
-                title={ testArtists[0].title }
-                imagePath={ testArtists[0].imagePath }
-                socialURLs={ testArtists[0].socialURLs }
-              /> 
-            </TwoSizeCardGallery>*/}
   {/*          <CenteringCradle>
 
             </CenteringCradle>*/}

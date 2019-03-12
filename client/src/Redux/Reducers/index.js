@@ -1,5 +1,4 @@
-import TOGGLE_THEME from '../actionStrings';
-import TOGGLE_SIDE_MENU from '../actionStrings';
+import {TOGGLE_THEME, TOGGLE_SIDE_MENU, TOGGLE_BACKDROP } from '../actionStrings';
 
 const UIReducer = (state = [], action) => {
 	switch (action.type) {
@@ -9,6 +8,17 @@ const UIReducer = (state = [], action) => {
 		case TOGGLE_SIDE_MENU: {
 			break;
 		}
+		case TOGGLE_BACKDROP: {
+			break;
+		}
 		default: { return state }
 	}
 };
+
+const rootReducer = (state = [], action) => {
+	switch (action.type) {
+		default: { return state }
+	}
+};
+
+export default rootReducer;
