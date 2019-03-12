@@ -15,6 +15,12 @@ const UIReducer = (state = [], action) => {
 	}
 };
 
+const artistReducer = (state = [], action) => {
+	switch (action.type) {
+		default: { return state }
+	}
+};
+
 const rootReducer = (state = [], action) => {
 	switch (action.type) {
 		default: { return state }

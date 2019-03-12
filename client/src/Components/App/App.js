@@ -30,6 +30,7 @@ import { sortCriteriaEnum, themeEnum } from '../../Helpers/generalDataStructures
 class App extends React.Component {
 
   // - TODO -> Move this into Redux flow once that's set up.
+  //           Container is scaffolded, just needs the rest of redux set up.
   state = {
     artists: artists,
     sideMenuOpen: false,
@@ -38,6 +39,8 @@ class App extends React.Component {
   };
  
   // - TODO -> setState call should be a store dispatch when redux is set up.
+  //           Call props function passed down from container component, which
+  //           will get reducer to manipulate state.
   sideMenuToggle = (active) => {
     const prevState = this.state;
     this.setState((prevState) => (
@@ -46,6 +49,8 @@ class App extends React.Component {
   };
 
   // - TODO -> setState call should be a store dispatch when redux is set up.
+  //           Call props function passed down from container component, which
+  //           will get reducer to manipulate state.
   backdropClickHandler = () => {
     this.setState({ 
       sideMenuOpen: false,

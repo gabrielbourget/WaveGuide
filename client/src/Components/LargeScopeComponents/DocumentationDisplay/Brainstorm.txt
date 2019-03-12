@@ -19,9 +19,13 @@
 -> ColorTheme
 	-> Context API
 	-> autoTheme assignment based on local time when app mounts
+-> Routing
+	-> React Router
 -> Testing
 	-> Enzyme, Jest
 -> Cybersec
+	-> Measured hesitancy to introduce file storage, profiles, messaging until 
+		 proper security planning/analysis and architecture is carried out.
 	-> rel="noopen noreferrer" on anchor links
 
 -> Future Improvement
