@@ -16,7 +16,7 @@ class SearchBar extends React.Component {
 
 	state = {
 		active: false,
-		searchBarText:''
+		searchQueryText:''
 	};
 
 	static propTypes = {
@@ -30,7 +30,7 @@ class SearchBar extends React.Component {
 	searchInputRef = React.createRef();
 
 	// - Temporary until ref issue is fixed.
-	searchInput = document.getElementById('searchInput');
+	// searchInput = document.getElementById('searchInput');
 	
 	handleSearchButtonClick = () => {
 		const prevState = this.state;
@@ -50,8 +50,14 @@ class SearchBar extends React.Component {
 		//document.getElementById('searchInput').focus();
 	};
 
+	onSearchQueryChange = (e) => {
+		this.setState({ searchQueryText: e.target.value })
+	}
+
 	handleSearchSubmit = (e) => {
-		e.preventDefault();
+		// - Active once redux is set up. 
+		//this.props.searchThroughArtists(this.state.searchBarText);
+		
 	}
 
 	render() {
@@ -65,12 +71,13 @@ class SearchBar extends React.Component {
 						<React.Fragment>
 							<form 
 								className={ styles.searchField }
-								onSubmit={ this.handleSearchSubmit }
+								//onSubmit={ this.handleSearchSubmit }
 							>
 								<input 
 									type='text'
 									ref={ this.searchInputRef }
 									id='searchInput' // - Temporary until ref issue fixed.
+									onChange={ this.onSeachQueryChange }
 									className={ initObject.searchInputClasses }
 									placeholder='Search by artist name.'
 								/>

@@ -74,7 +74,11 @@ class Navbar extends React.Component {
 					}
 
 				</div>
-				<SearchBar defaultText='Search by artist name.'/>
+				<SearchBar 
+					// - Active once redux is set up.
+					// searchThroughArtists={ this.props.searchThroughArtists }
+					defaultText='Search by artist name.'
+				/>
 				<div className={ initObject.rightNavClasses }>
 					{/* Once routing is set up, put link to home page here */}
 					<CircleButton

@@ -134,7 +134,11 @@ class App extends React.Component {
             </CenteringCradle>*/}
 
             <FromTheTopCradle>
-              <Navbar onSideMenuButtonClick={ this.toggleSideMenu }/>
+              <Navbar 
+                // - Active once redux is running.
+                // searchThroughArtists={ this.props.searchThroughArtists }
+                onSideMenuButtonClick={ this.toggleSideMenu }
+              />
               <ArtistProfileDisplay 
                 displayMode='gallery'
                 onSortClick={ this.sortArtists }

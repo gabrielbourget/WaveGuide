@@ -7,10 +7,30 @@ import { TOGGLE_THEME, TOGGLE_SIDE_MENU, TOGGLE_BACKDROP
 const UIReducer = (state = [], action) => {
 	switch (action.type) {
 		case TOGGLE_THEME: {
+			const requestedTheme = action.theme;
+			switch (requestedTheme) {
+				case 'dark': {
+					return Object.assign({}, state, {
+						settings.theme: 'dark'
+					});
+				}
+				case 'light': {
+					return Object.assign({}, state, {
+						settings.theme: 'light'
+					});
+				}
+				default: return state;
+			}
 			break;
 		}
+		// - Figure out what state the menu is in.
+		//   Return copy of state with that menu state
+		//   toggled.
 		case TOGGLE_SIDE_MENU: {
-			break;
+			const prevMenuState = this.state.settings.sideMenuOpen;
+			return Object.assign({}, state, {
+        settings.sideMenuOpen: !prevMenuState
+      });
 		}
 		case TOGGLE_BACKDROP: {
 			break;
@@ -26,8 +46,9 @@ const artistReducer = (state = [], action) => {
 };
 
 const rootReducer = (state = [], action) => {
-	switch (action.type) {
-		default: { return state }
+	return {
+		UI: UIReducer( state, action ),
+		artist: artistReducer( state, action )
 	}
 };
 
