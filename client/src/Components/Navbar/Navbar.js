@@ -77,7 +77,7 @@ class Navbar extends React.Component {
 				<SearchBar 
 					// - Active once redux is set up.
 					// searchThroughArtists={ this.props.searchThroughArtists }
-					defaultText='Search by artist name.'
+					defaultText='Search by artist name. Search "Everyone" to return all artists.'
 				/>
 				<div className={ initObject.rightNavClasses }>
 					{/* Once routing is set up, put link to home page here */}

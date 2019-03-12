@@ -4,47 +4,16 @@ import { TOGGLE_THEME, TOGGLE_SIDE_MENU, TOGGLE_BACKDROP
 				 SORT_ARTISTS_ALPHABETICAL,
 				 SORT_ARTISTS_REVERSE_ALPHABETICAL } from '../actionStrings';
 
-const UIReducer = (state = [], action) => {
-	switch (action.type) {
-		case TOGGLE_THEME: {
-			const requestedTheme = action.theme;
-			switch (requestedTheme) {
-				case 'dark': {
-					return Object.assign({}, state, {
-						settings.theme: 'dark'
-					});
-				}
-				case 'light': {
-					return Object.assign({}, state, {
-						settings.theme: 'light'
-					});
-				}
-				default: return state;
-			}
-			break;
-		}
-		// - Figure out what state the menu is in.
-		//   Return copy of state with that menu state
-		//   toggled.
-		case TOGGLE_SIDE_MENU: {
-			const prevMenuState = this.state.settings.sideMenuOpen;
-			return Object.assign({}, state, {
-        settings.sideMenuOpen: !prevMenuState
-      });
-		}
-		case TOGGLE_BACKDROP: {
-			break;
-		}
-		default: { return state }
-	}
-};
+import artistReducer from './artistReducer';
+import UIReducer from './UIReducer';
 
-const artistReducer = (state = [], action) => {
-	switch (action.type) {
-		default: { return state }
-	}
-};
+import { sortCriteriaEnum } from '../../Helpers/generalDataStructures';
 
+// - Combine reducers here, export that to store.
+//   Composition works here because when the root reducer 
+//   is called, it goes down that return object and calls each
+//   composed reducer, which themselves go through their logic, 
+//   looking to see if the action matches an option they have.
 const rootReducer = (state = [], action) => {
 	return {
 		UI: UIReducer( state, action ),
@@ -53,3 +22,13 @@ const rootReducer = (state = [], action) => {
 };
 
 export default rootReducer;
+
+
+
+
+
+
+
+
+
+

@@ -43,7 +43,6 @@ export const fetchArtists = () => (
 	};
 );
 
-
 // - Batch export.
 const actionCreators = {
 	switchTheme,

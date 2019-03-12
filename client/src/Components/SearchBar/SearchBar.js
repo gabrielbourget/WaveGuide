@@ -24,7 +24,7 @@ class SearchBar extends React.Component {
 	};
 
 	static defaultProps = {
-		defaultText: 'Search by artist name.'
+		defaultText: "Search by artist name. Search 'Everyone' to return all artists."
 	};
 
 	searchInputRef = React.createRef();
@@ -56,7 +56,7 @@ class SearchBar extends React.Component {
 
 	handleSearchSubmit = (e) => {
 		// - Active once redux is set up. 
-		//this.props.searchThroughArtists(this.state.searchBarText);
+		//this.props.searchThroughArtists(this.state.searchQueryText);
 		
 	}
 

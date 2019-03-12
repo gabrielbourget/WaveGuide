@@ -17,6 +17,7 @@ const initialState = {
 		sideMenuOpen: false
 	},
 	isLoading: false,
+	loadStatus: 'READY'
 	artists: []
 	displayedArtists: []
 };
