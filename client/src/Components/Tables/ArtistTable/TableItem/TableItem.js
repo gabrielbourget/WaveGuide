@@ -30,7 +30,7 @@ class TableItem extends React.Component {
 					<p>{ this.props.name }</p>
 				</td>
 				<td className={ initObject.socialLinksClasses }>
-{/*					{
+					{
 						artistSocialLinks.map((LinkInfo,index) => (
 							<a 
 								key={ index }
@@ -48,7 +48,7 @@ class TableItem extends React.Component {
 								/>
 							</a>													
 						))						
-					}*/}
+					}
 				</td>
 			</tr>
 		);

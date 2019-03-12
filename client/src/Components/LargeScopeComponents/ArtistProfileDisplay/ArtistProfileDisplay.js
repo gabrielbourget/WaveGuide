@@ -2,8 +2,7 @@ import React from 'react';
 import { ThemeContext } from '../../../ThemeContext';
 
 import TopBar from './TopBar/TopBar';
-import TwoSizeCardGallery from '../../Galleries/TwoSizeCardGallery/TwoSizeCardGallery';
-import TwoSizeCard from '../../Cards/TwoSizeCard/TwoSizeCard';
+import ArtistGallery from '../../Galleries/ArtistGallery/ArtistGallery';
 import ArtistTable from '../../Tables/ArtistTable/ArtistTable';
 
 import styles from './ArtistProfileDisplay.module.scss';
@@ -22,19 +21,10 @@ class ArtistProfileDisplay extends React.Component {
 	resolveDisplayMode = () => {
 		if (this.state.displayMode === 'gallery') {
 			return (
-				<TwoSizeCardGallery> 
-          {
-            this.props.artists.map((artist, index) => (
-              <TwoSizeCard
-                key={ index }
-                shape='round'
-                name={ artist.name }
-                imagePath={ artist.imageURL }
-                socialURLs={ artist.socialURLs }
-              />
-            ))
-          }					
-				</TwoSizeCardGallery>
+				<ArtistGallery 
+					// - This itself will eventually be props mapped in from the connect redux function. 
+					artists={ this.props.artists }
+				/>
 			);
 		}
 		else if (this.state.displayMode === 'list') {

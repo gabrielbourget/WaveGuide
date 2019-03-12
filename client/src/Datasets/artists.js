@@ -464,6 +464,20 @@ const artists = [
   //     twitter: ''
   //   }     
   // },
+  // {
+  //   name: '',
+  //   imageURL: process.env.PUBLIC_URL + '/Images/',
+  //   socialURLs: {
+  //     spotify: '',
+  //     soundCloud: '',
+  //     apple: '',
+  //     bandcamp: '',
+  //     youtube: '',
+  //     instagram: '',
+  //     facebook: '',
+  //     twitter: ''
+  //   }     
+  // },  
 ];
 
 export default artists;
