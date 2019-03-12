@@ -1,5 +1,5 @@
 // - UI
-export const TOGGLE_THEME = 'TOGGLE_THEME';
+export const SWITCH_THEME = 'SWITCH_THEME';
 export const TOGGLE_SIDE_MENU = 'TOGGLE_SIDE_MENU';
 export const TOGGLE_BACKDROP = 'TOGGLE_BACKDROP';
 

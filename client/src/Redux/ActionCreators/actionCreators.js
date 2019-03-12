@@ -1,4 +1,4 @@
-import { TOGGLE_THEME, TOGGLE_SIDE_MENU, TOGGLE_BACKDROP
+import { SWITCH_THEME, TOGGLE_SIDE_MENU, TOGGLE_BACKDROP
 				 FETCH_ARTISTS_REQUEST, FETCH_ARTIST_SUCCESS, 
 				 FETCH_ARTISTS_ERROR, SEARCH_THROUGH_ARTISTS,
 				 SORT_ARTISTS_ALPHABETICAL,
@@ -7,17 +7,29 @@ import { TOGGLE_THEME, TOGGLE_SIDE_MENU, TOGGLE_BACKDROP
 import artists from '../../Datasets/artists';
 
 // - UI
-export const toggleTheme = () => { type: TOGGLE_THEME };
+export const switchTheme = (theme) => { 
+	type: SWITCH_THEME,
+	theme
+};
 export const toggleSideMenu = () => { type: TOGGLE_SIDE_MENU };
 export const toggleBackDrop = () => { type: TOGGLE_BACKDROP };
 
 // - Fetching Artists
 export const fetchArtistsRequest = () => { type: FETCH_ARTISTS_REQUEST };
-export const fetchArtistsSuccess = () => { type: FETCH_ARTISTS_SUCCESS };
-export const fetchArtistsError = () => { type: FETCH_ARTISTS_ERROR };
+export const fetchArtistsSuccess = (artists) => { 
+	type: FETCH_ARTISTS_SUCCESS,
+	artists 
+};
+export const fetchArtistsError = (error) => { 
+	type: FETCH_ARTISTS_ERROR,
+	error
+};
 
 // - Manipulating Artists
-export const searchThroughArtists = () => { type: SEARCH_THROUGH_ARTISTS };
+export const searchThroughArtists = (queryText) => { 
+	type: SEARCH_THROUGH_ARTISTS,
+	queryText
+};
 export const sortArtistsAlphabetical = () => { type: SORT_ARTISTS_ALPHABETICAL };
 export const sortArtistsReverseAlphabetical = () => { type: SORT_ARTISTS_REVERSE_ALPHABETICAL };
 
@@ -34,7 +46,7 @@ export const fetchArtists = () => (
 
 // - Batch export.
 const actionCreators = {
-	toggleTheme,
+	switchTheme,
 	toggleSideMenu,
 	toggleBackdrop,
 	fetchArtistsRequest,

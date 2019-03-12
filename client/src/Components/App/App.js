@@ -41,7 +41,7 @@ class App extends React.Component {
   // - TODO -> setState call should be a store dispatch when redux is set up.
   //           Call props function passed down from container component, which
   //           will get reducer to manipulate state.
-  sideMenuToggle = (active) => {
+  toggleSideMenu = () => {
     const prevState = this.state;
     this.setState((prevState) => (
       { sideMenuOpen: !prevState.sideMenuOpen }
@@ -83,7 +83,7 @@ class App extends React.Component {
 
   // - Move this logic into a reducer once Redux is hooked up.
   switchTheme = (theme) => {
-    console.log('In theme switch function');
+    // console.log('In theme switch function');
     switch (theme) {
       case 'dark': {
         this.setState({ theme: 'dark' });
@@ -104,6 +104,9 @@ class App extends React.Component {
     const clientDateTime = new Date();
     const hour = clientDateTime.getHours();
     (hour < 12) ? this.setState({ theme:'dark' }) : this.setState({ theme:'light'});
+
+    // - Use this once redux is active. This will mock requesting initial data from server. 
+    //this.props.loadArtists()
   }
 
   render(){
@@ -131,7 +134,7 @@ class App extends React.Component {
             </CenteringCradle>*/}
 
             <FromTheTopCradle>
-              <Navbar onSideMenuButtonClick={ this.sideMenuToggle }/>
+              <Navbar onSideMenuButtonClick={ this.toggleSideMenu }/>
               <ArtistProfileDisplay 
                 displayMode='gallery'
                 onSortClick={ this.sortArtists }

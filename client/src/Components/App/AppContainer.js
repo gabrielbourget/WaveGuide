@@ -5,14 +5,32 @@ import actionCreators from './ActionCreators/actionCreators';
 import App from './App';
 
 const mapStateToProps = (state) => ({
-	artists: state.artists
+	settings: state.settings,
+	isLoading: state.isLoading,
+	artists: state.artists,
+	displayedArtists: state.displayedArtists
 });
 
 const mapDispatchToProps = (dispatch) => (
 	{
-		// - Write in handler functions that get passed into App component
-		//   as props. These will dispatch actions to the reducers, which
-		//   will update the state. 
+		switchTheme: (theme) => (
+			dispatch( actionCreators.switchTheme(theme) )
+		),
+		toggleSideMenu: () => (
+			dispatch( actionCreators.toggleSideMenu() )
+		),
+		searchThroughArtists: (queryText) => (
+			dispatch( actionCreators.searchThroughArtists(queryText) );
+		),
+		sortArtistsAlphabetical: (direction) => (
+			dispatch( actionCreators.sortArtistsAlphabetical(direction) )
+		),
+		sortArtistsReverseAlphabetical: (direction) => (
+			dispatch( actionCreators.sortArtistsReverseAlphabetical(direction) )
+		),
+		loadArtists: () => (
+			dispatch( actionCreators.fetchArtists() )
+		)		
 	}
 );
 

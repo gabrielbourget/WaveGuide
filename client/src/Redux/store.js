@@ -16,8 +16,9 @@ const initialState = {
 		backdropOpen: false,
 		sideMenuOpen: false
 	},
-	artists,
-	displayedArtists: artists
+	isLoading: false,
+	artists: []
+	displayedArtists: []
 };
 
 const store = createStore( rootReducer, initialState );
