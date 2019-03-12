@@ -1,4 +1,3 @@
-
 import { createStore } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { browserHistory } from 'react-redux';
@@ -17,7 +16,8 @@ const initialState = {
 		backdropOpen: false,
 		sideMenuOpen: false
 	},
-	artists
+	artists,
+	displayedArtists: artists
 };
 
 const store = createStore( rootReducer, initialState );
