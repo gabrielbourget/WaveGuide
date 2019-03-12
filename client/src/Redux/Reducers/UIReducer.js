@@ -1,6 +1,6 @@
 const UIReducer = (state = [], action) => {
 	switch (action.type) {
-		case TOGGLE_THEME: {
+		case SWITCH_THEME: {
 			const requestedTheme = action.theme;
 			switch (requestedTheme) {
 				case 'dark': {
@@ -27,9 +27,12 @@ const UIReducer = (state = [], action) => {
       });
 		}
 		case TOGGLE_BACKDROP: {
-			break;
+			const prevBackdropState = this.state.settings.backdropOpen;
+			return Object.assign({}, state, {
+				settings.backDropOpen: !prevBackdropState
+			});
 		}
-		default: { return state }
+		default: return state; 
 	}
 };
 

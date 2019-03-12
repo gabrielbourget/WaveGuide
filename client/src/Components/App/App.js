@@ -4,13 +4,6 @@ import { ThemeContext } from '../../ThemeContext';
 
 import artists from '../../Datasets/artists';
 
-//import * as config from '../../clientConfig';
-// import OutlineButton  from '../Buttons/OutlineButton/OutlineButton';
-// import FilledButton from '../Buttons/FilledButton/FilledButton';
-// import SelectionIndicator from '../Icons/Indicators/SelectionIndicator/SelectionIndicator';
-// import Paragraph from '../TextLayout/Paragraph/Paragraph';
-// import TwoSizeCardGallery from '../Galleries/TwoSizeCardGallery/TwoSizeCardGallery';
-// import TwoSizeCard from '../Cards/TwoSizeCard/TwoSizeCard';
 // import ColumnWithPaddingPageCradle 
 //   from '../Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle';
 // import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
@@ -113,6 +106,7 @@ class App extends React.Component {
 
     // - TODO -> setState call should be a store dispatch when Redux is set up.
     let backdrop;
+    // - if (this.props.backDropOpen) once redux is set up.
     if (this.state.sideMenuOpen) {
       backdrop = <Backdrop onClick={ this.backdropClickHandler }/>
     }
@@ -138,10 +132,13 @@ class App extends React.Component {
                 // - Active once redux is running.
                 // searchThroughArtists={ this.props.searchThroughArtists }
                 onSideMenuButtonClick={ this.toggleSideMenu }
+                // onSideMenuButtonClick={ this.props.toggleSideMenu }
               />
               <ArtistProfileDisplay 
                 displayMode='gallery'
                 onSortClick={ this.sortArtists }
+                // onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
+                // onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
                 artists={ this.state.artists }
               />
               <Footer/>
@@ -151,6 +148,7 @@ class App extends React.Component {
             currTheme={ this.state.theme }
             open={ this.state.sideMenuOpen } 
             onThemeSwitch={ this.switchTheme }
+            // onThemeSwitch={ this.props.switchTheme }
           />
           { backdrop }
         </div> 
@@ -161,18 +159,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-// const testArtist = {
-//   title: 'Cashforgold',
-//   imagePath: process.env.PUBLIC_URL + '/Images/Cashforgold.jpg',
-//   socialURLs: {
-//     soundCloud: 'https://soundcloud.com/hoodiegen',
-//     instagram: 'https://instagram.com/hoodiegen',
-//     twitter: 'https://twitter.com/hoodiegen',
-//     spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=RTo4wyZ8Q_uds2jyJbIvCA',
-//     personalWebsite: 'https://hoodiegen.com',
-//     //bandCamp: 'https://hoodie1.bandcamp.com/releases'
-//     // appleMusic: 'https://itunes.apple.com/us/artist/hoodie/1286330076'
-//   }
-// };

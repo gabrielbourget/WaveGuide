@@ -5,6 +5,7 @@ import App from './Components/App/App';
 import WrappedApp from './Components/WrappedApp/WrappedApp';
 import * as serviceWorker from './serviceWorker';
 
+// - ReactDOM.render(<WrappedApp/>, document.getElementByID('root'));
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

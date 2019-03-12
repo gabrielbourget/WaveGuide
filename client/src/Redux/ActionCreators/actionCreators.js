@@ -38,7 +38,7 @@ export const fetchArtists = () => (
 	(dispatch) => {
 		dispatch(fetchArtistsRequest());
 		APIClient.loadPeople()
-			.then((artists) => { dispatch(fetchArtistsSuccess()); })
+			.then((artists) => { dispatch(fetchArtistsSuccess(artists)); })
 			.catch((err) => { dispatch(fetchArtistsError()); });
 	};
 );
