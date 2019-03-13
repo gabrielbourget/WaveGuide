@@ -79,8 +79,9 @@ class App extends React.Component {
               // artists={ this.props.artists }
               artists={ this.props.displayedArtists }
             />
-            <Footer/>
+            
           </FromTheTopCradle>
+          <Footer/>
           {/* SideMenu goes here */}
           <SideMenu 
             // - OLD -> currTheme={ this.state.theme }

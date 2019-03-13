@@ -5,6 +5,7 @@
 	padding: 0px 30px; //30px 30px;
 
 	display: grid;
+	grid-template-rows: 50px 1fr;
 	grid-gap: 2rem;
 	align-content: start;
 	// grid-template-columns: 1fr;
