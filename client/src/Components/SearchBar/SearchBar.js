@@ -34,7 +34,6 @@ class SearchBar extends React.Component {
 	
 	handleSearchButtonClick = () => {
 		const prevState = this.state;
-		
 		this.setState((prevState) => (
 			{ active: !prevState.active }
 		));

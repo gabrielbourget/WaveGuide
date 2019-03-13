@@ -21,7 +21,6 @@ const UIReducer = (state = [], action) => {
 				}
 				default: return state;
 			}
-			break;
 		}
 		// - Figure out what state the menu is in.
 		//   Return copy of state with that menu state

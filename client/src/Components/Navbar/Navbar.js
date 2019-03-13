@@ -37,10 +37,10 @@ class Navbar extends React.Component {
 	handleSideMenuButtonClick = () => {
 		this.props.onSideMenuButtonClick();
 		// - This logic gets removed once redux is online.
-		const prevState = this.state;
-		this.setState((prevState) => (
-			{ menuActive: !prevState.menuActive }
-		));
+		// const prevState = this.state;
+		// this.setState((prevState) => (
+		// 	{ menuActive: !prevState.menuActive }
+		// ));
 	};
 
 	pushToHome = () => {
@@ -63,7 +63,8 @@ class Navbar extends React.Component {
 			<div className={ initObject.navbarClasses }>
 				<div className={ initObject.sideMenuButtonClasses }>
 					{
-						this.state.menuActive ?
+						//  - OLD -> this.state.menuActive ?
+						this.props.sideMenuOpen ? 
 						<CircleButton 
 							size='20px'
 							darkTheme={ <XIconDarkTheme/> }
@@ -83,7 +84,7 @@ class Navbar extends React.Component {
 				</div>
 				<SearchBar 
 					// - Active once redux is set up.
-					// searchThroughArtists={ this.props.searchThroughArtists }
+					searchThroughArtists={ this.props.searchThroughArtists }
 					defaultText='Search by artist name. Search "Everyone" to return all artists.'
 				/>
 				<div className={ initObject.rightNavClasses }>

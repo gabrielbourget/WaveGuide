@@ -36,10 +36,8 @@ export const sortArtistsReverseAlphabetical = () => ({ type: SORT_ARTISTS_REVERS
 // - Async Thunk action
 export const fetchArtists = () => (
 	(dispatch) => {
-		debugger;
 		dispatch(fetchArtistsRequest());
-		APIClient.loadPeople()
-			.then((artists) => { dispatch(fetchArtistsSuccess(artists)); });
+		APIClient.loadPeople().then((artists) => { dispatch(fetchArtistsSuccess(artists)); });
 	}
 );
 

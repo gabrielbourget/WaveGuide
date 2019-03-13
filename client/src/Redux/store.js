@@ -1,10 +1,10 @@
 import { createStore, applyMiddleware } from 'redux';
-import { syncHistoryWithStore } from 'react-router-redux';
+// import { syncHistoryWithStore } from 'react-router-redux';
 import thunkMiddleware from 'redux-thunk';
 //import { browserHistory } from 'react-router';
 
 // - Seed data, eventually this will be from a live database.
-import artists from '../Datasets/artists';
+// import artists from '../Datasets/artists';
 
 // - Import root reducer
 import rootReducer from './Reducers/index';

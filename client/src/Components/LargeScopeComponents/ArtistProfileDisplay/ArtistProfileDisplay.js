@@ -43,9 +43,9 @@ class ArtistProfileDisplay extends React.Component {
 		return (
 			<div className={ initObject.artistProfileDisplayClasses }>
 				<TopBar 
-					// onSortAlphabeticalClick={ this.props.onSortAlphabeticalClick }
-					// onSortRevAlphabeticalClick={ this.props.onSortRevAlphabeticalClick }
-					onSortClick={ this.props.onSortClick }
+					// - OLD -> onSortClick={ this.props.onSortClick }
+					onSortAlphabeticalClick={ this.props.onSortAlphabeticalClick }
+					onSortRevAlphabeticalClick={ this.props.onSortRevAlphabeticalClick }	
 					onSwitchViewModeClick={ this.switchViewMode }
 				/>
 				{/* Method below renders out gallery or list, based on mapped state props */}

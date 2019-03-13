@@ -22,9 +22,11 @@ export const sortArtists = (direction, artistsCopy) => {
 	switch (direction) {
 		case sortCriteriaEnum.ALPHABETICAL: {
 			sortedArtists = artistsCopy.sort((a,b) => a.name > b.name ? 1 : -1);
+			break;
 		}
 		case sortCriteriaEnum.REVERSE_ALPHABETICAL: {
 			sortedArtists = artistsCopy.sort((a,b) => a.name > b.name ? -1 : 1);
+			break;
 		}
 		default: return artistsCopy;
 	}

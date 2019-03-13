@@ -58,12 +58,6 @@ class TopBar extends React.Component {
 
 	// - TODO -> Call a handler function passed down from container component.
 	// 					 It should dispatch action to reducer.
-	handleSortButtonClick = (direction) => {
-		this.props.onClick(direction);
-	};
-
-	// - TODO -> Call a handler function passed down from container component.
-	// 					 It should dispatch action to reducer.
 	handleListDisplayButton = () => {
 		console.log('List Display button');
 	};
@@ -93,16 +87,16 @@ class TopBar extends React.Component {
 								darkTheme={ <AscAlphaIconDarkTheme/> }
 								lightTheme={ <AscAlphaIconLightTheme/> }
 								highlighted={ <AscAlphaIconHighlighted/> }
-								onClick={ () => this.props.onSortClick(sortCriteriaEnum.ALPHABETICAL) }
-								// onClick={ () => this.props.onSortAlphabeticalClick(sortCriteriaEnum.ALPHABETICAL) }
+								// - OLD -> onClick={ () => this.props.onSortClick(sortCriteriaEnum.ALPHABETICAL) }
+								onClick={ () => this.props.onSortAlphabeticalClick(sortCriteriaEnum.ALPHABETICAL) }
 							/>
 							<CircleButton
 								size='25px'
 								darkTheme={ <DescAlphaIconDarkTheme/> }
 								lightTheme={ <DescAlphaIconLightTheme/> }
 								highlighted={ <DescAlphaIconHighlighted/> }
-								onClick={ () => this.props.onSortClick(sortCriteriaEnum.REVERSE_ALPHABETICAL) }
-								// onClick={ () => this.props.onSortRevAlphabeticalClick(sortCriteriaEnum.ALPHABETICAL) }
+								// - OLD -> onClick={ () => this.props.onSortClick(sortCriteriaEnum.REVERSE_ALPHABETICAL) }
+								onClick={ () => this.props.onSortRevAlphabeticalClick(sortCriteriaEnum.ALPHABETICAL) }
 							/>
 						</React.Fragment>	:
 						null

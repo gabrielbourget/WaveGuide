@@ -1,6 +1,5 @@
 import React from 'react';
-import ClassNames from 'classnames';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../../ThemeContext';
 
 import styles from './TableItem.module.scss';
