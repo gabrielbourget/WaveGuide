@@ -14,7 +14,7 @@ export const switchTheme = (theme) => ({
 export const toggleSideMenu = () => ({ type: TOGGLE_SIDE_MENU });
 export const toggleBackdrop = () => ({ type: TOGGLE_BACKDROP });
 
-// - Fetching Artists
+// - Fetching artists
 export const fetchArtistsRequest = () => ({ type: FETCH_ARTISTS_REQUEST });
 export const fetchArtistsSuccess = (artists) => ({ 
 	type: FETCH_ARTISTS_SUCCESS,
@@ -25,7 +25,7 @@ export const fetchArtistsError = (error) => ({
 	error
 });
 
-// - Manipulating Artists
+// - Manipulating artists
 export const searchThroughArtists = (queryText) => ({ 
 	type: SEARCH_THROUGH_ARTISTS,
 	queryText
@@ -33,7 +33,7 @@ export const searchThroughArtists = (queryText) => ({
 export const sortArtistsAlphabetical = () => ({ type: SORT_ARTISTS_ALPHABETICAL });
 export const sortArtistsReverseAlphabetical = () => ({ type: SORT_ARTISTS_REVERSE_ALPHABETICAL });
 
-// - Async Thunk Action
+// - Async Thunk action
 export const fetchArtists = () => (
 	(dispatch) => {
 		dispatch(fetchArtistsRequest());
@@ -45,16 +45,16 @@ export const fetchArtists = () => (
 
 // - Batch export.
  const actionCreators = {
-// 	switchTheme,
-// 	toggleSideMenu,
-// 	toggleBackdrop,
-// 	fetchArtistsRequest,
-// 	fetchArtistsSuccess,
-// 	fetchArtistsError,
-// 	searchThroughArtists,
-// 	sortArtistsAlphabetical,
-// 	sortArtistsReverseAlphabetical,
-// 	fetchArtists	
+	switchTheme,
+	toggleSideMenu,
+	toggleBackdrop,
+	fetchArtistsRequest,
+	fetchArtistsSuccess,
+	fetchArtistsError,
+	searchThroughArtists,
+	sortArtistsAlphabetical,
+	sortArtistsReverseAlphabetical,
+	fetchArtists	
  };
 
 export default actionCreators;
@@ -67,7 +67,7 @@ const APIClient = {
 	loadPeople: () => ({
 		then: (callBack) => {
 			setTimeout( () => {
-				callBack(artists || {})
+				callBack(artists || {}) // - Send through empty object if nothing comes back.
 			}, 1000) 
 		}
 	})

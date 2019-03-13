@@ -29,6 +29,9 @@ const mapDispatchToProps = (dispatch) => (
 		sortArtistsReverseAlphabetical: (direction) => (
 			dispatch( actionCreators.sortArtistsReverseAlphabetical(direction) )
 		),
+		switchArtistDisplayMode: (displayMode) => (
+			dispatch( actionCreators.switchArtistDisplayMode(displayMode) )
+		),
 		loadArtists: () => (
 			dispatch( actionCreators.fetchArtists() )
 		)		

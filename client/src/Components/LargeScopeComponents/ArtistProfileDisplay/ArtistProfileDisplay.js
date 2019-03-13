@@ -43,6 +43,8 @@ class ArtistProfileDisplay extends React.Component {
 		return (
 			<div className={ initObject.artistProfileDisplayClasses }>
 				<TopBar 
+					// onSortAlphabeticalClick={ this.props.onSortAlphabeticalClick }
+					// onSortRevAlphabeticalClick={ this.props.onSortRevAlphabeticalClick }
 					onSortClick={ this.props.onSortClick }
 					onSwitchViewModeClick={ this.switchViewMode }
 				/>

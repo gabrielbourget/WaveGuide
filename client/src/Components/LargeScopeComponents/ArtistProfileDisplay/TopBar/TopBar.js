@@ -94,6 +94,7 @@ class TopBar extends React.Component {
 								lightTheme={ <AscAlphaIconLightTheme/> }
 								highlighted={ <AscAlphaIconHighlighted/> }
 								onClick={ () => this.props.onSortClick(sortCriteriaEnum.ALPHABETICAL) }
+								// onClick={ () => this.props.onSortAlphabeticalClick(sortCriteriaEnum.ALPHABETICAL) }
 							/>
 							<CircleButton
 								size='25px'
@@ -101,6 +102,7 @@ class TopBar extends React.Component {
 								lightTheme={ <DescAlphaIconLightTheme/> }
 								highlighted={ <DescAlphaIconHighlighted/> }
 								onClick={ () => this.props.onSortClick(sortCriteriaEnum.REVERSE_ALPHABETICAL) }
+								// onClick={ () => this.props.onSortRevAlphabeticalClick(sortCriteriaEnum.ALPHABETICAL) }
 							/>
 						</React.Fragment>	:
 						null

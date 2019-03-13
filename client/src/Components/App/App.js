@@ -24,12 +24,12 @@ class App extends React.Component {
 
   // - TODO -> Move this into Redux flow once that's set up.
   //           Container is scaffolded, just needs the rest of redux set up.
-  state = {
-    artists: artists,
-    sideMenuOpen: false,
-    backdropOpen: false,
-    theme: 'light'
-  };
+  // state = {
+  //   artists: artists,
+  //   sideMenuOpen: false,
+  //   backdropOpen: false,
+  //   theme: 'light'
+  // };
  
   // - TODO -> setState call should be a store dispatch when redux is set up.
   //           Call props function passed down from container component, which
@@ -100,7 +100,7 @@ class App extends React.Component {
     (hour < 12) ? this.setState({ theme:'dark' }) : this.setState({ theme:'light'});
 
     // - Use this once redux is active. This will mock requesting initial data from server. 
-    //this.props.loadArtists()
+    this.props.loadArtists()
   }
 
   render(){
@@ -129,16 +129,19 @@ class App extends React.Component {
               onSortClick={ this.sortArtists }
               // onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
               // onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
+              // artists={ this.props.artists }
               artists={ this.state.artists }
             />
             <Footer/>
           </FromTheTopCradle>
           {/* SideMenu goes here */}
           <SideMenu 
+            // currTheme={ this.props.settings.theme }
             currTheme={ this.state.theme }
+            // open={ this.props.settings.sideMenuOpen }
             open={ this.state.sideMenuOpen } 
-            onThemeSwitch={ this.switchTheme }
             // onThemeSwitch={ this.props.switchTheme }
+            onThemeSwitch={ this.switchTheme }
           />
           { backdrop }
         </div> 

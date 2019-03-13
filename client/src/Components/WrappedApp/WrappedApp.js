@@ -8,3 +8,5 @@ const WrappedApp = () => (
 		<AppContainer/>
 	</Provider>
 );
+
+export default WrappedApp;
