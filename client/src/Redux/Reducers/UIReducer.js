@@ -6,12 +6,16 @@ const UIReducer = (state = [], action) => {
 			const requestedTheme = action.theme;
 			switch (requestedTheme) {
 				case 'dark': {
-					const newState = state.slice();
+					const newState = Object.assign({}, state);
 					newState.settings.theme = 'dark';
 					return newState;
 				}
 				case 'light': {
-					const newState = state.slice();
+					console.log('original state');
+					console.log(state);
+					const newState = Object.assign({}, state);
+					console.log('newstate');
+					console.log(newState);					
 					newState.settings.theme = 'light';
 					return newState;
 				}
@@ -24,13 +28,13 @@ const UIReducer = (state = [], action) => {
 		//   toggled.
 		case TOGGLE_SIDE_MENU: {
 			const prevMenuState = state.settings.sideMenuOpen;
-			const newState = state.slice();
+			const newState = Object.assign({}, state);
 			newState.settings.sideMenuOpen = !prevMenuState;
 			return newState;
 		}
 		case TOGGLE_BACKDROP: {
 			const prevBackdropState = state.settings.backdropOpen;
-			const newState = state.slice();
+			const newState = Object.assign({}, state);
 			newState.settings.backDropOpen = !prevBackdropState;
 			return newState;
 		}

@@ -1,5 +1,6 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
+import thunkMiddleware from 'redux-thunk';
 //import { browserHistory } from 'react-router';
 
 // - Seed data, eventually this will be from a live database.
@@ -22,7 +23,7 @@ const initialState = {
 	displayedArtists: []
 };
 
-const store = createStore( rootReducer, initialState );
+const store = createStore( rootReducer, initialState, applyMiddleware(thunkMiddleware) );
 
 //export const history = syncHistoryWithStore( browserHistory, store );
 

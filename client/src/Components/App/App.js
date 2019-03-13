@@ -96,8 +96,8 @@ class App extends React.Component {
     // - Probably dispatch this out as an action eventually once Redux is hooked up.
     const clientDateTime = new Date();
     const hour = clientDateTime.getHours();
-    // (hour < 12) ? this.props.switchTheme('dark') : this.props.switchTheme('light');
-    (hour < 12) ? this.setState({ theme:'dark' }) : this.setState({ theme:'light'});
+    (hour < 12) ? this.props.switchTheme('dark') : this.props.switchTheme('light');
+    //(hour < 12) ? this.setState({ theme:'dark' }) : this.setState({ theme:'light'});
 
     // - Use this once redux is active. This will mock requesting initial data from server. 
     this.props.loadArtists()
@@ -107,14 +107,14 @@ class App extends React.Component {
 
     // - TODO -> setState call should be a store dispatch when Redux is set up.
     let backdrop;
-    // - if (this.props.backDropOpen) once redux is set up.
-    if (this.state.sideMenuOpen) {
+    if (this.props.backDropOpen){ //once redux is set up.
+    //if (this.state.sideMenuOpen) {
       backdrop = <Backdrop onClick={ this.backdropClickHandler }/>
     }
 
     return (
       // - Draw this from mapped props once redux is set up.
-      //   value={ this.props.settings.theme }
+      // - OLD -> value={ this.props.settings.theme }
       <ThemeContext.Provider value={ this.state.theme }> 
         <div className={ styles.app }>
           <FromTheTopCradle>
