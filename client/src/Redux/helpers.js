@@ -1,5 +1,7 @@
+import { sortCriteriaEnum } from '../Helpers/generalDataStructures';
+
 // - Return copy of input array that only includes matches to search query.
-export const searchThroughArtists = (queryToMatch, artists) => (
+export const searchThroughArtists = (queryToMatch, artists) => {
 
 	// - Shortcut in order to display all artists.
 	if (queryToMatch === 'all' 
@@ -10,7 +12,7 @@ export const searchThroughArtists = (queryToMatch, artists) => (
 		const regex = new RegExp(queryToMatch, 'gi');
 		return artist.match(regex);
 	})
-);
+};
 
 // - Return given array of artists sorted either alphabetically or reverse alphabetically.
 export const sortArtists = (direction, artistsCopy) => {

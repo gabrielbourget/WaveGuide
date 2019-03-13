@@ -1,17 +1,19 @@
+import { SWITCH_THEME, TOGGLE_SIDE_MENU, TOGGLE_BACKDROP } from '../actionStrings';
+
 const UIReducer = (state = [], action) => {
 	switch (action.type) {
 		case SWITCH_THEME: {
 			const requestedTheme = action.theme;
 			switch (requestedTheme) {
 				case 'dark': {
-					return Object.assign({}, state, {
-						settings.theme: 'dark'
-					});
+					const newState = state.slice();
+					newState.settings.theme = 'dark';
+					return newState;
 				}
 				case 'light': {
-					return Object.assign({}, state, {
-						settings.theme: 'light'
-					});
+					const newState = state.slice();
+					newState.settings.theme = 'light';
+					return newState;
 				}
 				default: return state;
 			}
@@ -21,16 +23,16 @@ const UIReducer = (state = [], action) => {
 		//   Return copy of state with that menu state
 		//   toggled.
 		case TOGGLE_SIDE_MENU: {
-			const prevMenuState = this.state.settings.sideMenuOpen;
-			return Object.assign({}, state, {
-        settings.sideMenuOpen: !prevMenuState
-      });
+			const prevMenuState = state.settings.sideMenuOpen;
+			const newState = state.slice();
+			newState.settings.sideMenuOpen = !prevMenuState;
+			return newState;
 		}
 		case TOGGLE_BACKDROP: {
-			const prevBackdropState = this.state.settings.backdropOpen;
-			return Object.assign({}, state, {
-				settings.backDropOpen: !prevBackdropState
-			});
+			const prevBackdropState = state.settings.backdropOpen;
+			const newState = state.slice();
+			newState.settings.backDropOpen = !prevBackdropState;
+			return newState;
 		}
 		default: return state; 
 	}

@@ -34,19 +34,26 @@ class Navbar extends React.Component {
 		onSideMenuButtonClick: PropTypes.func.isRequired
 	};
 
-	// - Expect onClick function for side menu which will dispatch
-	// 	 an action to the store to change the side menu's state from 
-	// 	 closed to open. That function passed in from somewhere else
-	// 	 will handle all responsibilities associated with the side menu.
-	// 	 All the navbar cares about it what icon to show. 
 	handleSideMenuButtonClick = () => {
-		this.props.onSideMenuButtonClick(this.state.menuActive);
-		// - For now, simulate click by toggling menuActive manually.
+		this.props.onSideMenuButtonClick();
+		// - This logic gets removed once redux is online.
 		const prevState = this.state;
 		this.setState((prevState) => (
 			{ menuActive: !prevState.menuActive }
 		));
 	};
+
+	pushToHome = () => {
+		// - Logic to push history to home page and prompt routing change at top level. 
+	};
+
+	pushToAbout = () => {
+		// - Logic to push history to home page and prompt routing change at top level. 
+	};
+
+	pushToDocumentation = () => {
+		// - Logic to push history to home page and prompt routing change at top level. 
+	}
 
 	render() {
 
@@ -86,19 +93,19 @@ class Navbar extends React.Component {
 						darkTheme={ <HomeIconDarkTheme/> }
 						lightTheme={ <HomeIconLightTheme/> }
 						highlighted={ <HomeIconHighlighted/> }
-						onClick={ () => {} } 
+						onClick={ () => this.pushToHome() } 
 					/>
 				  {/* Once routing is set up, put link to about section here. */}
 					<OutlineButton 
 						text='About'
-						onClick={ () => {} }
+						onClick={ () => this.pushToAbout() }
 						shape='rounded'
 					/>
 
 					{/* Once routing is set up, put link to documentation here. */}
 					<OutlineButton 
 						text='Documentation'
-						onClick={ () => {} }
+						onClick={ () => this.pushToDocumentation() }
 						shape='rounded'
 					/>
 					{/* Link to personal website */}

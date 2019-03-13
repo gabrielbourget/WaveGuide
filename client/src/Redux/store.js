@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
-import { browserHistory } from 'react-redux';
+//import { browserHistory } from 'react-router';
 
 // - Seed data, eventually this will be from a live database.
 import artists from '../Datasets/artists';
@@ -17,14 +17,14 @@ const initialState = {
 		sideMenuOpen: false
 	},
 	isLoading: false,
-	loadStatus: 'READY'
-	artists: []
+	loadStatus: 'READY',
+	artists: [],
 	displayedArtists: []
 };
 
 const store = createStore( rootReducer, initialState );
 
-export const history = syncHistoryWithStore( browserHistory, store );
+//export const history = syncHistoryWithStore( browserHistory, store );
 
 // - Get hot reloading to include reducers, 
 //   replace entire root reducer, and hence, all reducers.

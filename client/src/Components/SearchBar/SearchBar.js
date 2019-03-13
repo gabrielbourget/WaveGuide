@@ -42,23 +42,25 @@ class SearchBar extends React.Component {
 
 		// - Unsolved problem. Ref coming back as undefined, can't use it.
 		//   React syntax seems to be ok, not sure what the issue is. 
-		//console.log(this.searchInputRef);
-		//this.searchInputRef.current.focus();
+		// console.log(this.searchInputRef);
+		// this.searchInputRef.current.focus();
 		
 		// - Temporary until ref issue is fixed.
 		// this.searchInput.focus();
 		//document.getElementById('searchInput').focus();
 	};
 
-	onSearchQueryChange = (e) => {
-		this.setState({ searchQueryText: e.target.value })
-	}
-
 	handleSearchSubmit = (e) => {
 		// - Active once redux is set up. 
 		//this.props.searchThroughArtists(this.state.searchQueryText);
 		
-	}
+	};
+
+	handleSearchFormSubmit = (e) => {
+		e.preventDefault();
+		// - Active once redux is set up. 
+		//this.props.searchThroughArtists(this.state.searchQueryText);	
+	};
 
 	render() {
 
@@ -71,13 +73,14 @@ class SearchBar extends React.Component {
 						<React.Fragment>
 							<form 
 								className={ styles.searchField }
-								//onSubmit={ this.handleSearchSubmit }
+								onSubmit={ this.handleSearchFormSubmit }
 							>
 								<input 
 									type='text'
 									ref={ this.searchInputRef }
 									id='searchInput' // - Temporary until ref issue fixed.
-									onChange={ this.onSeachQueryChange }
+									value={ this.state.searchQueryText }
+									onChange={ (e) => this.setState({ searchQueryText: e.target.value }) }
 									className={ initObject.searchInputClasses }
 									placeholder='Search by artist name.'
 								/>

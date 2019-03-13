@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import actionCreators from './ActionCreators/actionCreators';
+import actionCreators from '../../Redux/ActionCreators/actionCreators';
 
 import App from './App';
 
@@ -16,11 +16,12 @@ const mapDispatchToProps = (dispatch) => (
 		switchTheme: (theme) => (
 			dispatch( actionCreators.switchTheme(theme) )
 		),
-		toggleSideMenu: () => (
-			dispatch( actionCreators.toggleSideMenu() )
-		),
+		toggleSideMenu: () => {
+			dispatch( actionCreators.toggleSideMenu() );
+			dispatch( actionCreators.toggleBackdrop() );
+		},
 		searchThroughArtists: (queryText) => (
-			dispatch( actionCreators.searchThroughArtists(queryText) );
+			dispatch( actionCreators.searchThroughArtists(queryText) )
 		),
 		sortArtistsAlphabetical: (direction) => (
 			dispatch( actionCreators.sortArtistsAlphabetical(direction) )

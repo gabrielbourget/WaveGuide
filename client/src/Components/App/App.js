@@ -96,6 +96,7 @@ class App extends React.Component {
     // - Probably dispatch this out as an action eventually once Redux is hooked up.
     const clientDateTime = new Date();
     const hour = clientDateTime.getHours();
+    // (hour < 12) ? this.props.switchTheme('dark') : this.props.switchTheme('light');
     (hour < 12) ? this.setState({ theme:'dark' }) : this.setState({ theme:'light'});
 
     // - Use this once redux is active. This will mock requesting initial data from server. 
@@ -113,36 +114,25 @@ class App extends React.Component {
 
     return (
       // - Draw this from mapped props once redux is set up.
+      //   value={ this.props.settings.theme }
       <ThemeContext.Provider value={ this.state.theme }> 
         <div className={ styles.app }>
-  {/*          <ToTheLeftCradle>
-              <TreeView/>
-            </ToTheLeftCradle>*/}
-  {/*          <ColumnWithPaddingPageCradle>
-              <MiddleContentCradle>
-
-              </MiddleContentCradle>
-            </ColumnWithPaddingPageCradle> */}
-  {/*          <CenteringCradle>
-
-            </CenteringCradle>*/}
-
-            <FromTheTopCradle>
-              <Navbar 
-                // - Active once redux is running.
-                // searchThroughArtists={ this.props.searchThroughArtists }
-                onSideMenuButtonClick={ this.toggleSideMenu }
-                // onSideMenuButtonClick={ this.props.toggleSideMenu }
-              />
-              <ArtistProfileDisplay 
-                displayMode='gallery'
-                onSortClick={ this.sortArtists }
-                // onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
-                // onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
-                artists={ this.state.artists }
-              />
-              <Footer/>
-            </FromTheTopCradle>
+          <FromTheTopCradle>
+            <Navbar 
+              // - Active once redux is running.
+              // searchThroughArtists={ this.props.searchThroughArtists }
+              onSideMenuButtonClick={ this.toggleSideMenu }
+              // onSideMenuButtonClick={ this.props.toggleSideMenu }
+            />
+            <ArtistProfileDisplay 
+              displayMode='gallery'
+              onSortClick={ this.sortArtists }
+              // onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
+              // onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
+              artists={ this.state.artists }
+            />
+            <Footer/>
+          </FromTheTopCradle>
           {/* SideMenu goes here */}
           <SideMenu 
             currTheme={ this.state.theme }
