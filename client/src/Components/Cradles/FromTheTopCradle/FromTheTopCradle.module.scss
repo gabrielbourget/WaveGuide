@@ -11,7 +11,13 @@
 	overflow-y: auto;
 	align-content: start;
 
-	&.darkTheme{ background: var(--veryveryDarkGrey); }
-	&.lightTheme{ background: var(--white); }
+	&.darkTheme{ 
+		background: var(--veryveryDarkGrey); 
+		color: var(--white);
+	}
+	&.lightTheme{ 
+		background: var(--white); 
+		color: var(--black);
+	}
 
 }
