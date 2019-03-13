@@ -23,25 +23,28 @@ const mapDispatchToProps = (dispatch) => (
 			dispatch( actionCreators.toggleSideMenu() );
 			dispatch( actionCreators.toggleBackdrop() );
 		},
+		// toggleBackdrop: () => (
+		// 	dispatch( actionCreators.toggleBackDrop() )
+		// ),
 		searchThroughArtists: (queryText) => {
 			console.log('in searchThroughArtists()');
-			dispatch( actionCreators.searchThroughArtists(queryText) )
+			dispatch( actionCreators.searchThroughArtists(queryText) );
 		},
 		sortArtistsAlphabetical: (direction) => {
 			console.log('in sortArtistsAlphabetical()');
-			dispatch( actionCreators.sortArtistsAlphabetical(direction) )
+			dispatch( actionCreators.sortArtistsAlphabetical(direction) );
 		},
 		sortArtistsReverseAlphabetical: (direction) => {
 			console.log('in sortArtistsReverseAlphabetical()');
-			dispatch( actionCreators.sortArtistsReverseAlphabetical(direction) )
+			dispatch( actionCreators.sortArtistsReverseAlphabetical(direction) );
 		},
 		switchArtistDisplayMode: (displayMode) => {
 			console.log('in switchArtistDisplayMode()');
-			dispatch( actionCreators.switchArtistDisplayMode(displayMode) )
+			dispatch( actionCreators.switchArtistDisplayMode(displayMode) );
 		},
 		loadArtists: () => {
 			console.log('in loadArtists()');
-			dispatch( actionCreators.fetchArtists() )
+			dispatch( actionCreators.fetchArtists() );
 		}		
 	}
 );

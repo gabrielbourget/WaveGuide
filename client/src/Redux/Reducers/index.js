@@ -30,7 +30,7 @@ import { sortCriteriaEnum } from '../../Helpers/generalDataStructures';
 // });
 
 const rootReducer = (state = [], action) => {
-	console.log('In root reducer');
+	// console.log('In root reducer');
 	switch(action.type) {
 		case SWITCH_THEME: {
 			console.log('In switch theme option of reducer');
@@ -44,7 +44,7 @@ const rootReducer = (state = [], action) => {
 				}
 				case 'light': {
 					const newState = JSON.parse(JSON.stringify(state));
-					//const newState = Object.assign({}, state);		
+					//const newState = Object.assign({}, state);
 					newState.settings.theme = 'light';
 					return newState;
 				}
@@ -56,11 +56,7 @@ const rootReducer = (state = [], action) => {
 			const prevMenuState = state.settings.sideMenuOpen;
 			const newState = JSON.parse(JSON.stringify(state));
 			// const newState = Object.assign({}, state);
-			console.log('Old state');
-			console.log(newState);
 			newState.settings.sideMenuOpen = !prevMenuState;
-			console.log('New State');
-			console.log(newState);
 			return newState;
 		}
 		case TOGGLE_BACKDROP: {
@@ -68,11 +64,11 @@ const rootReducer = (state = [], action) => {
 			const prevBackdropState = state.settings.backdropOpen;
 			const newState = JSON.parse(JSON.stringify(state));
 			//const newState = Object.assign({}, state);
-			newState.settings.backDropOpen = !prevBackdropState;
+			newState.settings.backdropOpen = !prevBackdropState;
 			return newState;
 		}
 		case FETCH_ARTISTS_REQUEST: {
-			console.log('In fetch artists request option of reducer');
+			//console.log('In fetch artists request option of reducer');
 			const newState = JSON.parse(JSON.stringify(state));
 			newState.isLoading = true;
 			newState.loadStatus = 'LOADING';
@@ -83,7 +79,7 @@ const rootReducer = (state = [], action) => {
 			return newState;
 		}
 		case FETCH_ARTISTS_ERROR: {
-			console.log('In fetch artists error option of reducer');
+			//console.log('In fetch artists error option of reducer');
 			const newState = JSON.parse(JSON.stringify(state));
 			newState.isLoading = false;
 			newState.loadState = 'ERROR';
@@ -94,7 +90,7 @@ const rootReducer = (state = [], action) => {
 			return newState;
 		}
 		case FETCH_ARTISTS_SUCCESS: {
-			console.log('In fetch artists success option of reducer');
+			//console.log('In fetch artists success option of reducer');
 			const newState = JSON.parse(JSON.stringify(state));
 			// return Object.assign({}, state, {
 			// 	artists: action.artists,
@@ -107,7 +103,7 @@ const rootReducer = (state = [], action) => {
 			return newState;
 		}
 		case SEARCH_THROUGH_ARTISTS: {
-			console.log('In fsearch through artists option of reducer');
+			console.log('In search through artists option of reducer');
 			const displayedArtists = searchThroughArtists(action.queryText, state.artists);
 			const newState = JSON.parse(JSON.stringify(state));
 			newState.displayedArtists = displayedArtists;

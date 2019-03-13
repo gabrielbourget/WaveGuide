@@ -22,25 +22,6 @@ import { sortCriteriaEnum } from '../../Helpers/generalDataStructures'
 
 class App extends React.Component {
 
-  // - TODO -> Move this into Redux flow once that's set up.
-  //           Container is scaffolded, just needs the rest of redux set up.
-  // state = {
-  //   artists: artists,
-  //   sideMenuOpen: false,
-  //   backdropOpen: false,
-  //   theme: 'light'
-  // };
- 
-  // - TODO -> setState call should be a store dispatch when redux is set up.
-  //           Call props function passed down from container component, which
-  //           will get reducer to manipulate state.
-  // toggleSideMenu = () => {
-  //   const prevState = this.state;
-  //   this.setState((prevState) => (
-  //     { sideMenuOpen: !prevState.sideMenuOpen }
-  //   ));
-  // };
-
   // - TODO -> setState call should be a store dispatch when redux is set up.
   //           Call props function passed down from container component, which
   //           will get reducer to manipulate state.
@@ -51,45 +32,6 @@ class App extends React.Component {
     });
   };
 
-  // - Move this logic into a reducer once Redux is hooked up. 
-  sortArtists = (direction) => {
-    switch (direction) {
-      case sortCriteriaEnum.ALPHABETICAL: {
-        // - Action will be dispatched here when redux is hooked up.
-        const newArtists = this.state.artists.slice().sort((a,b) => a.name > b.name ? 1 : -1);
-        this.setState({ 
-          artists: newArtists
-        });
-        break;
-      }
-      case sortCriteriaEnum.REVERSE_ALPHABETICAL: {
-        // - Action will be dispatched here when redux is hooked up.
-        const newArtists = this.state.artists.slice().sort((a,b) => a.name > b.name ? -1 : 1);
-        this.setState({ 
-          artists: newArtists
-        });
-        break;
-      }
-      default: break;
-    }   
-  };
-
-  // - Move this logic into a reducer once Redux is hooked up.
-  switchTheme = (theme) => {
-    // console.log('In theme switch function');
-    switch (theme) {
-      case 'dark': {
-        this.setState({ theme: 'dark' });
-        break;
-      }
-      case 'light': {
-        this.setState({ theme: 'light' });
-        break;
-      }
-      default: break;
-    }
-  };
-  
   // - Dispatch initial API call to the Neo4J database here
   componentWillMount() {
 
@@ -101,16 +43,17 @@ class App extends React.Component {
     
     // - Use this once redux is active. This will mock requesting initial data from server. 
     this.props.loadArtists();
-  }
+  };
 
   render(){
 
-    // - TODO -> setState call should be a store dispatch when Redux is set up.
     let backdrop;
-    if (this.props.backDropOpen){ //once redux is set up.
+    //console.log('backdrop props');
+    //console.log(this.props.settings.backdropOpen);
+    //if (this.props.settings.backdropOpen){ //once redux is set up.
     // - OLD -> if (this.state.sideMenuOpen) {
-      backdrop = <Backdrop onClick={ this.backdropClickHandler }/>
-    }
+      //backdrop = <Backdrop onClick={ this.props.toggleBackdrop }/>
+    //}
 
     return (
       // - Draw this from mapped props once redux is set up.
@@ -133,7 +76,8 @@ class App extends React.Component {
               onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
               
               // - OLD -> artists={ this.state.artists }
-              artists={ this.props.artists }
+              // artists={ this.props.artists }
+              artists={ this.props.displayedArtists }
             />
             <Footer/>
           </FromTheTopCradle>
