@@ -4,13 +4,13 @@ import { sortCriteriaEnum } from '../Helpers/generalDataStructures';
 export const searchThroughArtists = (queryToMatch, artists) => {
 
 	// - Shortcut in order to display all artists.
-	if (queryToMatch === 'all' 
-			|| queryToMatch === 'All'
-			|| queryToMatch === 'ALL') return artists;
+	if (queryToMatch === 'everyone' 
+			|| queryToMatch === 'Everyone'
+			|| queryToMatch === 'EVERYONE') return artists;
 
 	artists.filter((artist) => {
 		const regex = new RegExp(queryToMatch, 'gi');
-		return artist.match(regex);
+		return artist.name.match(regex);
 	})
 };
 

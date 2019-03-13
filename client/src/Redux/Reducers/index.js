@@ -105,6 +105,8 @@ const rootReducer = (state = [], action) => {
 		case SEARCH_THROUGH_ARTISTS: {
 			console.log('In search through artists option of reducer');
 			const displayedArtists = searchThroughArtists(action.queryText, state.artists);
+			console.log('Search Results');
+			console.log(displayedArtists);
 			const newState = JSON.parse(JSON.stringify(state));
 			newState.displayedArtists = displayedArtists;
 			// return Object.assign({}, state, {
@@ -114,7 +116,7 @@ const rootReducer = (state = [], action) => {
 		}
 		case SORT_ARTISTS_ALPHABETICAL: {
 			console.log('In sort artists alphabetical option of reducer');
-			const artistsCopy = state.artists.slice();
+			const artistsCopy = state.displayedArtists.slice();
 			const sortedArtists = sortArtists(sortCriteriaEnum.ALPHABETICAL, artistsCopy);
 			const newState = JSON.parse(JSON.stringify(state));
 			newState.displayedArtists = sortedArtists;
@@ -126,7 +128,7 @@ const rootReducer = (state = [], action) => {
 		}
 		case SORT_ARTISTS_REVERSE_ALPHABETICAL: {
 			console.log('In sort artists reverse alphabetical option of reducer');
-			const artistsCopy = state.artists.slice();
+			const artistsCopy = state.displayedArtists.slice();
 			const sortedArtists = sortArtists(sortCriteriaEnum.REVERSE_ALPHABETICAL, artistsCopy);
 			const newState = JSON.parse(JSON.stringify(state));
 			newState.displayedArtists = sortedArtists;
