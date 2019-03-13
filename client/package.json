@@ -15,7 +15,9 @@
     "react-router-redux": "^4.0.8",
     "react-scripts": "2.1.5",
     "redux": "^4.0.1",
-    "svg-to-react": "^0.1.0"
+    "redux-thunk": "^2.3.0",
+    "svg-to-react": "^0.1.0",
+    "typescript": "^3.3.3333"
   },
   "scripts": {
     "start": "react-scripts start",
