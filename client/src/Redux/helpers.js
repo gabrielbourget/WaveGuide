@@ -8,7 +8,7 @@ export const searchThroughArtists = (queryToMatch, artists) => {
 			|| queryToMatch === 'Everyone'
 			|| queryToMatch === 'EVERYONE') return artists;
 
-	artists.filter((artist) => {
+	return artists.filter((artist) => {
 		const regex = new RegExp(queryToMatch, 'gi');
 		return artist.name.match(regex);
 	})
