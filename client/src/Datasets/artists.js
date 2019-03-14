@@ -521,6 +521,18 @@ const artists = [
       vk: 'https://vk.com/roiilymusic'
     }     
   },   
+  {
+    name: 'Guilt Chip',
+    imageURL: process.env.PUBLIC_URL + '/Images/GuiltChip.png',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/1PWCOmvvW8kVMRvPDyLC2P',
+      soundCloud: 'https://soundcloud.com/guiltchip',
+      bandcamp: 'https://guiltchip.bandcamp.com/',
+      youtube: 'https://www.youtube.com/channel/UCVU5xqXj_ktCxvE_a-sNw9Q',
+      instagram: 'https://www.instagram.com/guiltchip/',
+      twitter: 'https://twitter.com/guiltchip'
+    }     
+  },    
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',
