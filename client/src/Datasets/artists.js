@@ -496,6 +496,21 @@ const artists = [
       facebook: 'https://www.facebook.com/kaseyissocoolunlikeURmom'
     }     
   },    
+  {
+    name: 'Enjoii',
+    imageURL: process.env.PUBLIC_URL + '/Images/Enjoii.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/5aUdEtXbJeOjAuNXLn9lkX',
+      soundCloud: 'https://soundcloud.com/enjoii',
+      apple: 'https://itunes.apple.com/us/artist/enjoii/1159691479',
+      bandcamp: 'https://enjoii.bandcamp.com/',
+      youtube: 'https://www.youtube.com/c/enjoii/',
+      instagram: 'https://www.instagram.com/enjoii/',
+      facebook: 'https://www.facebook.com/xenjoii/',
+      twitter: 'https://twitter.com/xenjoii/',
+      personalWebsite: 'http://enjoii.eu/'
+    }     
+  },   
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',
