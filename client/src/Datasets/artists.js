@@ -511,6 +511,16 @@ const artists = [
       personalWebsite: 'http://enjoii.eu/'
     }     
   },   
+  {
+    name: 'ROIILY',
+    imageURL: process.env.PUBLIC_URL + '/Images/Roiily.jpg',
+    socialURLs: {
+      soundCloud: 'https://soundcloud.com/roiily',
+      youtube: 'https://www.youtube.com/channel/UCR6tbNuJrhj_tyTRTKsNgBQ',
+      instagram: 'https://www.instagram.com/roiily_music/',
+      vk: 'https://vk.com/roiilymusic'
+    }     
+  },   
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',
