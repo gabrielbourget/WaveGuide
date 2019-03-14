@@ -533,6 +533,18 @@ const artists = [
       twitter: 'https://twitter.com/guiltchip'
     }     
   },    
+  {
+    name: 'Starstuff',
+    imageURL: process.env.PUBLIC_URL + '/Images/Starstuff.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/2luCxN9mXopQkupUUVYkIG',
+      soundCloud: 'https://soundcloud.com/imjuststarstuff',
+      apple: 'https://itunes.apple.com/us/artist/starstuff/id1280515957',
+      bandcamp: 'https://imjuststarstuff.bandcamp.com/',
+      instagram: 'https://www.instagram.com/___starstuff___/',
+      facebook: 'https://www.facebook.com/imjuststarstuff/'
+    }     
+  },  
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',
