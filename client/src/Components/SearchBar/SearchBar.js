@@ -50,13 +50,18 @@ class SearchBar extends React.Component {
 	};
 
 	handleSearchSubmit = (e) => {
+
+		if (this.state.searchQueryText === '') return;
+
 		// - Active once redux is set up. 
 		this.props.searchThroughArtists(this.state.searchQueryText);
 		
 	};
 
 	handleSearchFormSubmit = (e) => {
+
 		e.preventDefault();
+		if (this.state.searchQueryText === '') return;
 		// - Active once redux is set up. 
 		this.props.searchThroughArtists(this.state.searchQueryText);	
 	};
