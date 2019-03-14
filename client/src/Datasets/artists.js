@@ -477,7 +477,16 @@ const artists = [
       facebook: 'https://www.facebook.com/skelermusic/',
       twitter: 'https://twitter.com/skelermusic'
     }     
-  }   
+  },
+  {
+    name: 'TIGEREYES',
+    imageURL: process.env.PUBLIC_URL + '/Images/TigerEyes.jpg',
+    socialURLs: {
+      soundCloud: 'https://soundcloud.com/tigerr-eyes',
+      instagram: 'https://www.instagram.com/tigereyes.official/',
+      facebook: 'https://www.facebook.com/iamtigereyes/'
+    }     
+  },    
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',
