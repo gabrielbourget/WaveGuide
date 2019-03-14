@@ -487,6 +487,15 @@ const artists = [
       facebook: 'https://www.facebook.com/iamtigereyes/'
     }     
   },    
+  {
+    name: 'Calicry',
+    imageURL: process.env.PUBLIC_URL + '/Images/Calicry.jpg',
+    socialURLs: {
+      soundCloud: 'https://soundcloud.com/calicry',
+      instagram: 'https://www.instagram.com/calicry/',
+      facebook: 'https://www.facebook.com/kaseyissocoolunlikeURmom'
+    }     
+  },    
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',
