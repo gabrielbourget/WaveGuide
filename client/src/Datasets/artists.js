@@ -450,20 +450,34 @@ const artists = [
       twitter: 'https://twitter.com/JakeLeeeee'
     }     
   },
-  // {
-  //   name: '',
-  //   imageURL: process.env.PUBLIC_URL + '/Images/',
-  //   socialURLs: {
-  //     spotify: '',
-  //     soundCloud: '',
-  //     apple: '',
-  //     bandcamp: '',
-  //     youtube: '',
-  //     instagram: '',
-  //     facebook: '',
-  //     twitter: ''
-  //   }     
-  // },
+  {
+    name: 'Vacant',
+    imageURL: process.env.PUBLIC_URL + '/Images/Vacant.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/30DoC8Ezpk2qU8yRMUzr1x/about',
+      soundCloud: 'https://soundcloud.com/vacantmusiclondon',
+      apple: 'https://itunes.apple.com/gb/album/origins/1335311669',
+      bandcamp: 'https://vacant.bandcamp.com/',
+      youtube: 'https://www.youtube.com/vacantldn',
+      instagram: 'https://www.instagram.com/vacantldn/',
+      facebook: 'https://www.facebook.com/vacantmusiclondon',
+      twitter: 'https://twitter.com/vacantldn'
+    }     
+  },
+  {
+    name: 'Skeler',
+    imageURL: process.env.PUBLIC_URL + '/Images/Skeler.png',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/7ks4LdnBvp6HUsmVJiKgsB',
+      soundCloud: 'https://soundcloud.com/skelermusic',
+      apple: 'https://itunes.apple.com/us/artist/skeler/1257397468',
+      bandcamp: 'https://skelermusic.bandcamp.com/',
+      youtube: 'https://www.youtube.com/channel/UCpoKdKVhH-jcr3Pu0auKjmw',
+      instagram: 'https://www.instagram.com/skelerofficial/',
+      facebook: 'https://www.facebook.com/skelermusic/',
+      twitter: 'https://twitter.com/skelermusic'
+    }     
+  }   
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',

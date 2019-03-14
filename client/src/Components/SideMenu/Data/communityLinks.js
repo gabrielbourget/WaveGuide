@@ -45,6 +45,11 @@ export const communityLinks = [
 		description: 'Events/Community Info'
 	},
 	{
+		link: 'https://www.facebook.com/Terrorhythm',
+		buttonText: 'Terrorhythm',
+		description: 'Label'
+	},
+	{
 		link :'https://soundcloud.com/yusoul',
 		buttonText: 'Yusoul',
 		description: 'Label/Collective'

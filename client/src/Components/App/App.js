@@ -68,7 +68,7 @@ class App extends React.Component {
               // OLD -> onSideMenuButtonClick={ this.toggleSideMenu }
               onSideMenuButtonClick={ this.props.toggleSideMenu }
             />
-{/*            <ArtistProfileDisplay 
+            <ArtistProfileDisplay 
               displayMode='gallery'
               onSortClick={ this.sortArtists }
               // - Active once redux is running.
@@ -78,8 +78,8 @@ class App extends React.Component {
               // - OLD -> artists={ this.state.artists }
               // artists={ this.props.artists }
               artists={ this.props.displayedArtists }
-            />*/}
-            hello
+            />
+            
             
           </FromTheTopCradle>
           <Footer/>
