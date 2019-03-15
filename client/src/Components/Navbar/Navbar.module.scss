@@ -1,4 +1,5 @@
 @import '../../GlobalStyles/zIndexes.scss';
+@import '../../GlobalStyles/colors.css';
 
 .navbar {
 
@@ -34,4 +35,14 @@
 	grid-auto-flow: column;
 	justify-content: end;
 	grid-gap: 1.5rem;
+}
+
+.darkTheme {
+	color: var(--white);
+	background: var(--veryveryDarkGrey);
+}
+
+.lightTheme {
+	color: var(--black);
+	background: var(--white);
 }

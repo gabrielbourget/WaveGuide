@@ -60,14 +60,14 @@ class App extends React.Component {
       // OLD -> value={ this.state.theme }
       <ThemeContext.Provider value={ this.props.settings.theme }> 
         <div className={ styles.app }>
+          <Navbar 
+            // - Active once redux is running.
+            searchThroughArtists={ this.props.searchThroughArtists }
+            sideMenuOpen={ this.props.settings.sideMenuOpen }
+            // OLD -> onSideMenuButtonClick={ this.toggleSideMenu }
+            onSideMenuButtonClick={ this.props.toggleSideMenu }
+          />        
           <FromTheTopCradle>
-            <Navbar 
-              // - Active once redux is running.
-              searchThroughArtists={ this.props.searchThroughArtists }
-              sideMenuOpen={ this.props.settings.sideMenuOpen }
-              // OLD -> onSideMenuButtonClick={ this.toggleSideMenu }
-              onSideMenuButtonClick={ this.props.toggleSideMenu }
-            />
             <ArtistProfileDisplay 
               displayMode='gallery'
               onSortClick={ this.sortArtists }

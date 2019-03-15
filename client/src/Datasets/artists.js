@@ -554,7 +554,7 @@ const artists = [
   },   
   {
     name: 'Weaver Beats',
-    imageURL: process.env.PUBLIC_URL + '/Images/',
+    imageURL: process.env.PUBLIC_URL + '/Images/WeaverBeats.jpg',
     socialURLs: {
       spotify: 'https://open.spotify.com/artist/57KwqoERxpwlPmSMOKWjOP',
       soundCloud: 'https://soundcloud.com/weaverbeats',
