@@ -545,6 +545,13 @@ const artists = [
       facebook: 'https://www.facebook.com/imjuststarstuff/'
     }     
   },  
+  {
+    name: 'Module',
+    imageURL: process.env.PUBLIC_URL + '/Images/Module.png',
+    socialURLs: {
+      soundCloud: 'https://soundcloud.com/module'
+    }     
+  },   
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',
