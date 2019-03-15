@@ -51,7 +51,7 @@ class App extends React.Component {
             onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
             onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
             artists={ this.props.displayedArtists }
-          />   */}
+          />  */} 
           {/* TODO -> DOCUMENTATION ROUTE/COMPONENT GOES HERE */}
           <Footer/>
           <SideMenu 

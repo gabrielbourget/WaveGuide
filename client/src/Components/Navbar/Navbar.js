@@ -47,9 +47,9 @@ class Navbar extends React.Component {
 		// - Logic to push history to home page and prompt routing change at top level. 
 	};
 
-	pushToAbout = () => {
-		// - Logic to push history to home page and prompt routing change at top level. 
-	};
+	// pushToAbout = () => {
+	// 	// - Logic to push history to home page and prompt routing change at top level. 
+	// };
 
 	pushToDocumentation = () => {
 		// - Logic to push history to home page and prompt routing change at top level. 
@@ -97,11 +97,11 @@ class Navbar extends React.Component {
 						onClick={ () => this.pushToHome() } 
 					/>
 				  {/* Once routing is set up, put link to about section here. */}
-					<OutlineButton 
+{/*					<OutlineButton 
 						text='About'
 						onClick={ () => this.pushToAbout() }
 						shape='rounded'
-					/>
+					/>*/}
 
 					{/* Once routing is set up, put link to documentation here. */}
 					<OutlineButton 

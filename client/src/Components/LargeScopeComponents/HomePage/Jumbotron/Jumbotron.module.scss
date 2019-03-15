@@ -1,4 +1,45 @@
+@import '../../../../GlobalStyles/colors.css';
+@import '../../../../GlobalStyles/fonts.scss';
+
 .jumbotron {
 	background: url('./Images/JumbotronBG1.jpg') center;
 	background-size: cover;
+	position: relative;
+
+	color: var(--white);
+
+	padding-top: 200px;
+	padding-left: 30px;
+
+	display: grid; 
+	grid-gap: 2rem;
+	align-content: start;
+	justify-content: start;
+	align-items: center;
+	justify-items: start;
+
+
+	& h1 {
+		font: {
+			size: 3rem;
+			family: var(--sansSerifStack);
+		}
+		text-shadow: 0px 1px 2px #FFF;
+	}
+
+	& h3 {
+		font: {
+			size: 1.8rem;
+			family: var(--sansSerifStack);
+		}
+		text-shadow: 0px 1px 2px #FFF;
+	}
+}
+
+
+
+.downChevron {
+	position: absolute;
+	top: 80%;
+	left: 50%;
 }
