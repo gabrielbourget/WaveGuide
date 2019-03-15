@@ -552,6 +552,18 @@ const artists = [
       soundCloud: 'https://soundcloud.com/module'
     }     
   },   
+  {
+    name: 'Weaver Beats',
+    imageURL: process.env.PUBLIC_URL + '/Images/',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/57KwqoERxpwlPmSMOKWjOP',
+      soundCloud: 'https://soundcloud.com/weaverbeats',
+      youtube: 'https://www.youtube.com/weaverbeats',
+      instagram: 'https://www.instagram.com/weaverbeats/',
+      facebook: 'https://www.facebook.com/Weaverbeats',
+      twitter: 'https://twitter.com/weaverbeats'
+    }     
+   }
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',
