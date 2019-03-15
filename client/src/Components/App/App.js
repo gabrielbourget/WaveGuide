@@ -67,7 +67,7 @@ class App extends React.Component {
             // OLD -> onSideMenuButtonClick={ this.toggleSideMenu }
             onSideMenuButtonClick={ this.props.toggleSideMenu }
           />        
-          <FromTheTopCradle>
+          {/*<FromTheTopCradle>*/}
             <ArtistProfileDisplay 
               displayMode='gallery'
               onSortClick={ this.sortArtists }
@@ -78,10 +78,8 @@ class App extends React.Component {
               // - OLD -> artists={ this.state.artists }
               // artists={ this.props.artists }
               artists={ this.props.displayedArtists }
-            />
-            
-            
-          </FromTheTopCradle>
+            />    
+          {/*</FromTheTopCradle>*/}
           <Footer/>
           {/* SideMenu goes here */}
           <SideMenu 
