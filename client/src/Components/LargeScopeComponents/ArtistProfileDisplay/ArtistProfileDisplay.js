@@ -19,7 +19,19 @@ class ArtistProfileDisplay extends React.Component {
 		this.setState({displayMode});
 	}
 
-	resolveDisplayMode = () => {
+	resolveDisplayMode = (initObject) => {
+		if (this.props.artists.length === 0) {
+			return (
+        <div className={ initObject.noResultsClasses }>
+          <h4>Search for an artist up top in the navigation bar.</h4>
+          <br/>
+          <h4>
+            Enter 'everyone' as the search term to return all <br/>
+            artists contained in the community directory.
+          </h4>
+        </div>
+			);
+		}
 		if (this.state.displayMode === 'gallery') {
 			return (
 				<ArtistGallery 
@@ -51,7 +63,7 @@ class ArtistProfileDisplay extends React.Component {
 						onSwitchViewModeClick={ this.switchViewMode }
 					/>
 					{/* Method below renders out gallery or list, based on mapped state props */}
-					{ this.resolveDisplayMode() }
+					{ this.resolveDisplayMode(initObject) }
 				</div>				
 			</FromTheTopCradle>
 		);
