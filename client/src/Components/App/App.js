@@ -13,10 +13,11 @@ import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
 import Navbar from '../Navbar/Navbar';
 import SideMenu from '../SideMenu/SideMenu';
 import Backdrop from '../CoverBackdrop/CoverBackdrop';
-import ArtistProfileDisplay from '../LargeScopeComponents/ArtistProfileDisplay/ArtistProfileDisplay';
 import Footer from '../Footer/Footer';
 
-import { sortCriteriaEnum } from '../../Helpers/generalDataStructures'
+import HomePage from '../LargeScopeComponents/HomePage/HomePage';
+import ArtistProfileDisplay from '../LargeScopeComponents/ArtistProfileDisplay/ArtistProfileDisplay';
+
 
 class App extends React.Component {
 
@@ -41,15 +42,16 @@ class App extends React.Component {
             sideMenuOpen={ this.props.settings.sideMenuOpen }
             onSideMenuButtonClick={ this.props.toggleSideMenu }
           /> 
-          {/* TODO -> HOME PAGE ROUTE/COMPONENT GOES HERE */}
+          {/* TODO -> HOMEPAGE ROUTE/COMPONENT GOES HERE */}
+          <HomePage/>
           {/* TODO -> RENDER INTO A ROUTE EVENTUALLY */}
-          <ArtistProfileDisplay 
+{/*          <ArtistProfileDisplay 
             displayMode='gallery'
             onSortClick={ this.sortArtists }
             onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
             onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
             artists={ this.props.displayedArtists }
-          />   
+          />   */}
           {/* TODO -> DOCUMENTATION ROUTE/COMPONENT GOES HERE */}
           <Footer/>
           <SideMenu 
@@ -57,7 +59,6 @@ class App extends React.Component {
             open={ this.props.settings.sideMenuOpen }
             onThemeSwitch={ this.props.switchTheme }
           />
-          { backdrop }
         </div> 
       </ThemeContext.Provider>    
     ); // - return
