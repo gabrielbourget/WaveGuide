@@ -20,9 +20,9 @@ import { ReactComponent as DescAlphaIconDarkTheme } from './SVG/DescAlphaIcon/De
 import { ReactComponent as DescAlphaIconLightTheme } from './SVG/DescAlphaIcon/DescAlphaIconLightTheme.svg';
 import { ReactComponent as DescAlphaIconHighlighted } from './SVG/DescAlphaIcon/DescAlphaIconHighlighted.svg';
 // - List View 
-import { ReactComponent as ListViewIconDarkTheme } from './SVG/ListViewIcon/ListViewIconDarkTheme.svg';
-import { ReactComponent as ListViewIconLightTheme } from './SVG/ListViewIcon/ListViewIconLightTheme.svg';
-import { ReactComponent as ListViewIconHighlighted } from './SVG/ListViewIcon/ListViewIconHighlighted.svg';
+import ListViewIconDarkTheme from './SVG/ListViewIcon/ListViewIconDarkTheme';
+import ListViewIconLightTheme from './SVG/ListViewIcon/ListViewIconLightTheme';
+import ListViewIconHighlighted from './SVG/ListViewIcon/ListViewIconHighlighted';
 // - Grid View
 import { ReactComponent as GalleryViewIconDarkTheme } from './SVG/GalleryViewIcon/GalleryViewIconDarkTheme.svg';
 import { ReactComponent as GalleryViewIconLightTheme } from './SVG/GalleryViewIcon/GalleryViewIconLightTheme.svg';
