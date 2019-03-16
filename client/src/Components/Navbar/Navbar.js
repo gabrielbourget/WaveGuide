@@ -18,9 +18,9 @@ import { ReactComponent as XIconDarkTheme } from './SVG/XIcon/XIconDarkTheme.svg
 import { ReactComponent as XIconLightTheme } from './SVG/XIcon/XIconLightTheme.svg';
 import { ReactComponent as XIconHighlighted } from './SVG/XIcon/XIconHighlighted.svg';
 // - Home Icon
-import { ReactComponent as HomeIconDarkTheme } from './SVG/HomeIcon/HomeIconDarkTheme.svg';
-import { ReactComponent as HomeIconLightTheme } from './SVG/HomeIcon/HomeIconLightTheme.svg';
-import { ReactComponent as HomeIconHighlighted } from './SVG/HomeIcon/HomeIconHighlighted.svg';
+import HomeIconDarkTheme from './SVG/HomeIcon/HomeIconDarkTheme';
+import HomeIconLightTheme from './SVG/HomeIcon/HomeIconLightTheme';
+import HomeIconHighlighted from './SVG/HomeIcon/HomeIconHighlighted';
 
 class Navbar extends React.Component {
 

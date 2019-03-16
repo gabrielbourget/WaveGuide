@@ -12,17 +12,17 @@ import styles from './TwoSizeCard.module.scss';
 import { assignClasses, prepareLinkGallery } from './helpers';
 
 /* Wrap SVG Icons as functional components to be placed into the markup. */
-// import { ReactComponent as CircleExpandIconDarkTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_DarkTheme.svg';
-// import { ReactComponent as CircleExpandIconLightTheme } from './SVG/CircleExpandIcon/CircleExpandIcon_LightTheme.svg';
-// import { ReactComponent as CircleExpandIconHighlighted } from './SVG/CircleExpandIcon/CircleExpandIcon_Highlighted.svg';
+// import CircleExpandIconDarkTheme from './SVG/CircleExpandIcon/CircleExpandIcon_DarkTheme';
+// import CircleExpandIconLightTheme from './SVG/CircleExpandIcon/CircleExpandIcon_LightTheme';
+// import CircleExpandIconHighlighted from './SVG/CircleExpandIcon/CircleExpandIcon_Highlighted';
 // - Circle Down Icon
-import { ReactComponent as CircleDownIconDarkTheme } from './SVG/CircleDownIcon/CircleDownIcon_DarkTheme.svg';
-import { ReactComponent as CircleDownIconLightTheme } from './SVG/CircleDownIcon/CircleDownIcon_LightTheme.svg';
-import { ReactComponent as CircleDownIconHighlighted } from './SVG/CircleDownIcon/CircleDownIcon_Highlighted.svg';
+import CircleDownIconDarkTheme from './SVG/CircleDownIcon/CircleDownIcon_DarkTheme';
+import CircleDownIconLightTheme from './SVG/CircleDownIcon/CircleDownIcon_LightTheme';
+import CircleDownIconHighlighted from './SVG/CircleDownIcon/CircleDownIcon_Highlighted';
 // - Circle Up Icon
-import { ReactComponent as CircleUpIconDarkTheme } from './SVG/CircleUpIcon/CircleUpIcon_DarkTheme.svg';
-import { ReactComponent as CircleUpIconLightTheme } from './SVG/CircleUpIcon/CircleUpIcon_LightTheme.svg';
-import { ReactComponent as CircleUpIconHighlighted } from './SVG/CircleUpIcon/CircleUpIcon_Highlighted.svg';
+import CircleUpIconDarkTheme from './SVG/CircleUpIcon/CircleUpIcon_DarkTheme';
+import CircleUpIconLightTheme from './SVG/CircleUpIcon/CircleUpIcon_LightTheme';
+import CircleUpIconHighlighted from './SVG/CircleUpIcon/CircleUpIcon_Highlighted';
 
 /**
  * Built right now to fit into gallery that intends to have the cards expand vertically
@@ -142,10 +142,3 @@ class TwoSizeCard extends React.Component {
 TwoSizeCard.contextType = ThemeContext;
 
 export default TwoSizeCard;
-
-/**
-
-								
- */
-
-

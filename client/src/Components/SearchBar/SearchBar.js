@@ -8,9 +8,9 @@ import OutlineButton from '../Buttons/OutlineButton/OutlineButton';
 import styles from './SearchBar.module.scss';
 import { prepareComponent } from './helpers';
 
-import { ReactComponent as MagnifyingGlassHighlighted } from './SVG/MagnifyingGlass/MagnifyingGlassHighlighted.svg';
-import { ReactComponent  as MagnifyingGlassDarkTheme } from './SVG/MagnifyingGlass/MagnifyingGlassDarkTheme.svg';
-import { ReactComponent as MagnifyingGlassLightTheme } from './SVG/MagnifyingGlass/MagnifyingGlassLightTheme.svg';
+import MagnifyingGlassHighlighted from './SVG/MagnifyingGlass/MagnifyingGlassHighlighted';
+import MagnifyingGlassDarkTheme from './SVG/MagnifyingGlass/MagnifyingGlassDarkTheme';
+import MagnifyingGlassLightTheme from './SVG/MagnifyingGlass/MagnifyingGlassLightTheme';
 
 class SearchBar extends React.Component {
 

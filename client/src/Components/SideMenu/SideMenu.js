@@ -12,13 +12,13 @@ import CircleButton from '../Buttons/CircleButton/CircleButton';
 import CommunityLinks from './CommunityLinks/CommunityLinks';
 
 // - Circle Down Icon
-import { ReactComponent as CircleDownIconDarkTheme } from './SVG/CircleDownIcon/CircleDownIcon_DarkTheme.svg';
-import { ReactComponent as CircleDownIconLightTheme } from './SVG/CircleDownIcon/CircleDownIcon_LightTheme.svg';
-import { ReactComponent as CircleDownIconHighlighted } from './SVG/CircleDownIcon/CircleDownIcon_Highlighted.svg';
+import CircleDownIconDarkTheme from './SVG/CircleDownIcon/CircleDownIcon_DarkTheme';
+import CircleDownIconLightTheme from './SVG/CircleDownIcon/CircleDownIcon_LightTheme';
+import CircleDownIconHighlighted from './SVG/CircleDownIcon/CircleDownIcon_Highlighted';
 // - Circle Up Icon
-import { ReactComponent as CircleUpIconDarkTheme } from './SVG/CircleUpIcon/CircleUpIcon_DarkTheme.svg';
-import { ReactComponent as CircleUpIconLightTheme } from './SVG/CircleUpIcon/CircleUpIcon_LightTheme.svg';
-import { ReactComponent as CircleUpIconHighlighted } from './SVG/CircleUpIcon/CircleUpIcon_Highlighted.svg';
+import CircleUpIconDarkTheme from './SVG/CircleUpIcon/CircleUpIcon_DarkTheme';
+import CircleUpIconLightTheme from './SVG/CircleUpIcon/CircleUpIcon_LightTheme';
+import CircleUpIconHighlighted from './SVG/CircleUpIcon/CircleUpIcon_Highlighted';
 
 class SideMenu extends React.Component {
 

@@ -7,7 +7,7 @@ import { ThemeContext } from '../../ThemeContext';
 // import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 // import CenteringCradle from '../Cradles/CenteringCradle/CenteringCradle';
 // import ToTheLeftCradle from '../Cradles/ToTheLeftCradle/ToTheLeftCradle';
-// import TreeView from '../TreeView/TreeView';
+import TreeView from '../TreeView/TreeView';
 
 import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
 import Navbar from '../Navbar/Navbar';
@@ -43,16 +43,17 @@ class App extends React.Component {
             onSideMenuButtonClick={ this.props.toggleSideMenu }
           /> 
           {/* TODO -> HOMEPAGE ROUTE/COMPONENT GOES HERE */}
-          <HomePage/>
+          {/*<HomePage/>*/}
           {/* TODO -> RENDER INTO A ROUTE EVENTUALLY */}
-{/*          <ArtistProfileDisplay 
+          <ArtistProfileDisplay 
             displayMode='gallery'
             onSortClick={ this.sortArtists }
             onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
             onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
             artists={ this.props.displayedArtists }
-          />  */} 
+          />  
           {/* TODO -> DOCUMENTATION ROUTE/COMPONENT GOES HERE */}
+          {/* <Documentation/> */}
           <Footer/>
           <SideMenu 
             currTheme={ this.props.settings.theme }
