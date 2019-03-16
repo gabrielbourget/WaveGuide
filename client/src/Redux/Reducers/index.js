@@ -33,7 +33,6 @@ const rootReducer = (state = [], action) => {
 	// console.log('In root reducer');
 	switch(action.type) {
 		case SWITCH_THEME: {
-			console.log('In switch theme option of reducer');
 			const requestedTheme = action.theme;
 			switch (requestedTheme) {
 				case 'dark': {
@@ -52,7 +51,6 @@ const rootReducer = (state = [], action) => {
 			}
 		}
 		case TOGGLE_SIDE_MENU: {
-			console.log('In toggle side menu option of reducer');
 			const prevMenuState = state.settings.sideMenuOpen;
 			const newState = JSON.parse(JSON.stringify(state));
 			// const newState = Object.assign({}, state);
@@ -60,7 +58,6 @@ const rootReducer = (state = [], action) => {
 			return newState;
 		}
 		case TOGGLE_BACKDROP: {
-			console.log('In toggle backdrop option of reducer');
 			const prevBackdropState = state.settings.backdropOpen;
 			const newState = JSON.parse(JSON.stringify(state));
 			//const newState = Object.assign({}, state);
@@ -68,7 +65,6 @@ const rootReducer = (state = [], action) => {
 			return newState;
 		}
 		case FETCH_ARTISTS_REQUEST: {
-			//console.log('In fetch artists request option of reducer');
 			const newState = JSON.parse(JSON.stringify(state));
 			newState.isLoading = true;
 			newState.loadStatus = 'LOADING';
@@ -79,7 +75,6 @@ const rootReducer = (state = [], action) => {
 			return newState;
 		}
 		case FETCH_ARTISTS_ERROR: {
-			//console.log('In fetch artists error option of reducer');
 			const newState = JSON.parse(JSON.stringify(state));
 			newState.isLoading = false;
 			newState.loadState = 'ERROR';
@@ -90,7 +85,6 @@ const rootReducer = (state = [], action) => {
 			return newState;
 		}
 		case FETCH_ARTISTS_SUCCESS: {
-			//console.log('In fetch artists success option of reducer');
 			const newState = JSON.parse(JSON.stringify(state));
 			// return Object.assign({}, state, {
 			// 	artists: action.artists,
@@ -103,10 +97,7 @@ const rootReducer = (state = [], action) => {
 			return newState;
 		}
 		case SEARCH_THROUGH_ARTISTS: {
-			console.log('In search through artists option of reducer');
 			const displayedArtists = searchThroughArtists(action.queryText, state.artists);
-			console.log('Search Results');
-			console.log(displayedArtists);
 			const newState = JSON.parse(JSON.stringify(state));
 			newState.displayedArtists = displayedArtists;
 			// return Object.assign({}, state, {
