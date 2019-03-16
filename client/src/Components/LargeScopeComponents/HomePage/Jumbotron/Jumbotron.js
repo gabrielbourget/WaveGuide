@@ -24,7 +24,7 @@ class Jumbotron extends React.Component {
 				</h3>
 				<div className={ styles.downChevron }>
 					<SingleIcon 
-						size='40px'
+						size='30px'
 						icon={ <ChevronDownSkinnyDarkTheme/> }
 					/>
 				</div>
