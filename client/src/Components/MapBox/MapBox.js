@@ -32,7 +32,7 @@ class MabBox extends React.Component {
 		});
 
 		// - Send out async action over thunk middleware to grab artists.
-		setInitialArtists();
+		setInitialMapArtists();
 
 		// - Add artists as source for map component.
 		this.map.addSource('artists', {
