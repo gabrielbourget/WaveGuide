@@ -1,0 +1,3 @@
+Default public key for map box is 
+
+pk.eyJ1IjoiZ2FicmllbGJvdXJnZXQiLCJhIjoiY2p0YXlqZDV4MGc1dTQ5bDh0dnpnaGdzeSJ9.5-wJl47Cf5wyNivPIsX6IA
