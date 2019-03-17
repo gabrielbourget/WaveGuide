@@ -1,4 +1,7 @@
 import React from 'react';
+import { Route, Link, Redirect, Switch } from 'react-router-dom';
+
+
 import styles from './App.module.css';
 import { ThemeContext } from '../../ThemeContext';
 
@@ -17,6 +20,7 @@ import Footer from '../Footer/Footer';
 
 import HomePage from '../LargeScopeComponents/HomePage/HomePage';
 import ArtistProfileDisplay from '../LargeScopeComponents/ArtistProfileDisplay/ArtistProfileDisplay';
+import DocumentationDisplayWithRouter from '../LargeScopeComponents/DocumentationDisplay/DocumentationDisplay';
 
 
 class App extends React.Component {
@@ -42,25 +46,43 @@ class App extends React.Component {
             sideMenuOpen={ this.props.settings.sideMenuOpen }
             onSideMenuButtonClick={ this.props.toggleSideMenu }
           /> 
-          {/* TODO -> HOMEPAGE ROUTE/COMPONENT GOES HERE */}
-          {/*<HomePage/>*/}
-          {/* TODO -> RENDER INTO A ROUTE EVENTUALLY */}
-          <ArtistProfileDisplay 
-            displayMode='gallery'
-            onSortClick={ this.sortArtists }
-            onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
-            onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
-            artists={ this.props.displayedArtists }
-          />  
-          {/* TODO -> DOCUMENTATION ROUTE/COMPONENT GOES HERE */}
-          {/* <Documentation/> */}
+          <Switch>
+             <Route 
+              path='/' 
+              exact
+              component={ HomePage }
+             />
+             <Route
+              path='/artists'
+              render={ () => (
+                <ArtistProfileDisplay 
+                  displayMode='gallery'
+                  onSortClick={ this.sortArtists }
+                  onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
+                  onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
+                  artists={ this.props.displayedArtists }
+                />               
+              )}
+            /> 
+            {/* TODO -> DOCUMENTATION ROUTE/COMPONENT GOES HERE */}
+            <Route 
+              path='/documentation'
+              component={ DocumentationDisplayWithRouter }
+            />
+
+           {/* Catch all route for 404 errors */}
+           <Route render={ ({ location }) => (
+            
+            <div> Cannot find this location... </div>
+           )}/>
+          </Switch>
           <Footer/>
           <SideMenu 
             currTheme={ this.props.settings.theme }
             open={ this.props.settings.sideMenuOpen }
             onThemeSwitch={ this.props.switchTheme }
           />
-        </div> 
+        </div>    
       </ThemeContext.Provider>    
     ); // - return
   }; // - render()

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router';
 import { ThemeContext } from '../../ThemeContext';
 
 import CircleButton from '../Buttons/CircleButton/CircleButton';
@@ -20,7 +21,10 @@ class SearchBar extends React.Component {
 	};
 
 	static propTypes = {
-		defaultText: PropTypes.string.isRequired
+		defaultText: PropTypes.string.isRequired,
+		match: PropTypes.object.isRequired,
+		location: PropTypes.object.isRequired,
+		history: PropTypes.object.isRequired
 	};
 
 	static defaultProps = {
@@ -38,7 +42,6 @@ class SearchBar extends React.Component {
 			{ active: !prevState.active }
 		));
 
-
 		// - Unsolved problem. Ref coming back as undefined, can't use it.
 		//   React syntax seems to be ok, not sure what the issue is. 
 		// console.log(this.searchInputRef);
@@ -46,7 +49,8 @@ class SearchBar extends React.Component {
 		
 		// - Temporary until ref issue is fixed.
 		// this.searchInput.focus();
-		//document.getElementById('searchInput').focus();
+		//document.getElementById('searchInput').focus();		
+
 	};
 
 	handleSearchSubmit = (e) => {
@@ -55,7 +59,7 @@ class SearchBar extends React.Component {
 
 		// - Active once redux is set up. 
 		this.props.searchThroughArtists(this.state.searchQueryText);
-		
+		this.props.history.push('/artists');
 	};
 
 	handleSearchFormSubmit = (e) => {
@@ -64,6 +68,7 @@ class SearchBar extends React.Component {
 		if (this.state.searchQueryText === '') return;
 		// - Active once redux is set up. 
 		this.props.searchThroughArtists(this.state.searchQueryText);	
+		this.props.history.push('/artists');
 	};
 
 	render() {
@@ -71,7 +76,7 @@ class SearchBar extends React.Component {
 		const initObject = prepareComponent(this.context, this.props, styles, this.state);
 
 		return (
-			<div className={ initObject.searchBarClasses }>			
+			<div className={ initObject.searchBarClasses }>
 				{
 					(this.state.active) ?
 						<React.Fragment>
@@ -113,4 +118,6 @@ class SearchBar extends React.Component {
 
 SearchBar.contextType = ThemeContext;
 
-export default SearchBar;
+const SearchBarWithRouter = withRouter(SearchBar);
+
+export default SearchBarWithRouter;

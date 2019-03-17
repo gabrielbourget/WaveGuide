@@ -7,7 +7,9 @@ import { prepareComponent } from './helpers';
 
 import CircleButton from '../Buttons/CircleButton/CircleButton';
 import OutlineButton from '../Buttons/OutlineButton/OutlineButton';
-import SearchBar from '../SearchBar/SearchBar';
+import SearchBarWithRouter from '../SearchBar/SearchBar';
+
+import { Link } from 'react-router-dom'
 
 // - Hamburger Menu Icon
 import { ReactComponent as HamburgerMenuDarkTheme } from './SVG/HamburgerMenu/HamburgerIconDarkTheme.svg';
@@ -82,41 +84,30 @@ class Navbar extends React.Component {
 					}
 
 				</div>
-				<SearchBar 
+				<SearchBarWithRouter
 					// - Active once redux is set up.
 					searchThroughArtists={ this.props.searchThroughArtists }
 					defaultText='Search by artist name. Search "Everyone" to return all artists.'
 				/>
 				<div className={ initObject.rightNavClasses }>
-					{/* Once routing is set up, put link to home page here */}
-					<CircleButton
-						size='25px'
-						darkTheme={ <HomeIconDarkTheme/> }
-						lightTheme={ <HomeIconLightTheme/> }
-						highlighted={ <HomeIconHighlighted/> }
-						onClick={ () => this.pushToHome() } 
-					/>
-				  {/* Once routing is set up, put link to about section here. */}
-{/*					<OutlineButton 
-						text='About'
-						onClick={ () => this.pushToAbout() }
-						shape='rounded'
-					/>*/}
 
-					{/* Once routing is set up, put link to documentation here. */}
-					<OutlineButton 
-						text='Documentation'
-						onClick={ () => this.pushToDocumentation() }
-						shape='rounded'
-					/>
-					{/* Link to personal website */}
-{/*					<a 
-						href='https://www.gabrielbourget.com'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						<OutlineButton text='Personal Website'/>
-					</a>*/}
+					<Link to ='/'>
+						<CircleButton
+							size='25px'
+							darkTheme={ <HomeIconDarkTheme/> }
+							lightTheme={ <HomeIconLightTheme/> }
+							highlighted={ <HomeIconHighlighted/> }
+							onClick={ () => this.pushToHome() } 
+						/>
+					</Link>
+
+					<Link to='/documentation'>
+						<OutlineButton 
+							text='Documentation'
+							onClick={ () => this.pushToDocumentation() }
+							shape='rounded'
+						/>
+					</Link>
 				</div>
 			</div>
 		);

@@ -66,7 +66,7 @@ const APIClient = {
 		then: (callBack) => {
 			setTimeout( () => {
 				callBack(artists || {}) // - Send through empty object if nothing comes back.
-			}, 1000) 
+			}, 1000)
 		}
 	})
 };
