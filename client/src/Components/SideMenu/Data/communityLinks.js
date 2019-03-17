@@ -73,5 +73,15 @@ export const communityLinks = [
 		link: 'https://soundcloud.com/sekai-collective',
 		buttonText: 'Sekai',
 		description: 'Label/Collective'
+	},
+	{
+		link :'https://soundcloud.com/official-secret-souls',
+		buttonText: 'Secret Souls',
+		description: 'Label/Collective'
+	},
+	{
+		link: 'https://soundcloud.com/HiddenAurora',
+		buttonText: 'Hidden Aurora',
+		description: 'Collective'
 	}
 ];

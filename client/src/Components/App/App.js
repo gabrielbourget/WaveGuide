@@ -43,15 +43,15 @@ class App extends React.Component {
             onSideMenuButtonClick={ this.props.toggleSideMenu }
           /> 
           {/* TODO -> HOMEPAGE ROUTE/COMPONENT GOES HERE */}
-          <HomePage/>
+          {/*<HomePage/>*/}
           {/* TODO -> RENDER INTO A ROUTE EVENTUALLY */}
-{/*          <ArtistProfileDisplay 
+          <ArtistProfileDisplay 
             displayMode='gallery'
             onSortClick={ this.sortArtists }
             onSortAlphabeticalClick={ this.props.sortArtistsAlphabetical }
             onSortRevAlphabeticalClick={ this.props.sortArtistsReverseAlphabetical }
             artists={ this.props.displayedArtists }
-          />  */}
+          />  
           {/* TODO -> DOCUMENTATION ROUTE/COMPONENT GOES HERE */}
           {/* <Documentation/> */}
           <Footer/>
