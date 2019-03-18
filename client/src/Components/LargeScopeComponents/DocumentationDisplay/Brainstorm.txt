@@ -1,5 +1,61 @@
 -- SECTIONS -- 
 
+-> Table of Contents
+-> Overview
+	-> Introduction to wave scene
+	-> Overview of what application is and how it 
+	   is intended to help and support that community.
+	  -> Overall strategy is to create an application that is tightly scoped to
+	     my current capabilities and the type of role that I am applying for, but 
+	     that is architectured to scale in functionality/capability and into 
+	     to-be-developed sections such as my back-end server and database. 
+	-> Tech Stack
+		-> React for UI (bootstrapped from create-react-app to get started)
+			-> Provide link that goes into front end section of documentation.
+		-> Redux for state management
+			-> Provide link that goes into state management section of documentation.
+		-> Neo4J for database 
+			-> Explain in next steps that you plan on implementing an 
+			   express server which will proxy requests from React application,
+			   serve the application, and connect to Neo4J database in real time. 
+			-> For now, as an application for software development jobs with a focus on 
+			   front end, hooking up to a remote server and database was out of scope. 
+			-> Provide link that goes into data persistence section of documentation.
+	-> Project structuring.
+		-> Overall directory structure.
+			-> client (holding overall UI client that runs the front end.)
+				-> build (exported build version of application, which is deployed to heroku)
+				-> node_modules
+				-> public (holds static content such as profile images)
+				-> package.json and package-lock.json from create-react-app boilerplate
+				-> src (holds all source code used to build react application.)
+					-> Components (holds all components used to build the application, explain that you go into further
+												 detail regarding the folder structure you use within components.)
+					-> Datasets (holds static dataset of artists you pull from currently to serve application. Explain
+										   that eventually, this data structure will be queried from and resolved into the state tree
+										   in the redux store from a database query eventually.)
+			    -> GlobalStyles (contains css and scss files that contain variables for application-wide considerations around
+			    								 colors, default component sizing, box shadows, fonts, z-indexes, etc...) 
+			    -> Helpers
+			    	-> generalDataStructures (Currently contains an enum structure for different sort criteria, will 
+			    		 											  contain similar data structures as the need for them arises.)
+			    	-> socialMediaIconComponents (Transforms all social media SVGs into react components and exports them in an object.)
+			  	-> Redux 
+			  		-> ActionCreators (holds functions that return actions of different types to be resolved by the reducer)
+			  		-> Reducers (receive actions from the UI and modify the state tree to reflect their intent)
+			  		-> actionStrings (action type strings are saved into constant variables rather than hardcoded)
+			  		-> helpers.js (encapsulates application logic such as sorting displayed artists or searching through 
+			  									 them into functions to be imported and used by the reducer.)
+			  		-> Initializes application state, initializes and exports the redux store, and greenlights hot reloading for reducer components.
+			  	-> index.js (Renders top-level component and injects it at the mount point of the index.html file)
+			-> Design (holds photoshop and illustrator files from production of assets like jumbotron image and icon library)
+			-> Utility files (.rc for linters, .gitignore for version control calibration, license file, project README markdown file)
+		-> Strategy for folder structures within a component. 
+			-> Main Component JS file.
+			-> Stylesheet
+			-> Helpers JS file.
+			-> Sub-Components that make sense in context of application or the parent 
+			   component, but not as overall components in the rest of the library. 
 -> State Management
 	-> Redux
 	-> Some local state for certain components
@@ -11,12 +67,12 @@
 		-> ClassNames
 -> Server
 	-> Express
--> Database
+-> Data Persistence 
 	-> Neo4J
 	-> Query
 -> Accessibility
 	-> Semantic HTML
--> ColorTheme
+-> ColorTheming
 	-> Context API
 	-> autoTheme assignment based on local time when app mounts
 -> Routing
@@ -27,8 +83,7 @@
 	-> Measured hesitancy to introduce file storage, profiles, messaging until 
 		 proper security planning/analysis and architecture is carried out.
 	-> rel="noopen noreferrer" on anchor links
-
--> Future Improvement
+-> Future Improvements
 	-> GraphQL vs. Redux, limitations of a REST API eventually. 
 	-> UI Improvements
 		-> Mobile Integration

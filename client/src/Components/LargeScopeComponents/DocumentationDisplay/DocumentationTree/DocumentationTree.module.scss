@@ -1,10 +1,22 @@
+@import '../../../../GlobalStyles/colors.css';
+@import '../../../../GlobalStyles/generalVars.scss';
+
 .documentationTree {
 
-	&.darkTheme {
+	height: 100%;
+	width: 100%;
 
+	padding-left: 30px;
+
+	&.darkTheme {
+		background: var(--black);
+		color: var(--white);
+		box-shadow: var(--darkThemeBoxShadow);
 	}
 
 	&.lightTheme {
-		
+		background: var(--white);
+		color: var(--black);
+		box-shadow: var(--lightThemeBoxShadow);
 	}
 }
