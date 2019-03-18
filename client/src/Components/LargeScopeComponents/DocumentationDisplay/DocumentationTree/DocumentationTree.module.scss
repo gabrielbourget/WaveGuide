@@ -9,14 +9,12 @@
 	padding-left: 30px;
 
 	&.darkTheme {
-		background: var(--black);
+		background: var(--veryveryDarkGrey);
 		color: var(--white);
-		box-shadow: var(--darkThemeBoxShadow);
 	}
 
 	&.lightTheme {
 		background: var(--white);
 		color: var(--black);
-		box-shadow: var(--lightThemeBoxShadow);
 	}
 }

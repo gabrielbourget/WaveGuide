@@ -3,17 +3,19 @@
 
 .documentationDisplay {
 
-	
+	height: 100%;
+	width: 100%;
+
+	display: grid;	
+	grid-template-columns: 350px 1fr;
 
 	&.darkTheme {
 		background: var(--black);
 		color: var(--white);
-		box-shadow: var(--boxShadowDarkTheme);
 	}
 
 	&.lightTheme {
 		background: var(--white);
 		color: var(--black);
-		box-shadow: var(--boxShadowLightTheme);
 	}
 }

@@ -38,6 +38,7 @@ class App extends React.Component {
   };
 
   render(){
+
     return (
       <ThemeContext.Provider value={ this.props.settings.theme }> 
         <div className={ styles.app }>
@@ -72,7 +73,7 @@ class App extends React.Component {
 
            {/* Catch all route for 404 errors */}
            <Route render={ ({ location }) => (
-            
+
             <div> Cannot find this location... </div>
            )}/>
           </Switch>
