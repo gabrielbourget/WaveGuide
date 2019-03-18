@@ -1,6 +1,90 @@
 -- SECTIONS -- 
 
 -> Table of Contents
+	-> Overview
+		-> Introduction to the Wave Music Community
+		-> Overview of the application's main functionality
+		-> Technology Stack
+			-> React
+			-> Redux
+			-> Express
+			-> Neo4J
+		-> Project Structure
+			-> Overall Directory Structure
+			-> Folder Structure Within a React Component
+	-> Front End
+		-> React
+		-> CSS Modules
+		-> Render-time component preparation
+		-> Implemented Designs/Design Patterns
+			-> Buttons
+			-> Selection Indicators
+			-> Cards
+			-> Dividers
+			-> Cradles
+			-> Gallery
+			-> Graph Visualization
+			-> Map 
+			-> Search Bar
+			-> Side Menu
+			-> Table
+			-> Tree View
+	-> State Management
+		-> Redux
+			-> Action Strings
+			-> Action Creators
+			-> Reducers
+			-> Store
+			-> AppContainer HoC
+			-> Provider Component
+			-> Wrapped App
+		-> Special Cases for Component State
+		-> Redux-Thunk Middleware
+		-> Future Improvements
+	-> Back End
+		-> Server
+		-> Neo4J Database
+			-> Intro to Neo4J
+			-> Data Model
+			-> Construction Strategy Around WaveCity Cluster
+			-> Planned Queries
+	-> Graphic Design
+		-> Icon Library
+		-> Font Sizing and Styling
+		-> Color Scheme
+	-> Routing
+		-> Declarative Routing Primer
+		-> React Router
+		-> Top-Level Application Routing
+		-> Dynamic Routing In Documentation Section
+	-> Testing
+		-> Jest Test Runner and Suite
+		-> Enzyme
+		-> Smoke Tests
+		-> Future Improvements
+			-> Advanced Mocking and Scenarios
+			-> Integration Testing
+			-> E2E Testing
+			-> Database Test Suite 
+	-> Accessibility
+		-> Semantic HTML
+		-> Alts on Links
+		-> Titles on Images
+		-> High Contrast
+		-> Future Additions
+	-> Security
+		-> Keeping application features and development in scope
+			 with current security capabilties.
+		-> Anchor links
+	-> Future Improvements
+		-> UI Improvements
+		-> Adding Events as a Map Layer
+		-> Internationalization
+	-> Active Problem Areas
+		-> React Refs
+		-> SVG Rendering Issues
+		-> Linting Issues
+		-> Card Gallery Behavior
 -> Overview
 	-> Introduction to wave scene
 	-> Overview of what application is and how it 
@@ -54,37 +138,160 @@
 			-> Main Component JS file.
 			-> Stylesheet
 			-> Helpers JS file.
+			-> Tests
 			-> Sub-Components that make sense in context of application or the parent 
-			   component, but not as overall components in the rest of the library. 
--> State Management
-	-> Redux
-	-> Some local state for certain components
-	-> Redux-Thunk for async connection to API server
+			component, but not as overall components in the rest of the library. 
 -> Front End 
 	-> React
-	-> SCSS Modules
-	-> Render-time helper functions
-		-> ClassNames
--> Server
-	-> Express
--> Data Persistence 
-	-> Neo4J
-	-> Query
--> Accessibility
-	-> Semantic HTML
--> ColorTheming
-	-> Context API
-	-> autoTheme assignment based on local time when app mounts
+	-> CSS Modules
+		-> Written in SCSS
+		-> Syntax to be picked up by 
+			 webpack
+		-> Overall translation into 
+			 in-browser DOM elements.
+		-> Go through the global CSS that is included
+			-> Base styling
+			-> Variables
+				-> Fonts
+				-> Colors
+				-> z Indexes
+	-> Render-time component preparation
+		-> Logic that maps state, props, 
+		   and context to the filtering
+		   of certain css classes.
+		-> Construction of class lists
+		-> Export object that contains
+		   these classlists
+		   -> Aside about classlists 
+		      dependency.
+		-> Assignment of these classlists
+		   to their appropriate places in 
+		   the render template.
+	-> Implemented Design Patterns
+		-> Buttons
+			-> Types
+			-> Rounded option
+		-> Selection Indicators
+			-> Shapes
+			-> Further Use Cases
+				-> Check Boxes
+				-> Radio Button Sets
+		-> Card (TwoSize in this application)
+			-> Open/Closed Toggle
+			-> Population of social media
+				 icon list
+			-> Display demo card to play with.
+			-> Potential to have card open and close horizontally.
+		-> Dividers
+			-> Horizontal and vertical
+			-> Variable heights/widths
+			-> Variable margin/padding
+		-> Cradles
+		-> Gallery
+		-> Graph Visualization
+		-> Map 
+		-> Search Bar
+			-> Implementation of Controlled Component
+		-> Side Menu
+			-> Fixed positioning
+			-> Open / Close Animations
+		-> Table
+			-> Ability to enter table header and footer
+		-> Tree View
+			-> Feeding flattened data tree to component as props
+			-> Recursive generation of Tree Structure
+	-> Color Themes
+		-> Context API
+			-> ThemeContext creation
+			-> Importing ThemeContext
+			   /setting defaultContext
+			-> Referencing this.context
+		-> autoTheme assignment based on local time when app mounts	
+-> State Management
+	-> Redux
+		-> Action Strings
+			-> Scalability Considerations
+		-> Action Creators
+			-> Scalability Considerations
+		-> Reducers
+		-> Store
+		-> Generation of Container 
+			 Component for App.
+		-> Provider Component
+	-> Some local state for certain components
+	-> Redux-Thunk for async connection to API server
+	-> Future Improvements
+		-> Reducer Composition
+		-> Modularize application into 
+		sectioned containers that have
+		part of state tree and action
+		dispatchers mapped to their props.
+		-> As state tree gets larger and 
+		increasingly nested, normalize it
+		into a flattened structure.
+-> Back End	
+	-> Server
+		-> Express
+	-> Future Improvements
+    -> GraphQL vs. Redux, limitations of a REST API eventually. 
+  -> Neo4J Database
+		-> High Level Intro to Neo4J
+			-> Intro to graphs
+			-> How this is implemented into a database tech
+				-> Nodes
+				-> Relationships
+				-> CYPHER
+			-> How it differentiates itself from SQL, NoSQL
+				-> Relationships as first class citizens
+				-> Graph traversal
+				-> Performance benefits for highly interconnected data
+		-> Data model 
+			-> Future Additions
+				-> Events
+				-> Labels/Collectives
+				-> Community members who are not necessarily musicians.
+					-> Graphic/Motion/Visual artists
+					-> DJs 
+					-> Promoters
+					-> Software Developers
+		-> Building portfolio database around wavecity cluster
+	  -> Planned Queries
+	  	-> Grabbing some/all artists from the database
+	  	-> Adding people/artists into the database
+-> Graphic Design
+	-> Icon library
+	-> Predictable font size through rem scaling
+	-> Color scheme
 -> Routing
+	-> Declarative Routing
 	-> React Router
+	-> Top App level routing
+	-> Dynamic routing within the documentation section
 -> Testing
 	-> Enzyme, Jest
--> Cybersec
-	-> Measured hesitancy to introduce file storage, profiles, messaging until 
-		 proper security planning/analysis and architecture is carried out.
+	-> Smoke tests,
+	-> Future Improvements	
+		-> Advanced Mocking and Scenarios
+		-> Integration Testing
+		-> E2E Testing
+		-> Database Test Suite
+-> Accessibility
+	-> Semantic HTML
+		-> Good HTML
+		-> React Fragments instead of wrapper divs
+	-> Alts on links
+	-> Titles as fallbacks on images
+	-> High color contrast in both light and dark themes
+	-> Future additions
+		-> Aria labels
+		-> Focus Control
+		-> Skip Links
+		-> Dynamic Page Titles
+		-> Testing With Screen Readers
+-> Security
+	-> Measured hesitancy to introduce file storage, profiles, messaging until proper security planning/analysis and architecture is carried out.
 	-> rel="noopen noreferrer" on anchor links
 -> Future Improvements
-	-> GraphQL vs. Redux, limitations of a REST API eventually. 
 	-> UI Improvements
 		-> Mobile Integration
 			-> Nav bar losing top right buttons at certain width.
@@ -94,5 +301,18 @@
 		-> Refactoring to React Native application
 		-> Wrapping the application with Electron and running out of the browser.
 	-> Ability to add upcoming events into the application and have them pop up on a map and in different components.
-
+	-> Internationalization
+-> Active Problem Areas
+	-> Ref on search input to focus on magnifying glass click
+	-> SVG Rendering Problems
+		-> Airbnb's babel package
+			-> Outputed component names are not PascalCased
+		-> Create React App's methodology
+			-> Unpredictable hover effects
+			-> Unpredictable stroke width effects
+	-> Linting issues in text editor.
+	-> Gallery cards remaining in open state on sort
+		-> Either find a way for all cards to close 
+			 or find a way to persist which ones were open.
+	-> 
 
