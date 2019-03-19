@@ -10,6 +10,8 @@ import FromTheTopCradle from '../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import DocumentationItem from './DocumentationItem/DocumentationItem'; // - TODO -> Eventually import list of components that
 import DocumentationTree from './DocumentationTree/DocumentationTree'; //   			  use that one to build pages. 
 
+// - Import all documentation pages.
+
 class DocumentationDisplay extends React.Component { 
 	render() {
 
@@ -20,6 +22,7 @@ class DocumentationDisplay extends React.Component {
 				<div className={ initObject.documentationDisplayClasses }>
 					<DocumentationTree/>
 					<DocumentationItem/>
+
 				</div>				
 			</FromTheTopCradle>
 		);
