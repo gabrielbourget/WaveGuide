@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link, Redirect, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 
 import styles from './App.module.css';
@@ -10,12 +10,12 @@ import { ThemeContext } from '../../ThemeContext';
 // import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
 // import CenteringCradle from '../Cradles/CenteringCradle/CenteringCradle';
 // import ToTheLeftCradle from '../Cradles/ToTheLeftCradle/ToTheLeftCradle';
-import TreeView from '../TreeView/TreeView';
+// import TreeView from '../TreeView/TreeView';
 
-import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
+//import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
 import Navbar from '../Navbar/Navbar';
 import SideMenu from '../SideMenu/SideMenu';
-import Backdrop from '../CoverBackdrop/CoverBackdrop';
+//import Backdrop from '../CoverBackdrop/CoverBackdrop';
 import Footer from '../Footer/Footer';
 
 import HomePage from '../LargeScopeComponents/HomePage/HomePage';

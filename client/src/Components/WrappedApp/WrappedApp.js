@@ -5,13 +5,13 @@ import AppContainer from '../App/AppContainer';
 import store from '../../Redux/store';
 
 
-import createBrowserHistory from 'history/createBrowserHistory';
-
-const customHistory = createBrowserHistory();
+//import createBrowserHistory from 'history/createBrowserHistory';
+//const customHistory = createBrowserHistory();
 
 const WrappedApp = () => (
 	<Provider store={ store }>
-		<Router history={ customHistory }>
+		{/*<Router history={ customHistory }>*/}
+		<Router>
 			<AppContainer/>
 		</Router>
 	</Provider>

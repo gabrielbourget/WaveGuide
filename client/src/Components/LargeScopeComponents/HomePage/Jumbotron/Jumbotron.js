@@ -5,7 +5,7 @@ import { ThemeContext } from '../../../../ThemeContext';
 
 // import { ReactComponent as ChevronDownSkinnyDarkTheme } from './SVG/ChevronDownSkinny/ChevronDownSkinnyDarkTheme.svg';
 import ChevronDownSkinnyDarkTheme from './SVG/ChevronDownSkinny/ChevronDownSkinnyDarkTheme';
-import IconDisplay from '../../../Icons/IconDisplay/IconDisplay';
+//import IconDisplay from '../../../Icons/IconDisplay/IconDisplay';
 import SingleIcon from '../../../Icons/SingleIcon/SingleIcon';
 
 import styles from './Jumbotron.module.scss';
@@ -19,8 +19,9 @@ class Jumbotron extends React.Component {
 					growing and global community of artists. 
 				</h1>
 				<h3>
-					Search through the directory up above, or scroll down to see <br/> 
-					information on where everyone in the scene is based.
+					Search through the directory up above, to find information on <br/>
+					artists in the community. Enter the term 'everyone' in order to <br/>
+					return everyone in the directory.
 				</h3>
 				<div className={ styles.downChevron }>
 					<SingleIcon 

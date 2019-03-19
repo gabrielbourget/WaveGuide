@@ -1,5 +1,5 @@
 import React from 'react';
-import ClassNames from 'classnames';
+//import ClassNames from 'classnames';
 // import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 
@@ -46,7 +46,7 @@ class ArtistGallery extends React.Component {
 
 	render() {
 
-    const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
+    // const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
 
     return (
       <div className={ styles.artistGallery }>

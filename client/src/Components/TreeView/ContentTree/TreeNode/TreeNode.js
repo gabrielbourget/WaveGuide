@@ -83,12 +83,11 @@ class TreeNode extends React.Component {
 							)
 						}
 					</div>
-					<div 
+{/*					<div 
 						style={ initObject.nodeIconStyle }
 						className={ initObject.nodeIconClasses } 
 						r_mrgn={ 10 }
 					>
-						{/* File */}
 						{ 
 							node.type === 'file'  
 							&& <CircleButton
@@ -99,7 +98,6 @@ class TreeNode extends React.Component {
 										onClick={ () => {} }
 								 />
 						}
-					  {/* Open Folder */}
 						{
 							node.type === 'folder' && node.isOpen && (
 								<CircleButton
@@ -111,7 +109,6 @@ class TreeNode extends React.Component {
 								/>
 							)
 						}
-					  {/* Closed Folder */}
 						{
 							node.type === 'folder' && !node.isOpen && (
 								<CircleButton 
@@ -123,7 +120,7 @@ class TreeNode extends React.Component {
 								/>
 							)
 						}
-					</div>
+					</div>*/}
 
 					{/* Grab name at the end of that node's path. */}
 					<span 
@@ -131,7 +128,8 @@ class TreeNode extends React.Component {
 						role="button"
 						onClick={ () => { onNodeSelect(node) }}
 					>
-						{ getNodeLabel(node) }
+						{/* getNodeLabel(node) */}
+						{ node.name }
 					</span>
 				</div>	
 

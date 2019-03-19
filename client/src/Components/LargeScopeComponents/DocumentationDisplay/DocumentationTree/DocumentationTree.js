@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../../ThemeContext';
 
 import styles from './DocumentationTree.module.scss';
@@ -9,6 +9,7 @@ import documentationTree from '../documentationTree'
 import TreeView from '../../../TreeView/TreeView';
 
 class DocumentationTree extends React.Component {
+
 	render() {
 
 		const initObject = prepareComponent(this.context, this.props, styles);
