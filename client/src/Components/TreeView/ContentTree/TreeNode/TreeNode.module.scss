@@ -18,6 +18,28 @@
 			background: var(--lightGrey);
 		}
 	}
+
+	&.darkTheme {
+		& a {
+			color: var(--white);
+
+			&:visited, &:hover, &:focus {
+				color: var(--white);
+				text-decoration: none;
+			}
+		}
+	}
+
+	&.lightTheme {
+		& a {
+			color: var(--black);
+
+			&:visited, &:hover, &:focus {
+				color: var(--black);
+				text-decoration: none;
+			}
+		}
+	}	
 }
 
 .nodeIcon {
