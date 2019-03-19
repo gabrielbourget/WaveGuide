@@ -1,27 +1,15 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-
-
-import styles from './App.module.css';
 import { ThemeContext } from '../../ThemeContext';
 
-// import ColumnWithPaddingPageCradle 
-//   from '../Cradles/ColumnWithPaddingPageCradle/ColumnWithPaddingPageCradle';
-// import MiddleContentCradle from '../Cradles/MiddleContentCradle/MiddleContentCradle';
-// import CenteringCradle from '../Cradles/CenteringCradle/CenteringCradle';
-// import ToTheLeftCradle from '../Cradles/ToTheLeftCradle/ToTheLeftCradle';
-// import TreeView from '../TreeView/TreeView';
+import styles from './App.module.css';
 
-//import FromTheTopCradle from '../Cradles/FromTheTopCradle/FromTheTopCradle';
 import Navbar from '../Navbar/Navbar';
-import SideMenu from '../SideMenu/SideMenu';
-//import Backdrop from '../CoverBackdrop/CoverBackdrop';
-import Footer from '../Footer/Footer';
-
 import HomePage from '../LargeScopeComponents/HomePage/HomePage';
 import ArtistProfileDisplay from '../LargeScopeComponents/ArtistProfileDisplay/ArtistProfileDisplay';
 import DocumentationDisplayWithRouter from '../LargeScopeComponents/DocumentationDisplay/DocumentationDisplay';
-
+import SideMenu from '../SideMenu/SideMenu';
+import Footer from '../Footer/Footer';
 
 class App extends React.Component {
 
@@ -48,12 +36,8 @@ class App extends React.Component {
             onSideMenuButtonClick={ this.props.toggleSideMenu }
           /> 
           <Switch>
-             <Route 
-              path='/' 
-              exact
-              component={ HomePage }
-             />
-             <Route
+            <Route path='/' exact component={ HomePage }/>
+            <Route
               path='/artists'
               render={ () => (
                 <ArtistProfileDisplay 
@@ -65,17 +49,10 @@ class App extends React.Component {
                 />               
               )}
             /> 
-            {/* TODO -> DOCUMENTATION ROUTE/COMPONENT GOES HERE */}
-            <Route 
-              path='/documentation'
-              component={ DocumentationDisplayWithRouter }
-            />
+            <Route path='/documentation' component={ DocumentationDisplayWithRouter }/>
 
-           {/* Catch all route for 404 errors */}
-           <Route render={ ({ location }) => (
-
-            <div> Cannot find this location... </div>
-           )}/>
+            {/* Catch all route for 404 errors */}
+            <Route render={ ({ location }) =>  <div> Cannot find this location... </div> }/>
           </Switch>
           <Footer/>
           <SideMenu 

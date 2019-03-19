@@ -46,7 +46,7 @@
 .nodeIcon {
 	font: {
 		family: var(--sansSerifStack);
-		size: 1.2rem;
+		//size: 1.2rem;
 		// padding: 0 5px;
 		// - Margin right determined at run time by the component. 
 	}
@@ -65,4 +65,16 @@
 		cursor: pointer; 
 	}
 	width: 100%;
+
+	font-family: var(--sansSerifStack);
+	font-size: 1.2rem;
+
+	// &.isOpen {
+	// 	border: 1.5px solid var(--covenantPurple);
+	// }
 }
+
+
+
+
+

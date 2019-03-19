@@ -579,33 +579,33 @@ const documentationTree = {
 		isOpen: false,
 		id: 'e24ccfb1-1db5-4543-b598-ade2e289bfd2'
 	},
-	'/graphicDesign': {
-		path: '/graphicDesign',
-		name: 'Graphic Design',
+	'/design': {
+		path: '/design',
+		name: 'Design',
 		type: 'folder',
 		isRoot: true,
 		isOpen: false,
 		id: '8e113667-df9d-44ff-aa7c-6e2f16a96b80',
-		children: ['/graphicDesign/iconLibrary',
-							 '/graphicDesign/fonts',
-							 '/graphicDesign/colorScheme']
+		children: ['/design/iconLibrary',
+							 '/design/fonts',
+							 '/design/colorScheme']
 	},
-	'/graphicDesign/iconLibrary': {
-		path: '/graphicDesign/iconLibrary',
+	'/design/iconLibrary': {
+		path: '/design/iconLibrary',
 		name: 'Icon Library',
 		type: 'file',
 		isOpen: false,
 		id: '29c796b7-4261-4ccc-b491-8036ac2e4b29'
 	},
-	'/graphicDesign/fonts': {
-		path: '/graphicDesign/fonts',
+	'/design/fonts': {
+		path: '/design/fonts',
 		name: 'Fonts',
 		type: 'file',
 		isOpen: false,
 		id: 'd722a88a-4631-435f-bd46-d6606074442a'
 	},
-	'/graphicDesign/colorScheme': {
-		path: '/graphicDesign/colorScheme',
+	'/design/colorScheme': {
+		path: '/design/colorScheme',
 		name: 'Color Scheme',
 		type: 'file',
 		isOpen: false,
@@ -665,7 +665,7 @@ const documentationTree = {
 		isOpen: false,
 		id: '64b76bcd-455f-46e7-b2c1-9ced5dcda550',
 		children: ['/accessibility/semanticHTML', '/accessibility/images', 
-							 '/accessibility/colorContrast', '/accessibility/futureAdditions']
+							 '/accessibility/colorContrast', '/accessibility/futureImprovements']
 	},
 	'/accessibility/semanticHTML': {
 		path: '/accessibility/semanticHTML',
@@ -688,9 +688,9 @@ const documentationTree = {
 		isOpen: false,
 		id: '7d79247b-6e16-4a67-a220-b4c482ff137f'
 	},
-	'/accessibility/futureAdditions': {
-		path: '/accessibility/futureAdditions',
-		name: 'Future Additions',
+	'/accessibility/futureImprovements': {
+		path: '/accessibility/futureImprovements',
+		name: 'Future Improvements',
 		type: 'file',
 		isOpen: false,
 		id: 'c5e98afe-c86a-4406-afc1-6a62d24c7553'

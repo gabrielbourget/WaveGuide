@@ -15,7 +15,7 @@ class DocumentationItem extends React.Component {
 		return (
 			<FromTheTopCradle>
 				<div className={ initObject.documentationItemClasses }>
-					
+					<h1>Table of Contents</h1>
 				</div>
 			</FromTheTopCradle>
 		);
@@ -25,3 +25,4 @@ class DocumentationItem extends React.Component {
 DocumentationItem.contextType = ThemeContext;
 
 export default DocumentationItem;
+

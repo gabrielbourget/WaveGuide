@@ -4,6 +4,7 @@ import last from 'lodash/last';
 export const prepareComponent = (context, props, styles) => {
 
 	const themeClass = (context === 'dark') ? styles.darkTheme : styles.lightTheme;
+	const openClass = (props.node.isOpen) ? styles.isOpen : null;
 
 	const treeNodeStyle = {
 		paddingLeft: getPaddingLeft(props.level, props.node.type) + 'px'
@@ -17,11 +18,14 @@ export const prepareComponent = (context, props, styles) => {
 
 	const nodeIconClasses = ClassNames(styles.nodeIcon, themeClass);
 
+	const spanClasses = ClassNames(styles.nodeSpan, openClass);
+
 	return {
 		treeNodeStyle,
 		nodeIconStyle,
 		treeNodeClasses,
-		nodeIconClasses
+		nodeIconClasses,
+		spanClasses
 	};
 };
 

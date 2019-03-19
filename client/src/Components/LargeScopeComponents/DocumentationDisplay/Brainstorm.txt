@@ -220,6 +220,8 @@
 		-> As state tree gets larger and 
 		increasingly nested, normalize it
 		into a flattened structure.
+		-> Flatten state tree
+		-> Move documentation tree into redux store
 -> Back End	
 	-> Server
 		-> Express
@@ -303,4 +305,5 @@
 		-> Either find a way for all cards to close 
 			 or find a way to persist which ones were open.
 	-> Sorts are working for the most part except for a few stubborn items.
+
 

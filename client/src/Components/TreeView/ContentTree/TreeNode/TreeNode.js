@@ -126,7 +126,7 @@ class TreeNode extends React.Component {
 					{/* Grab name at the end of that node's path. */}
 					<Link to={`/documentation/${node.id}`}>
 						<span 
-							className={ styles.nodeSpan }
+							className={ initObject.spanClasses }
 							role="button"
 							onClick={ () => { onNodeSelect(node) }}
 						>
