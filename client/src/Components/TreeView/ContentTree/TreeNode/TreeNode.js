@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../../ThemeContext';
 
 import styles from './TreeNode.module.scss';
@@ -54,7 +55,7 @@ class TreeNode extends React.Component {
 		const initObject = prepareComponent(this.context, this.props, styles);
 
 		return (
-			<React.Fragment>
+			<React.Fragment>				
 				<div 
 					style={ initObject.treeNodeStyle }
 					className={ initObject.treeNodeClasses } 
@@ -123,16 +124,18 @@ class TreeNode extends React.Component {
 					</div>*/}
 
 					{/* Grab name at the end of that node's path. */}
-					<span 
-						className={ styles.nodeSpan }
-						role="button"
-						onClick={ () => { onNodeSelect(node) }}
-					>
-						{/* getNodeLabel(node) */}
-						{ node.name }
-					</span>
+					<Link to={`/documentation/${node.id}`}>
+						<span 
+							className={ styles.nodeSpan }
+							role="button"
+							onClick={ () => { onNodeSelect(node) }}
+						>
+							{/* getNodeLabel(node) */}
+							{ node.name }
+						</span>
+					</Link>
 				</div>	
-
+				
 				{/* If the node is open, recursively generate each child node. */}
 				{
 					node.isOpen && getChildNodes(node).map((childNode, index) => (
