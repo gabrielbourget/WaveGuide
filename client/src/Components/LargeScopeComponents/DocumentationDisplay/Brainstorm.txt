@@ -11,7 +11,7 @@
 			-> Neo4J
 		-> Project Structure
 			-> Overall Directory Structure
-			-> Folder Structure Within a React Component
+			-> Directory Structure Within a React Component
 	-> Front End
 		-> React
 		-> CSS Modules
@@ -39,7 +39,7 @@
 			-> Provider Component
 			-> Wrapped App
 		-> Special Cases for Component State
-		-> Redux-Thunk Middleware
+		-> Thunk Middleware
 		-> Future Improvements
 	-> Back End
 		-> Server
@@ -67,10 +67,6 @@
 			-> E2E Testing
 			-> Database Test Suite 
 	-> Accessibility
-		-> Semantic HTML
-		-> Alts on Links
-		-> Titles on Images
-		-> High Contrast
 		-> Future Additions
 	-> Security
 		-> Keeping application features and development in scope
@@ -87,31 +83,26 @@
 		-> Card Gallery Behavior
 -> Overview
 	-> Introduction to wave scene
-	-> Overview of what application is and how it 
-	   is intended to help and support that community.
-	  -> Overall strategy is to create an application that is tightly scoped to
-	     my current capabilities and the type of role that I am applying for, but 
-	     that is architectured to scale in functionality/capability and into 
-	     to-be-developed sections such as my back-end server and database. 
+	-> Overview of what application is and how it is intended to help and support that community. Go through major UX flows built into the application.
+	-> Overall strategy is to create an application that is tightly scoped to my current capabilities and the type of 
+	   role that I am applying for, but that is architectured to scale in functionality/capability and into to-be-developed 
+	   sections such as my back-end server and database. 
+		-> Technical Scope
+		-> Feature Scope
 	-> Tech Stack
 		-> React for UI (bootstrapped from create-react-app to get started)
 			-> Provide link that goes into front end section of documentation.
 		-> Redux for state management
 			-> Provide link that goes into state management section of documentation.
 		-> Neo4J for database 
-			-> Explain in next steps that you plan on implementing an 
-			   express server which will proxy requests from React application,
-			   serve the application, and connect to Neo4J database in real time. 
-			-> For now, as an application for software development jobs with a focus on 
-			   front end, hooking up to a remote server and database was out of scope. 
 			-> Provide link that goes into data persistence section of documentation.
+		-> Explain in next steps that you plan on implementing an express server which will proxy requests from React application, serve the application, and connect to Neo4J database in real time. 			
 	-> Project structuring.
 		-> Overall directory structure.
+			-> Disclaimer about excuding certain boilerplate items like .rc files, node modules, package.json, package-lock.json, README.md etc...
 			-> client (holding overall UI client that runs the front end.)
 				-> build (exported build version of application, which is deployed to heroku)
-				-> node_modules
 				-> public (holds static content such as profile images)
-				-> package.json and package-lock.json from create-react-app boilerplate
 				-> src (holds all source code used to build react application.)
 					-> Components (holds all components used to build the application, explain that you go into further
 												 detail regarding the folder structure you use within components.)
@@ -133,7 +124,6 @@
 			  		-> Initializes application state, initializes and exports the redux store, and greenlights hot reloading for reducer components.
 			  	-> index.js (Renders top-level component and injects it at the mount point of the index.html file)
 			-> Design (holds photoshop and illustrator files from production of assets like jumbotron image and icon library)
-			-> Utility files (.rc for linters, .gitignore for version control calibration, license file, project README markdown file)
 		-> Strategy for folder structures within a component. 
 			-> Main Component JS file.
 			-> Stylesheet
@@ -146,15 +136,16 @@
 	-> CSS Modules
 		-> Written in SCSS
 		-> Syntax to be picked up by 
-			 webpack
+			 webpack (node-sass npm package)
+			 -> Reference medium article that helped set it up.
 		-> Overall translation into 
 			 in-browser DOM elements.
-		-> Go through the global CSS that is included
-			-> Base styling
-			-> Variables
-				-> Fonts
-				-> Colors
-				-> z Indexes
+  -> Go through the global CSS that is included
+		-> Base styling
+		-> Variables
+			-> Fonts
+			-> Colors
+			-> z Indexes
 	-> Render-time component preparation
 		-> Logic that maps state, props, 
 		   and context to the filtering
@@ -176,7 +167,7 @@
 			-> Further Use Cases
 				-> Check Boxes
 				-> Radio Button Sets
-		-> Card (TwoSize in this application)
+		-> Profile Card (TwoSize in this application)
 			-> Open/Closed Toggle
 			-> Population of social media
 				 icon list
@@ -187,7 +178,7 @@
 			-> Variable heights/widths
 			-> Variable margin/padding
 		-> Cradles
-		-> Gallery
+		-> Card Gallery
 		-> Graph Visualization
 		-> Map 
 		-> Search Bar
@@ -232,8 +223,7 @@
 -> Back End	
 	-> Server
 		-> Express
-	-> Future Improvements
-    -> GraphQL vs. Redux, limitations of a REST API eventually. 
+		-> Proxying requests from client server through to API server
   -> Neo4J Database
 		-> High Level Intro to Neo4J
 			-> Intro to graphs
@@ -254,10 +244,11 @@
 					-> DJs 
 					-> Promoters
 					-> Software Developers
-		-> Building portfolio database around wavecity cluster
 	  -> Planned Queries
 	  	-> Grabbing some/all artists from the database
 	  	-> Adding people/artists into the database
+	-> Future Improvements
+    -> GraphQL vs. Redux, limitations of a REST API eventually. 	  	
 -> Graphic Design
 	-> Icon library
 	-> Predictable font size through rem scaling
@@ -279,7 +270,6 @@
 	-> Semantic HTML
 		-> Good HTML
 		-> React Fragments instead of wrapper divs
-	-> Alts on links
 	-> Titles as fallbacks on images
 	-> High color contrast in both light and dark themes
 	-> Future additions
@@ -298,8 +288,6 @@
 			-> Table Items wrapping into a two row item, flow social media buttons into bottom row. 
 			-> Unexpected behavior from React's SVG wrapper components, maybe just switch to splicing them inline
 				 from props to another presentational template component.
-		-> Refactoring to React Native application
-		-> Wrapping the application with Electron and running out of the browser.
 	-> Ability to add upcoming events into the application and have them pop up on a map and in different components.
 	-> Internationalization
 -> Active Problem Areas
@@ -314,5 +302,5 @@
 	-> Gallery cards remaining in open state on sort
 		-> Either find a way for all cards to close 
 			 or find a way to persist which ones were open.
-	-> 
+	-> Sorts are working for the most part except for a few stubborn items.
 

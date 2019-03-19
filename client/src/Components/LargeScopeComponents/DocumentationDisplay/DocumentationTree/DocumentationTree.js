@@ -4,6 +4,7 @@ import { ThemeContext } from '../../../../ThemeContext';
 
 import styles from './DocumentationTree.module.scss';
 import { prepareComponent } from './helpers';
+import documentationTree from '../documentationTree'
 
 import TreeView from '../../../TreeView/TreeView';
 
@@ -14,7 +15,7 @@ class DocumentationTree extends React.Component {
 
 		return (
 			<div className={ initObject.documentationTreeClasses }>
-				<TreeView />
+				<TreeView data={ documentationTree }/>
 			</div>
 		);
 	}
