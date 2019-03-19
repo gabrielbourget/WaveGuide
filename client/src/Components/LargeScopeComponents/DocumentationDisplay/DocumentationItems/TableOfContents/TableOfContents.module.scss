@@ -6,7 +6,7 @@
 	
 	height: 100%;
 	width: 100%;
-	padding: 0px 10px;
+	padding: 0px 15rpx;
 
 	display: grid;
 	justify-content: start;
@@ -47,7 +47,7 @@
 	}
 
 	ul {
-		list-style-type: none;
+		list-style-type: disc;
 		margin: 0;
 		padding: 0;
 	}	
@@ -61,6 +61,10 @@
 			size: 1.35rem;
 			family: var(--sansSerifStack);
 	  }
+
+	  &:hover, &:active {
+			color: var(--covenantPurple);
+	  }
 	}
 
 	h1 {
@@ -68,6 +72,7 @@
 			size: 3rem;
 			family: var(--sansSerifStack);
 		}
+		text-decoration: underline;
 	}
 
 	h2 {

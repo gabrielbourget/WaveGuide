@@ -61,14 +61,15 @@
 }
 
 .nodeSpan {
-	&:hover { 
+	&:hover, &:active { 
 		cursor: pointer; 
+		color: var(--covenantPurple);
 	}
 	width: 100%;
 
 	font-family: var(--sansSerifStack);
-	font-size: 1.2rem;
-
+	font-size: 1.3rem;
+	font-weight: bold;
 	// &.isOpen {
 	// 	border: 1.5px solid var(--covenantPurple);
 	// }

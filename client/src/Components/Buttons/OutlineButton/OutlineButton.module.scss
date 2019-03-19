@@ -13,8 +13,6 @@
 
   transition: all 0.25s ease-in-out;
   
-
-  &:hover { cursor: pointer; }
   &:link, &:visited, &:hover, &:active {
     cursor: pointer;
     text-decoration: none;
@@ -24,18 +22,40 @@
   &.darkTheme {
     background-color: transparent;
     border: 3px solid var(--white);
+
+    &:hover { 
+      cursor: pointer; 
+      color: var(--covenantPurple);
+      border: 3px solid var(--covenantPurple);
+    }    
   }
 
   &.lightTheme {
     background-color: transparent;
     border: 3px solid var(--black);
+  
+    &:hover { 
+      cursor: pointer; 
+      color: var(--covenantPurple);
+      border: 3px solid var(--covenantPurple);
+    }    
   }
 }
 
 .buttonText {
 
-  &.darkTheme { color: var(--white); }
-  &.lightTheme { color: var(--black); }
+  transition: all 0.25s ease-in-out;
+
+  &.darkTheme { 
+    color: var(--white); 
+
+    &:hover { color: var(--covenantPurple); }
+  }
+  &.lightTheme { 
+    color: var(--black); 
+
+    &:hover { color: var(--covenantPurple); }
+  }
 
   font: {
     family: var(--sansSerifStack);
