@@ -20,17 +20,17 @@ import ChevronDownDarkTheme from '../SVG/ChevronDown/ChevronDownDarkTheme';
 import ChevronDownLightTheme from '../SVG/ChevronDown/ChevronDownLightTheme';
 import ChevronDownHighlighted from '../SVG/ChevronDown/ChevronDownHighlighted';
 // - FolderClosed
-import FolderClosedDarkTheme from '../SVG/FolderClosed/FolderClosedDarkTheme';
-import FolderClosedLightTheme from '../SVG/FolderClosed/FolderClosedLightTheme';
-import FolderClosedHighlighted from '../SVG/FolderClosed/FolderClosedHighlighted';
+// import FolderClosedDarkTheme from '../SVG/FolderClosed/FolderClosedDarkTheme';
+// import FolderClosedLightTheme from '../SVG/FolderClosed/FolderClosedLightTheme';
+// import FolderClosedHighlighted from '../SVG/FolderClosed/FolderClosedHighlighted';
 // - FolderOpen
-import FolderOpenDarkTheme from '../SVG/FolderOpen/FolderOpenDarkTheme';
-import FolderOpenLightTheme from '../SVG/FolderOpen/FolderOpenLightTheme';
-import FolderOpenHighlighted from '../SVG/FolderOpen/FolderOpenHighlighted';
+// import FolderOpenDarkTheme from '../SVG/FolderOpen/FolderOpenDarkTheme';
+// import FolderOpenLightTheme from '../SVG/FolderOpen/FolderOpenLightTheme';
+// import FolderOpenHighlighted from '../SVG/FolderOpen/FolderOpenHighlighted';
 // - File
-import FileDarkTheme from '../SVG/File/FileDarkTheme';
-import FileLightTheme from '../SVG/File/FileLightTheme';
-import FileHighlighted from '../SVG/File/FileHighlighted.svg';
+// import FileDarkTheme from '../SVG/File/FileDarkTheme';
+// import FileLightTheme from '../SVG/File/FileLightTheme';
+// import FileHighlighted from '../SVG/File/FileHighlighted.svg';
 
 class TreeNode extends React.Component {
 

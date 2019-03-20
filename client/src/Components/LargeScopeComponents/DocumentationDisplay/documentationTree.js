@@ -524,8 +524,8 @@ const documentationTree = {
 		isOpen: false,
 		id: '27d03266-f7a4-453f-8c4a-9f4f08584f09',
 		children: ['/backEnd/database/neo4JIntro', 
-							 '/backEnd/database/dataModel',
-							 '/backEnd/database/plannedQueries']
+							 '/backEnd/database/dataModel']
+							 // '/backEnd/database/plannedQueries']
 	},
 	'/backEnd/database/neo4JIntro': {
 		path: '/backEnd/database/neo4JIntro',
@@ -565,13 +565,13 @@ const documentationTree = {
 		isOpen: false,
 		id: '485dc30c-1e72-412e-9fc0-cf065a808c09'
 	},
-	'/backEnd/database/plannedQueries': {
-		path: '/backEnd/database/plannedQueries',
-		name: 'Planned Queries',
-		type: 'file',
-		isOpen: false,
-		id: '1000295c-ddb1-4bd4-b0e5-a8ded2f605bd'
-	},
+	// '/backEnd/database/plannedQueries': {
+	// 	path: '/backEnd/database/plannedQueries',
+	// 	name: 'Planned Queries',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '1000295c-ddb1-4bd4-b0e5-a8ded2f605bd'
+	// },
 	'/backEnd/futureImprovements': {
 		path: '/backEnd/futureImprovements',
 		name: 'Future Improvements',
