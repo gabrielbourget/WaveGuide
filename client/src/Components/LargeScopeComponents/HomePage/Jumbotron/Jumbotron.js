@@ -15,7 +15,7 @@ class Jumbotron extends React.Component {
 		return (
 			<div className={ styles.jumbotron }>
 				<h1>
-					Welcome to Origin, a directory for a <br/> 
+					Welcome to WaveGuide, a directory for a <br/> 
 					growing and global community of artists <br/>
 					forming around Wave music.
 				</h1>
