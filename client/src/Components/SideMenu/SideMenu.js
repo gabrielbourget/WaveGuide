@@ -1,5 +1,6 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router-dom';
 // import PropTypes from 'prop-types';
 import { ThemeContext } from '../../ThemeContext';
 
@@ -71,23 +72,21 @@ class SideMenu extends React.Component {
 				<div className={ styles.hDividerCradle }>
 					<HorizontalDivider height='3px'/>
 				</div>
-			  {/* These will have to be <Link>s when routing is set up. */}
 				<div className={ styles.buttonGrid }>
-					<OutlineButton
-						text='Home'
-						shape='rounded'
-						onClick={ () => {} }
-					/>	
-					<OutlineButton
-						text='About'
-						shape='rounded'
-						onClick={ () => {} }
-					/>	
-					<OutlineButton
-						text='Documentation'
-						shape='rounded'
-						onClick={ () => {} }
-					/>	
+					<Link to='/'>					
+						<OutlineButton
+							text='Home'
+							shape='rounded'
+							onClick={ () => {} }
+						/>
+					</Link>	
+					<Link to='/documentation/'>					
+						<OutlineButton
+							text='Documentation'
+							shape='rounded'
+							onClick={ () => {} }
+						/>
+					</Link>	
 				</div>
 				<div className={ styles.communityLinksTitleBar }>
 					<h3 className={ themeClass }>Community Links</h3>

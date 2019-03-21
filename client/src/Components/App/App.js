@@ -4,7 +4,7 @@ import { ThemeContext } from '../../ThemeContext';
 
 import styles from './App.module.css';
 
-import Navbar from '../Navbar/Navbar';
+import NavbarWithRouter from '../Navbar/Navbar';
 import HomePage from '../LargeScopeComponents/HomePage/HomePage';
 import ArtistProfileDisplay from '../LargeScopeComponents/ArtistProfileDisplay/ArtistProfileDisplay';
 import DocumentationDisplayWithRouter from '../LargeScopeComponents/DocumentationDisplay/DocumentationDisplay';
@@ -30,7 +30,7 @@ class App extends React.Component {
     return (
       <ThemeContext.Provider value={ this.props.settings.theme }> 
         <div className={ styles.app }>
-          <Navbar 
+          <NavbarWithRouter 
             searchThroughArtists={ this.props.searchThroughArtists }
             sideMenuOpen={ this.props.settings.sideMenuOpen }
             onSideMenuButtonClick={ this.props.toggleSideMenu }

@@ -10,7 +10,7 @@ import FromTheTopCradle from '../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import DocumentationItem from './DocumentationItem/DocumentationItem'; // - TODO -> Eventually import list of components that
 import DocumentationTree from './DocumentationTree/DocumentationTree'; //   			  use that one to build pages. 
 
-import documentationItemIndex from './documentationItemIndex'; // - Holds list of pages and their corresponding ids.
+import routingTable from './routingTable'; // - Holds list of pages and their corresponding ids.
 
 // - Import all documentation pages.
 import TableOfContents from './DocumentationItems/01-TableOfContents/TableOfContents';
@@ -21,10 +21,10 @@ import ApplicationScope from './DocumentationItems/05-ApplicationScope/Applicati
 import TechnicalScope from './DocumentationItems/06-TechnicalScope/TechnicalScope';
 import Overview_FeatureScope from './DocumentationItems/07-Overview_FeatureScope/Overview_FeatureScope';
 import TechStack from './DocumentationItems/08-TechStack/TechStack';
-import OverviewReact from './DocumentationItems/09-OverviewReact/OverviewReact';
-import OverviewRedux from './DocumentationItems/10-OverviewRedux/OverviewRedux';
-import OverviewExpress from './DocumentationItems/11-OverviewExpress/OverviewExpress';
-import OverviewNeo4J from './DocumentationItems/12-OverviewNeo4J/OverviewNeo4J';
+// import OverviewReact from './DocumentationItems/09-OverviewReact/OverviewReact';
+// import OverviewRedux from './DocumentationItems/10-OverviewRedux/OverviewRedux';
+// import OverviewExpress from './DocumentationItems/11-OverviewExpress/OverviewExpress';
+// import OverviewNeo4J from './DocumentationItems/12-OverviewNeo4J/OverviewNeo4J';
 import ProjectStructure from './DocumentationItems/13-ProjectStructure/ProjectStructure';
 import OverallDirectoryStructure from './DocumentationItems/14-OverallDirectoryStructure/OverallDirectoryStructure';
 import ODS_ExcludedItems from './DocumentationItems/15-ODS_ExcludedItems/ODS_ExcludedItems';
@@ -119,7 +119,7 @@ class DocumentationDisplay extends React.Component {
 			<FromTheTopCradle>
 				<div className={ initObject.documentationDisplayClasses }>
 					<DocumentationTree/>
-					<TableOfContents/>
+					<ProjectStructure/>
 				</div>				
 			</FromTheTopCradle>
 		);

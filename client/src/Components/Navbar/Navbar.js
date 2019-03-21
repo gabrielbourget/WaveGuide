@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router';
+import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../ThemeContext';
 
 import styles from './Navbar.module.scss';
@@ -9,7 +11,7 @@ import CircleButton from '../Buttons/CircleButton/CircleButton';
 import OutlineButton from '../Buttons/OutlineButton/OutlineButton';
 import SearchBarWithRouter from '../SearchBar/SearchBar';
 
-import { Link } from 'react-router-dom'
+
 
 // - Hamburger Menu Icon
 import { ReactComponent as HamburgerMenuDarkTheme } from './SVG/HamburgerMenu/HamburgerIconDarkTheme.svg';
@@ -33,7 +35,10 @@ class Navbar extends React.Component {
 	};
 
 	static propTypes = {
-		onSideMenuButtonClick: PropTypes.func.isRequired
+		onSideMenuButtonClick: PropTypes.func.isRequired,
+		match: PropTypes.object.isRequired,
+		location: PropTypes.object.isRequired,
+		history: PropTypes.object.isRequired		
 	};
 
 	handleSideMenuButtonClick = () => {
@@ -116,4 +121,6 @@ class Navbar extends React.Component {
 
 Navbar.contextType = ThemeContext;
 
-export default Navbar;
+const NavbarWithRouter = withRouter(Navbar);
+
+export default NavbarWithRouter;

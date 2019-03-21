@@ -37,58 +37,58 @@ const documentationTree = {
 	'/overview/applicationScope': {
 		path: '/overview/applicationScope',
 		name: 'Application Scope',
-		type: 'folder',
+		type: 'file',
 		isOpen: false,
 		id: '40edbc86-218c-47c9-b395-7a87c98a1fbe',
-		children: ['/overview/applicationScope/technicalScope',
-							 '/overview/applicationScope/featureScope']
+		// children: ['/overview/applicationScope/technicalScope',
+		// 					 '/overview/applicationScope/featureScope']
 	},
-	'/overview/applicationScope/technicalScope': {
-		path: '/overview/applicationScope/technicalScope',
-		name: 'Technical Scope',
-		type: 'file',
-		isOpen: false,
-		id: '85aed067-0172-493f-8660-b1e1d825dbb1'
-	},
-	'/overview/applicationScope/featureScope': {
-		path: '/overview/applicationScope/featureScope',
-		name: 'Feature Scope',
-		type: 'file',
-		isOpen: false,
-		id: 'ec8c2776-abdf-4a58-b7ed-c1e62ef56e64'
-	},
+	// '/overview/applicationScope/technicalScope': {
+	// 	path: '/overview/applicationScope/technicalScope',
+	// 	name: 'Technical Scope',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '85aed067-0172-493f-8660-b1e1d825dbb1'
+	// },
+	// '/overview/applicationScope/featureScope': {
+	// 	path: '/overview/applicationScope/featureScope',
+	// 	name: 'Feature Scope',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'ec8c2776-abdf-4a58-b7ed-c1e62ef56e64'
+	// },
 	'/overview/techStack': {
 		path: '/overview/techStack',
 		name: 'Tech Stack',
-		type: 'folder',
+		type: 'file',
 		isOpen: false,
 		id: '73627e59-49df-47a8-a0d7-22edd04a7c0c',
-		children: ['/overview/techStack/react',
-							 '/overview/techStack/redux',
-							 '/overview/techStack/express',
-							 '/overview/techStack/neo4J']
+		// children: ['/overview/techStack/react',
+		// 					 '/overview/techStack/redux',
+		// 					 '/overview/techStack/express',
+		// 					 '/overview/techStack/neo4J']
 	},
-	'/overview/techStack/react': {
-		path: '/overview/techStack/react',
-		name: 'React',
-		type: 'file',
-		isOpen: false,
-		id: '540ce7b9-b00f-41ab-9042-507d781268f9'
-	},
-	'/overview/techStack/redux': {
-		path: '/overview/techStack/redux',
-		name: 'Redux',
-		type: 'file',
-		isOpen: false,
-		id: '09e461f5-baec-4785-b509-ecbcb9980f16'
-	},
-	'/overview/techStack/express': {
-		path: '/overview/techStack/express',
-		name: 'Express',
-		type: 'file',
-		isOpen: false,
-		id: '0720c963-f0f3-4097-9011-78aebb9743de'
-	},
+	// '/overview/techStack/react': {
+	// 	path: '/overview/techStack/react',
+	// 	name: 'React',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '540ce7b9-b00f-41ab-9042-507d781268f9'
+	// },
+	// '/overview/techStack/redux': {
+	// 	path: '/overview/techStack/redux',
+	// 	name: 'Redux',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '09e461f5-baec-4785-b509-ecbcb9980f16'
+	// },
+	// '/overview/techStack/express': {
+	// 	path: '/overview/techStack/express',
+	// 	name: 'Express',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '0720c963-f0f3-4097-9011-78aebb9743de'
+	// },
 	'/overview/techStack/neo4J': {
 		path: '/overview/techStack/neo4J',
 		name: 'Neo4J',
@@ -519,7 +519,7 @@ const documentationTree = {
 	},
 	'/backEnd/database': {
 		path: '/backEnd/database',
-		name: 'Neo4J Database',
+		name: 'Database',
 		type: 'folder',
 		isOpen: false,
 		id: '27d03266-f7a4-453f-8c4a-9f4f08584f09',

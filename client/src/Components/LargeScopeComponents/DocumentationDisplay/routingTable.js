@@ -1,16 +1,16 @@
-const documentationItemIndex = [
+const routingTable = [
 	{ 'f161856e-5375-4a66-882f-85b122eb439d': 'TableOfContents' },
 	{ '894b3efd-02a9-40d7-adee-aab4548c87f6': 'Overview' },
 	{ '97df66de-33fb-48cd-9543-0c698821d5d8': 'IntroToTheWaveScene' },
 	{ '71987a6a-61c1-4c2e-8ad6-af16714c583f': 'ApplicationOverview' },
 	{ '40edbc86-218c-47c9-b395-7a87c98a1fbe': 'ApplicationScope' },
-	{ '85aed067-0172-493f-8660-b1e1d825dbb1': 'TechnicalScope' },
-	{ 'ec8c2776-abdf-4a58-b7ed-c1e62ef56e64': 'Overview_FeatureScope' },
+	// { '85aed067-0172-493f-8660-b1e1d825dbb1': 'TechnicalScope' },
+	// { 'ec8c2776-abdf-4a58-b7ed-c1e62ef56e64': 'Overview_FeatureScope' },
 	{ '73627e59-49df-47a8-a0d7-22edd04a7c0c': 'TechStack' },
-	{ '540ce7b9-b00f-41ab-9042-507d781268f9': 'OverviewReact' },
-	{ '09e461f5-baec-4785-b509-ecbcb9980f16': 'OverviewRedux' },
-	{ '0720c963-f0f3-4097-9011-78aebb9743de': 'OverviewExpress' },
-	{ '4c153909-f42a-4577-8de0-edd069441d97': 'OverviewNeo4J' },
+	// { '540ce7b9-b00f-41ab-9042-507d781268f9': 'OverviewReact' },
+	// { '09e461f5-baec-4785-b509-ecbcb9980f16': 'OverviewRedux' },
+	// { '0720c963-f0f3-4097-9011-78aebb9743de': 'OverviewExpress' },
+	// { '4c153909-f42a-4577-8de0-edd069441d97': 'OverviewNeo4J' },
 	{ '0d209cbd-5b73-4e52-901e-1d012299acfd': 'ProjectStructure' },
 	{ '18d1dc66-e33b-4823-bed3-ea4c8b60c553': 'OverallDirectoryStructure' },
 	{ '9b5de2da-c1c8-4651-82d2-0c66a410e405': 'ODS_ExcludedItems' },
@@ -98,7 +98,7 @@ const documentationItemIndex = [
 	{ 'e555a550-4c90-4d84-942b-d5afde3bbdf1': 'CardGalleryProblem' },
 ]
 
-export default documentationItemIndex;
+export default routingTable;
 
 
 
