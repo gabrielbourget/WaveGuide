@@ -36,8 +36,8 @@ class ProjectStructure extends React.Component {
 						sub-section where I talk about this strategy and how it was applied to designing the components that make up the application. 
 					</p>
 					<div className={ initObject.navButtonsClasses }>
-						<Link><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/73627e59-49df-47a8-a0d7-22edd04a7c0c'><FilledButton text='&larr; Prev Page'/></Link>	
+						<Link to='/documentation/18d1dc66-e33b-4823-bed3-ea4c8b60c553'><FilledButton text='Next Page &rarr;'/></Link>	
 					</div>
 					
 				</div>
