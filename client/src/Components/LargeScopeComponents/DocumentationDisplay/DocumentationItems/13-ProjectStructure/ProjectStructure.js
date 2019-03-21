@@ -24,8 +24,8 @@ class ProjectStructure extends React.Component {
 						<TextIndent>Having</TextIndent> decided to scope my portfolio project towards a focus on front end development 
 						technologies and techniques, I have not yet completely implemented the API server and connected it to the Neo4J 
 						database being developed in parallel to the front end. However, I have nested the entire client of the application 
-						within a top level of the project's overall top level directory, creating the space for me to embed a server directory 
-						structure when I turn towards implementing that side of the application. 
+						within the top level of the project's directory, creating the space for me to embed a server directory structure 
+						when I turn towards implementing that side of the application. 
 					</p>
 
 					<p>

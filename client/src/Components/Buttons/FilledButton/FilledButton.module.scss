@@ -14,20 +14,42 @@
 
 	transition: all 0.25s ease-in-out;
   
-  &:hover { cursor: pointer; }
+
   &:link, &:visited, &:hover, &:active {
     cursor: pointer;
     text-decoration: none;
     outline: none;
   }
 
-	&.darkTheme { background-color: var(--white); }
-	&.lightTheme { background-color: var(--black); }
+	&.darkTheme { 
+		background-color: var(--white); 
+
+    &:hover { 
+      cursor: pointer; 
+      color: var(--covenantPurple);
+    }		
+	}
+	&.lightTheme { 
+		background-color: var(--black); 
+
+    &:hover { 
+      cursor: pointer; 
+      color: var(--covenantPurple);
+    }			
+	}
 }
 
 .buttonText {
-	&.darkTheme { color: var(--black); }
-	&.lightTheme { color: var(--white); }
+	transition: all 0.25s ease-in-out;
+	
+	&.darkTheme { 
+		color: var(--black); 
+		&:hover { color: var(--covenantPurple); }
+	}
+	&.lightTheme { 
+		color: var(--white); 
+		&:hover { color: var(--covenantPurple); }
+	}
 	
 	font: {
 		family: var(--sansSerifStack);
