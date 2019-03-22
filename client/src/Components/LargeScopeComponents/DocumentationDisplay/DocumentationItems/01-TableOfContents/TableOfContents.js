@@ -15,7 +15,7 @@ class TableOfContents extends React.Component {
 
 		return (
 			<FromTheTopCradle>
-				<div className={ initObject.tableOfContentsClasses }>
+				<article className={ initObject.tableOfContentsClasses }>
 					<ul style={ {width: '100%'} }>
 						<h1 style={ {marginBottom: '20px'} }>Documentation - Table of Contents</h1>
 						{/* OVERVIEW */}
@@ -547,7 +547,7 @@ class TableOfContents extends React.Component {
 							</ul>
 						</li>
 					</ul>
-				</div>
+				</article>		
 			</FromTheTopCradle>
 		);
 	}

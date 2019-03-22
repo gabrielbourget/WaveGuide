@@ -14,9 +14,9 @@ class ODS_Build extends React.Component {
 
 		return (
 			<FromTheTopCradle>
-				<div className={ initObject.documentationItemClasses }>
+				<article className={ initObject.documentationItemClasses }>
 					
-				</div>
+				</article>
 			</FromTheTopCradle>
 		);
 	}

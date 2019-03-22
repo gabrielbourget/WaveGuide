@@ -111,34 +111,36 @@ const documentationTree = {
 		type: 'folder',
 		isOpen: false,
 		id: '18d1dc66-e33b-4823-bed3-ea4c8b60c553',
-		children: ['/overview/projectStructure/overallDirectoryStructure/excludedItems',
+		children: [
+							//'/overview/projectStructure/overallDirectoryStructure/excludedItems',
 							 '/overview/projectStructure/overallDirectoryStructure/client',
 							 '/overview/projectStructure/overallDirectoryStructure/Design']
 	},
-	'/overview/projectStructure/overallDirectoryStructure/excludedItems': {
-		path: '/overview/projectStructure/overallDirectoryStructure/excludedItems',
-		name: 'Excluded Items',
-		type: 'file',
-		isOpen: false,
-		id: '9b5de2da-c1c8-4651-82d2-0c66a410e405'
-	},
+	// '/overview/projectStructure/overallDirectoryStructure/excludedItems': {
+	// 	path: '/overview/projectStructure/overallDirectoryStructure/excludedItems',
+	// 	name: 'Excluded Items',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '9b5de2da-c1c8-4651-82d2-0c66a410e405'
+	// },
 	'/overview/projectStructure/overallDirectoryStructure/client': {
 		path: '/overview/projectStructure/overallDirectoryStructure/client',
 		name: 'client',
 		type: 'folder',
 		isOpen: false,
 		id: '2c4c531e-e905-41f4-ac7c-bc6018bab0a6',
-		children: ['/overview/projectStructure/overallDirectoryStructure/client/build',
+		children: [
+							 // '/overview/projectStructure/overallDirectoryStructure/client/build',
 							 '/overview/projectStructure/overallDirectoryStructure/client/public',
 							 '/overview/projectStructure/overallDirectoryStructure/client/src']
 	},
-	'/overview/projectStructure/overallDirectoryStructure/client/build': {
-		path: '/overview/projectStructure/overallDirectoryStructure/client/build',
-		name: 'build',
-		type: 'file',
-		isOpen: false,
-		id: 'ca7dfe9c-7580-4398-8750-0d205775c5d7'
-	},
+	// '/overview/projectStructure/overallDirectoryStructure/client/build': {
+	// 	path: '/overview/projectStructure/overallDirectoryStructure/client/build',
+	// 	name: 'build',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'ca7dfe9c-7580-4398-8750-0d205775c5d7'
+	// },
 	'/overview/projectStructure/overallDirectoryStructure/client/public': {
 		path: '/overview/projectStructure/overallDirectoryStructure/client/public',
 		name: 'public',
@@ -156,8 +158,8 @@ const documentationTree = {
 							 '/overview/projectStructure/overallDirectoryStructure/client/src/Datasets',
 							 '/overview/projectStructure/overallDirectoryStructure/client/src/GlobalStyles',
 							 '/overview/projectStructure/overallDirectoryStructure/client/src/Helpers',
-							 '/overview/projectStructure/overallDirectoryStructure/client/src/Redux',
-							 '/overview/projectStructure/overallDirectoryStructure/client/src/index.js']
+							 '/overview/projectStructure/overallDirectoryStructure/client/src/Redux']
+							 // '/overview/projectStructure/overallDirectoryStructure/client/src/index.js']
 	},
 	'/overview/projectStructure/overallDirectoryStructure/client/src/Components': {
 		path: '/overview/projectStructure/overallDirectoryStructure/client/src/Components',
@@ -194,13 +196,13 @@ const documentationTree = {
 		isOpen: false,
 		id: 'bf059259-f7fa-4f97-8bb8-459eb3e2a805'
 	},
-	'/overview/projectStructure/overallDirectoryStructure/client/src/index.js': {
-		path: '/overview/projectStructure/overallDirectoryStructure/client/src/index.js',
-		name: 'index.js',
-		type: 'file',
-		isOpen: false,
-		id: 'ca13322a-448f-427c-bdcf-cc16fd2c379f'
-	},
+	// '/overview/projectStructure/overallDirectoryStructure/client/src/index.js': {
+	// 	path: '/overview/projectStructure/overallDirectoryStructure/client/src/index.js',
+	// 	name: 'index.js',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'ca13322a-448f-427c-bdcf-cc16fd2c379f'
+	// },
 	'/overview/projectStructure/overallDirectoryStructure/Design': {
 		path: '/overview/projectStructure/overallDirectoryStructure/Design',
 		name: 'Design',
@@ -739,13 +741,13 @@ const documentationTree = {
 							 '/activeProblemAreas/lintingIssues',
 							 '/activeProblemAreas/cardGallery']
 	},
-	'/activeProblemAreas/reactRefs': {
-		path: '/activeProblemAreas/reactRefs',
-		name: 'React Refs',
-		type: 'file',
-		isOpen: false,
-		id: 'e3f30382-9da2-4d08-a3b1-bb6899b34a86'
-	},
+	// '/activeProblemAreas/reactRefs': {
+	// 	path: '/activeProblemAreas/reactRefs',
+	// 	name: 'React Refs',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'e3f30382-9da2-4d08-a3b1-bb6899b34a86'
+	// },
 	'/activeProblemAreas/SVGRendering': {
 		path: '/activeProblemAreas/SVGRendering',
 		name: 'SVG Rendering',
@@ -753,13 +755,13 @@ const documentationTree = {
 		isOpen: false,
 		id: '44e61326-d324-4563-9792-f481dc7ad1f4'
 	},
-	'/activeProblemAreas/lintingIssues': {
-		path: '/activeProblemAreas/lintingIssues',
-		name: 'Linting Issues',
-		type: 'file',
-		isOpen: false,
-		id: '9ed15eea-a75b-4c78-9da2-d1bf0c3ab741'
-	},
+	// '/activeProblemAreas/lintingIssues': {
+	// 	path: '/activeProblemAreas/lintingIssues',
+	// 	name: 'Linting Issues',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '9ed15eea-a75b-4c78-9da2-d1bf0c3ab741'
+	// },
 	'/activeProblemAreas/cardGallery': {
 		path: '/activeProblemAreas/cardGallery',
 		name: 'Card Gallery',

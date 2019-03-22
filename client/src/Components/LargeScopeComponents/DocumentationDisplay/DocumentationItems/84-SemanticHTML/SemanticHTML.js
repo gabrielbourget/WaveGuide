@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../../../ThemeContext';
 
@@ -14,9 +15,10 @@ class SemanticHTML extends React.Component {
 
 		return (
 			<FromTheTopCradle>
-				<div className={ initObject.documentationItemClasses }>
+				<article className={ initObject.documentationItemClasses }>
+					article tags in documentation <br/>
 					
-				</div>
+				</article>
 			</FromTheTopCradle>
 		);
 	}

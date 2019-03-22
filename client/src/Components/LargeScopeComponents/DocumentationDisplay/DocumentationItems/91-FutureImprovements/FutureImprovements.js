@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../../../ThemeContext';
 
@@ -14,9 +15,12 @@ class FutureImprovements extends React.Component {
 
 		return (
 			<FromTheTopCradle>
-				<div className={ initObject.documentationItemClasses }>
-					
-				</div>
+				<article className={ initObject.documentationItemClasses }>
+					<ul>
+						<li>Documentation of component library onto something like Storybook and/or Bit</li>
+						<li>Move context into state</li>
+					</ul>
+				</article>
 			</FromTheTopCradle>
 		);
 	}

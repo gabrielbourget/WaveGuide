@@ -1,5 +1,6 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../../../ThemeContext';
 
 import styles from '../../DocumentationItem/DocumentationItem.module.scss';
@@ -7,6 +8,7 @@ import { prepareComponent } from '../../DocumentationItem/helpers';
 
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
+import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
 
 class ApplicationOverview extends React.Component {
 	render() {
@@ -15,7 +17,7 @@ class ApplicationOverview extends React.Component {
 
 		return (
 			<FromTheTopCradle>
-				<div className={ initObject.documentationItemClasses }>
+				<article className={ initObject.documentationItemClasses }>
 					<h1>Application Overview</h1>
 
 					<p>
@@ -38,7 +40,13 @@ class ApplicationOverview extends React.Component {
 						You can also sort the artists that return from the search alphabetically or reverse alphabetically by opening up the sort menu options and selecting the 
 						the corresponding button.
 					</p>
-				</div>
+
+					<div className={ initObject.navButtonsClasses }>
+						<Link to='/documentation/97df66de-33fb-48cd-9543-0c698821d5d8'><FilledButton text='&larr; Prev Page'/></Link>	
+						<Link to='/documentation/40edbc86-218c-47c9-b395-7a87c98a1fbe'><FilledButton text='Next Page &rarr;'/></Link>	
+					</div>
+										
+				</article>
 			</FromTheTopCradle>
 		);
 	}

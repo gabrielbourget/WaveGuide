@@ -1,5 +1,6 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../../../ThemeContext';
 
 import styles from '../../DocumentationItem/DocumentationItem.module.scss';
@@ -7,6 +8,7 @@ import { prepareComponent } from '../../DocumentationItem/helpers';
 
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
+import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
 
 class IntroToTheWaveScene extends React.Component {
 	render() {
@@ -15,7 +17,7 @@ class IntroToTheWaveScene extends React.Component {
 
 		return (
 			<FromTheTopCradle>
-				<div className={ initObject.documentationItemClasses }>
+				<article className={ initObject.documentationItemClasses }>
 					<h1>The Wave Scene</h1>
 
 					<p>
@@ -114,7 +116,13 @@ class IntroToTheWaveScene extends React.Component {
 						and exciting places. I look forward to the places that we'll all end up, and am excited to play a part in that discussion with the music and art that I come up with 
 						and collaborate with others on.
 					</p>
-				</div>
+
+					<div className={ initObject.navButtonsClasses }>
+						<Link to='/documentation/894b3efd-02a9-40d7-adee-aab4548c87f6'><FilledButton text='&larr; Prev Page'/></Link>	
+						<Link to='/documentation/71987a6a-61c1-4c2e-8ad6-af16714c583f'><FilledButton text='Next Page &rarr;'/></Link>	
+					</div>
+
+				</article>
 			</FromTheTopCradle>
 		);
 	}

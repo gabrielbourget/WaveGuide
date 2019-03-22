@@ -140,6 +140,18 @@ figcaption {
 }
 
 
+.navButtons {
+	grid-column: 2;
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 1.5rem;
+	justify-content: end;
+
+	width: 100%;
+	height: auto;
+}
+
+
 	// img {
 	//   max-width: 100%;
 	// }	

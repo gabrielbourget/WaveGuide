@@ -3,7 +3,8 @@ import ClassNames from 'classnames';
 import { ThemeContext } from '../../ThemeContext';
 
 import styles from './Footer.module.scss';
-import { ReactComponent as WaveIconDarkTheme } from './SVG/WaveIcon/WaveIconDarkTheme.svg';
+import WaveIconDarkTheme from './SVG/WaveIcon/WaveIconDarkTheme';
+//import { ReactComponent as WaveIconDarkTheme } from './SVG/WaveIcon/WaveIconDarkTheme.svg';
 import { ReactComponent as  WaveIconLightTheme } from './SVG/WaveIcon/WaveIconLightTheme.svg';
 
 import IconDisplay from '../Icons/IconDisplay/IconDisplay';
@@ -24,6 +25,8 @@ class Footer extends React.Component {
 						darkTheme={ <WaveIconDarkTheme/> }
 						lightTheme={ <WaveIconLightTheme/> }
 					/>
+
+					{/*<img src="./SVG/WaveIcon/WaveIconDarkTheme.svg" alt=""/>*/}
 				</div>
 				<div className={ styles.footerInfo }>
 					<div className={ styles.description }>

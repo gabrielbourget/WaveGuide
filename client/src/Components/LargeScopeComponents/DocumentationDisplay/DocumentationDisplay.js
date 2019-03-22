@@ -105,9 +105,9 @@ import Security_FeatureScope from './DocumentationItems/89-Security_FeatureScope
 import AnchorLinks from './DocumentationItems/90-AnchorLinks/AnchorLinks';
 import FutureImprovements from './DocumentationItems/91-FutureImprovements/FutureImprovements';
 import ActiveProblemAreas from './DocumentationItems/92-ActiveProblemAreas/ActiveProblemAreas';
-import ReactRefsProblem from './DocumentationItems/93-ReactRefsProblem/ReactRefsProblem';
+// import ReactRefsProblem from './DocumentationItems/93-ReactRefsProblem/ReactRefsProblem';
 import SVGRenderingProblem from './DocumentationItems/94-SVGRenderingProblem/SVGRenderingProblem';
-import LintingProblem from './DocumentationItems/95-LintingProblem/LintingProblem';
+// import LintingProblem from './DocumentationItems/95-LintingProblem/LintingProblem';
 import CardGalleryProblem from './DocumentationItems/96-CardGalleryProblem/CardGalleryProblem';
 
 class DocumentationDisplay extends React.Component { 
@@ -119,7 +119,7 @@ class DocumentationDisplay extends React.Component {
 			<FromTheTopCradle>
 				<div className={ initObject.documentationDisplayClasses }>
 					<DocumentationTree/>
-					<ProjectStructure/>
+					<ODS_Components/>
 				</div>				
 			</FromTheTopCradle>
 		);

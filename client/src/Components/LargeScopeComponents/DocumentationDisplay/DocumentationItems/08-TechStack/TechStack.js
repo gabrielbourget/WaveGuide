@@ -8,7 +8,7 @@ import { prepareComponent } from '../../DocumentationItem/helpers';
 
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
-import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
 
 class TechStack extends React.Component {
 	render() {
@@ -17,7 +17,7 @@ class TechStack extends React.Component {
 
 		return (
 			<FromTheTopCradle>
-				<div className={ initObject.documentationItemClasses }>
+				<article className={ initObject.documentationItemClasses }>
 					<h1>Tech Stack</h1>
 
 					<p>
@@ -109,7 +109,12 @@ class TechStack extends React.Component {
 						documentation.
 					</p>
 
-				</div>
+					<div className={ initObject.navButtonsClasses }>
+						<Link to='/documentation/40edbc86-218c-47c9-b395-7a87c98a1fbe'><FilledButton text='&larr; Prev Page'/></Link>	
+						<Link to='/documentation/0d209cbd-5b73-4e52-901e-1d012299acfd'><FilledButton text='Next Page &rarr;'/></Link>	
+					</div>
+
+				</article>
 			</FromTheTopCradle>
 		);
 	}
