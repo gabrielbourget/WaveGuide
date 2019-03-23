@@ -3,12 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../../../ThemeContext';
 
-import styles from '../../DocumentationItem/DocumentationItem.module.scss';
-import { prepareComponent } from '../../DocumentationItem/helpers';
-
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
+import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+
+import styles from '../../DocumentationItem/DocumentationItem.module.scss';
+import { prepareComponent } from '../../DocumentationItem/helpers';
 
 class ApplicationScope extends React.Component {
 	render() {
@@ -112,6 +113,8 @@ class ApplicationScope extends React.Component {
 						populate it through async actions to API endpoints. Implemented as a virtualized list, the component would only mount the items that will fit into 
 						the viewport at a time, plus some buffer amount up and down in order to allow for smooth loading as the application user moves up and down. 
 					</p>
+
+					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
 						<Link to='/documentation/71987a6a-61c1-4c2e-8ad6-af16714c583f'><FilledButton text='&larr; Prev Page'/></Link>	

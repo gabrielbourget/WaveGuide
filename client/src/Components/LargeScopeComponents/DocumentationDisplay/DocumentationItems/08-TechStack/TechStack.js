@@ -3,12 +3,13 @@ import React from 'react';
 import { ThemeContext } from '../../../../../ThemeContext';
 import { Link } from 'react-router-dom';
 
-import styles from '../../DocumentationItem/DocumentationItem.module.scss';
-import { prepareComponent } from '../../DocumentationItem/helpers';
-
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
+import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+
+import styles from '../../DocumentationItem/DocumentationItem.module.scss';
+import { prepareComponent } from '../../DocumentationItem/helpers';
 
 class TechStack extends React.Component {
 	render() {
@@ -108,6 +109,8 @@ class TechStack extends React.Component {
 						databases, the overall data model I am working with in the <Link to='/documentation/27d03266-f7a4-453f-8c4a-9f4f08584f09'> Database</Link> section of the 
 						documentation.
 					</p>
+
+					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
 						<Link to='/documentation/40edbc86-218c-47c9-b395-7a87c98a1fbe'><FilledButton text='&larr; Prev Page'/></Link>	

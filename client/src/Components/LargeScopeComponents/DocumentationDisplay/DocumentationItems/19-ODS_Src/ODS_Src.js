@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 //import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../../../ThemeContext';
 
-import styles from '../../DocumentationItem/DocumentationItem.module.scss';
-import { prepareComponent } from '../../DocumentationItem/helpers';
-
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
+import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+
+import styles from '../../DocumentationItem/DocumentationItem.module.scss';
+import { prepareComponent } from '../../DocumentationItem/helpers';
 
 class ODS_Src extends React.Component {
 	render() {
@@ -55,6 +56,8 @@ class ODS_Src extends React.Component {
 							</li>
 						</ul>
 					</p>
+
+					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
 						<Link to='/documentation/3033ce2e-9598-4d6c-9819-9666b49176f4'><FilledButton text='&larr; Prev Page'/></Link>	

@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 //import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../../../ThemeContext';
+
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
+import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
+import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
 
 import styles from '../../DocumentationItem/DocumentationItem.module.scss';
 import { prepareComponent } from '../../DocumentationItem/helpers';
-
-import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 
 class ODS_Components extends React.Component {
 	render() {
@@ -23,7 +24,7 @@ class ODS_Components extends React.Component {
 					<p>
 						<TextIndent>As </TextIndent> I sat down and began to brainstorm the application, and considered the kinds 
 						of components and experiences that would be necessary to build a community directory for this music scene, 
-						I began with broad strokes. I knew that I wanted some sort of home page, and that on that home page, I would 
+						I began with broad strokes. For example, I knew that I wanted some sort of home page, and that on that home page, I would 
 						want some sort of navbar, jumbotron splash image, and a footer. I knew that I wanted to be able to convey 
 						information about artists in at least a couple of ways, and settled on building out a card gallery and table 
 						representation of their profiles. 
@@ -31,9 +32,9 @@ class ODS_Components extends React.Component {
 
 					<p>
 						<TextIndent>As </TextIndent> this process continued, I began to get increasingly sophisticated in my sketching 
-						and began to consider the smaller components like buttons, indicators, and dividers, which would be used again 
-						and again in the context of providing a cohesive interface in which key UX series could take place. Moving into 
-						implementation of these components as React code, I decided to start small, and build up. I have come to really 
+						and started to consider the smaller components like buttons, indicators, and dividers, which would be used again 
+						and again in the context of providing a cohesive interface in which key UX sequences could take place. Moving into 
+						implementation of these components as React code, I decided to start small and build up. I have come to really 
 						embrace the compositional nature of React's philosophy, gradually working your way up to complex user interfaces by 
 						building smaller pieces of it, and then composing them into the different larger contexts in which they play a part 
 						in the user experience. 
@@ -41,7 +42,7 @@ class ODS_Components extends React.Component {
 
 					<p>
 						<TextIndent>I </TextIndent>go into the general design strategies that I employed to structure each component's inner 
-						directory structure, later on in <Link to='/documentation/45631f67-11da-4a24-986a-7ba6dfb4a157'>this section</Link>.
+						directory structure later on in <Link to='/documentation/45631f67-11da-4a24-986a-7ba6dfb4a157'>this section</Link>.
 						However, in this section of the documentation, I'd like to keep the focus on the structure that I developed for the 
 						organization of the overall component library.
 					</p>
@@ -101,8 +102,16 @@ class ODS_Components extends React.Component {
 						in the application, such as the <code>HomePage</code>, <code>DocumentationDisplay</code>, and <code>ArtistProfileDisplay</code>. The 
 						layouts, styles, and logic in these components is for the most part taking care of the broad strokes of how the pages of the application 
 						are laid out. In another application, the construction of similar components would be more of an emergent result of how one would want 
-						the large sections of the application to look, resulting from the composition and coordination of some of its larger pieces. 
+						the large sections of the application to look and function, resulting from the composition and coordination of some of its larger pieces. 
 					</p>
+
+					<HorizontalDivider/>
+
+					<div className={ initObject.navButtonsClasses }>
+						<Link to='/documentation/7e34fce7-d704-4d24-9779-0ea55d5a6664'><FilledButton text='&larr; Prev Page'/></Link>	
+						<Link to='/documentation/1722e2d5-8cb7-48d9-bcf2-333ea54de0ce'><FilledButton text='Next Page &rarr;'/></Link>	
+					</div>
+
 				</article>
 			</FromTheTopCradle>
 		);

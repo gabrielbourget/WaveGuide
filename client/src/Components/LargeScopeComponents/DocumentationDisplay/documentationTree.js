@@ -103,7 +103,7 @@ const documentationTree = {
 		isOpen: false,
 		id: '0d209cbd-5b73-4e52-901e-1d012299acfd',
 		children: ['/overview/projectStructure/overallDirectoryStructure',
-							 '/overview/projectStructure/componentDirectoryStructure']
+							 '/overview/projectStructure/internalComponentStructure']
 	},
 	'/overview/projectStructure/overallDirectoryStructure': {
 		path: '/overview/projectStructure/overallDirectoryStructure',
@@ -210,48 +210,48 @@ const documentationTree = {
 		isOpen: false,
 		id: '28005464-9c1f-413e-952f-d422242ed0ff'
 	},
-	'/overview/projectStructure/componentDirectoryStructure': {
-		path: '/overview/projectStructure/componentDirectoryStructure',
-		name: 'Component Directory Structure',
+	'/overview/projectStructure/internalComponentStructure': {
+		path: '/overview/projectStructure/internalComponentStructure',
+		name: 'Internal Directory Structure',
 		type: 'folder',
 		isOpen: false,
 		id: '45631f67-11da-4a24-986a-7ba6dfb4a157',
-		children: ['/overview/projectStructure/componentDirectoryStructure/mainComponentFile',
-							 '/overview/projectStructure/componentDirectoryStructure/stylesheets',
-							 '/overview/projectStructure/componentDirectoryStructure/helpers',
-							 '/overview/projectStructure/componentDirectoryStructure/tests',
-							 '/overview/projectStructure/componentDirectoryStructure/nestedComponents']
+		children: ['/overview/projectStructure/internalComponentStructure/mainComponentFile',
+							 '/overview/projectStructure/internalComponentStructure/stylesheets',
+							 '/overview/projectStructure/internalComponentStructure/HelpersAndResources',
+							 '/overview/projectStructure/internalComponentStructure/tests',
+							 '/overview/projectStructure/internalComponentStructure/nestedComponents']
 	},
-	'/overview/projectStructure/componentDirectoryStructure/mainComponentFile': {
-		path: '/overview/projectStructure/componentDirectoryStructure/mainComponentFile',
+	'/overview/projectStructure/internalComponentStructure/mainComponentFile': {
+		path: '/overview/projectStructure/internalComponentStructure/mainComponentFile',
 		name: 'Main Component File',
 		type: 'file',
 		isOpen: false,
 		id: '3b75a19f-9373-42d7-889a-47b30f0d2535'
 	},
-	'/overview/projectStructure/componentDirectoryStructure/stylesheets': {
-		path: '/overview/projectStructure/componentDirectoryStructure/stylesheets',
+	'/overview/projectStructure/internalComponentStructure/stylesheets': {
+		path: '/overview/projectStructure/internalComponentStructure/stylesheets',
 		name: 'Stylesheets',
 		type: 'file',
 		isOpen: false,
 		id: 'b535e44c-5ce5-4e18-9792-5067b7186c71'
 	},
-	'/overview/projectStructure/componentDirectoryStructure/helpers': {
-		path: '/overview/projectStructure/componentDirectoryStructure/helpers',
-		name: 'Helpers',
+	'/overview/projectStructure/internalComponentStructure/HelpersAndResources': {
+		path: '/overview/projectStructure/internalComponentStructure/HelpersAndResources',
+		name: 'Helpers And Resources',
 		type: 'file',
 		isOpen: false,
 		id: '070f43b1-72a0-4f64-9293-bd1bec17055c'
 	},
-	'/overview/projectStructure/componentDirectoryStructure/tests': {
-		path: '/overview/projectStructure/componentDirectoryStructure/tests',
+	'/overview/projectStructure/internalComponentStructure/tests': {
+		path: '/overview/projectStructure/internalComponentStructure/tests',
 		name: 'Tests',
 		type: 'file',
 		isOpen: false,
 		id: '4a1afd52-4735-4f21-a24f-33c112c511aa'
 	},
-	'/overview/projectStructure/componentDirectoryStructure/nestedComponents': {
-		path: '/overview/projectStructure/componentDirectoryStructure/nestedComponents',
+	'/overview/projectStructure/internalComponentStructure/nestedComponents': {
+		path: '/overview/projectStructure/internalComponentStructure/nestedComponents',
 		name: 'Nested Components',
 		type: 'file',
 		isOpen: false,

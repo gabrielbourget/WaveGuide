@@ -3,12 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../../../ThemeContext';
 
-import styles from '../../DocumentationItem/DocumentationItem.module.scss';
-import { prepareComponent } from '../../DocumentationItem/helpers';
-
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
+import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+
+import styles from '../../DocumentationItem/DocumentationItem.module.scss';
+import { prepareComponent } from '../../DocumentationItem/helpers';
 
 class Overview extends React.Component {
 	render() {
@@ -103,7 +104,10 @@ class Overview extends React.Component {
 					<div className={ initObject.navButtonsClasses }>
 						<Link to='/documentation/f161856e-5375-4a66-882f-85b122eb439d'><FilledButton text='&larr; Prev Page'/></Link>	
 						<Link to='/documentation/97df66de-33fb-48cd-9543-0c698821d5d8'><FilledButton text='Next Page &rarr;'/></Link>	
-					</div>					
+					</div>	
+
+					<HorizontalDivider/>
+
 				</article>
 			</FromTheTopCradle>
 		);

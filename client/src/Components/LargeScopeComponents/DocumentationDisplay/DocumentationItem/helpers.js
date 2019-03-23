@@ -9,12 +9,14 @@ export const prepareComponent = ( context, props, styles ) => {
 	const tipLeftClasses = ClassNames(styles.tipLeft, themeClass);
 	const spanQuoteClasses = ClassNames(styles.spanQuote, themeClass);
 	const navButtonsClasses = ClassNames(styles.navButtons, themeClass);
+	const tempPlaceholderClasses = ClassNames(styles.tempPlaceHolder)
 
 	return {
 		documentationItemClasses,
 		tipRightClasses,
 		tipLeftClasses,
 		spanQuoteClasses,
-		navButtonsClasses
+		navButtonsClasses,
+		tempPlaceholderClasses
 	};
 };

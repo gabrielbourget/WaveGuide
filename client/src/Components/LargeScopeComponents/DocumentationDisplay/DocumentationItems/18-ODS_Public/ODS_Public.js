@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 //import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../../../ThemeContext';
 
-import styles from '../../DocumentationItem/DocumentationItem.module.scss';
-import { prepareComponent } from '../../DocumentationItem/helpers';
-
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
+import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+
+import styles from '../../DocumentationItem/DocumentationItem.module.scss';
+import { prepareComponent } from '../../DocumentationItem/helpers';
 
 class ODS_Public extends React.Component {
 	render() {
@@ -50,6 +51,8 @@ class ODS_Public extends React.Component {
 						first for static assets. If it did not exist, the logic could make an API request to these external network resources, bring them into the state 
 						tree, and appropriately cache them for later use. 
 					</p>
+
+					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
 						<Link to='/documentation/2c4c531e-e905-41f4-ac7c-bc6018bab0a6'><FilledButton text='&larr; Prev Page'/></Link>	

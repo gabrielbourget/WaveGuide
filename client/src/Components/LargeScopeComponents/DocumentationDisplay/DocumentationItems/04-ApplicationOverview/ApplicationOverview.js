@@ -3,12 +3,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../../../ThemeContext';
 
-import styles from '../../DocumentationItem/DocumentationItem.module.scss';
-import { prepareComponent } from '../../DocumentationItem/helpers';
-
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
+import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+
+import styles from '../../DocumentationItem/DocumentationItem.module.scss';
+import { prepareComponent } from '../../DocumentationItem/helpers';
+
+
 
 class ApplicationOverview extends React.Component {
 	render() {
@@ -40,6 +43,8 @@ class ApplicationOverview extends React.Component {
 						You can also sort the artists that return from the search alphabetically or reverse alphabetically by opening up the sort menu options and selecting the 
 						the corresponding button.
 					</p>
+
+					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
 						<Link to='/documentation/97df66de-33fb-48cd-9543-0c698821d5d8'><FilledButton text='&larr; Prev Page'/></Link>	

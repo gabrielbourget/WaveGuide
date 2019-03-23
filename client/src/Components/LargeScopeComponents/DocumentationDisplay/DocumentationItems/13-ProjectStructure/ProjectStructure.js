@@ -3,12 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../../../ThemeContext';
 
-import styles from '../../DocumentationItem/DocumentationItem.module.scss';
-import { prepareComponent } from '../../DocumentationItem/helpers';
-
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
+import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+
+import styles from '../../DocumentationItem/DocumentationItem.module.scss';
+import { prepareComponent } from '../../DocumentationItem/helpers';
 
 class ProjectStructure extends React.Component {
 	render() {
@@ -35,6 +36,8 @@ class ProjectStructure extends React.Component {
 						to organizing and co-locating the resources that it needed to function as independently as possible. As such, I have broken off a 
 						sub-section where I talk about this set of strategies and how it was applied to building the components that make up the application. 
 					</p>
+
+					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
 						<Link to='/documentation/73627e59-49df-47a8-a0d7-22edd04a7c0c'><FilledButton text='&larr; Prev Page'/></Link>	

@@ -39,10 +39,10 @@ import ODS_Helpers from './DocumentationItems/23-ODS_Helpers/ODS_Helpers';
 import ODS_Redux from './DocumentationItems/24-ODS_Redux/ODS_Redux';
 import ODS_IndexJS from './DocumentationItems/25-ODS_IndexJS/ODS_IndexJS';
 import ODS_Design from './DocumentationItems/26-ODS_Design/ODS_Design';
-import ComponentDirectoryStructure from './DocumentationItems/27-ComponentDirectoryStructure/ComponentDirectoryStructure';
+import InternalComponentStructure from './DocumentationItems/27-InternalComponentStructure/InternalComponentStructure';
 import CDS_MainComponentFile from './DocumentationItems/28-CDS_MainComponentFile/CDS_MainComponentFile';
 import CDS_Stylesheets from './DocumentationItems/29-CDS_Stylesheets/CDS_Stylesheets';
-import CDS_Helpers from './DocumentationItems/30-CDS_Helpers/CDS_Helpers';
+import CDS_HelpersAndResources from './DocumentationItems/30-CDS_HelpersAndResources/CDS_HelpersAndResources';
 import CDS_Tests from './DocumentationItems/31-CDS_Tests/CDS_Tests';
 import CDS_NestedComponents from './DocumentationItems/32-CDS_NestedComponents/CDS_NestedComponents';
 import FrontEnd from './DocumentationItems/33-FrontEnd/FrontEnd';
@@ -119,7 +119,7 @@ class DocumentationDisplay extends React.Component {
 			<FromTheTopCradle>
 				<div className={ initObject.documentationDisplayClasses }>
 					<DocumentationTree/>
-					<ODS_Components/>
+					<CDS_Tests/>
 				</div>				
 			</FromTheTopCradle>
 		);
