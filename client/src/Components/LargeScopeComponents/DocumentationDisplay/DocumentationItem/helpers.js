@@ -9,7 +9,8 @@ export const prepareComponent = ( context, props, styles ) => {
 	const tipLeftClasses = ClassNames(styles.tipLeft, themeClass);
 	const spanQuoteClasses = ClassNames(styles.spanQuote, themeClass);
 	const navButtonsClasses = ClassNames(styles.navButtons, themeClass);
-	const tempPlaceholderClasses = ClassNames(styles.tempPlaceHolder)
+	const tempPlaceholderClasses = ClassNames(styles.tempPlaceHolder);
+	const componentDemonstrationRowClasses = ClassNames(styles.componentDemonstrationRow);
 
 	return {
 		documentationItemClasses,
@@ -17,6 +18,7 @@ export const prepareComponent = ( context, props, styles ) => {
 		tipLeftClasses,
 		spanQuoteClasses,
 		navButtonsClasses,
-		tempPlaceholderClasses
+		tempPlaceholderClasses,
+		componentDemonstrationRowClasses
 	};
 };

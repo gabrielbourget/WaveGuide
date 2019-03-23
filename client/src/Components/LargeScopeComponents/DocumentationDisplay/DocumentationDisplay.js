@@ -48,7 +48,7 @@ import CDS_NestedComponents from './DocumentationItems/32-CDS_NestedComponents/C
 import FrontEnd from './DocumentationItems/33-FrontEnd/FrontEnd';
 import React_DocArticle from './DocumentationItems/34-React_DocArticle/React_DocArticle';
 import CSSModules from './DocumentationItems/35-CSSModules/CSSModules';
-import GlobalStyles from './DocumentationItems/36-GlobalStyles/GlobalStyles';
+// import GlobalStyles from './DocumentationItems/36-GlobalStyles/GlobalStyles';
 import ColorThemes from './DocumentationItems/37-ColorThemes/ColorThemes';
 import RenderTimeComponentPreparation from './DocumentationItems/38-RenderTimeComponentPreparation/RenderTimeComponentPreparation';
 import UIDesignPatterns from './DocumentationItems/39-UIDesignPatterns/UIDesignPatterns';
@@ -64,7 +64,7 @@ import MapBox from './DocumentationItems/48-MapBox/MapBox';
 import SideMenu from './DocumentationItems/49-SideMenu/SideMenu';
 import Table from './DocumentationItems/50-Table/Table';
 import TreeView from './DocumentationItems/51-TreeView/TreeView';
-import FutureComponents from './DocumentationItems/52-FutureComponents/FutureComponents';
+import FrontEnd_FutureImprovements from './DocumentationItems/52-FrontEnd_FutureImprovements/FrontEnd_FutureImprovements';
 import StateManagement from './DocumentationItems/53-StateManagement/StateManagement';
 import Redux from './DocumentationItems/54-Redux/Redux';
 import ActionStrings from './DocumentationItems/55-ActionStrings/ActionStrings';
@@ -119,12 +119,14 @@ class DocumentationDisplay extends React.Component {
 			<FromTheTopCradle>
 				<div className={ initObject.documentationDisplayClasses }>
 					<DocumentationTree/>
-					<CDS_Tests/>
+					<ProfileCard/>
 				</div>				
 			</FromTheTopCradle>
 		);
 	}
 }
+
+// <Buttons onThemeSwitch={ this.props.onThemeSwitch }/>
 
 DocumentationDisplay.contextType = ThemeContext;
 

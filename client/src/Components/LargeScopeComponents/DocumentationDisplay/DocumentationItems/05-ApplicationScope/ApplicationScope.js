@@ -25,7 +25,7 @@ class ApplicationScope extends React.Component {
 						<TextIndent direction='leftToRight'>Part</TextIndent> of this learning process has also been developing the ability to more accurately
 						scope the amount of code, design, thought, and time that is required to build different types of user interface components and implement 
 						different design patterns. With that growing perspective, I was able to identify features that, while I wanted to take the time to develop,
-						would not fit within the timeline of learning these technologies and applying for software dev positions. Some of these features include 
+						would not fit within the timeline of learning these technologies and applying for software development positions. Some of these features include 
 						a more fully featured profile page for artists, profiles for other members of the community who contribute but do not necessarily make music,
 						and a content feed containing recent musical releases in the community, upcoming events, contests that are running etc...
 					</p>					

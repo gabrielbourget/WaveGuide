@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types'
 import { ThemeContext } from '../../../../ThemeContext';
 
 // - EX: -> Importing SVGs wrapped as React components. 
@@ -11,6 +12,14 @@ class SelectionIndicator extends React.Component {
 
 	state = {
 		selected: false
+	};
+
+	static propTypes = {
+		shape: PropTypes.string
+	};
+
+	static defaultProps = {
+		shape: 'roundedSquare'
 	};
 
 	handleClick = () => {

@@ -49,7 +49,15 @@ class App extends React.Component {
                 />               
               )}
             /> 
-            <Route path='/documentation' component={ DocumentationDisplayWithRouter }/>
+            <Route 
+              path='/documentation' 
+              //component={ DocumentationDisplayWithRouter }
+              render={ () => (
+                <DocumentationDisplayWithRouter
+                  onThemeSwitch={ this.props.switchTheme }
+                />
+              )}
+            />
 
             {/* Catch all route for 404 errors */}
             <Route render={ ({ location }) =>  <div> Cannot find this location... </div> }/>

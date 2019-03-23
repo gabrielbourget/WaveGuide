@@ -32,32 +32,13 @@ class CDS_Helpers extends React.Component {
 					<h2>Helper JS Files</h2>
 
 					<p>
-						<TextIndent>In</TextIndent> the course of building the application, I found that as I thought about how I wanted components to be 
-						styled, that these decisions were often contingent on dynamic factors such as application context, props passed into the component, 
-						or component state itself. In order to make sure my components were styling themselves in proper accordance to these information 
-						sources, I began writing logic such as assigning a <code>darkTheme</code> or <code>lightTheme</code> class to different elements of 
-						the component depending on the value stored in the ThemeContext object exposed through React's Context API. 
+						<TextIndent>In </TextIndent> an effort to keep my main component files as concise as possible, I have adopted a strategy of 
+						extracting certain utility logic to its own helper JS files, to be imported and used by component files as they need them. 
+						The main case in which I did this for components was a helper function that took in a component's state, props, context, and styles, 
+						running through some logic to determine how to appropriately style the component at render-time based on this dynamic information. 
+						I go into more detail on this process that I developed in the 
+						<Link to='/documentation/5b0bb77c-efd2-491f-9ef7-9fab84fe4f42'> Render-Time Component Preparation </Link> section of the documentation.
 					</p>
-
-					<p>
-						<TextIndent>What</TextIndent> I ended up with was series of different styling evaluations like this, based on how the stage was set 
-						at render-time by context, state, and props, which decided upon a certain selector name to be chosen. Then I used the 
-						<a href="https://www.npmjs.com/package/classnames" target='_blank' rel='noopen noreferrer'> ClassNames</a> package to build 
-						appropriate class lists for the different sections of my component. 
-					</p>
-
-					<p>
-						<TextIndent>As </TextIndent> I repeated this process for different components, I decided to extract it to its own function in a 
-						<code> helpers.js</code> file. This function takes in component state, props, and application context, and once it has prepared 
-						the classlists for the different sections of markup in the component, exports them as an object. Then, the component usingi this 
-						helper function imports it at the top of the file, and calls it, returning it into an object declared and initialized in the 
-						component's <code> render()</code> method. An example of one of these helper functions is included below for the [ insert component 
-						name here ] component, followed by how it is used in the component itself to assign the right styles to its parts. 
-					</p>
-
-					<div className={ initObject.tempPlaceholderClasses }>
-						[ Code sample of a component's helper function, and how it is used in the component's <code> render()</code> method. ]
-					</div>
 
 					<h3>Other Helper Functions</h3>
 
@@ -68,6 +49,13 @@ class CDS_Helpers extends React.Component {
 						profile against a list of available social media icons. They then returns an array of objects containing the appropriate 
 						social media icons, grouped by name and variation, providing the components with the right assets needed to 
 						render the profile correctly.
+					</p>
+
+					<p>
+						<TextIndent>I</TextIndent> have not yet run into many situations that require the extraction of other helper logic associated with the 
+						rendering and function of my components. However, I am more comfortable knowing that I have set up an external file that can grow as 
+						the need might arise for additional helper logic. It will keep my component files uncluttered, and if any helper file starts to reach 
+						unwieldly sizes, I can refactor it into multiple files and move them into their own nested directory.
 					</p>
 
 					<h2>Resources</h2>

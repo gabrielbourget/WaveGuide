@@ -20,8 +20,13 @@ class FutureImprovements extends React.Component {
 			<FromTheTopCradle>
 				<article className={ initObject.documentationItemClasses }>
 					<ul>
-						<li>Documentation of component library onto something like Storybook and/or Bit</li>
+						<li>Documentation of component library onto something like Storybook and/or Bit, exposing sections of it as npm package</li>
 						<li>Move context into state</li>
+						<li>Whole section on media responsiveness</li>
+						<ul>
+							<li>Media queries to reflow how layout is achieved in css</li>
+							<li>Window listeners in components that trigger changes to state which trigger re-expression of component for changed viewport context</li>
+						</ul>
 					</ul>
 				</article>
 			</FromTheTopCradle>

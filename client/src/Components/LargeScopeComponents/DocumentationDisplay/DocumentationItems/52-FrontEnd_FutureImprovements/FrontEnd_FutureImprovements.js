@@ -19,7 +19,41 @@ class ApplicationOverview extends React.Component {
 		return (
 			<FromTheTopCradle>
 				<article className={ initObject.documentationItemClasses }>
-					
+					<ul>
+						<li>
+							<p>
+								Move theme into redux store and discontinue use of Context API
+							</p>
+						</li>
+						<li>
+							<p>
+								Move tree state into redux store.
+							</p>
+						</li>
+						<li>
+							<p>Future UI Components</p>
+							<ul>
+								<li>
+									<p>
+										Audio Player
+									</p>
+								</li>
+								<li>
+									<p>
+										Video Player
+									</p>
+								</li>
+								<li>
+									<p>
+										Modal (w/explanation of how I have many of the tools needed, having implemented Side Menu)
+									</p>
+								</li>
+								<li>
+									<p>Other Indicators (e.g. selection indicators that are absolutely positioned under menu options and such)</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</article>
 			</FromTheTopCradle>
 		);

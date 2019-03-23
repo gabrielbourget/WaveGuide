@@ -58,7 +58,7 @@ class TechStack extends React.Component {
 
 					<p>
 						<TextIndent>With</TextIndent> its modular, component-based approach to UI construction, its performant diffing algorithms over a 
-						Javascript-based VirtualDOM, the great library support it has from its creator and the wider open source community, and the 
+						Javascript-based virtual DOM, the great library support it has from its creator and the wider open source community, and the 
 						exciting new features being shipped out with every release, React was a clear choice for me as I set out to build the front end 
 						of my application. You can read more about the API features I used and the way that I structured the front end of the application 
 						in the <Link to='/documentation/b7b2a049-cdcb-493f-aa24-29b2bed9ccf8'>Front End</Link> section of the documentation.

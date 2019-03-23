@@ -19,6 +19,7 @@ class CDS_Tests extends React.Component {
 		return (
 			<FromTheTopCradle>
 				<article className={ initObject.documentationItemClasses }>
+					
 					<h1>Tests</h1>
 
 					<p>
@@ -29,6 +30,14 @@ class CDS_Tests extends React.Component {
 						develop as the application grows in the <Link to='/documentation/2ddc812b-2390-4664-a2f0-d214dfe7b8ea'> Tests </Link> 
 						section of the documentation.
 					</p>
+
+					<HorizontalDivider/>
+
+					<div className={ initObject.navButtonsClasses }>
+						<Link to='/documentation/070f43b1-72a0-4f64-9293-bd1bec17055c'><FilledButton text='&larr; Prev Page'/></Link>	
+						<Link to='/documentation/1fd3e88d-cf43-4616-b115-f0bd390585a4'><FilledButton text='Next Page &rarr;'/></Link>	
+					</div>
+
 				</article>
 			</FromTheTopCradle>
 		);

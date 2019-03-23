@@ -265,9 +265,11 @@ const documentationTree = {
 		isOpen: false,
 		id: 'b7b2a049-cdcb-493f-aa24-29b2bed9ccf8',
 		children: ['/frontEnd/React/', '/frontEnd/CSSModules',
-							 '/frontEnd/GlobalStyles', '/frontEnd/colorThemes',
+							 // '/frontEnd/GlobalStyles', 
+							 '/frontEnd/colorThemes',
 							 '/frontEnd/renderTimeComponentPrep', 
-							 '/frontEnd/UIDesignPatterns']
+							 '/frontEnd/ImplementedUIPatterns',
+							 '/frontEnd/FrontEnd_FutureImprovements']
 	},
 	'/frontEnd/React/': {
 		path: '/frontEnd/React',
@@ -283,13 +285,13 @@ const documentationTree = {
 		isOpen: false,
 		id: '8f90509c-c5f9-471c-b068-e616a9679e86'
 	},	
-	'/frontEnd/GlobalStyles': {
-		path: '/frontEnd/GlobalStyles',
-		name: 'Global Styles',
-		type: 'file',
-		isOpen: false,
-		id: 'c49b19c1-16d1-4eff-9e92-f2ce76efb402'
-	},
+	// '/frontEnd/GlobalStyles': {
+	// 	path: '/frontEnd/GlobalStyles',
+	// 	name: 'Global Styles',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'c49b19c1-16d1-4eff-9e92-f2ce76efb402'
+	// },
 	'/frontEnd/colorThemes': {
 		path: '/frontEnd/colorThemes',
 		name: 'Color Themes',
@@ -304,113 +306,112 @@ const documentationTree = {
 		isOpen: false,
 		id: '5b0bb77c-efd2-491f-9ef7-9fab84fe4f42'
 	},
-	'/frontEnd/UIDesignPatterns': {
-		path: '/frontEnd/UIDesignPatterns',
-		name: 'Implemented Design Patterns',
+	'/frontEnd/ImplementedUIPatterns': {
+		path: '/frontEnd/ImplementedUIPatterns',
+		name: 'Implemented UI Patterns',
 		type: 'folder',
 		isOpen: false,
 		id: 'b1020f53-578b-4d6b-a112-1ee402e94ead',
-		children: ['/frontEnd/UIDesignPatterns/buttons',
-							 '/frontEnd/UIDesignPatterns/selectionIndicators',
-							 '/frontEnd/UIDesignPatterns/dividers',
-							 '/frontEnd/UIDesignPatterns/searchBar',
-							 '/frontEnd/UIDesignPatterns/cradles',
-							 '/frontEnd/UIDesignPatterns/profileCard', 
-							 '/frontEnd/UIDesignPatterns/cardGallery',
-							 '/frontEnd/UIDesignPatterns/graphVisualization',
-							 '/frontEnd/UIDesignPatterns/map',
-							 '/frontEnd/UIDesignPatterns/sideMenu',
-							 '/frontEnd/UIDesignPatterns/table',
-							 '/frontEnd/UIDesignPatterns/treeView',
-							 '/frontEnd/UIDesignPatterns/futureComponents']
+		children: ['/frontEnd/ImplementedUIPatterns/buttons',
+							 '/frontEnd/ImplementedUIPatterns/selectionIndicators',
+							 '/frontEnd/ImplementedUIPatterns/dividers',
+							 '/frontEnd/ImplementedUIPatterns/searchBar',
+							 '/frontEnd/ImplementedUIPatterns/cradles',
+							 '/frontEnd/ImplementedUIPatterns/profileCard', 
+							 '/frontEnd/ImplementedUIPatterns/cardGallery',
+							 '/frontEnd/ImplementedUIPatterns/graphVisualization',
+							 '/frontEnd/ImplementedUIPatterns/map',
+							 '/frontEnd/ImplementedUIPatterns/sideMenu',
+							 '/frontEnd/ImplementedUIPatterns/table',
+							 '/frontEnd/ImplementedUIPatterns/treeView']
 	},
-	'/frontEnd/UIDesignPatterns/buttons': {
-		path: '/frontEnd/UIDesignPatterns/buttons',
+	'/frontEnd/ImplementedUIPatterns/buttons': {
+		path: '/frontEnd/ImplementedUIPatterns/buttons',
 		name: 'Buttons',
 		type: 'file',
 		isOpen: false,
 		id: 'ac20c586-039e-4ea4-9b20-8a41cdab3a38'
 	},
-	'/frontEnd/UIDesignPatterns/selectionIndicators': {
-		path: '/frontEnd/UIDesignPatterns/selectionIndicators',
+	'/frontEnd/ImplementedUIPatterns/selectionIndicators': {
+		path: '/frontEnd/ImplementedUIPatterns/selectionIndicators',
 		name: 'Selection Indicators',
 		type: 'file',
 		isOpen: false,
 		id: '80c14b29-aa22-40f8-9672-7314481f5d86'
 	},
-	'/frontEnd/UIDesignPatterns/dividers': {
-		path: '/frontEnd/UIDesignPatterns/dividers',
+	'/frontEnd/ImplementedUIPatterns/dividers': {
+		path: '/frontEnd/ImplementedUIPatterns/dividers',
 		name: 'Dividers',
 		type: 'file',
 		isOpen: false,
 		id: '21a57b18-8be9-45ca-9e79-66b6511e995f'
 	},
-	'/frontEnd/UIDesignPatterns/searchBar': {
-		path: '/frontEnd/UIDesignPatterns/searchBar',
+	'/frontEnd/ImplementedUIPatterns/searchBar': {
+		path: '/frontEnd/ImplementedUIPatterns/searchBar',
 		name: 'Search Bar',
 		type: 'file',
 		isOpen: false,
 		id: '0b78e43a-9b1f-4544-bb50-5f1772434f29'
 	},
-	'/frontEnd/UIDesignPatterns/cradles': {
-		path: '/frontend/UIDesignPatterns/cradles',
+	'/frontEnd/ImplementedUIPatterns/cradles': {
+		path: '/frontend/ImplementedUIPatterns/cradles',
 		name: 'Cradles',
 		type: 'file',
 		isOpen: false,
 		id: 'c212d863-a83b-451f-a7a3-93c979ec3d0a'
 	},
-	'/frontEnd/UIDesignPatterns/profileCard': {
-		path: '/frontEnd/UIDesignPatterns/profileCard',
+	'/frontEnd/ImplementedUIPatterns/profileCard': {
+		path: '/frontEnd/ImplementedUIPatterns/profileCard',
 		name: 'Profile Card',
 		type: 'file',
 		isOpen: false,
 		id: '5998402b-1e69-4095-b7a9-7800e17d0b47'
 	},
-	'/frontEnd/UIDesignPatterns/cardGallery': {
-		path: '/frontEnd/UIDesignPatterns/cardGallery',
+	'/frontEnd/ImplementedUIPatterns/cardGallery': {
+		path: '/frontEnd/ImplementedUIPatterns/cardGallery',
 		name: 'Card Gallery',
 		type: 'file',
 		isOpen: false,
 		id: '6061a33a-2168-4571-8aa7-cf516e0ef601'
 	},
-	'/frontEnd/UIDesignPatterns/graphVisualization': {
-		path: '/frontEnd/UIDesignPatterns/graphVisualization',
+	'/frontEnd/ImplementedUIPatterns/graphVisualization': {
+		path: '/frontEnd/ImplementedUIPatterns/graphVisualization',
 		name: 'Graph Visualization',
 		type: 'file',
 		isOpen: false,
 		id: '8f036fd9-596b-40eb-9f79-311e0e9afa79'
 	},
-	'/frontEnd/UIDesignPatterns/map': {
-		path: '/frontEnd/UIDesignPatterns/map',
+	'/frontEnd/ImplementedUIPatterns/map': {
+		path: '/frontEnd/ImplementedUIPatterns/map',
 		name: 'Map',
 		type: 'file',
 		isOpen: false,
 		id: 'fc2898d7-3deb-4816-b30e-1334e7f96ae6'
 	},
-	'/frontEnd/UIDesignPatterns/sideMenu': {
-		path: '/frontEnd/UIDesignPatterns/sideMenu',
+	'/frontEnd/ImplementedUIPatterns/sideMenu': {
+		path: '/frontEnd/ImplementedUIPatterns/sideMenu',
 		name: 'Side Menu',
 		type: 'file',
 		isOpen: false,
 		id: 'cf74736d-037c-45ab-a517-be63fbb05987'
 	},
-	'/frontEnd/UIDesignPatterns/table': {
-		path: '/frontEnd/UIDesignPatterns/table',
+	'/frontEnd/ImplementedUIPatterns/table': {
+		path: '/frontEnd/ImplementedUIPatterns/table',
 		name: 'Table',
 		type: 'file',
 		isOpen: false,
 		id: '167985c8-11a5-4b09-be7b-fa176dcef24e'
 	},
-	'/frontEnd/UIDesignPatterns/treeView': {
-		path: '/frontEnd/UIDesignPatterns/table',
+	'/frontEnd/ImplementedUIPatterns/treeView': {
+		path: '/frontEnd/ImplementedUIPatterns/table',
 		name: 'Tree View',
 		type: 'file',
 		isOpen: false,
 		id: '22e9e820-5b9c-4688-8f31-7b44a3afe6bd'
 	},
-	'/frontEnd/UIDesignPatterns/futureComponents': {
-		path: '/frontEnd/UIDesignPatterns/futureComponents',
-		name: 'Future Components',
+	'/frontEnd/FrontEnd_FutureImprovements': {
+		path: '/frontEnd/FrontEnd_FutureImprovements',
+		name: 'Future Improvements',
 		type: 'file',
 		isOpen: false,
 		id: 'a6405a7a-5467-4e28-a388-c48a47284850'
