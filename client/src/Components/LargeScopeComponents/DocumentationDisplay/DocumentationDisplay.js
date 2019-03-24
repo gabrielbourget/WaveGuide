@@ -119,7 +119,7 @@ class DocumentationDisplay extends React.Component {
 			<FromTheTopCradle>
 				<div className={ initObject.documentationDisplayClasses }>
 					<DocumentationTree/>
-					<Redux/>
+					<SpecialCasesComponentState/>
 				</div>
 			</FromTheTopCradle>
 		);

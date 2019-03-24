@@ -32,9 +32,9 @@ class Redux extends React.Component {
 					</p>
 
 					<p>
-						<TextIndent>At</TextIndent> the bottom of this section is a visual representation of the different entities involved in my Redux implementation
-						along with relationships denoting resources that have been granted to and passed between them, along with the types of actions and information that 
-						flow between them. Between here and there, I will go over the different parts of my Redux implementation, which are:
+						<TextIndent>At</TextIndent> the bottom of this section is a visual representation of the different entities involved in this setup
+						along with relationships denoting resources that have been granted to and passed between them and the types of actions and information that 
+						flow to the reducer. Between here and there, I will go over the different parts of my Redux implementation, which are:
 						<ul style={ {paddingLeft: '20px'} }>
 							<li>
 								<p>The action strings I wrote and encapsulated into constant variables</p>
@@ -44,7 +44,7 @@ class Redux extends React.Component {
 							</li>
 							<li>
 								<p>
-									The reducer which negotiates the current state along with instructions about how to return a new copy of it to the store, along with 
+									The reducer which negotiates the current state along with instructions about how to return a new copy of it to the store, including 
 									appropriate changes and updates.
 								</p>
 							</li>
@@ -98,9 +98,9 @@ class Redux extends React.Component {
 
 					<p>
 						<TextIndent>The</TextIndent> reducer is where the real meat of this design pattern is carried out. Actions that are dispatched to the store are received by a 
-						reducer function, which descends down a conditional structure such as an <code>if</code> / <code>if-else</code> / <code>else</code> block or <code>switch</code> 
-						block. Depending on the action type, the reducer creates a copy of the current state, makes the appropriate modifications to state required by the action, 
-						and returns the new, modified copy of state back to the store to be resolved against the Virtual DOM by React, modifying UI where necessary.
+						reducer function, which descends down a conditional structure such as an <code>if</code> / <code>if-else</code> / <code>else</code> block or <code>switch </code> 
+						block. Depending on the action type, the reducer creates a copy of the current state, makes the appropriate modifications required by the action, 
+						and returns the new, modified copy back to the store to be resolved against the Virtual DOM by React, modifying UI where necessary.
 					</p>
 
 					<h2>The Store</h2>
