@@ -3,10 +3,14 @@
 	min-height: 350px;
 	width: 100%;
 	// margin-top: 40px;
-
+	grid-gap: 1.5rem;
 	display: grid;
 	grid-auto-flow: column;
-	grid-template-columns: 2fr 4fr;
+	align-content: center;
+
+	@media (max-width: 600px) {
+		grid-auto-flow: row;
+	}
 
 	&.darkTheme {
 		background: var(--black);
@@ -25,23 +29,18 @@
 		place-items: center;
 	}
 
-	& .footerInfo {
+
+	& .description {
+		height: 100%;
+		width: 100%;
+	}
+
+	& .links {
 		height: 100%;
 		width: 100%;
 		display: grid;
-
-		& .description {
-			height: 100%;
-			width: 100%;
-		}
-
-		& .links {
-			height: 100%;
-			width: 100%;
-			display: grid;
-			grid-template-columns: 200px;
-			justify-content: center;
-			grid-gap: 1rem;
-		}
+		grid-template-columns: 200px;
+		justify-content: center;
+		grid-gap: 1rem;
 	}
 }
