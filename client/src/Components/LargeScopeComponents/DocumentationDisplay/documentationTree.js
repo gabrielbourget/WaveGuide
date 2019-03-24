@@ -431,58 +431,58 @@ const documentationTree = {
 	'/stateManagement/redux': {
 		path: '/stateManagement/redux',
 		name: 'Redux',
-		type: 'folder',
+		type: 'file',
 		isOpen: false,
 		id: 'c51a43be-2a4b-4fac-b40b-ec04e0d64a95',
-		children: ['/stateManagement/redux/actionStrings',
-						   '/stateManagement/redux/actionCreators',
-						   '/stateManagement/redux/reducer',
-						   '/stateManagement/redux/store',
-						   '/stateManagement/redux/appContainer',
-						   '/stateManagement/redux/provider']
+		// children: ['/stateManagement/redux/actionStrings',
+		// 				   '/stateManagement/redux/actionCreators',
+		// 				   '/stateManagement/redux/reducer',
+		// 				   '/stateManagement/redux/store',
+		// 				   '/stateManagement/redux/appContainer',
+		// 				   '/stateManagement/redux/provider']
 	},
-	'/stateManagement/redux/actionStrings': {
-		path: '/stateManagement/redux/actionStrings',
-		name: 'Action Strings',
-		type: 'file',
-		isOpen: false,
-		id: '65220967-8409-48aa-9e1b-1d2e6336a89e'
-	},
-	'/stateManagement/redux/actionCreators': {
-		path: '/stateManagement/redux/actionCreators',
-		name: 'Action Creators',
-		type: 'file',
-		isOpen: false,
-		id: 'b09aa2f2-47cf-4f4d-a429-cc06fe05efff'
-	},
-	'/stateManagement/redux/reducer': {
-		path: '/stateManagement/redux/reducer',
-		name: 'Reducer',
-		type: 'file',
-		isOpen: false,
-		id: 'ce206855-3aa3-4e36-8a4a-786e90f1c594'
-	},
-	'/stateManagement/redux/store': {
-		path: '/stateManagement/redux/store',
-		name: 'Store',
-		type: 'file',
-		isOpen: false,
-		id: 'e46c6933-0081-4811-98ac-c5be389c84b7'
-	},
-	'/stateManagement/redux/appContainer': {
-		path: '/stateManagement/redux/appContainer',
-		name: 'AppContainer',
-		type: 'file',
-		isOpen: false,
-		id: '9f85f9a2-8521-484a-99b6-da43dad32dd2'
-	},
-	'/stateManagement/redux/provider': {
-		path: '/stateManagement/redux/provider',
-		name: 'Provider',
-		type: 'file',
-		isOpen: false,
-		id: 'e0475963-b5b2-4dca-b47d-ac4ef640a65a'
-	},
+	// '/stateManagement/redux/actionStrings': {
+	// 	path: '/stateManagement/redux/actionStrings',
+	// 	name: 'Action Strings',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '65220967-8409-48aa-9e1b-1d2e6336a89e'
+	// },
+	// '/stateManagement/redux/actionCreators': {
+	// 	path: '/stateManagement/redux/actionCreators',
+	// 	name: 'Action Creators',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'b09aa2f2-47cf-4f4d-a429-cc06fe05efff'
+	// },
+	// '/stateManagement/redux/reducer': {
+	// 	path: '/stateManagement/redux/reducer',
+	// 	name: 'Reducer',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'ce206855-3aa3-4e36-8a4a-786e90f1c594'
+	// },
+	// '/stateManagement/redux/store': {
+	// 	path: '/stateManagement/redux/store',
+	// 	name: 'Store',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'e46c6933-0081-4811-98ac-c5be389c84b7'
+	// },
+	// '/stateManagement/redux/appContainer': {
+	// 	path: '/stateManagement/redux/appContainer',
+	// 	name: 'AppContainer',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '9f85f9a2-8521-484a-99b6-da43dad32dd2'
+	// },
+	// '/stateManagement/redux/provider': {
+	// 	path: '/stateManagement/redux/provider',
+	// 	name: 'Provider',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'e0475963-b5b2-4dca-b47d-ac4ef640a65a'
+	// },
 	'/stateManagement/specialCasesComponentState': {
 		path: '/stateManagement/specialCasesComponentState',
 		name: 'Local State In Some Components',

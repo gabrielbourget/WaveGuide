@@ -119,8 +119,8 @@ class DocumentationDisplay extends React.Component {
 			<FromTheTopCradle>
 				<div className={ initObject.documentationDisplayClasses }>
 					<DocumentationTree/>
-					<ProfileCard/>
-				</div>				
+					<Redux/>
+				</div>
 			</FromTheTopCradle>
 		);
 	}

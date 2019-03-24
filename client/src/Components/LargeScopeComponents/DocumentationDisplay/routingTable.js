@@ -53,12 +53,12 @@ const routingTable = [
 	{ 'a6405a7a-5467-4e28-a388-c48a47284850': 'FrontEnd_FutureImprovements' },
 	{ '9cb887d0-a6d6-4a68-985b-0d0fb4a6836b': 'StateManagement' },
 	{ 'c51a43be-2a4b-4fac-b40b-ec04e0d64a95': 'Redux' },
-	{ '65220967-8409-48aa-9e1b-1d2e6336a89e': 'ActionStrings' },
-	{ 'b09aa2f2-47cf-4f4d-a429-cc06fe05efff': 'ActionCreators' },
-	{ 'ce206855-3aa3-4e36-8a4a-786e90f1c594': 'Reducer' },
-	{ 'e46c6933-0081-4811-98ac-c5be389c84b7': 'Store' },
-	{ '9f85f9a2-8521-484a-99b6-da43dad32dd2': 'AppContainer' },
-	{ 'e0475963-b5b2-4dca-b47d-ac4ef640a65a': 'Provider' },
+	// { '65220967-8409-48aa-9e1b-1d2e6336a89e': 'ActionStrings' },
+	// { 'b09aa2f2-47cf-4f4d-a429-cc06fe05efff': 'ActionCreators' },
+	// { 'ce206855-3aa3-4e36-8a4a-786e90f1c594': 'Reducer' },
+	// { 'e46c6933-0081-4811-98ac-c5be389c84b7': 'Store' },
+	// { '9f85f9a2-8521-484a-99b6-da43dad32dd2': 'AppContainer' },
+	// { 'e0475963-b5b2-4dca-b47d-ac4ef640a65a': 'Provider' },
 	{ 'b9f85483-d91c-44b7-9723-f9a96632ac65': 'SpecialCasesComponentState' },
 	{ '65fab7ed-3225-4ca4-8a08-723406e431eb': 'ThunkMiddleware' },
 	{ '469a3266-ff6b-4879-948d-616af79f8e39': 'StateManagement_FutureImprovements' },
@@ -96,7 +96,7 @@ const routingTable = [
 	{ '44e61326-d324-4563-9792-f481dc7ad1f4': 'SVGRenderingProblem' },
 	// { '9ed15eea-a75b-4c78-9da2-d1bf0c3ab741': 'LintingProblem' },
 	{ 'e555a550-4c90-4d84-942b-d5afde3bbdf1': 'CardGalleryProblem' },
-]
+];
 
 export default routingTable;
 

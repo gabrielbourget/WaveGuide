@@ -11,6 +11,7 @@ export const prepareComponent = ( context, props, styles ) => {
 	const navButtonsClasses = ClassNames(styles.navButtons, themeClass);
 	const tempPlaceholderClasses = ClassNames(styles.tempPlaceHolder);
 	const componentDemonstrationRowClasses = ClassNames(styles.componentDemonstrationRow);
+	const reduxFlowDemoCradleClasses = ClassNames(styles.reduxFlowDemoCradle);
 
 	return {
 		documentationItemClasses,
@@ -19,6 +20,7 @@ export const prepareComponent = ( context, props, styles ) => {
 		spanQuoteClasses,
 		navButtonsClasses,
 		tempPlaceholderClasses,
-		componentDemonstrationRowClasses
+		componentDemonstrationRowClasses,
+		reduxFlowDemoCradleClasses
 	};
 };

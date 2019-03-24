@@ -20,6 +20,39 @@ class CardGallery extends React.Component {
 			<FromTheTopCradle>
 				<article className={ initObject.documentationItemClasses }>
 					
+					<h1>Card Gallery</h1>
+
+					<p>
+						<TextIndent>One</TextIndent> of the standard display environments that I wanted to implement as part of 
+						my learning process was a dynamic gallery that could display and arrange the artist profile cards within 
+						fluid specifications that reflowed content accordingly and could handle different viewport sizes. I followed 
+						<a href="https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/" target='_blank' rel='noopen noreferrer'> this </a>
+						tutorial from CSS-Tricks to get a starting idea of how to pull it off, and went from there, customizing the 
+						gallery to my needs.
+					</p>
+
+					<p>
+						<TextIndent>As</TextIndent> mentioned in the previous section, where I discuss the <code>TwoSizeCard</code> component that 
+						displays artist profile information, the way that it resizes itself is by changing its row-span within this grid environment 
+						from one, to two. I template the columns of the grid to fill as many spots as there is available, at the globally specified 
+						card height that I set. Then, I set the template rows of the grid to fill as many spots as are required by the number of cards 
+						in the grid. I also made use of the property <code>grid-auto-flow: dense</code> in order to ensure that, as cards expanded and closed, 
+						the available content would reflow thorugh the grid's space in order prevent any holes from occuring. Finally, the way the columns 
+						and rows are templated out, the grid scales nicely across wide screen sizes all the way down to the narrow reality of mobile devices. 
+						The full SCSS code that specifies the grid layout is included below in the following code sample. 
+					</p>
+
+					<div className={ initObject.tempPlaceholderClasses }>
+						[ code sample with SCSS for artist card grid ]
+					</div>
+
+					<HorizontalDivider/>
+
+					<div className={ initObject.navButtonsClasses }>
+						<Link to='/documentation/5998402b-1e69-4095-b7a9-7800e17d0b47'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/8f036fd9-596b-40eb-9f79-311e0e9afa79'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
+					</div>					
+
 				</article>
 			</FromTheTopCradle>
 		);

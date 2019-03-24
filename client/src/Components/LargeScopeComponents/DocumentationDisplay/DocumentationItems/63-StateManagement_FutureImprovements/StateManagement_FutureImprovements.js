@@ -19,7 +19,23 @@ class StateManagement_FutureImprovements extends React.Component {
 		return (
 			<FromTheTopCradle>
 				<article className={ initObject.documentationItemClasses }>
-					
+					<ul>
+						<li>
+							<p>
+								Breaking up and composing reducer logic. 
+							</p>
+						</li>
+						<li>
+							<p>
+								Moving TreeView state into redux store, allowing it to persist its visual representation. 
+							</p>
+						</li>
+						<li>
+							<p>
+								Other tech like Redux Sagas, Redux Observables (from Netflix)
+							</p>
+						</li>
+					</ul>
 				</article>
 			</FromTheTopCradle>
 		);
