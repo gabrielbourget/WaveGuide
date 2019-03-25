@@ -60,7 +60,7 @@ export const communityLinks = [
 		description: 'Label/Collective'
 	},
 	{
-		link: 'https://liquidritual.com/',
+		link: 'http://liquidritual.com/',
 		buttonText: 'Liquid Ritual',
 		description: 'Label/Collective'
 	},
@@ -77,6 +77,11 @@ export const communityLinks = [
 	{
 		link :'https://soundcloud.com/official-secret-souls',
 		buttonText: 'Secret Souls',
+		description: 'Label/Collective'
+	},
+	{
+		link: 'https://soundcloud.com/crystalorca/tracks',
+		buttonText: 'Crystal Orca',
 		description: 'Label/Collective'
 	},
 	{

@@ -41,7 +41,7 @@ class Overview extends React.Component {
 						</a> 
 
 						, and fan of this kind of music, I've built this application with the intention of serving that community, seeking for it to 
-						act as a directory and hub for the artists and all others to use. It also doubles as a portoflio project in which I am seeking 
+						act as a directory and hub for artists and all others to use. It also doubles as a portoflio project in which I am seeking 
 						to demonstrate a working understanding of many of the core technologies and design patterns that make up the modern web applications 
 						of the day, with a focus on front end development. You can find more information on this artistic community in the
 						 <Link to='/documentation/97df66de-33fb-48cd-9543-0c698821d5d8'> next section</Link>, and can learn more about the way that 
@@ -58,7 +58,7 @@ class Overview extends React.Component {
 
 					<h2>Learning Journey</h2>
 					<p>
-						<TextIndent direction='leftToRight'>Having</TextIndent> finished my computer science program at Algonquin College in 
+						<TextIndent direction='leftToRight'>Having</TextIndent> finished a computer science program at Algonquin College in 
 						December of 2018, it was time to look towards what kind of jobs I might want to apply for, and the types of skills
 						required for them. As I kept up with modern web development technologies through podcasts, blog posts, Youtube 
 						channels I enjoyed, etc... I became increasingly enamored with technologies such as NodeJS, React, and Redux, which were
@@ -71,7 +71,7 @@ class Overview extends React.Component {
 						<TextIndent direction='leftToRight'>One</TextIndent> of the major pain points that I had experienced in 
 						developing web applications so far had been the difficulty of maintaining modular and reusable code. Building them up 
 						to that point within an MVC paradigm, I found that on the markup side, using templating syntaxes such as CSHTML, I was 
-						replicating a lot of similar view code blocks for similar but nevertheless differentiated UI scenarios. On the styling side, 
+						replicating a lot of near-identical view code blocks for similar but nevertheless differentiated UI scenarios. On the styling side, 
 						I had been somewhat successful in learning to modularize my CSS using SASS pre-processor syntax to nest markup within a parent 
 						class selector for the overall view. However, from a project organization standpoint, all of the styles were stored 
 						in a separate directory structure, creating significant cognitive load as I tried to coordinate it with corresponding 

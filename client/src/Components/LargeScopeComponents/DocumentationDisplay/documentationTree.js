@@ -511,7 +511,7 @@ const documentationTree = {
 		isRoot: true,
 		isOpen: false,
 		id: '994199e8-5e34-4e9a-8ad7-ba84d1faa851',
-		children: ['/backEnd/APIServer', '/backEnd/database', '/backEnd/futureImprovements']
+		children: ['/backEnd/APIServer', '/backEnd/database'] // '/backEnd/futureImprovements']
 	},
 	'/backEnd/APIServer': {
 		path: '/backEnd/APIServer',
@@ -526,35 +526,37 @@ const documentationTree = {
 		type: 'folder',
 		isOpen: false,
 		id: '27d03266-f7a4-453f-8c4a-9f4f08584f09',
-		children: ['/backEnd/database/neo4JIntro', 
+		children: ['/backEnd/database/introToGraphs',
+							 '/backEnd/database/neo4JImplementation',
+							 '/backEnd/database/differentiation', 
 							 '/backEnd/database/dataModel']
 							 // '/backEnd/database/plannedQueries']
 	},
-	'/backEnd/database/neo4JIntro': {
-		path: '/backEnd/database/neo4JIntro',
-		name: 'Introduction to Neo4J',
-		type: 'folder',
-		isOpen: false,
-		id: '4d7135a5-91f6-4a70-945c-b4411891ca75',
-		children: ['/backEnd/database/neo4JIntro/introToGraphs',
-							 '/backEnd/database/neo4JIntro/neo4JImplementation',
-							 '/backEnd/database/neo4JIntro/differentiation']
-	},
-	'/backEnd/database/neo4JIntro/introToGraphs': {
+	// '/backEnd/database/neo4JIntro': {
+	// 	path: '/backEnd/database/neo4JIntro',
+	// 	name: 'Introduction to Neo4J',
+	// 	type: 'folder',
+	// 	isOpen: false,
+	// 	id: '4d7135a5-91f6-4a70-945c-b4411891ca75',
+	// 	children: ['/backEnd/database/neo4JIntro/introToGraphs',
+	// 						 '/backEnd/database/neo4JIntro/neo4JImplementation',
+	// 						 '/backEnd/database/neo4JIntro/differentiation']
+	// },
+	'/backEnd/database/introToGraphs': {
 		path: '/backEnd/database/neo4JIntro/introToGraphs',
 		name: 'Introduction to Graphs',
 		type: 'file',
 		isOpen: false,
 		id: '70e2dbc6-f34f-4004-936d-f7a708ff76a4'
 	},
-	'/backEnd/database/neo4JIntro/neo4JImplementation': {
-		path: '/backEnd/database/neo4JIntro/neo4JImplementation',
+	'/backEnd/database/neo4JImplementation': {
+		path: '/backEnd/database/neo4JImplementation',
 		name: 'Neo4J Implementation',
 		type: 'file',
 		isOpen: false,
 		id: '399b8def-c5cc-4c6a-a9dd-309fe70c758b'
 	},
-	'/backEnd/database/neo4JIntro/differentiation': {
+	'/backEnd/database/differentiation': {
 		path: '/backEnd/database/neo4JIntro/differentiation',
 		name: 'Differentiation With Other Database Technologies',
 		type: 'file',
@@ -585,143 +587,143 @@ const documentationTree = {
 	'/design': {
 		path: '/design',
 		name: 'Design',
-		type: 'folder',
+		type: 'file',
 		isRoot: true,
 		isOpen: false,
 		id: '8e113667-df9d-44ff-aa7c-6e2f16a96b80',
-		children: ['/design/iconLibrary',
-							 '/design/fonts',
-							 '/design/colorScheme']
+		// children: ['/design/iconLibrary',
+		// 					 '/design/fonts',
+		// 					 '/design/colorScheme']
 	},
-	'/design/iconLibrary': {
-		path: '/design/iconLibrary',
-		name: 'Icon Library',
-		type: 'file',
-		isOpen: false,
-		id: '29c796b7-4261-4ccc-b491-8036ac2e4b29'
-	},
-	'/design/fonts': {
-		path: '/design/fonts',
-		name: 'Fonts',
-		type: 'file',
-		isOpen: false,
-		id: 'd722a88a-4631-435f-bd46-d6606074442a'
-	},
-	'/design/colorScheme': {
-		path: '/design/colorScheme',
-		name: 'Color Scheme',
-		type: 'file',
-		isOpen: false,
-		id: '98448871-11a4-4c22-bb55-9d2d81ad880c'
-	},
+	// '/design/iconLibrary': {
+	// 	path: '/design/iconLibrary',
+	// 	name: 'Icon Library',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '29c796b7-4261-4ccc-b491-8036ac2e4b29'
+	// },
+	// '/design/fonts': {
+	// 	path: '/design/fonts',
+	// 	name: 'Fonts',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'd722a88a-4631-435f-bd46-d6606074442a'
+	// },
+	// '/design/colorScheme': {
+	// 	path: '/design/colorScheme',
+	// 	name: 'Color Scheme',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '98448871-11a4-4c22-bb55-9d2d81ad880c'
+	// },
 	'/routing': {
 		path: '/routing',
 		name: 'Routing',
-		type: 'folder',
+		type: 'file',
 		isRoot: true,
 		isOpen: false,
 		id: '158df3a4-d696-458e-a710-93395dc90d9e',
-		children: ['/routing/topLevelApplicationRouting', '/routing/dynamicRouting']
+		// children: ['/routing/topLevelApplicationRouting', '/routing/dynamicRouting']
 	},
-	'/routing/topLevelApplicationRouting': {
-		path: '/routing/topLevelApplicationRouting',
-		name: 'Top-Level Application Routing',
-		type: 'file',
-		isOpen: false,
-		id: '839458cc-bc5a-4c3d-b5e9-fecc3642ffd4'
-	},
-	'/routing/dynamicRouting': {
-		path: '/routing/dynamicRouting',
-		name: 'Dynamic Routing',
-		type: 'file',
-		isOpen: false,
-		id: '1684177a-80e6-4e13-88a4-71e732e74196'
-	},
+	// '/routing/topLevelApplicationRouting': {
+	// 	path: '/routing/topLevelApplicationRouting',
+	// 	name: 'Top-Level Application Routing',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '839458cc-bc5a-4c3d-b5e9-fecc3642ffd4'
+	// },
+	// '/routing/dynamicRouting': {
+	// 	path: '/routing/dynamicRouting',
+	// 	name: 'Dynamic Routing',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '1684177a-80e6-4e13-88a4-71e732e74196'
+	// },
 	'/testing': {
 		path: '/testing',
 		name: 'Testing',
-		type: 'folder',
+		type: 'file',
 		isRoot: true,
 		isOpen: false,
 		id: '2ddc812b-2390-4664-a2f0-d214dfe7b8ea',
-		children: ['/testing/smokeTests', '/testing/futureImprovements']
+		// children: ['/testing/smokeTests', '/testing/futureImprovements']
 	},
-	'/testing/smokeTests': {
-		path: '/testing/smokeTests',
-		name: 'Smoke Tests',
-		type: 'file',
-		isOpen: false,
-		id: 'bee814cf-7163-4252-b9f2-13630deadce1'
-	},
-	'/testing/futureImprovements': {
-		path: '/testing/futureImprovements',
-		name: 'Future Improvements',
-		type: 'file',
-		isOpen: false,
-		id: '257a77f5-2601-4888-9fe2-1e0744f0d3cf'
-	},
+	// '/testing/smokeTests': {
+	// 	path: '/testing/smokeTests',
+	// 	name: 'Smoke Tests',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'bee814cf-7163-4252-b9f2-13630deadce1'
+	// },
+	// '/testing/futureImprovements': {
+	// 	path: '/testing/futureImprovements',
+	// 	name: 'Future Improvements',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '257a77f5-2601-4888-9fe2-1e0744f0d3cf'
+	// },
 	'/accessibility': {
 		path: '/accessibility',
 		name: 'Accessibility',
-		type: 'folder',
+		type: 'file',
 		isRoot: true,
 		isOpen: false,
 		id: '64b76bcd-455f-46e7-b2c1-9ced5dcda550',
-		children: ['/accessibility/semanticHTML', '/accessibility/images', 
-							 '/accessibility/colorContrast', '/accessibility/futureImprovements']
+		// children: ['/accessibility/semanticHTML', '/accessibility/images', 
+		// 					 '/accessibility/colorContrast', '/accessibility/futureImprovements']
 	},
-	'/accessibility/semanticHTML': {
-		path: '/accessibility/semanticHTML',
-		name: 'Semantic Markup',
-		type: 'file',
-		isOpen: false,
-		id: '04bb3ca7-1c19-4756-be58-6be49fb4c7b5'
-	},
-	'/accessibility/images': {
-		path: '/accessibility/images',
-		name: 'Images',
-		type: 'file',
-		isOpen: false,
-		id: 'e6e90217-a2d8-4a63-9d89-0a8323959690'
-	},
-	'/accessibility/colorContrast': {
-		path:' /accessibility/colorContrast',
-		name: 'Color Contrast',
-		type: 'file',
-		isOpen: false,
-		id: '7d79247b-6e16-4a67-a220-b4c482ff137f'
-	},
-	'/accessibility/futureImprovements': {
-		path: '/accessibility/futureImprovements',
-		name: 'Future Improvements',
-		type: 'file',
-		isOpen: false,
-		id: 'c5e98afe-c86a-4406-afc1-6a62d24c7553'
-	},
+	// '/accessibility/semanticHTML': {
+	// 	path: '/accessibility/semanticHTML',
+	// 	name: 'Semantic Markup',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '04bb3ca7-1c19-4756-be58-6be49fb4c7b5'
+	// },
+	// '/accessibility/images': {
+	// 	path: '/accessibility/images',
+	// 	name: 'Images',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'e6e90217-a2d8-4a63-9d89-0a8323959690'
+	// },
+	// '/accessibility/colorContrast': {
+	// 	path:' /accessibility/colorContrast',
+	// 	name: 'Color Contrast',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '7d79247b-6e16-4a67-a220-b4c482ff137f'
+	// },
+	// '/accessibility/futureImprovements': {
+	// 	path: '/accessibility/futureImprovements',
+	// 	name: 'Future Improvements',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'c5e98afe-c86a-4406-afc1-6a62d24c7553'
+	// },
 	'/security': {
 		path: '/security',
 		name: 'Security',
-		type: 'folder',
+		type: 'file',
 		isRoot: true,
 		isOpen: false,
 		id: '6a91f5a4-03e4-43e2-8fee-34e8a51fcdfc',
-		children: ['/security/featureScope',
-							 '/security/anchorLinks']
+		// children: ['/security/featureScope',
+		// 					 '/security/anchorLinks']
 	},
-	'/security/featureScope': {
-		path: '/security/featureScope',
-		name: 'Feature Scope',
-		type: 'file',
-		isOpen: false,
-		id: '5567a38b-c60c-46cb-9106-ca0efd5fedc7'
-	},
-	'/security/anchorLinks': {
-		path: '/security/anchorLinks',
-		name: 'Anchor Links',
-		type: 'file',
-		isOpen: false,
-		id: 'ca34616f-e233-4cf6-a5cb-a50a2a00fa20'
-	},
+	// '/security/featureScope': {
+	// 	path: '/security/featureScope',
+	// 	name: 'Feature Scope',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '5567a38b-c60c-46cb-9106-ca0efd5fedc7'
+	// },
+	// '/security/anchorLinks': {
+	// 	path: '/security/anchorLinks',
+	// 	name: 'Anchor Links',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'ca34616f-e233-4cf6-a5cb-a50a2a00fa20'
+	// },
 	'/futureImprovements': {
 		path: '/futureImprovements',
 		name: 'Future Improvements',
@@ -730,18 +732,18 @@ const documentationTree = {
 		isOpen: false,
 		id: 'f111f51d-4c5b-4bee-ada4-211d36359ce9'
 	},
-	'/activeProblemAreas': {
-		path: '/activeProblemAreas',
-		name: 'Active Problem Areas',
-		type: 'folder',
-		isRoot: true,
-		isOpen: false,
-		id: '0443e5d2-3289-4fda-9086-8bf4779cc00a',
-		children: ['/activeProblemAreas/reactRefs',
-							 '/activeProblemAreas/SVGRendering',
-							 '/activeProblemAreas/lintingIssues',
-							 '/activeProblemAreas/cardGallery']
-	},
+	//  '/activeProblemAreas': {
+	// 	path: '/activeProblemAreas',
+	// 	name: 'Active Problem Areas',
+	// 	type: 'file',
+	// 	isRoot: true,
+	// 	isOpen: false,
+	// 	id: '0443e5d2-3289-4fda-9086-8bf4779cc00a',
+		// children: ['/activeProblemAreas/reactRefs',
+		// 					 '/activeProblemAreas/SVGRendering',
+		// 					 '/activeProblemAreas/lintingIssues',
+		// 					 '/activeProblemAreas/cardGallery']
+	//  },
 	// '/activeProblemAreas/reactRefs': {
 	// 	path: '/activeProblemAreas/reactRefs',
 	// 	name: 'React Refs',
@@ -749,13 +751,13 @@ const documentationTree = {
 	// 	isOpen: false,
 	// 	id: 'e3f30382-9da2-4d08-a3b1-bb6899b34a86'
 	// },
-	'/activeProblemAreas/SVGRendering': {
-		path: '/activeProblemAreas/SVGRendering',
-		name: 'SVG Rendering',
-		type: 'file',
-		isOpen: false,
-		id: '44e61326-d324-4563-9792-f481dc7ad1f4'
-	},
+	// '/activeProblemAreas/SVGRendering': {
+	// 	path: '/activeProblemAreas/SVGRendering',
+	// 	name: 'SVG Rendering',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '44e61326-d324-4563-9792-f481dc7ad1f4'
+	// },
 	// '/activeProblemAreas/lintingIssues': {
 	// 	path: '/activeProblemAreas/lintingIssues',
 	// 	name: 'Linting Issues',
@@ -763,14 +765,15 @@ const documentationTree = {
 	// 	isOpen: false,
 	// 	id: '9ed15eea-a75b-4c78-9da2-d1bf0c3ab741'
 	// },
-	'/activeProblemAreas/cardGallery': {
-		path: '/activeProblemAreas/cardGallery',
-		name: 'Card Gallery',
-		type: 'file',
-		isOpen: false,
-		id: 'e555a550-4c90-4d84-942b-d5afde3bbdf1'
-	}
-}
+	// '/activeProblemAreas/cardGallery': {
+	// 	path: '/activeProblemAreas/cardGallery',
+	// 	name: 'Card Gallery',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'e555a550-4c90-4d84-942b-d5afde3bbdf1'
+	// }
+};
+
 export default documentationTree;
 
 

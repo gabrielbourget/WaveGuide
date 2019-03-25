@@ -1,0 +1,32 @@
+.colorDisplay {
+	height: auto;
+	width: 100%;
+	padding: 20px 0px;
+
+	display: grid;
+	grid-auto-flow: column;
+
+	@media (max-width: 500px) {
+		grid-auto-flow: row;
+	}
+}
+
+.colorDisplayTheme {
+	height: auto;
+	width:500px;
+	display: grid;
+	align-content: space-around;
+}
+
+.colorDisplayItem {
+	height: auto;
+	width: 100%;
+	display: grid;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.colorDisplayBlock {
+	height: 30px;
+	width: 60px;
+}
