@@ -5,12 +5,14 @@
 
 .sideMenu {
 	position: fixed;
-	top: 85px; // - Hardcoded for now according to navbar it slides in under.
+	//top: 85px; // - Hardcoded for now according to navbar it slides in under.
+	top: 15px;
 	left: 15px; 
 	z-index: var(--floatingElementZIndex);
 
-	height: calc(100% - 100px); // - Make up for top shift and take away 15 more pixels
+	//height: calc(100% - 100px); // - Make up for top shift and take away 15 more pixels
 	width: 300px;								//   so that menu doesn't sit flush with bottom of page.
+	height: 95%;
 	padding: 15px 15px;
 	border-radius: 3px;
 	overflow-y: auto;
@@ -56,6 +58,16 @@
 	&.open {
 		transform: translateX(0);
 	}
+}
+
+.topBar {
+	width: 100%;
+	height: auto;
+	display: grid;
+	align-items: center;
+	grid-auto-flow: column;
+	justify-content: space-between;
+	grid-gap: 1rem;
 }
 
 .hDividerCradle {

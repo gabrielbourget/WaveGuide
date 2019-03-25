@@ -17,10 +17,7 @@ import SearchBarWithRouter from '../SearchBar/SearchBar';
 import { ReactComponent as HamburgerMenuDarkTheme } from './SVG/HamburgerMenu/HamburgerIconDarkTheme.svg';
 import { ReactComponent as HamburgerMenuLightTheme } from './SVG/HamburgerMenu/HamburgerIconLightTheme.svg';
 import { ReactComponent as HamburgerMenuHighlighted } from './SVG/HamburgerMenu/HamburgerIconHighlighted.svg';
-// - X Icon
-import { ReactComponent as XIconDarkTheme } from './SVG/XIcon/XIconDarkTheme.svg';
-import { ReactComponent as XIconLightTheme } from './SVG/XIcon/XIconLightTheme.svg';
-import { ReactComponent as XIconHighlighted } from './SVG/XIcon/XIconHighlighted.svg';
+
 // - Home Icon
 import HomeIconDarkTheme from './SVG/HomeIcon/HomeIconDarkTheme';
 import HomeIconLightTheme from './SVG/HomeIcon/HomeIconLightTheme';
@@ -69,25 +66,13 @@ class Navbar extends React.Component {
 		return (
 			<div className={ initObject.navbarClasses }>
 				<div className={ initObject.sideMenuButtonClasses }>
-					{
-						//  - OLD -> this.state.menuActive ?
-						this.props.sideMenuOpen ? 
-						<CircleButton 
-							size='20px'
-							darkTheme={ <XIconDarkTheme/> }
-							lightTheme={ <XIconLightTheme/> }
-							highlighted={ <XIconHighlighted/> }
-							onClick={ this.handleSideMenuButtonClick }
-						/> :
-						<CircleButton 
-							size='20px'
-							darkTheme={ <HamburgerMenuDarkTheme/> }
-							lightTheme={ <HamburgerMenuLightTheme/> }
-							highlighted={ <HamburgerMenuHighlighted/> }
-							onClick={ this.handleSideMenuButtonClick }
-						/>						
-					}
-
+					<CircleButton 
+						size='20px'
+						darkTheme={ <HamburgerMenuDarkTheme/> }
+						lightTheme={ <HamburgerMenuLightTheme/> }
+						highlighted={ <HamburgerMenuHighlighted/> }
+						onClick={ this.handleSideMenuButtonClick }
+					/>
 				</div>
 				<SearchBarWithRouter
 					// - Active once redux is set up.

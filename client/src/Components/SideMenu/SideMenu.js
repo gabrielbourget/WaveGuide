@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../ThemeContext';
 
 import styles from './SideMenu.module.scss';
-import { communityLinks } from './Data/communityLinks'
+import { communityLinks } from './Data/communityLinks';
 
 import HorizontalDivider from '../Dividers/HorizontalDivider/HorizontalDivider';
 import OutlineButton from '../Buttons/OutlineButton/OutlineButton';
@@ -20,6 +20,10 @@ import CircleDownIconHighlighted from './SVG/CircleDownIcon/CircleDownIcon_Highl
 import CircleUpIconDarkTheme from './SVG/CircleUpIcon/CircleUpIcon_DarkTheme';
 import CircleUpIconLightTheme from './SVG/CircleUpIcon/CircleUpIcon_LightTheme';
 import CircleUpIconHighlighted from './SVG/CircleUpIcon/CircleUpIcon_Highlighted';
+// - X Icon
+import { ReactComponent as XIconDarkTheme } from './SVG/XIcon/XIconDarkTheme.svg';
+import { ReactComponent as XIconLightTheme } from './SVG/XIcon/XIconLightTheme.svg';
+import { ReactComponent as XIconHighlighted } from './SVG/XIcon/XIconHighlighted.svg';
 
 class SideMenu extends React.Component {
 
@@ -37,15 +41,29 @@ class SideMenu extends React.Component {
 		this.setState({ communityLinksExpanded: false });
 	};	
 
+	handleSideMenuButtonClick = () => {
+		this.props.onSideMenuButtonClick();
+	};
+
 	render() {
 
 		const themeClass = (this.context === 'dark') ? styles.darkTheme : styles.lightTheme;
 		const openClass = (this.props.open) ? styles.open : null;
 		const sideMenuClasses = ClassNames(styles.sideMenu, themeClass, openClass);
+		const topBarClasses = ClassNames(styles.topBar, themeClass);
 
 		return (
 			<div className={ sideMenuClasses } >
-				<h3 className={ themeClass }>Settings</h3>
+				<div className={ topBarClasses }>
+					<CircleButton 
+						size='20px'
+						darkTheme={ <XIconDarkTheme/> }
+						lightTheme={ <XIconLightTheme/> }
+						highlighted={ <XIconHighlighted/> }
+						onClick={ this.handleSideMenuButtonClick }
+					/>					
+					<h3 className={ themeClass }>Settings</h3>
+				</div>
 				<div className={ styles.hDividerCradle }>
 					<HorizontalDivider height='3px'/>
 				</div>

@@ -67,6 +67,7 @@ class App extends React.Component {
             currTheme={ this.props.settings.theme }
             open={ this.props.settings.sideMenuOpen }
             onThemeSwitch={ this.props.switchTheme }
+            onSideMenuButtonClick={ this.props.toggleSideMenu }
           />
         </div>    
       </ThemeContext.Provider>    
