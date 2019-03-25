@@ -154,8 +154,8 @@ class Buttons extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/b1020f53-578b-4d6b-a112-1ee402e94ead'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/80c14b29-aa22-40f8-9672-7314481f5d86'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/b1020f53-578b-4d6b-a112-1ee402e94ead'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/80c14b29-aa22-40f8-9672-7314481f5d86'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 
 				</article>

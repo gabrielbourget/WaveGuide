@@ -85,8 +85,8 @@ class ODS_GlobalStyles extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/1722e2d5-8cb7-48d9-bcf2-333ea54de0ce'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/0772ee70-a178-4be0-8db3-989ae5ca743f'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/1722e2d5-8cb7-48d9-bcf2-333ea54de0ce'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/0772ee70-a178-4be0-8db3-989ae5ca743f'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 
 				</article>

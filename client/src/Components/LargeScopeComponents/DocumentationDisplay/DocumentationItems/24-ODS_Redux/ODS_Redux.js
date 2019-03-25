@@ -66,8 +66,8 @@ class ODS_Redux extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/0772ee70-a178-4be0-8db3-989ae5ca743f'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/28005464-9c1f-413e-952f-d422242ed0ff'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/0772ee70-a178-4be0-8db3-989ae5ca743f'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/28005464-9c1f-413e-952f-d422242ed0ff'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 
 				</article>

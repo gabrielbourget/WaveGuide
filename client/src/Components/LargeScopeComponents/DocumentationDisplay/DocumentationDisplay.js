@@ -1,3 +1,5 @@
+/* eslint no-use-before-define: 0 */  // --> OFF
+
 import React from 'react';
 //import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
@@ -126,8 +128,6 @@ class DocumentationDisplay extends React.Component {
 						render= { () => {
 
 							const path = this.props.location.pathname;
-							
-							console.log(routingTable[path]);
 
 							// - Special case for buttons since it needs props 
 							if (path === '/documentation/ac20c586-039e-4ea4-9b20-8a41cdab3a38') {
@@ -135,7 +135,6 @@ class DocumentationDisplay extends React.Component {
 							}
 
 							else return (
-								//React.createElement(`${routingTable[path]}`)
 								React.createElement(routingTable[path])
 							)
 						}}

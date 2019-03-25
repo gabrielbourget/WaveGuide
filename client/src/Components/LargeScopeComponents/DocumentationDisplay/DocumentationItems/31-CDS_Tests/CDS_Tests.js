@@ -34,8 +34,8 @@ class CDS_Tests extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/070f43b1-72a0-4f64-9293-bd1bec17055c'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/1fd3e88d-cf43-4616-b115-f0bd390585a4'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/070f43b1-72a0-4f64-9293-bd1bec17055c'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/1fd3e88d-cf43-4616-b115-f0bd390585a4'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 
 				</article>

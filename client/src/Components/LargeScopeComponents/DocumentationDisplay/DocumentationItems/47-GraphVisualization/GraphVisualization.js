@@ -43,8 +43,8 @@ class GraphVisualization extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/6061a33a-2168-4571-8aa7-cf516e0ef601'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/fc2898d7-3deb-4816-b30e-1334e7f96ae6'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/6061a33a-2168-4571-8aa7-cf516e0ef601'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/fc2898d7-3deb-4816-b30e-1334e7f96ae6'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 
 				</article>

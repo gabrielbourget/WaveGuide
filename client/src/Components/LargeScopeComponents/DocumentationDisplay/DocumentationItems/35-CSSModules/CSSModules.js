@@ -82,8 +82,8 @@ class CSSModules extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/f472f77f-cc05-4e04-a779-53cdab8cf280'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/4d3daac5-29e2-4d96-b4bd-9e0ba7b8c133'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/f472f77f-cc05-4e04-a779-53cdab8cf280'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/4d3daac5-29e2-4d96-b4bd-9e0ba7b8c133'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 
 				</article>

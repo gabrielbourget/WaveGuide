@@ -58,8 +58,8 @@ class SearchBar extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/21a57b18-8be9-45ca-9e79-66b6511e995f'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/c212d863-a83b-451f-a7a3-93c979ec3d0a'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/21a57b18-8be9-45ca-9e79-66b6511e995f'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/c212d863-a83b-451f-a7a3-93c979ec3d0a'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 										
 				</article>

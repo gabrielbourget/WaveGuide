@@ -81,8 +81,8 @@ class ComponentDirectoryStructure extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/28005464-9c1f-413e-952f-d422242ed0ffc'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/3b75a19f-9373-42d7-889a-47b30f0d2535'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/28005464-9c1f-413e-952f-d422242ed0ff'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/3b75a19f-9373-42d7-889a-47b30f0d2535'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 				</article>
 			</FromTheTopCradle>

@@ -147,8 +147,8 @@ class React_DocArticle extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/b7b2a049-cdcb-493f-aa24-29b2bed9ccf8'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/8f90509c-c5f9-471c-b068-e616a9679e86'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/b7b2a049-cdcb-493f-aa24-29b2bed9ccf8'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/8f90509c-c5f9-471c-b068-e616a9679e86'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 
 				</article>

@@ -22,10 +22,10 @@ class IntroToTheWaveScene extends React.Component {
 					<h1>Wave Music</h1>
 
 					<p>
-						<TextIndent direction='leftToRight'>It</TextIndent> is hard hard to measure the degree to which such a foundational technology as 
+						<TextIndent direction='leftToRight'>It</TextIndent> is hard hard to measure the degree to which a foundational technology such as 
 						the internet has had, and continues to have on our communities and overall way of life. The technologies that make it up are dynamic,
 						ever-shifting and iterating, making it hard to quantify their effects. One lens of analysis that can help though, is to look at how the 
-						rise of social networks and streaming platforms has shifted the ways that we interact with eachother and access people's art. 
+						rise of social networks and streaming platforms have contributed to modifying the ways that we interact with eachother and access people's art. 
 					</p>
 
 					<p>
@@ -45,10 +45,11 @@ class IntroToTheWaveScene extends React.Component {
 
 					<p>
 						<TextIndent direction='leftToRight'>What</TextIndent> these socio-technological shifts have contributed to is a partial breakdown of the
-						traditional ways that we might have segmented music into genres throughout the 20th century. While these categories have held, and continue 
-						to hold legitimate social merit, I think that to a large extent, they were also the emergent result of the gatekeeping created by having a 
-						music industry of labels, radio stations, distributors, and promoters making hard decisions around what music they wanted to invest their 
-						limited resources towards developing and pushing forward.
+						traditional ways that we might have segmented music into genres throughout the 20th century. I am of the belief that these categories have 
+						held, and continue to hold legitimate social merit, rising out of the shared meaning we create around the art that is local to the context 
+						of our lives. However, I also think that to a large extent they were the emergent result of the gatekeeping created by having a music industry 
+						of labels, radio stations, distributors, and promoters making hard decisions around what music they wanted to invest their limited resources towards 
+						developing and pushing forward.
 					</p>
 
 					<p>
@@ -125,8 +126,8 @@ class IntroToTheWaveScene extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/894b3efd-02a9-40d7-adee-aab4548c87f6'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/71987a6a-61c1-4c2e-8ad6-af16714c583f'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/894b3efd-02a9-40d7-adee-aab4548c87f6'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/71987a6a-61c1-4c2e-8ad6-af16714c583f'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 
 				</article>

@@ -157,8 +157,8 @@ class CDS_MainComponentFile extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/45631f67-11da-4a24-986a-7ba6dfb4a157'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/b535e44c-5ce5-4e18-9792-5067b7186c71'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/45631f67-11da-4a24-986a-7ba6dfb4a157'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/b535e44c-5ce5-4e18-9792-5067b7186c71'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 
 				</article>

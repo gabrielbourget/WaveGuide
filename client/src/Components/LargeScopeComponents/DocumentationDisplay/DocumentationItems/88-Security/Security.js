@@ -52,7 +52,7 @@ class Security extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/73627e59-49df-47a8-a0d7-22edd04a7c0c'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/64b76bcd-455f-46e7-b2c1-9ced5dcda550'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
 						<Link to='/documentation/18d1dc66-e33b-4823-bed3-ea4c8b60c553'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 

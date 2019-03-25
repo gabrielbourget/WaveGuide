@@ -55,8 +55,8 @@ class ODS_Public extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/2c4c531e-e905-41f4-ac7c-bc6018bab0a6'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/7e34fce7-d704-4d24-9779-0ea55d5a6664'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/2c4c531e-e905-41f4-ac7c-bc6018bab0a6'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/7e34fce7-d704-4d24-9779-0ea55d5a6664'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 				</article>
 			</FromTheTopCradle>

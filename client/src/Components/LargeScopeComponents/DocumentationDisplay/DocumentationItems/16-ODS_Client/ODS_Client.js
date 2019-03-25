@@ -33,8 +33,8 @@ class ODS_Client extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/18d1dc66-e33b-4823-bed3-ea4c8b60c553'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/3033ce2e-9598-4d6c-9819-9666b49176f4'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/18d1dc66-e33b-4823-bed3-ea4c8b60c553'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/3033ce2e-9598-4d6c-9819-9666b49176f4'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 
 				</article>

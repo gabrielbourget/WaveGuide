@@ -1,18 +1,19 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../ThemeContext';
 
-// import IconDisplay from '../Icons/IconDisplay/IconDisplay';
+import IconDisplay from '../Icons/IconDisplay/IconDisplay';
 import Paragraph from '../TextLayout/Paragraph/Paragraph';
 import OutlineButton from '../Buttons/OutlineButton/OutlineButton';
 
 import styles from './Footer.module.scss';
 // import WaveIconDarkTheme from './SVG/WaveIcon/WaveIconDarkTheme';
-//import { ReactComponent as WaveIconDarkTheme } from './SVG/WaveIcon/WaveIconDarkTheme.svg';
-// import { ReactComponent as  WaveIconLightTheme } from './SVG/WaveIcon/WaveIconLightTheme.svg';
+import { ReactComponent as WaveIconDarkTheme } from './SVG/WaveIcon/WaveIconDarkTheme.svg';
+import { ReactComponent as  WaveIconLightTheme } from './SVG/WaveIcon/WaveIconLightTheme.svg';
 
-import waveImageDarkTheme from './SVG/WaveIcon/WaveIconImageDarkTheme.jpg';
-import waveImageLightTheme from './SVG/WaveIcon/WaveIconImageLightTheme.jpg';
+// import waveImageDarkTheme from './SVG/WaveIcon/WaveIconImageDarkTheme.png';
+// import waveImageLightTheme from './SVG/WaveIcon/WaveIconImageLightTheme.png';
 
 class Footer extends React.Component {
 	render() {
@@ -23,21 +24,17 @@ class Footer extends React.Component {
 		return (
 			<div className={ footerClasses }>
 				<div className={ styles.logo }>
-{/*					<IconDisplay
+					<IconDisplay
 						size='75px'
 						darkTheme={ <WaveIconDarkTheme/> }
 						lightTheme={ <WaveIconLightTheme/> }
-					/>*/}
+					/>
 
-					{
-						(this.context === 'dark') ?
-						<img src={ waveImageDarkTheme } alt="Wave Icon Dark Theme"/> :
-						<img src={ waveImageLightTheme } alt="WaveIconLightTheme"/>
-					}
+
 				</div>
 				<div className={ styles.description }>
 					<Paragraph fontSize='1.5rem'>
-						Wavecity is developed and maintained by Gabriel Bourget. 
+						Waveguide is developed and maintained by Gabriel Bourget. 
 						While this application serves primarily as a web development
 						portfolio project at the moment, I'm hoping to add increasing
 						functionality to it as time goes on.
@@ -55,21 +52,20 @@ class Footer extends React.Component {
 							onClick={ () => {} }
 						/>
 					</a>
-					<OutlineButton
-						text='Home'
-						shape='rounded'
-						onClick={ () => {} }
-					/>	
-					<OutlineButton
-						text='About'
-						shape='rounded'
-						onClick={ () => {} }
-					/>	
-					<OutlineButton
-						text='Documentation'
-						shape='rounded'
-						onClick={ () => {} }
-					/>							
+					<Link to='/'>
+						<OutlineButton
+							text='Home'
+							shape='rounded'
+							onClick={ () => {} }
+						/>							
+					</Link>
+					<Link to='/documentation'>
+						<OutlineButton
+							text='Documentation'
+							shape='rounded'
+							onClick={ () => {} }
+						/>							
+					</Link>
 				</div>
 			</div>
 		);
@@ -79,3 +75,9 @@ class Footer extends React.Component {
 Footer.contextType = ThemeContext;
 
 export default Footer;
+
+					 // {
+					 // 	(this.context === 'dark') ?
+					 // 	<img src={ waveImageDarkTheme } alt="Wave Icon Dark Theme"/> :
+					 // 	<img src={ waveImageLightTheme } alt="WaveIconLightTheme"/>
+					 // }

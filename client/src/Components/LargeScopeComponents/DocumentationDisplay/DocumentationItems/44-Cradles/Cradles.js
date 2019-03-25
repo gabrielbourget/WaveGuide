@@ -43,8 +43,8 @@ class Cradles extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/0b78e43a-9b1f-4544-bb50-5f1772434f29'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/5998402b-1e69-4095-b7a9-7800e17d0b47'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/0b78e43a-9b1f-4544-bb50-5f1772434f29'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/5998402b-1e69-4095-b7a9-7800e17d0b47'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 										
 				</article>

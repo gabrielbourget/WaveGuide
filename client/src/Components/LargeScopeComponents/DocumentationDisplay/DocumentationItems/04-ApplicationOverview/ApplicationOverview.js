@@ -32,7 +32,7 @@ class ApplicationOverview extends React.Component {
 					<p>
 						<TextIndent>In</TextIndent> the side menu, accessed with the menu button in the top left, you can toggle the application between a 
 						dark and light theme depending on personal preference. If you open up the community links list as well, there are a bunch of links that 
-						act as jump-off points to the major subreddits, discord servers, youtube channels, events pages, and label/collective websites that exist 
+						act as jump-off points some of the major subreddits, discord servers, youtube channels, events pages, and label/collective websites that exist 
 						in the community.
 					</p>
 
@@ -47,8 +47,8 @@ class ApplicationOverview extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/97df66de-33fb-48cd-9543-0c698821d5d8'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/40edbc86-218c-47c9-b395-7a87c98a1fbe'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/97df66de-33fb-48cd-9543-0c698821d5d8'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/40edbc86-218c-47c9-b395-7a87c98a1fbe'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 										
 				</article>

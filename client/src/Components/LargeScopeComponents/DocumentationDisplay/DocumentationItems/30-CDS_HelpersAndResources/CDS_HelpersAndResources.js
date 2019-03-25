@@ -77,8 +77,8 @@ class CDS_Helpers extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/b535e44c-5ce5-4e18-9792-5067b7186c71'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/4a1afd52-4735-4f21-a24f-33c112c511aa'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/b535e44c-5ce5-4e18-9792-5067b7186c71'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/4a1afd52-4735-4f21-a24f-33c112c511aa'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 
 				</article>

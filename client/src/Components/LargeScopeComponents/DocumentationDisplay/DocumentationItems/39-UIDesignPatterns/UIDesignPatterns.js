@@ -40,8 +40,8 @@ class UIDesignPatterns extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/5b0bb77c-efd2-491f-9ef7-9fab84fe4f42'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/ac20c586-039e-4ea4-9b20-8a41cdab3a38'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/5b0bb77c-efd2-491f-9ef7-9fab84fe4f42'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/ac20c586-039e-4ea4-9b20-8a41cdab3a38'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 
 				</article>

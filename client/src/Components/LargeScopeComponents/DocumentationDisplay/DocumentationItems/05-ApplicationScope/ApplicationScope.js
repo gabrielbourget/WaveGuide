@@ -50,9 +50,6 @@ class ApplicationScope extends React.Component {
 								<p>Their biography, pulled down from somewhere like soundcloud, instagram, or spotify</p>
 							</li>
 							<li>
-								<p>Some of the labels and collectives they've released music with</p>
-							</li>
-							<li>
 								<p>The labels and collectives they've released music with</p>
 							</li>
 							<li>
@@ -117,8 +114,8 @@ class ApplicationScope extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/71987a6a-61c1-4c2e-8ad6-af16714c583f'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/73627e59-49df-47a8-a0d7-22edd04a7c0c'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/71987a6a-61c1-4c2e-8ad6-af16714c583f'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/73627e59-49df-47a8-a0d7-22edd04a7c0c'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 										
 				</article>

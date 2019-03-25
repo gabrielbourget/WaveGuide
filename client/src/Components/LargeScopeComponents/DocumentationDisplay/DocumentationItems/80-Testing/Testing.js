@@ -49,6 +49,19 @@ class Testing extends React.Component {
 						basic smoke tests in order to ensure that the components can at least render. 
 					</p>
 
+					<h2>Future Improvements</h2>
+
+					<p>
+						<TextIndent>The</TextIndent> types of tests that I have worked with so far are mainly unit tests which deal with evaluating the functionality of 
+						isolated components. Moving up the complexity ladder, I'd like to start mocking test scenarios which involve multiple components at first, 
+						moving through various key UX paths and ensuring that everything works smoothly. While these UI-level integration tests will be a good addition 
+						the test suite, as my back end comes online, I'd like to move towards system-level integration tests. These tests could mock network calls, 
+						ensuring that the back-end is functioning well. Finally, I have also done some research into testing Neo4J databases and am planning on 
+						implementing test suites in that context as well. These will involve identifying key patterns within the graph topology that I am trying to match 
+						with my API queries, mocking small graph databases that contain this structure, and ensuring that the range of queries that are expected function 
+						properly. 
+					</p>
+
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>

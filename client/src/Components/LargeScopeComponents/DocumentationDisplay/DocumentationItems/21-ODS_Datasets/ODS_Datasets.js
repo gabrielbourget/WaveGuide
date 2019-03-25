@@ -51,8 +51,8 @@ class ODS_Datasets extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/43b4e475-94f9-4674-840e-0e955238b2aa'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/00bf3d83-f8eb-4dab-ba2d-1e6ffc40dc2c'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/43b4e475-94f9-4674-840e-0e955238b2aa'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/00bf3d83-f8eb-4dab-ba2d-1e6ffc40dc2c'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 										
 				</article>

@@ -38,45 +38,11 @@ class TableOfContents extends React.Component {
 									<Link to='/documentation/40edbc86-218c-47c9-b395-7a87c98a1fbe'>
 										<p>Application Scope</p>
 									</Link>										
-									<ul style={ {paddingLeft: '20px'} }>
-										<li>
-											<Link to='/documentation/85aed067-0172-493f-8660-b1e1d825dbb1'>
-												<p>Technical Scope</p>
-											</Link>
-										</li>
-										<li>
-											<Link to='/documentation/ec8c2776-abdf-4a58-b7ed-c1e62ef56e64'>
-												<p>Feature Scope</p>
-											</Link>
-										</li>
-									</ul>
 								</li>
 								<li>
 									<Link to='/documentation/73627e59-49df-47a8-a0d7-22edd04a7c0c'>
 										<p>Tech Stack</p>
 									</Link>										
-									<ul style={ {paddingLeft: '20px'} }>
-										<li>
-											<Link to='/documentation/540ce7b9-b00f-41ab-9042-507d781268f9'>
-												<p>React</p>
-											</Link>
-										</li>
-										<li>
-											<Link to='/documentation/09e461f5-baec-4785-b509-ecbcb9980f16'>
-												<p>Redux</p>
-											</Link>
-										</li>
-										<li>
-											<Link to='/documentation/0720c963-f0f3-4097-9011-78aebb9743de'>
-												<p>Express</p>
-											</Link>
-										</li>
-										<li>
-											<Link to='/documentation/4c153909-f42a-4577-8de0-edd069441d97'>
-												<p>Neo4J</p>
-											</Link>
-										</li>
-									</ul>
 								</li>
 								<li>
 									<Link to='/documentation/0d209cbd-5b73-4e52-901e-1d012299acfd'>
@@ -89,20 +55,10 @@ class TableOfContents extends React.Component {
 											</Link>												
 											<ul style={ {paddingLeft: '20px'} }>
 												<li>
-													<Link to='/documentation/9b5de2da-c1c8-4651-82d2-0c66a410e405'>
-														<p>Excluded Items</p>
-													</Link>
-												</li>
-												<li>
 													<Link to='/documentation/2c4c531e-e905-41f4-ac7c-bc6018bab0a6'>
 														<p>client</p>
 													</Link>														
 													<ul style={ {paddingLeft: '20px'} }>
-														<li>
-															<Link to='/documentation/ca7dfe9c-7580-4398-8750-0d205775c5d7'>
-																<p>build</p>
-															</Link>
-														</li>
 														<li>
 															<Link to='/documentation/3033ce2e-9598-4d6c-9819-9666b49176f4'>
 																<p>public</p>
@@ -138,11 +94,6 @@ class TableOfContents extends React.Component {
 																		<p>Redux</p>
 																	</Link>
 																</li>
-																<li>
-																	<Link to='/documentation/ca13322a-448f-427c-bdcf-cc16fd2c379f'>
-																		<p>index.js</p>
-																	</Link>
-																</li>
 															</ul>
 														</li>
 													</ul>
@@ -156,7 +107,7 @@ class TableOfContents extends React.Component {
 										</li>
 										<li>
 											<Link to='/documentation/45631f67-11da-4a24-986a-7ba6dfb4a157'>
-												<p>Component Directory Structure</p>
+												<p>Internal Component Structure</p>
 											</Link>
 											<ul style={ {paddingLeft: '20px'} }>
 												<li>
@@ -204,11 +155,6 @@ class TableOfContents extends React.Component {
 								<li>
 									<Link to='/documentation/8f90509c-c5f9-471c-b068-e616a9679e86'>
 										<p>CSS Modules</p>
-									</Link>
-								</li>
-								<li>
-									<Link to='/documentation/c49b19c1-16d1-4eff-9e92-f2ce76efb402'>
-										<p>Global Styles</p>
 									</Link>
 								</li>
 								<li>
@@ -286,12 +232,12 @@ class TableOfContents extends React.Component {
 												<p>Tree View</p>
 											</Link>
 										</li>
-										<li>
-											<Link to='/documentation/a6405a7a-5467-4e28-a388-c48a47284850'>
-												<p>Future Components</p>
-											</Link>
-										</li>
 									</ul>
+								<li>
+									<Link to='/documentation/a6405a7a-5467-4e28-a388-c48a47284850'>
+										<p>Future Components</p>
+									</Link>
+								</li>									
 								</li>
 							</ul>
 						</li>
@@ -305,38 +251,6 @@ class TableOfContents extends React.Component {
 									<Link to='/documentation/c51a43be-2a4b-4fac-b40b-ec04e0d64a95'>
 										<p>Redux</p>
 									</Link>
-									<ul style={ {paddingLeft: '20px'} }>
-										<li>
-											<Link to='/documentation/65220967-8409-48aa-9e1b-1d2e6336a89e'>
-												<p>Action Strings</p>
-											</Link>
-										</li>
-										<li>
-											<Link to='/documentation/b09aa2f2-47cf-4f4d-a429-cc06fe05efff'>
-												<p>Action Creators</p>
-											</Link>
-										</li>
-										<li>
-											<Link to='/documentation/ce206855-3aa3-4e36-8a4a-786e90f1c594'>
-												<p>Reducer</p>
-											</Link>
-										</li>
-										<li>
-											<Link to='/documentation/e46c6933-0081-4811-98ac-c5be389c84b7'>
-												<p>Store</p>
-											</Link>
-										</li>
-										<li>
-											<Link to='/documentation/9f85f9a2-8521-484a-99b6-da43dad32dd2'>
-												<p>AppContainer</p>
-											</Link>
-										</li>
-										<li>
-											<Link to='/documentation/e0475963-b5b2-4dca-b47d-ac4ef640a65a'>
-												<p>Provider</p>
-											</Link>
-										</li>
-									</ul>
 								</li>
 								<li>
 									<Link to='/documentation/b9f85483-d91c-44b7-9723-f9a96632ac65'>
@@ -368,42 +282,30 @@ class TableOfContents extends React.Component {
 								</li>
 								<li>
 									<Link to='/documentation/27d03266-f7a4-453f-8c4a-9f4f08584f09'>
-										<p>Neo4J Database</p>
+										<p>Database</p>
 									</Link>
 									<ul style={ {paddingLeft: '20px'} }>
 										<li>
-											<Link to='/documentation/4d7135a5-91f6-4a70-945c-b4411891ca75'>
-												<p>Introduction To Neo4J</p>
+											<Link to='/documentation/70e2dbc6-f34f-4004-936d-f7a708ff76a4'>
+												<p>Introduction To Graphs</p>
 											</Link>
-											<ul style={ {paddingLeft: '20px'} }>
-												<li>
-													<Link to='/documentation/70e2dbc6-f34f-4004-936d-f7a708ff76a4'>
-														<p>Introduction To Graphs</p>
-													</Link>
-												</li>
-												<li>
-													<Link to='/documentation/399b8def-c5cc-4c6a-a9dd-309fe70c758b'>
-														<p>Neo4J Implementation</p>
-													</Link>
-												</li>
-												<li>
-													<Link to='/documentation/86b92487-31ec-49e9-9818-7919430888ee'>
-														<p>Differentiation With Other Database Technology</p>
-													</Link>
-												</li>
-											</ul>
+										</li>
+										<li>
+											<Link to='/documentation/399b8def-c5cc-4c6a-a9dd-309fe70c758b'>
+												<p>Neo4J Implementation</p>
+											</Link>
+										</li>
+										<li>
+											<Link to='/documentation/86b92487-31ec-49e9-9818-7919430888ee'>
+												<p>Differentiation With Other Database Technology</p>
+											</Link>
 										</li>
 										<li>
 											<Link to='/documentation/485dc30c-1e72-412e-9fc0-cf065a808c09'>
 												<p>Data Model</p>
 											</Link>
-										</li>
+										</li>												
 									</ul>
-								</li>
-								<li>
-									<Link to='/documentation/e24ccfb1-1db5-4543-b598-ade2e289bfd2'>
-										<p>Future Improvements</p>
-									</Link>
 								</li>
 							</ul>
 						</li>
@@ -412,105 +314,30 @@ class TableOfContents extends React.Component {
 							<Link to='/documentation/8e113667-df9d-44ff-aa7c-6e2f16a96b80'>
 								<p>Design</p>
 							</Link>
-							<ul style={ {paddingLeft: '20px'} }>
-								<li>
-									<Link to='/documentation/29c796b7-4261-4ccc-b491-8036ac2e4b29'>
-										<p>Icon Library</p>
-									</Link>
-								</li>
-								<li>
-									<Link to='/documentation/d722a88a-4631-435f-bd46-d6606074442a'>
-										<p>Fonts</p>
-									</Link>
-								</li>
-								<li>
-									<Link to='/documentation/98448871-11a4-4c22-bb55-9d2d81ad880c'>
-										<p>Color Scheme</p>
-									</Link>
-								</li>
-							</ul>
 						</li>
 						{/* ROUTING */}
 						<li>
 							<Link to='/documentation/158df3a4-d696-458e-a710-93395dc90d9e'>
 								<p>Routing</p>
 							</Link>
-							<ul style={ {paddingLeft: '20px'} }>
-								<li>
-									<Link to='/documentation/839458cc-bc5a-4c3d-b5e9-fecc3642ffd4'>
-										<p>Top-Level Application Routing</p>
-									</Link>
-								</li>
-								<li>
-									<Link to='/documentation/1684177a-80e6-4e13-88a4-71e732e74196'>
-										<p>Dynamic Routing</p>
-									</Link>
-								</li>
-							</ul>
 						</li>
 						{/* TESTING */}
 						<li>
 							<Link to='/documentation/2ddc812b-2390-4664-a2f0-d214dfe7b8ea'>
 								<p>Testing</p>
 							</Link>
-							<ul style={ {paddingLeft: '20px'} }>
-								<li>
-									<Link to='/documentation/bee814cf-7163-4252-b9f2-13630deadce1'>
-										<p>Smoke Tests</p>
-									</Link>
-								</li>
-								<li>
-									<Link to='/documentation/257a77f5-2601-4888-9fe2-1e0744f0d3cf'>
-										<p>Future Improvements</p>
-									</Link>
-								</li>
-							</ul>
 						</li>
 						{/* ACCESSIBILITY */}
 						<li>
 							<Link to='/documentation/64b76bcd-455f-46e7-b2c1-9ced5dcda550'>
 								<p>Accessibility</p>
 							</Link>
-							<ul style={ {paddingLeft: '20px'} }>
-								<li>
-									<Link to='/documentation/04bb3ca7-1c19-4756-be58-6be49fb4c7b5'>
-										<p>Semantic Markup</p>
-									</Link>
-								</li>
-								<li>
-									<Link to='/documentation/e6e90217-a2d8-4a63-9d89-0a8323959690'>
-										<p>Images</p>
-									</Link>
-								</li>
-								<li>
-									<Link to='/documentation/7d79247b-6e16-4a67-a220-b4c482ff137f'>
-										<p>Color Contrast</p>
-									</Link>
-								</li>
-								<li>
-									<Link to='/documentation/c5e98afe-c86a-4406-afc1-6a62d24c7553'>
-										<p>Future Improvements</p>
-									</Link>
-								</li>
-							</ul>
 						</li>
 						{/* SECURITY */}
 						<li>
 							<Link to='/documentation/6a91f5a4-03e4-43e2-8fee-34e8a51fcdfc'>
 								<p>Security</p>
 							</Link>
-							<ul style={ {paddingLeft: '20px'} }>
-								<li>
-									<Link to='/documentation/5567a38b-c60c-46cb-9106-ca0efd5fedc7'>
-										<p>Feature Scope</p>
-									</Link>
-								</li>
-								<li>
-									<Link to='/documentation/ca34616f-e233-4cf6-a5cb-a50a2a00fa20'>
-										<p>Anchor Links</p>
-									</Link>
-								</li>
-							</ul>
 						</li>
 						{/* FUTURE IMPROVEMENTS */}
 						<li>
@@ -519,7 +346,7 @@ class TableOfContents extends React.Component {
 							</Link>
 						</li>
 						{/* ACTIVE PROBLEM AREAS */}
-						<li>
+{/*						<li>
 							<Link to='/documentation/0443e5d2-3289-4fda-9086-8bf4779cc00a'>
 								<p>Active Problem Areas</p>
 							</Link>
@@ -545,7 +372,7 @@ class TableOfContents extends React.Component {
 									</Link>
 								</li>
 							</ul>
-						</li>
+						</li>*/}
 					</ul>
 				</article>		
 			</FromTheTopCradle>

@@ -63,8 +63,8 @@ class OverallDirectoryStructure extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/0d209cbd-5b73-4e52-901e-1d012299acfd'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/2c4c531e-e905-41f4-ac7c-bc6018bab0a6'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/0d209cbd-5b73-4e52-901e-1d012299acfd'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/2c4c531e-e905-41f4-ac7c-bc6018bab0a6'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 
 				</article>

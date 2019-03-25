@@ -86,8 +86,8 @@ class ColorThemes extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/8f90509c-c5f9-471c-b068-e616a9679e86'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/5b0bb77c-efd2-491f-9ef7-9fab84fe4f42'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/8f90509c-c5f9-471c-b068-e616a9679e86'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/5b0bb77c-efd2-491f-9ef7-9fab84fe4f42'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 
 				</article>

@@ -66,8 +66,8 @@ class FrontEnd extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/1fd3e88d-cf43-4616-b115-f0bd390585a4'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/f472f77f-cc05-4e04-a779-53cdab8cf280'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/1fd3e88d-cf43-4616-b115-f0bd390585a4'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/f472f77f-cc05-4e04-a779-53cdab8cf280'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 
 				</article>

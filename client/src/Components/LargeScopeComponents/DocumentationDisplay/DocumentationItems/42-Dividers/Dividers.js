@@ -7,7 +7,7 @@ import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCra
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
 import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
-import VerticalDivider from '../../../../Dividers/VerticalDivider/VerticalDivider';
+//import VerticalDivider from '../../../../Dividers/VerticalDivider/VerticalDivider';
 
 import styles from '../../DocumentationItem/DocumentationItem.module.scss';
 import { prepareComponent } from '../../DocumentationItem/helpers';
@@ -44,8 +44,8 @@ class Dividers extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/80c14b29-aa22-40f8-9672-7314481f5d86'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/0b78e43a-9b1f-4544-bb50-5f1772434f29'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/80c14b29-aa22-40f8-9672-7314481f5d86'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/0b78e43a-9b1f-4544-bb50-5f1772434f29'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 
 				</article>

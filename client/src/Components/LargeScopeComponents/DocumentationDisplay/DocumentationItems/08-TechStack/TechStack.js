@@ -113,8 +113,8 @@ class TechStack extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/40edbc86-218c-47c9-b395-7a87c98a1fbe'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/0d209cbd-5b73-4e52-901e-1d012299acfd'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/40edbc86-218c-47c9-b395-7a87c98a1fbe'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/0d209cbd-5b73-4e52-901e-1d012299acfd'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>
 
 				</article>

@@ -52,8 +52,8 @@ class RenderTimeComponentPreparation extends React.Component {
 					<HorizontalDivider/>
 
 					<div className={ initObject.navButtonsClasses }>
-						<Link to='/documentation/4d3daac5-29e2-4d96-b4bd-9e0ba7b8c133'><FilledButton text='&larr; Prev Page'/></Link>	
-						<Link to='/documentation/b1020f53-578b-4d6b-a112-1ee402e94ead'><FilledButton text='Next Page &rarr;'/></Link>	
+						<Link to='/documentation/4d3daac5-29e2-4d96-b4bd-9e0ba7b8c133'><FilledButton text='&larr; Prev Page' onClick={ () => {} }/></Link>	
+						<Link to='/documentation/b1020f53-578b-4d6b-a112-1ee402e94ead'><FilledButton text='Next Page &rarr;' onClick={ () => {} }/></Link>	
 					</div>					
 
 				</article>
