@@ -24,7 +24,7 @@ class IntroToTheWaveScene extends React.Component {
 					<p>
 						<TextIndent direction='leftToRight'>It</TextIndent> is hard hard to measure the degree to which a foundational technology such as 
 						the internet has had, and continues to have on our communities and overall way of life. The technologies that make it up are dynamic,
-						ever-shifting and iterating, making it hard to quantify their effects. One lens of analysis that can help though, is to look at how the 
+						ever-shifting and iterating, making it hard to meaningfully quantify their effects. One lens of analysis that can help though, is to look at how the 
 						rise of social networks and streaming platforms have contributed to modifying the ways that we interact with eachother and access people's art. 
 					</p>
 
@@ -39,7 +39,7 @@ class IntroToTheWaveScene extends React.Component {
 					<p>
 						<TextIndent>In</TextIndent> parallel to these social networks, the development of online streaming platforms such as Spotify, Apple Music, and 
 						Soundcloud have led to a fairly dramatic shift away from the traditional models of CD sales, record labels, and radio/media placement. What we have 
-						seen come up in addition, is a fluid world of playlists, singles, EPs, full-length projects, and in general, an unprecedented ability to publish 
+						seen come up in addition is a fluid world of playlists, singles, EPs, full-length projects, and in general, an unprecedented ability to publish 
 						your art to a global community with more independence than ever before.
 					</p>
 
@@ -54,7 +54,7 @@ class IntroToTheWaveScene extends React.Component {
 
 					<p>
 						<TextIndent direction='leftToRight'>The</TextIndent> increasingly distributed nature of the artistic discourse, accompanied by this breaking 
-						down of genre barriers has led to countless musical sub-genres and groups forming across the internet and the real world, and it is out of a 
+						down of genre barriers, has led to countless musical sub-genres and groups forming across the internet and the real world; it is out of a 
 						similar process that wave music has begun. Arising from the melting pot of musical influences that was Soundcloud around 2012 or so, artists 
 						such as 
 
@@ -88,7 +88,7 @@ class IntroToTheWaveScene extends React.Component {
 						</a>	
 
 						&nbsp; began to mark their tracks and the mixes they were rinsing out with the tag <code>#wave</code> as a way to differentiate a collective tendency
-						towards sonic markers such as ambient, journeying soundscapes, smooth, powerful basslines, and an emotional investment in the song's melodic content 
+						towards certain sonic markers. These included ambient, journeying soundscapes, smooth, powerful basslines, and an emotional investment in the song's melodic content 
 						that was not as strongly present in some of the dominant styles of those years such as trap and dubstep. 
 					</p>
 
