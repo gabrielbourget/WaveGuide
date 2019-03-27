@@ -2,7 +2,7 @@
 @import '../../../../GlobalStyles/fonts.scss';
 
 .jumbotron {
-	background: url('./Images/JumbotronBG1.jpg') center;
+	background: url('./Images/JumbotronBG2.jpg') center;
 	background-size: cover;
 	position: relative;
 
@@ -36,7 +36,14 @@
 	}
 }
 
+.logo {
+	height: auto;
+	width: 100%;
+	padding: 20px 0px;
 
+	display: grid;
+	place-content: center;
+}
 
 .downChevron {
 	position: absolute;

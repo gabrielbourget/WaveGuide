@@ -5,6 +5,7 @@ import { ThemeContext } from '../../../../ThemeContext';
 
 // import { ReactComponent as ChevronDownSkinnyDarkTheme } from './SVG/ChevronDownSkinny/ChevronDownSkinnyDarkTheme.svg';
 import ChevronDownSkinnyDarkTheme from './SVG/ChevronDownSkinny/ChevronDownSkinnyDarkTheme';
+import { ReactComponent as WaveIcon } from './SVG/WaveIcon/WaveIconLightTheme.svg';
 //import IconDisplay from '../../../Icons/IconDisplay/IconDisplay';
 import SingleIcon from '../../../Icons/SingleIcon/SingleIcon';
 

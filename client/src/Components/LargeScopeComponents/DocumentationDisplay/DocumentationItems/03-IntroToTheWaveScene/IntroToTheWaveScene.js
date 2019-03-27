@@ -30,10 +30,10 @@ class IntroToTheWaveScene extends React.Component {
 
 					<p>
 						<TextIndent direction='leftToRight'>As</TextIndent> digital social networks have risen, the energy of the discourse on artistic interests 
-						has spread out and distributed across the countless comment threads, link forums, facebook groups, chat rooms, and such in which people live 
-						their online lives. While the cultural commentary of the music section of newspapers and magazines like Rolling Stone and Pitchfork is still
-						important and well-received, people have also turned to the discussions they have with eachother, the posts that come up in their news feeds, 
-						and the myriad blogs, youtube channels, and online publications that have sprung up to participate in the conversation. 
+						has spread out and distributed across the countless comment threads, link forums, Facebook groups, chat rooms, and such in which people live 
+						their online lives. The cultural commentary of the music section of newspapers and magazines like Rolling Stone and Pitchfork is still
+						important and well-received. However, people have also turned to the discussions they have with eachother, the posts that come up in their news feeds, 
+						and the myriad blogs, Youtube channels, and online publications that have sprung up to participate in the conversation. 
 					</p>
 
 					<p>
@@ -114,8 +114,8 @@ class IntroToTheWaveScene extends React.Component {
 
 					<p>
 						<TextIndent direction='leftToRight'>While</TextIndent> the ambiguity that exists around what exactly 'wave music' is can make it initially challenging in some ways 
-						to introduce new listeners to the community, I believe that in the long term, it will continue to be an overall strength. The reality is that the wave scene is 
-						one that forms around more than just an easily definable form of music, and the discussion in many of its online forums often centers around music and art that is 
+						to introduce new listeners to the community, I believe that in the long term, it will continue to be an overall strength. The reality is that the wave scene  
+						forms around more than just an easily definable form of music, and the discussion in many of its online forums often centers around music and art that is 
 						peripheral or not even directly related. Everyone is joining the discussion and submitting music coming from their own contexts, influences, and interests, and 
 						I think that this is something to be celebrated and reinforced. Fundamentally, this is a space in which people are gathering to connect over things that are 
 						meaningful to them, to be kind and respectful to one another, and to take part in a collective project that seeks to push all sorts of artistic boundaries to new 
