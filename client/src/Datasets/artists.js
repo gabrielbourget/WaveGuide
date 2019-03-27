@@ -74,19 +74,19 @@ const artists = [
       twitter: 'https://twitter.com/manlikemingo'
     }
   }, 
-  // {
-  //   name: 'brothel',
-  //   imageURL: process.env.PUBLIC_URL + '/Images/Brothel.jpg',
-  //   socialURLs: {
-  //     spotify: 'https://open.spotify.com/artist/3xYvvJ6tjXyJJdEXBs8qf0',
-  //     soundCloud: 'https://soundcloud.com/brothelmusic',
-  //     bandcamp: 'https://brothelmusic.bandcamp.com/',
-  //     instagram: 'https://www.instagram.com/brothel.brothel',
-  //     facebook: 'https://www.facebook.com/brothelofficial/',
-  //     twitter: 'https://twitter.com/brothelmusic',
-  //     personalWebSite: 'https://www.brothelmerch.com/'
-  //   }
-  // }, 
+  {
+    name: 'brothel',
+    imageURL: process.env.PUBLIC_URL + '/Images/Brothel.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/3xYvvJ6tjXyJJdEXBs8qf0',
+      soundCloud: 'https://soundcloud.com/brothelmusic',
+      bandcamp: 'https://brothelmusic.bandcamp.com/',
+      instagram: 'https://www.instagram.com/brothel.brothel',
+      facebook: 'https://www.facebook.com/brothelofficial/',
+      twitter: 'https://twitter.com/brothelmusic',
+      personalWebsite: 'https://www.brothelmerch.com/'
+    }
+  }, 
   {
     name: 'Deadcrow',
     imageURL: process.env.PUBLIC_URL + '/Images/Deadcrow.png',
@@ -110,18 +110,18 @@ const artists = [
       twitter: 'https://twitter.com/thisiswithout'
     }
   },
-  // {
-  //   name: 'INFDL',
-  //   imageURL: process.env.PUBLIC_URL + '/Images/INFDL.jpg',
-  //   socialURLs: {
-  //     spotify: 'https://open.spotify.com/artist/4DFdFV95TzpGUCKw9ZFI9M?si=Coow2mcWQ2mztZrxVwrZvA',
-  //     soundCloud: 'https://soundcloud.com/infdl',
-  //     instagram: 'https://www.instagram.com/infdlmusic/',
-  //     facebook: 'https://www.facebook.com/Infdlmusic/',
-  //     twitter: 'https://twitter.com/INFDLMusic',
-  //     personalWebSite: 'https://www.infdlmusic.com/'
-  //   }
-  // }, 
+  {
+    name: 'INFDL',
+    imageURL: process.env.PUBLIC_URL + '/Images/INFDL.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/4DFdFV95TzpGUCKw9ZFI9M?si=Coow2mcWQ2mztZrxVwrZvA',
+      soundCloud: 'https://soundcloud.com/infdl',
+      instagram: 'https://www.instagram.com/infdlmusic/',
+      facebook: 'https://www.facebook.com/Infdlmusic/',
+      twitter: 'https://twitter.com/INFDLMusic',
+      personalWebsite: 'https://www.infdlmusic.com/'
+    }
+  }, 
   {
     name: 'Othos',
     imageURL: process.env.PUBLIC_URL + '/Images/Othos.jpg',
@@ -216,6 +216,20 @@ const artists = [
       twitter: 'https://twitter.com/brett_djedi'
     }
   }, 
+  {
+    name: 'Sweeep',
+    imageURL: process.env.PUBLIC_URL + '/Images/Sweeep.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/44AMYUwAQZq6GzYPJO0Nn2',
+      soundCloud: 'https://soundcloud.com/sweeep',
+      bandcamp: 'https://sweeep.bandcamp.com/',
+      youtube: '',
+      instagram: 'https://www.instagram.com/sweeep_/',
+      facebook: 'https://www.facebook.com/sweeepmusic ',
+      twitter: 'https://twitter.com/sweeep_',
+      vk: 'https://vk.com/sweeepmusic'
+    }     
+  },    
   {
     name: 'Medici',
     imageURL: process.env.PUBLIC_URL + '/Images/Medici.jpg',
@@ -324,20 +338,33 @@ const artists = [
       twitter: 'https://twitter.com/LTHLgrm'
     }
   }, 
-  // {
-  //   name: 'Martian Moon',
-  //   imageURL: process.env.PUBLIC_URL + '/Images/MartianMoon.png',
-  //   socialURLs: {
-  //     spotify: 'https://open.spotify.com/artist/58zBD9v1ac86uikZ90oJVJ',
-  //     soundCloud: 'https://soundcloud.com/martianmoon/',
-  //     apple: 'https://itunes.apple.com/gr/artist/martian-moon/1262141379?app=music&ign-mpt=uo%3D4',
-  //     bandcamp: 'https://martianmoon.bandcamp.com/',
-  //     instagram: 'https://www.instagram.com/martianmoonmusic/ ',
-  //     facebook: 'https://www.facebook.com/MartianMoonMusic/',
-  //     twitter: 'https://twitter.com/MartianMoonCA',
-  //     personalWebSite: 'https://www.martianmoon.ca/'
-  //   }
-  // }, 
+  {
+    name: 'Martian Moon',
+    imageURL: process.env.PUBLIC_URL + '/Images/MartianMoon.png',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/58zBD9v1ac86uikZ90oJVJ',
+      soundCloud: 'https://soundcloud.com/martianmoon/',
+      apple: 'https://itunes.apple.com/gr/artist/martian-moon/1262141379?app=music&ign-mpt=uo%3D4',
+      bandcamp: 'https://martianmoon.bandcamp.com/',
+      instagram: 'https://www.instagram.com/martianmoonmusic/ ',
+      facebook: 'https://www.facebook.com/MartianMoonMusic/',
+      twitter: 'https://twitter.com/MartianMoonCA',
+      personalWebsite: 'https://www.martianmoon.ca/'
+    }
+  }, 
+  {
+    name: 'Klimeks',
+    imageURL: process.env.PUBLIC_URL + '/Images/Klimeks.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/5JQljNQvDpk1hhKpJHpwNU?si=HP7oViEvQp2auZL9a0tPjQ',
+      soundCloud: 'https://soundcloud.com/klimeks',
+      bandcamp: 'https://music.klimeks.co.uk/',
+      instagram: 'https://www.instagram.com/klimeksmusic/',
+      facebook: 'https://www.facebook.com/klimeks',
+      twitter: 'https://twitter.com/klimeks',
+      personalWebsite:'https://klimeks.co.uk/'
+    }     
+  }, 
   {
     name: 'pinknokia',
     imageURL: process.env.PUBLIC_URL + '/Images/PinkNokia.png',
@@ -358,19 +385,19 @@ const artists = [
       twitter: 'https://twitter.com/stohoumusic'
     }
   },
-  // {
-  //   name: 'Hoodie',
-  //   imageURL: process.env.PUBLIC_URL + '/Images/Hoodie.jpg',
-  //   socialURLs: {
-  //     spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=43MH15YTRJKoNMOmm7SIkA',
-  //     soundCloud: 'https://soundcloud.com/hoodiegen',
-  //     apple: 'https://itunes.apple.com/us/artist/hoodie/1286330076',
-  //     bandcamp: 'https://hoodie1.bandcamp.com/',
-  //     instagram: 'https://www.instagram.com/hoodiegen/',
-  //     twitter: 'https://www.twitter.com/hoodiegen',
-  //     personalWebSite: 'https://hoodiegen.com'
-  //   }
-  // },  
+  {
+    name: 'Hoodie',
+    imageURL: process.env.PUBLIC_URL + '/Images/Hoodie.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/08kgcpEQscDxkhVLXRkGXK?si=43MH15YTRJKoNMOmm7SIkA',
+      soundCloud: 'https://soundcloud.com/hoodiegen',
+      apple: 'https://itunes.apple.com/us/artist/hoodie/1286330076',
+      bandcamp: 'https://hoodie1.bandcamp.com/',
+      instagram: 'https://www.instagram.com/hoodiegen/',
+      twitter: 'https://www.twitter.com/hoodiegen',
+      personalWebsite: 'https://hoodiegen.com'
+    }
+  },  
   {
     name: 'Cashforgold',
     imageURL: process.env.PUBLIC_URL + '/Images/Cashforgold.jpg',
@@ -464,6 +491,17 @@ const artists = [
       twitter: 'https://twitter.com/vacantldn'
     }     
   },
+  {
+    name: 'Jessaudrey',
+    imageURL: process.env.PUBLIC_URL + '/Images/Jessaudrey.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/5zlvaJmz0WIPlv2oMITqci',
+      soundCloud: 'https://soundcloud.com/jessicahedrick',
+      bandcamp: 'https://jessaudrey.bandcamp.com/',
+      instagram: 'https://www.instagram.com/jessaudreylynn/',
+      twitter: 'https://twitter.com/jessaudreylynn'
+    }     
+  },  
   {
     name: 'Skeler',
     imageURL: process.env.PUBLIC_URL + '/Images/Skeler.png',
@@ -563,7 +601,32 @@ const artists = [
       facebook: 'https://www.facebook.com/Weaverbeats',
       twitter: 'https://twitter.com/weaverbeats'
     }     
-   }
+  },  
+  {
+    name: 'Just Connor',
+    imageURL: process.env.PUBLIC_URL + '/Images/JustConnor.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/56RD5PjknZlVSB4HS6YEF1',
+      soundCloud: 'https://soundcloud.com/justconnornyc',
+      bandcamp: 'https://justconnor.bandcamp.com/',
+      instagram: 'https://www.instagram.com/condonaldson/',
+      twitter: 'https://twitter.com/justbeconnor'
+    }
+  },    
+  {
+    name: 'Eevee',
+    imageURL: process.env.PUBLIC_URL + '/Images/Eevee.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/4pwqNyMSvuv7VOhQBdjB6Q',
+      soundCloud: 'https://soundcloud.com/eveline-eevee',
+      apple: 'https://itunes.apple.com/us/album/beats/id1213430356?app=itunes',
+      bandcamp: 'https://eeveebeats.bandcamp.com/music',
+      youtube: 'https://www.youtube.com/channel/UCPUAkFysGwOgB5ibTPSN4lg',
+      instagram: 'https://www.instagram.com/eveline.eevee/',
+      facebook: 'https://www.facebook.com/eevee.eveline',
+      twitter: 'https://twitter.com/EeveeEveline'
+    }     
+  },    
   // {
   //   name: '',
   //   imageURL: process.env.PUBLIC_URL + '/Images/',

@@ -22,7 +22,7 @@ class IntroToTheWaveScene extends React.Component {
 					<h1>Wave Music</h1>
 
 					<p>
-						<TextIndent direction='leftToRight'>It</TextIndent> is hard hard to measure the degree to which a foundational technology such as 
+						<TextIndent direction='leftToRight'>It</TextIndent> is hard to measure the degree to which a foundational technology such as 
 						the internet has had, and continues to have on our communities and overall way of life. The technologies that make it up are dynamic,
 						ever-shifting and iterating, making it hard to meaningfully quantify their effects. One lens of analysis that can help though, is to look at how the 
 						rise of social networks and streaming platforms have contributed to modifying the ways that we interact with eachother and access people's art. 
@@ -53,7 +53,7 @@ class IntroToTheWaveScene extends React.Component {
 					</p>
 
 					<p>
-						<TextIndent direction='leftToRight'>The</TextIndent> increasingly distributed nature of the artistic discourse, accompanied by this breaking 
+						<TextIndent direction='leftToRight'>This</TextIndent> increasingly distributed nature of artistic discourse, accompanied by this breaking 
 						down of genre barriers, has led to countless musical sub-genres and groups forming across the internet and the real world; it is out of a 
 						similar process that wave music has begun. Arising from the melting pot of musical influences that was Soundcloud around 2012 or so, artists 
 						such as 
@@ -99,8 +99,8 @@ class IntroToTheWaveScene extends React.Component {
 						and hip hop basses, ambient and evolving pads, bright, icy plucks, and dominant, charismatic leads. I see this style of music 
 						in emotive, cinematic arrangement structures that flow smoothly from one section to the next, often building and releasing tension like a wave would rather than opting for 
 						the powerful and abrupt drops of music like electro-house and dubstep. Due to the varied musical styles that are dominant within the local contexts 
-						in which this music scene is developing, I also see these tendencies being expressed with rhythmic styles that you might find in styles such as hip hop, garage, 
-						house, drum and bass, and breakbeat.
+						in which this music scene is developing, I also see these tendencies being expressed with rhythmic styles that you might find in styles such as hip hop, garage, drum and bass, 
+						house, and breakbeat.
 					</p>
 
 					<p>
@@ -119,8 +119,7 @@ class IntroToTheWaveScene extends React.Component {
 						peripheral or not even directly related. Everyone is joining the discussion and submitting music coming from their own contexts, influences, and interests, and 
 						I think that this is something to be celebrated and reinforced. Fundamentally, this is a space in which people are gathering to connect over things that are 
 						meaningful to them, to be kind and respectful to one another, and to take part in a collective project that seeks to push all sorts of artistic boundaries to new 
-						and exciting places. I look forward to the places that we'll all end up, and am excited to play a part in that discussion with the music and art that I come up with 
-						and collaborate with others on.
+						and exciting places.
 					</p>
 
 					<HorizontalDivider/>

@@ -85,6 +85,11 @@ export const communityLinks = [
 		description: 'Label/Collective'
 	},
 	{
+		link: 'https://soundcloud.com/yumecollective',
+		buttonText: 'Yume',
+		description: 'Label/Collective'
+	},	
+	{
 		link: 'https://soundcloud.com/HiddenAurora',
 		buttonText: 'Hidden Aurora',
 		description: 'Collective'

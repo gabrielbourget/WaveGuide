@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from './ColumnWithPaddingPageCradle.module.scss';
-import { ThemeContext } from '../../../ThemeContext';
 import classNames from 'classnames';
+import { ThemeContext } from '../../../ThemeContext';
+
+import styles from './ColumnWithPaddingPageCradle.module.scss';
 
 class ColumnWithPaddingPageCradle extends React.Component {
 

@@ -3,10 +3,10 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 
-import styles from './ArtistGallery.module.scss';
-
 import TwoSizeCardGallery from '../TwoSizeCardGallery/TwoSizeCardGallery';
 import TwoSizeCard from '../../Cards/TwoSizeCard/TwoSizeCard';
+
+import styles from './ArtistGallery.module.scss';
 
 class ArtistGallery extends React.Component {
 

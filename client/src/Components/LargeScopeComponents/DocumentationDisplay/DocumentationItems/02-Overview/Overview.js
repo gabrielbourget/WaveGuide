@@ -26,7 +26,7 @@ class Overview extends React.Component {
 						the paradigm shift over to streaming platforms such as Spotify, Apple Music, and Soundcloud in a really interesting and
 						special way. Across these social networks and streaming platforms, and drawing from diverse music scenes such as Trap, 
 						Garage, Witch House, and Trance, a global community of artists and fans has formed around a set of loose tendencies adding 
-						up to be known collectively as wave music. 
+						up to be known collectively as <strong>wave music</strong>. 
 					</p>
 
 					<p>

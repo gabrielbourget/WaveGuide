@@ -1,9 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-
-import styles from './MiddleContentCradle.module.scss';
 import { ThemeContext } from '../../../ThemeContext';
 
+import styles from './MiddleContentCradle.module.scss';
 
 class MiddleContentCradle extends React.Component {
 

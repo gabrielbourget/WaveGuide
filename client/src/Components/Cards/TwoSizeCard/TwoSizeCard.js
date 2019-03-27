@@ -1,5 +1,4 @@
 import React from 'react';
-//import PropTypes from 'prop-types';
 import { ThemeContext } from '../../../ThemeContext';
 import SocialMediaIconComponents from '../../../Helpers/socialMediaIconComponents';
 
@@ -8,7 +7,6 @@ import CircleButton from '../../Buttons/CircleButton/CircleButton';
 import HorizontalDivider from '../../Dividers/HorizontalDivider/HorizontalDivider';
 
 import styles from './TwoSizeCard.module.scss';
-
 import { assignClasses, prepareLinkGallery } from './helpers';
 
 /* Wrap SVG Icons as functional components to be placed into the markup. */
