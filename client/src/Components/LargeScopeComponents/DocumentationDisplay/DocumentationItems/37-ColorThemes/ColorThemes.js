@@ -75,7 +75,7 @@ class ColorThemes extends React.Component {
 
 					<p>
 						<TextIndent>Then,</TextIndent> in order for components to subscribe to this context and use it in their rendering logic, I imported this 
-						ThemeContext variable in their main JS files and specified that their <code> contextType </code> was of <code> ThemeContext </code>. This is 
+						ThemeContext variable in their main JS files and specified that their <code> contextType </code> was of <code> ThemeContext</code>. This is 
 						outlined in the code sample below.
 					</p>
 

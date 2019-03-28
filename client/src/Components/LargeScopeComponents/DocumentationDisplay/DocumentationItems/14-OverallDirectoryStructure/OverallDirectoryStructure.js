@@ -24,8 +24,8 @@ class OverallDirectoryStructure extends React.Component {
 					<p>
 						<TextIndent>As</TextIndent> mentioned in the previous section, I am planning on implementing a back-end server 
 						in addition to the client that I've developed so far. Once I've moved into development on it, it will have its own 
-						directory within the top level of the application structure called 'server'. The two main sections that I'll be going into at this top level will be the overall project 
-						structure of the client, along with the Design folder.
+						directory within the top level of the application structure called 'server'. The two main sections that I will be going 
+						into at this top level will be the overall project structure of the client, along with the Design folder.
 					</p>
 
 					<h2>Items Excluded</h2>

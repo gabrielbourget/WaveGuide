@@ -53,7 +53,7 @@ class SpecialCasesComponentState extends React.Component {
 						<TextIndent>While</TextIndent> this type of information is certainly dynamic, I reasoned that there weren't any other 
 						components throughout the application that depended on it in order to function correctly. It is due to this that 
 						small, locally-scoped segments of state are kept in their appropriate containers and out of the Redux store. If there 
-						ever came a time when this kind of depedency structure changed, it would be relatively simple to move that piece of 
+						ever came a time when this kind of dependency structure changed, it would be relatively simple to move that piece of 
 						information into the redux store, and pass it down as mapped props to a container component. 
 					</p>
 

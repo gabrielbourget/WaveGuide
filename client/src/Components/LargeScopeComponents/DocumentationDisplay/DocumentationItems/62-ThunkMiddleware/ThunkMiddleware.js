@@ -25,7 +25,7 @@ class ThunkMiddleware extends React.Component {
 					<p>
 						<TextIndent>The</TextIndent> functionality that comes packaged with the Redux library is great. However, one hole that is present
 	 					reveals itself when you start seeing the need to perform asynchronous actions such as making network requests for dynamic information 
-	 					from a server. Actions that are dispatched to redux store are evaluated synchronously, moving through the reducer and updating the store 
+	 					from a server. Actions that are dispatched to the redux store are evaluated synchronously, moving through the reducer and updating the store 
 	 					right away.
  					</p> 
 

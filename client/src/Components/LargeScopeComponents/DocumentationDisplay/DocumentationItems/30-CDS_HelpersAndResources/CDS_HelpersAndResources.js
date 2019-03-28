@@ -24,7 +24,7 @@ class CDS_Helpers extends React.Component {
 					<p>
 						<TextIndent>Many</TextIndent> of the components that I wrote for the application reached a level of size and complexity 
 						where it made sense to extract certain logic to helper files, which helped me to standardize the way that I wrote this 
-						logic, and to keep the main component JS files as clean and concise as possible. I also found that with certain component, 
+						logic, and to keep the main component JS files as clean and concise as possible. I also found that with certain components, 
 						it made sense to me to bring in local copies of resources such as SVG icons in order to make them as independent and reusable
 						as possible.
 					</p>

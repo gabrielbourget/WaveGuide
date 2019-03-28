@@ -27,7 +27,7 @@ class SearchBar extends React.Component {
 						to implement a functioning search engine, allowing application users the ability to search through and find information 
 						on artists in the community. Sending off search queries to the redux store, and how those queries are used to generate a 
 						search result list is more in the realm of the state management section of what I did, but I'll talk here about the 
-						<code>SearchBar</code> component that I implemented. 
+						<code> SearchBar</code> component that I implemented. 
 					</p>
 
 					<p>

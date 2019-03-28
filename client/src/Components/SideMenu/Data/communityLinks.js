@@ -45,6 +45,11 @@ export const communityLinks = [
 		description: 'Events/Community Info'
 	},
 	{
+		link: 'https://www.facebook.com/komorebiaudio/',
+		buttonText: 'Komorebi Audio',
+		description: 'Sound Design'
+	},
+	{
 		link: 'https://www.facebook.com/Terrorhythm',
 		buttonText: 'Terrorhythm',
 		description: 'Label/Collective'

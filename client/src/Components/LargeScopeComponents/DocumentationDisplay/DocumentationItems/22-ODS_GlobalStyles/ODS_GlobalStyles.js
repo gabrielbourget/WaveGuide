@@ -35,7 +35,7 @@ class ODS_GlobalStyles extends React.Component {
 
 					<p>
 						<TextIndent>In </TextIndent> many web applications, there are certain calibrating style rules that one wants to apply to top level DOM elements
-						such as <code>html</code> and <code>body</code>, meant to set the stage for a smooth development experience. In that spirit, my <code>base.css </code> 
+						such as <code>html</code> and <code>body</code>, meant to set the stage for a smooth development experience. Based on this, my <code>base.css </code> 
 						file makes small style rules along those lines. As the application grows, any other base-level styling that needs to be applied can be entered there. 
 					</p>
 

@@ -45,7 +45,7 @@ class Neo4JImplementation extends React.Component {
 					<p>
 						<TextIndent>The</TextIndent> processing engine is at the heart of graph databases systems, responsible for implementing the CRUD API and achieving other standard 
 						fare of production-ready databases such as ACID-compliance and Transactions. The main differentiation point here will be whether or not the graph database system 
-						achieves <i>index-free adjacency</i> in its operations. A system that achieves this stores nodes and relationships with memory addresses within the system Because 
+						achieves <i>index-free adjacency</i> in its operations. A system that achieves this stores nodes and relationships with memory addresses within the system. Because 
 						each relationship points to the direct memory address of other nodes with which it has the relationship, it is extremely efficient to make traversals across the 
 						data structure. Whereas other database technologies might have to run through JOIN tables to match up what they are looking for with a corresponding ID, graph 
 						database systems can simply point to that specific index and return from their search operations very quickly. This ability for nodes to be so conceptually close 

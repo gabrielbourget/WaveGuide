@@ -49,7 +49,7 @@ class Neo4JDifferentiation extends React.Component {
 						<TextIndent>When</TextIndent> working with relational databases, the need to define a pretty strict schema for how your data is laid out and related to eachother can 
 						make significant changes to the database structure laborious and prone to frustrating errors. The problem with this approach is that it is very unlikely that you and 
 						your team will accurately model the entire domain space within which you want to operate completely or perfectly on the first go around. What you ideally want is a 
-						way of building out an understanding of this space organically over time, as you gain the team members, resources, and take the time to fully understand it.
+						way of building out an understanding of this space organically over time, as you gain the team members, resources, and take the time needed to fully understand it.
 					</p>
 
 					<p>
@@ -60,7 +60,7 @@ class Neo4JDifferentiation extends React.Component {
 
 					<p>
 						<TextIndent>The</TextIndent> flexibility of this approach also maps very nicely onto the agile development processes of modern software teams. Software today is for the most part 
-						being developed in small functional sprints, merged into the rest of the codebase, and shipped to production in sprints. Being able to add to and modify the underlying persistence 
+						being developed in small functional sprints, merged into the rest of the codebase, and shipped to production. Being able to add to and modify the underlying persistence 
 						layer of your application so quickly fits very well into this type of strategy.
 					</p>
 

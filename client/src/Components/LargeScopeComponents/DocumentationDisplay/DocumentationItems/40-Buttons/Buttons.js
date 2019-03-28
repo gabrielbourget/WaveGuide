@@ -139,12 +139,9 @@ class Buttons extends React.Component {
 					</p>
 
 					<p>
-						<TextIndent>As</TextIndent> it stands, I am experiencing ongoing and unresolved issues surrounding the use of SVG files like this as React 
-						components. I go into more detail around the implementations I have tried, along with the problems I have run into with each of them in the 
-						<Link to='/documentation/44e61326-d324-4563-9792-f481dc7ad1f4'> Active Problem Areas</Link> section, included at the bottom of the documentation tree. 
-						While the <code>CircleButton</code> has the logic and resources set up to allow for transitioning to the highlighted version of the SVG when the 
-						button is hovered over, I have disabled this functionality until I can resolve the SVG issues I'm experiencing. For now, I have provided a demo of 
-						the button below which toggles between light and dark theme.
+						<TextIndent>While</TextIndent> the <code>CircleButton</code> has the logic and resources set up to allow for transitioning to the highlighted version 
+						of the SVG when the button is hovered over, I have disabled this functionality until I can resolve the SVG issues I'm experiencing. For now, I have 
+						provided a demo of the button below which toggles between light and dark theme.
 					</p>
 
 {					<div className={ initObject.componentDemonstrationRowClasses }>

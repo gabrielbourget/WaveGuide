@@ -22,7 +22,7 @@ class Database extends React.Component {
 					<h1>Database</h1>
 
 					<p>
-						<TextIndent>Recognizing</TextIndent> from the starting days of designing this community directory, I knew that I wanted it to 
+						<TextIndent>Recognizing</TextIndent> from the starting days of designing this community directory that I wanted it to 
 						be able to scale as it grew, and that persisting the information that is involved with the application would be important. Doing 
 						some research into different types of database systems I came across 
 						<a href='https://en.wikipedia.org/wiki/Graph_database' target='_blank' rel='noopener noreferrer'> graph databases</a>, 

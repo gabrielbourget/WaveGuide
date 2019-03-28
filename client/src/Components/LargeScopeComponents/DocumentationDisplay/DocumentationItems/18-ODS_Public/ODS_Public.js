@@ -28,7 +28,7 @@ class ODS_Public extends React.Component {
 					</p>
 
 					<p>
-						<TextIndent>A</TextIndent> development feature of in create-react-app is that its build process does not enjoy when you attempt 
+						<TextIndent>A</TextIndent> development feature of create-react-app is that its build process does not enjoy when you attempt 
 						to import resources from beyond the root of the project's <code>src</code> directory. Seeing as many of my project's UI components 
 						needed to pull from the icon library that I built, I decided for now to splice a copy of the library as its own directory within the 
 						bounds of <code>src</code>.

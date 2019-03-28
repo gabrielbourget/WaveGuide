@@ -22,7 +22,7 @@ class RenderTimeComponentPreparation extends React.Component {
 					<h1>Render-Time Component Preparation</h1>
 
 					<p>
-						<TextIndent>In</TextIndent> I have found that as I think about how I want components to be styled, these decisions are often 
+						<TextIndent>I</TextIndent> have found that as I think about how I want components to be styled, these decisions are often 
 						contingent on dynamic factors such as application context, props passed into the component, or component state itself. In order to 
 						make sure my components style themselves in proper accordance to these information sources, I have ended up writing logic such as assigning 
 						a <code>darkTheme</code> or <code>lightTheme</code> class to different elements of 
@@ -31,7 +31,7 @@ class RenderTimeComponentPreparation extends React.Component {
 
 					<p>
 						<TextIndent>What</TextIndent> I have ended up with was series of different styling evaluations like this, based on how the stage is set 
-						at render-time by context, state, and props, which decided upon a certain selector name to be chosen. Then I used the 
+						at render-time by context, state, and props, which decide a certain selector name to be chosen. Then I used the 
 						<a href="https://www.npmjs.com/package/classnames" target='_blank' rel='noopen noreferrer'> ClassNames</a> package to build 
 						appropriate class lists for the different sections of my component. 
 					</p>
@@ -39,7 +39,7 @@ class RenderTimeComponentPreparation extends React.Component {
 					<p>
 						<TextIndent>As </TextIndent> I repeated this process for different components, I decided to extract it to its own function in a 
 						<code> helpers.js</code> file. This function takes in component state, props, and application context, and once it has prepared 
-						the classlists for the different sections of markup in the component, exports them as an object. Then, the component usingi this 
+						the classlists for the different sections of markup in the component, exports them as an object. Then, the component using this 
 						helper function imports it at the top of the file, and calls it, returning it into an object declared and initialized in the 
 						component's <code> render()</code> method. An example of one of these helper functions is included below for the [ insert component 
 						name here ] component, followed by how it is used in the component itself to assign the right styles to its parts. 

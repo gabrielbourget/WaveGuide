@@ -28,7 +28,7 @@ class SearchBar extends React.Component {
 	};
 
 	static defaultProps = {
-		defaultText: "Search by artist name. Search 'Everyone' to return all artists."
+		defaultText: "Search by artist name. Search 'everyone' to return all artists."
 	};
 
 	searchInputRef = React.createRef();
@@ -91,7 +91,7 @@ class SearchBar extends React.Component {
 									value={ this.state.searchQueryText }
 									onChange={ (e) => this.setState({ searchQueryText: e.target.value }) }
 									className={ initObject.searchInputClasses }
-									placeholder='Search by artist name.'
+									placeholder={ this.props.defaultText }
 								/>
 							</form>
 							<OutlineButton

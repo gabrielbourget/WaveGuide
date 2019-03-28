@@ -33,7 +33,7 @@ class IntroToGraphs extends React.Component {
 
 					<p>
 						<TextIndent>In</TextIndent> a context that's closer to the type of application I'm building here, you could use a graph structure to model the people 
-						in a social context, along with some of the relationships between them such as those who are friends, married, part of eachother's families etc... A 
+						in a social network, along with some of the relationships between them such as those who are friends, married, part of eachother's families etc... A 
 						graph such as this might look like the one below. 
 					</p>
 

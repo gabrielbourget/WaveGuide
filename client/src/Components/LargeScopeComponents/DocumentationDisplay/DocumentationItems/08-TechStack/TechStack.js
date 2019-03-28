@@ -80,7 +80,7 @@ class TechStack extends React.Component {
 							While I have thought out some of the ways that these parts of my application stack would be integrated with the front end in the future, I have worked 
 							to create a codebase that can be refactored relatively simply towards working with a back end eventually, and have developed both the server and database 
 							to a certain point, the focus of my job applications and educational push have been mostly on front-end technologies. As my abilities grow, and as time permits, I am 
-							looking forward to stitching in a NodeJS API server, creating a set of connection points to a remote Neo4J database in order to make the application more 
+							looking forward to stitching in a NodeJS API server, and creating a set of connection points to a remote Neo4J database in order to make the application more 
 							scalable and dynamic.
 						</p>
 					</div>
@@ -104,7 +104,7 @@ class TechStack extends React.Component {
 						<TextIndent>Relational</TextIndent> databases built on various SQL-type technologies have served as a solid foundation for many very large and successful 
 						applications over the time of their existence. However, for the kind of complex, highly interconnected data that I am looking to work with as this 
 						application grows, I was searching for something that could better suit my needs. Due to its efficient memory map, ease of asking the database for deeply 
-						interconnected information, and extremely impressive performance, I chose to go with a graph database implemented by Neo4J for my persistence layer. 
+						interconnected information, and very impressive performance, I chose to go with a graph database implemented by Neo4J for my persistence layer. 
 						You can learn more about graphs, how Neo4J implements a database system on top of that kind of data structure, the signficant differentiation to SQL and NoSQL
 						databases, the overall data model I am working with in the <Link to='/documentation/27d03266-f7a4-453f-8c4a-9f4f08584f09'> Database</Link> section of the 
 						documentation.

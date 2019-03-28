@@ -52,7 +52,6 @@ class App extends React.Component {
             /> 
             <Route 
               path='/documentation' 
-              //component={ DocumentationDisplayWithRouter }
               render={ () => (
                 <DocumentationDisplayWithRouter
                   onThemeSwitch={ this.props.switchTheme }

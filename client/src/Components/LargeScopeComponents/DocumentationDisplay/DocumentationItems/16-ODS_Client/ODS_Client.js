@@ -27,7 +27,7 @@ class ODS_Client extends React.Component {
 						key application-wide systems like routing and state management. While I am comfortable with what the Webpack bundler does
 						and some of the ways it can be configured, I opted for now to bootstrap the client using Facebook's create-react-app tool. 
 						I am looking forward to learning more about Webpack as my experience grows, and I am comfortable with the fact that, if I 
-						outgrow the different presets set by Facebook, that I can eject the project and move on from there. 
+						outgrow the different presets set by Facebook I can eject the project and move on from there. 
 					</p>
 
 					<HorizontalDivider/>

@@ -33,7 +33,7 @@ class Cradles extends React.Component {
 					</p>
 
 					<p>
-						<TextIndent>The</TextIndent> cradles are pretty simple components, who just contain a div that is assigned the appropriate 
+						<TextIndent>The</TextIndent> cradles are pretty simple components that just contain a div that is assigned the appropriate 
 						layout rules for its inner context. I then nest the children props that the component receives, allowing me to nest whatever 
 						components and markup I want to include within the cradle when I'm building up other components. This is an overall design 
 						pattern that I plan to continue employing, adding more cradles that I can pull off the shelf for other common layout situations

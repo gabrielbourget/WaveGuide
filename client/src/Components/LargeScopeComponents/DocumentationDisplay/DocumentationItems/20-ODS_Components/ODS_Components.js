@@ -51,7 +51,7 @@ class ODS_Components extends React.Component {
 
 					<p>
 						<TextIndent>Seeing </TextIndent> as this was the first time I built a React component library, my approach was to 
-						start with the smallest components and work my way up. The way that their structured alongside eachother in the end 
+						start with the smallest components and work my way up. The way that they're structured alongside eachother in the end 
 						is an emergent result of the insights and lessons I learnt along the way as I tried different things out, seeing 
 						what worked well and what brought up issues.
 					</p>

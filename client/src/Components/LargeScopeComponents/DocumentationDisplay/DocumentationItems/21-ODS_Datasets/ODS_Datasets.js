@@ -26,19 +26,19 @@ class ODS_Datasets extends React.Component {
 						online courses, and tutorial articles, one of the development principles that has generally come up is to get the 
 						application up and running with some sort of local state before trying to have it depend on external API calls. In that 
 						spirit, I have stored the array of objects that holds information on each artist in the application in this directory. They 
-						are stored and and exported in <code>artists.js</code>, grabbed and pushed into state with an asynchronous Redux action on
-						page load.
+						are stored and and exported in <code>artists.js</code>, grabbed and pushed into state with an asynchronous Redux action when 
+						the application mounts.
 					</p>
 
 					<p>
-						<TextIndent>Given,</TextIndent> this is not going to be a very sustainable situation in the future, as I add more and more artists 
+						<TextIndent>Admittedly,</TextIndent> this is not going to be a very sustainable situation in the future as I add more and more artists 
 						into the directory, and I start to think about building the functionality for people to build their own accounts where they can add 
 						in and modify the information that is used to fill in their user profiles in the UI. What I have made sure to do in the meantime, is to
 						develop a database that holds all this same user information in parallel to the UI development. While the application is not connected 
-						to the database through an API server, just yet, I have made an effort to put some of the pieces together that will be required when I do.
+						to the database through an API server just yet, I have made an effort to put some of the pieces together that will be required when I do.
 						I go into this more in the <Link to='/documentation/27d03266-f7a4-453f-8c4a-9f4f08584f09'>database</Link> section of the documentation, 
 						where I talk about the <a href='https://neo4j.com/' target='_blank' rel='noopen noreferrer'>technology</a> used to build the database and 
-						the schema outlining the template of its topology.
+						the schema outlining the template from which its topology spans out.
 					</p>
 
 					<p>

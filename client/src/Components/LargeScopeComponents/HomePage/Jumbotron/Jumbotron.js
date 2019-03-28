@@ -5,7 +5,7 @@ import { ThemeContext } from '../../../../ThemeContext';
 
 // import { ReactComponent as ChevronDownSkinnyDarkTheme } from './SVG/ChevronDownSkinny/ChevronDownSkinnyDarkTheme.svg';
 import ChevronDownSkinnyDarkTheme from './SVG/ChevronDownSkinny/ChevronDownSkinnyDarkTheme';
-import { ReactComponent as WaveIcon } from './SVG/WaveIcon/WaveIconLightTheme.svg';
+// import { ReactComponent as WaveIcon } from './SVG/WaveIcon/WaveIconLightTheme.svg';
 //import IconDisplay from '../../../Icons/IconDisplay/IconDisplay';
 import SingleIcon from '../../../Icons/SingleIcon/SingleIcon';
 
@@ -20,15 +20,14 @@ class Jumbotron extends React.Component {
 					growing and global community of artists <br/>
 					forming around Wave music.
 				</h1>
-				<h3>
-					Search through the directory up above, to find information on <br/>
+				<h2>
+					Search through the directory up above to find information on <br/>
 					artists in the community. Enter the term 'everyone' in order to <br/>
 					return everyone in the directory.
-				</h3>
-				<h3>
-					Scroll down to learn more about the community and see how it's <br/>
-					distributed around the world.
-				</h3>
+				</h2>
+				<h2>
+					Scroll down to learn more about the community.
+				</h2>
 				<div className={ styles.downChevron }>
 					<SingleIcon 
 						size='30px'

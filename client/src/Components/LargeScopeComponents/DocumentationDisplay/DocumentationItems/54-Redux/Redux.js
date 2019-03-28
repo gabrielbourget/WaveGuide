@@ -87,7 +87,7 @@ class Redux extends React.Component {
 
 					<p>
 						<TextIndent>As</TextIndent> I learnt redux at first, I was dispatching action objects with their types and payloads directly from within components, which 
-						I believe was find as a learning exercise. However, looking towards scaled up production-level settings, I believe that this would hard-code the form that 
+						I believe was fine as a learning exercise. However, looking towards scaled up production-level settings, I believe that this would hard-code the form that 
 						actions take across the codebase, making it pretty tedious to go through each place they're dispatched and changing the types and payloads in each one. 
 						As an alternative strategy, I defined action creator functions, which are defined in one file. These action creator functions are then called by the components 
 						that generate them throughout the course of the application. If, in the future, something about the action type or payload needs to change for some part of 

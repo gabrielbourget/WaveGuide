@@ -25,7 +25,7 @@ class Table extends React.Component {
 						<TextIndent>The</TextIndent> other major environment I wanted to provide for displaying artist information was a general purpose 
 						table, that I could then adopt for other contexts where information could be effectively displayed in this format. I had implemented a 
 						div-based table for a previous software project that I worked on during school, and one of the major frustrations that I had was developing 
-						a strategy for using it in the context of other parts of the application we were developing. Implemented as a CSHTML template as part of an 
+						a strategy for using it in the context of other parts of the application we were developing. Implemented as a CSHTML template as part of a 
 						.NET Core stack application that pulled from an external source to map out the items in the table body, I found it unwieldly to implement it 
 						again in other Views of the application. I would either rewrite all of the markup again in a new file, or copy over the table markup from another
 						view and comb through it to change the dynamic code within it. Both processes were slow and error prone, and resulted in a user interface component 

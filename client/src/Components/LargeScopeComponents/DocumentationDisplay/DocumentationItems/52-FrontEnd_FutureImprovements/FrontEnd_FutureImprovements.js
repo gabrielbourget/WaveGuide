@@ -26,7 +26,7 @@ class ApplicationOverview extends React.Component {
 						<TextIndent>Building</TextIndent> a modest UI library has felt like falling down a rabbithole in some senses. As I've composed 
 						my way up to larger and larger components, I have started to see more concretely how I would implement all manner of other UI components.
 						With this expanding vision though also comes a deeper understanding of the time and consideration that must go into these other components. 
-						As a matter of balance and scope for this portfolio project, I developed the library to the poing where I could fulfill the basic requirements 
+						As a matter of balance and scope for this portfolio project, I developed the library to the point where I could fulfill the basic requirements 
 						that I wanted it to meet. Below are some of the structural changes to the application's front end that I am considering along with some of the 
 						other major components I am in the process of thinking through and implementing.
 					</p>
@@ -70,7 +70,7 @@ class ApplicationOverview extends React.Component {
 					<p>
 						<TextIndent>Having</TextIndent> spent a lot of time in digital audio workstations such as Ableton, and on streaming platforms such as Soundcloud as I have moved through 
 						learning sound design, music production, and audio engineering, I have become really intrigued by the idea of building an audio player component of my own. If I could 
-						write a procedure that could sample the amplitude of an audio file's amplitude a certain number of times per second, the results of this process could form the basis needed 
+						write a procedure that could sample the amplitude of an audio file a certain number of times per second, the results of this process could form the basis needed 
 						to form a visual representation of the file's waveform. 
 					</p>
 

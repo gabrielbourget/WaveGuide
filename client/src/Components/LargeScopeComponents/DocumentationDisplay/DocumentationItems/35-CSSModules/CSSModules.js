@@ -73,7 +73,7 @@ class CSSModules extends React.Component {
 					<p>
 						<TextIndent>The </TextIndent> second of these reasons is that while the way styling logic is implemented in styled components is interesting to me, 
 						the switch over to them seemed like it would be relatively horizontal based on how I was styling my components. The way I've implemented my 
-						component library, I am still progrmatically applying certain styles based on this dynamic information, but I do this by adding or removing classes 
+						component library, I am still programatically applying certain styles based on this dynamic information, but I do this by adding or removing classes 
 						from the classlists applied to parts of a component at render time. While the logic to do this is separated from the actual styles, it still 
 						seemed like about the same amount of code in the end. You can read more about the way that I dynamically apply component styles in the 
 						<Link to='/documentation/5b0bb77c-efd2-491f-9ef7-9fab84fe4f42'> Render-Time Component Preperation</Link> section of the documentation.

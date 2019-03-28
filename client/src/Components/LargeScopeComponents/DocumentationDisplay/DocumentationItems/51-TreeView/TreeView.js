@@ -42,7 +42,7 @@ class TreeView extends React.Component {
 
 					<p>
 					 	<TextIndent>From</TextIndent> a re-use standpoint, the way that I construct the flattened tree that is fed into the rendering process of the tree is 
-					 	fairly cumbersome, with me writing out each individual node in the data structure. What I am considering is some programattic process in which I could either 
+					 	fairly cumbersome, with me writing out each individual node in the data structure. What I am considering is some programmatic process in which I could either 
 					 	scan through an existing folder structure build some sort of UI layer where I could build the data structure by filling out a series of forms I could create 
 					 	for myself. 
 					</p>

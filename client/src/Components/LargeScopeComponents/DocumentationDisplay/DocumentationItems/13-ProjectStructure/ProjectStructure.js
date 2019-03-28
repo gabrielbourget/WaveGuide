@@ -32,7 +32,7 @@ class ProjectStructure extends React.Component {
 					<p>
 						<TextIndent>This</TextIndent> section of the documentation goes through some of the key parts of the application, explaining 
 						how many of them work in some detail, and in the context of where they sit in the overall directory structure. Also, as I built 
-						my component library during development, I noticed that I tended towards the same overall cohesive strategy to organizing and 
+						my component library during development, I noticed that I tended towards the same overall cohesive strategy for organizing and 
 						co-locating the resources that it needed to function as independently as possible. As such, I have broken off a 
 						sub-section where I talk about this set of strategies and how it was applied to building the components that make up the application. 
 					</p>

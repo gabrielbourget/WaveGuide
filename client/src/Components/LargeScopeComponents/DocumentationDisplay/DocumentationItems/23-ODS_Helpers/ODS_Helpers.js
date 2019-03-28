@@ -24,7 +24,7 @@ class ODS_Helpers extends React.Component {
 					<p>
 						<TextIndent>This </TextIndent> section of the application is where I am storing logic and data structure utilities 
 						that are accessed and used by other logic in the application. The first data structure stored in there right now is an enum 
-						that helps logic in my reducers know the critieria by which to sort through the list of artists that returns from search results. 
+						that helps logic in my reducers know the criteria by which to sort through the list of artists that returns from search results. 
 						While I have so far only implemented sorting alphabetically and reverse alphabetically through artist names, I can envision 
 						different sorting criteria that could be applied to datasets in the application. Having one place in the codebase where these 
 						sort criteria are set should help to make my code more maintainable in the long run, and make implementing these other types of sorting 

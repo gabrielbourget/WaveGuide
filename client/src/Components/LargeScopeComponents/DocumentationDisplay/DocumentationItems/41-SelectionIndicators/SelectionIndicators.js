@@ -27,13 +27,13 @@ class SelectionIndicators extends React.Component {
 					<p>
 						<TextIndent>Another</TextIndent> one of the first components I started with while building out this application was the selection indicator.
 						Used as a building block to common UI components like checkboxes and radio button sets, I built these in mind for composition into such components. 
-						It achieves its visual presentation by nesting an inside div with a border div. When the component is in a selected state, this inside div has 
+						It achieves its visual presentation by nesting an inside div within a border div. When the component is in a selected state, this inside div has 
 						a background fill, and when it is not, the fill is transparent. 
 					</p>
 
 					<p>
-						<TextIndent>The</TextIndent> component keeps track of this selection status through a boolean held in internal state. The comopnent also 
-						takes a shape prop which allows the component to be rendered in a square, rounded square, and circular format. Finally, the component 
+						<TextIndent>The</TextIndent> component keeps track of this selection status through a boolean held in internal state. It also 
+						takes a shape prop which allows the component to be rendered in a square, rounded square, and circular format. Finally, it 
 						subscribes to the ThemeContext, allowing it to render out a dark theme and light theme version, as appropriate. A demonstration of these 
 						indicators below in their various forms and states, is provided.
 					</p>

@@ -25,7 +25,7 @@ class ODS_Redux extends React.Component {
 						<TextIndent>As</TextIndent> mentioned previously in the documentation, I chose to go with Redux as my strategy for managing 
 						the state tree of my application. I resonate strongly with the simplicity of a unidirectional information flow paradigm, and 
 						the learning resources/documentation/community support around this implementation of the Flux pattern were very attractive to 
-						a beginner and learner like myself. 
+						a beginner like myself. 
 					</p>
 
 					<p>
@@ -44,7 +44,7 @@ class ODS_Redux extends React.Component {
 							</li>
 							<li>
 								<p>
-									The reducers which process these actions, resolving how their consequences modifies the state tree, and then reflecting those changes 
+									The reducers which process these actions, resolving how their consequences modify the state tree, and then reflecting those changes 
 									in the new copy of state that they return. 
 								</p>
 							</li>
