@@ -23,23 +23,26 @@ class Footer extends React.Component {
 
 		return (
 			<div className={ footerClasses }>
-				<div className={ styles.logo }>
-					<IconDisplay
-						size='75px'
-						darkTheme={ <WaveIconDarkTheme/> }
-						lightTheme={ <WaveIconLightTheme/> }
-					/>
+				<div className={ styles.logoAndDescription }>
+					<div className={ styles.logo }>
+						<IconDisplay
+							size='75px'
+							darkTheme={ <WaveIconDarkTheme/> }
+							lightTheme={ <WaveIconLightTheme/> }
+						/>
 
 
+					</div>
+					<div className={ styles.description }>
+						<Paragraph fontSize='1.5rem'>
+							Waveguide is developed and maintained by Gabriel Bourget. 
+							While this application serves primarily as a web development
+							portfolio project at the moment, I'm hoping to add increasing
+							functionality to it as time goes on.
+						</Paragraph>
+					</div>					
 				</div>
-				<div className={ styles.description }>
-					<Paragraph fontSize='1.5rem'>
-						Waveguide is developed and maintained by Gabriel Bourget. 
-						While this application serves primarily as a web development
-						portfolio project at the moment, I'm hoping to add increasing
-						functionality to it as time goes on.
-					</Paragraph>
-				</div>
+
 				<div className={ styles.links }>
 					<a
 						href='https://www.github.com/gabrielbourget/WaveMusicCommunity'
