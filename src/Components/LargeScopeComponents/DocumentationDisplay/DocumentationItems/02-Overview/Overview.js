@@ -41,7 +41,7 @@ class Overview extends React.Component {
 						</a> 
 
 						, and fan of this kind of music, I've built this application with the intention of serving that community, seeking for it to 
-						act as a directory and hub for artists and all others to use. It also doubles as a portoflio project in which I am seeking 
+						act as a directory and hub for artists and all others to use. It also doubles as a portfolio project in which I am seeking 
 						to demonstrate a working understanding of the core technologies and design patterns that make up the modern web applications 
 						of the day, with a focus on front end development. You can find more information on this artistic community in the
 						 <Link to='/documentation/97df66de-33fb-48cd-9543-0c698821d5d8'> next section</Link>, and can learn more about the way that 
