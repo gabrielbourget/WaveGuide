@@ -97,6 +97,21 @@ export const communityLinks = [
 	{
 		link: 'https://soundcloud.com/HiddenAurora',
 		buttonText: 'Hidden Aurora',
-		description: 'Collective'
-	}
+		description: 'Label/Collective'
+	},
+	{
+		link: 'https://soundcloud.com/wearenoir',
+		buttonText: 'Noir',
+		description: 'Label/Collective'
+	},
+	{
+		link: 'https://soundcloud.com/czelusc',
+		buttonText: 'Czeluść',
+		description: 'Label/Collective'
+	},
+	{
+		link: 'https://soundcloud.com/titancult',
+		buttonText: 'Titan',
+		description: 'Label/Collective'
+	}	
 ];

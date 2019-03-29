@@ -55,7 +55,7 @@ class IntroToTheWaveScene extends React.Component {
 					<p>
 						<TextIndent direction='leftToRight'>This</TextIndent> increasingly distributed nature of artistic discourse, accompanied by this breaking 
 						down of genre barriers, has led to countless musical sub-genres and groups forming across the internet and the real world; it is out of a 
-						similar process that wave music has begun. Arising from the melting pot of musical influences that was Soundcloud around 2012 or so, artists 
+						similar process that wave music has begun. Arising from the melting pot of musical influences found on the internet around 2012 or so, artists 
 						such as 
 
 						<a 
