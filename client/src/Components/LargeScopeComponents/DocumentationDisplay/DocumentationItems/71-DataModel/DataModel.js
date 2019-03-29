@@ -34,7 +34,7 @@ class DataModel extends React.Component {
 					</p>
 
 					<div>
-						<img style={ {marginLeft: '50%', marginRight: '50%'} } src={ dataModel } alt="Graph Database Schema" style={ {height:'90%', width: '90%'} }/>
+						<img src={ dataModel } alt="Graph Database Schema" style={ {height:'95%', width: '95%'} }/>
 					</div>
 
 					<h2>Future Modifications and Expansions</h2>
