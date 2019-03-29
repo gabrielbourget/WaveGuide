@@ -1,18 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 //import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import { ThemeContext } from '../../../../../ThemeContext';
 
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
 import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+import CodeBlock from '../../../../TextLayout/CodeBlock/CodeBlock';
 
 import styles from '../../DocumentationItem/DocumentationItem.module.scss';
 import { prepareComponent } from '../../DocumentationItem/helpers';
 
 class CardGallery extends React.Component {
 	render() {
+
+		const codeBlock= `
+			@import "../../../GlobalStyles/colors.css";
+			@import "../../../GlobalStyles/generalVars.scss";
+
+			.gallery {
+
+				width: 100%;
+				height: 100%;
+				padding-bottom: 30px;
+
+				display: grid;
+				grid-template-columns: repeat(auto-fill, var(--cardWidth));
+				grid-template-rows: repeat(auto-fit, var(--cardHeight));
+				justify-content: center;
+				justify-items: center;
+				grid-gap: 1rem;
+				grid-auto-flow: dense;
+				overflow-y: auto;
+
+				&.darkTheme {
+					background: var(--veryveryDarkGrey);
+				}
+
+				&.lightTheme {
+					background: var(--white);
+				}
+			}
+		`;
 
 		const initObject = prepareComponent(this.context, this.props, styles);
 
@@ -26,7 +57,7 @@ class CardGallery extends React.Component {
 						<TextIndent>One</TextIndent> of the standard display environments that I wanted to implement as part of 
 						my learning process was a dynamic gallery that could display and arrange the artist profile cards within 
 						fluid specifications that reflowed content accordingly and could handle different viewport sizes. I followed 
-						<a href="https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/" target='_blank' rel='noopen noreferrer'> this </a>
+						<a href="https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/" target='_blank' rel='noopener noreferrer'> this </a>
 						tutorial from CSS-Tricks to get a starting idea of how to pull it off, and went from there, customizing the 
 						gallery to my needs.
 					</p>
@@ -42,9 +73,10 @@ class CardGallery extends React.Component {
 						The full SCSS code that specifies the grid layout is included below in the following code sample. 
 					</p>
 
-					<div className={ initObject.tempPlaceholderClasses }>
-						[ code sample with SCSS for artist card grid ]
-					</div>
+					<ReactMarkdown 
+						source={ codeBlock } 
+						renderers={ {code: CodeBlock} }
+					/>
 
 					<HorizontalDivider/>
 

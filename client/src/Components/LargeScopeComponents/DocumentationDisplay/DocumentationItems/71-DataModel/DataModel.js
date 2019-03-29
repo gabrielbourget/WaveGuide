@@ -10,6 +10,7 @@ import HorizontalDivider from '../../../../Dividers/HorizontalDivider/Horizontal
 
 import styles from '../../DocumentationItem/DocumentationItem.module.scss';
 import { prepareComponent } from '../../DocumentationItem/helpers';
+import dataModel from './DataModel.jpg';
 
 class DataModel extends React.Component {
 	render() {
@@ -32,8 +33,8 @@ class DataModel extends React.Component {
 						Below is a representation of the data model I have come up with so far, outlining the major nodes and relationships that make up the database. 
 					</p>
 
-					<div class={ initObject.tempPlaceholderClasses }>
-						[ data model, expressed as shitty illustrator JPG or graph viz if I get that up and running. ]
+					<div>
+						<img style={ {marginLeft: '50%', marginRight: '50%'} } src={ dataModel } alt="Graph Database Schema" style={ {height:'90%', width: '90%'} }/>
 					</div>
 
 					<h2>Future Modifications and Expansions</h2>

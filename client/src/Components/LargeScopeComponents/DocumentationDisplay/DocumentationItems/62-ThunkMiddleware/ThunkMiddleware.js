@@ -1,18 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 //import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import { ThemeContext } from '../../../../../ThemeContext';
 
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
 import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+import CodeBlock from '../../../../TextLayout/CodeBlock/CodeBlock';
 
 import styles from '../../DocumentationItem/DocumentationItem.module.scss';
 import { prepareComponent } from '../../DocumentationItem/helpers';
 
 class ThunkMiddleware extends React.Component {
 	render() {
+
+		const codeBlock = `
+			export const fetchArtists = () => (
+				(dispatch) => {
+					dispatch(fetchArtistsRequest());
+					APIClient.loadPeople().then((artists) => { dispatch(fetchArtistsSuccess(artists)); });
+				}
+			);
+		`;
 
 		const initObject = prepareComponent(this.context, this.props, styles);
 
@@ -43,9 +54,10 @@ class ThunkMiddleware extends React.Component {
 						displayed in the code sample below.
 					</p>
 
-					<div className={ initObject.tempPlaceholderClasses }>
-						[ fetchArtists() action creator function ]
-					</div>
+					<ReactMarkdown
+						source={ codeBlock }
+						renderers={ {code: CodeBlock} }
+					/>					
 
 					<HorizontalDivider/>
 

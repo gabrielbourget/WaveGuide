@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 //import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import { ThemeContext } from '../../../../../ThemeContext';
 
 import FromTheTopCradle from '../../../../Cradles/FromTheTopCradle/FromTheTopCradle';
 import TextIndent from '../../../../TextLayout/TextIndent/TextIndent';
 import FilledButton from '../../../../Buttons/FilledButton/FilledButton';
 import HorizontalDivider from '../../../../Dividers/HorizontalDivider/HorizontalDivider';
+import CodeBlock from '../../../../TextLayout/CodeBlock/CodeBlock';
 
 import styles from '../../DocumentationItem/DocumentationItem.module.scss';
 import { prepareComponent } from '../../DocumentationItem/helpers';
@@ -15,6 +17,22 @@ class ColorThemes extends React.Component {
 	render() {
 
 		const initObject = prepareComponent(this.context, this.props, styles);
+
+		const codeBlock1 = `
+			import React from 'react';
+			import ClassNames from 'classnames';
+			import PropTypes from 'prop-types';
+			import { ThemeContext } from '../../../ThemeContext';
+			import styles from './FilledButton.module.scss';
+
+			class FilledButton extends React.Component {
+				{/* Rest of component body here */}
+			}
+
+			FilledButton.contextType = ThemeContext;
+
+			export default FilledButton;
+		`;
 
 		return (
 			<FromTheTopCradle>
@@ -66,22 +84,15 @@ class ColorThemes extends React.Component {
 					
 					<p>
 						<TextIndent>At</TextIndent> the top directory level of the client's source code, I wrote a small Javascript file in which I exported 
-						a variable that instantiated a React Context along with some default value for the theme. You can see this in the code sample below:
+						a variable that instantiated a React Context along with some default value for the theme. Then, in order for components to subscribe to this 
+						context and use it in their rendering logic, I imported this ThemeContext variable in their main JS files and specified that their
+						<code> contextType </code> was of <code> ThemeContext</code>. This is outlined in the code sample below.You can see this in the code sample below:
 					</p>
 
-					<div className={ initObject.tempPlaceholderClasses }>
-						[ Code sample of the declaration of the ThemeContext variable ]
-					</div>
-
-					<p>
-						<TextIndent>Then,</TextIndent> in order for components to subscribe to this context and use it in their rendering logic, I imported this 
-						ThemeContext variable in their main JS files and specified that their <code> contextType </code> was of <code> ThemeContext</code>. This is 
-						outlined in the code sample below.
-					</p>
-
-					<div className={ initObject.tempPlaceholderClasses }>
-						[ Code sample of a component subscribing to the ThemeContext ]
-					</div>					
+					<ReactMarkdown
+						source={ codeBlock1 }
+						renderers={ {code: CodeBlock} }
+					/>				
 
 					<HorizontalDivider/>
 

@@ -319,8 +319,8 @@ const documentationTree = {
 							 '/frontEnd/ImplementedUIPatterns/cradles',
 							 '/frontEnd/ImplementedUIPatterns/profileCard', 
 							 '/frontEnd/ImplementedUIPatterns/cardGallery',
-							 '/frontEnd/ImplementedUIPatterns/graphVisualization',
-							 '/frontEnd/ImplementedUIPatterns/map',
+							 // '/frontEnd/ImplementedUIPatterns/graphVisualization',
+							 // '/frontEnd/ImplementedUIPatterns/map',
 							 '/frontEnd/ImplementedUIPatterns/sideMenu',
 							 '/frontEnd/ImplementedUIPatterns/table',
 							 '/frontEnd/ImplementedUIPatterns/treeView']
@@ -374,20 +374,20 @@ const documentationTree = {
 		isOpen: false,
 		id: '6061a33a-2168-4571-8aa7-cf516e0ef601'
 	},
-	'/frontEnd/ImplementedUIPatterns/graphVisualization': {
-		path: '/frontEnd/ImplementedUIPatterns/graphVisualization',
-		name: 'Graph Visualization',
-		type: 'file',
-		isOpen: false,
-		id: '8f036fd9-596b-40eb-9f79-311e0e9afa79'
-	},
-	'/frontEnd/ImplementedUIPatterns/map': {
-		path: '/frontEnd/ImplementedUIPatterns/map',
-		name: 'Map',
-		type: 'file',
-		isOpen: false,
-		id: 'fc2898d7-3deb-4816-b30e-1334e7f96ae6'
-	},
+	// '/frontEnd/ImplementedUIPatterns/graphVisualization': {
+	// 	path: '/frontEnd/ImplementedUIPatterns/graphVisualization',
+	// 	name: 'Graph Visualization',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: '8f036fd9-596b-40eb-9f79-311e0e9afa79'
+	// },
+	// '/frontEnd/ImplementedUIPatterns/map': {
+	// 	path: '/frontEnd/ImplementedUIPatterns/map',
+	// 	name: 'Map',
+	// 	type: 'file',
+	// 	isOpen: false,
+	// 	id: 'fc2898d7-3deb-4816-b30e-1334e7f96ae6'
+	// },
 	'/frontEnd/ImplementedUIPatterns/sideMenu': {
 		path: '/frontEnd/ImplementedUIPatterns/sideMenu',
 		name: 'Side Menu',
