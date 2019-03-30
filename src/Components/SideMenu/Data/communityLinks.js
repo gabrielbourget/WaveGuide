@@ -113,5 +113,10 @@ export const communityLinks = [
 		link: 'https://soundcloud.com/titancult',
 		buttonText: 'Titan',
 		description: 'Label/Collective'
-	}	
+	},
+	{
+		link: 'soundcloud.com/humanerrorcollective',
+		buttonText: 'Human Error',
+		description: 'Label/Collective'
+	}
 ];
