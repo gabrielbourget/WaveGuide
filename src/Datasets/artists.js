@@ -436,6 +436,15 @@ const artists = [
     }
   }, 
   {
+    name: 'Everous',
+    imageURL: process.env.PUBLIC_URL + '/Images/Everous.png',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/4lzpKKzCXdj3uyCMJjb97C?si=6ePAEL2aQaGQBPOinhm3ow',
+      soundCloud: 'https://soundcloud.com/everous',
+      youtube: 'https://www.youtube.com/channel/UC8GDS3cUWYfY9_1ErkNaBRQ?view_as=subscriber'
+    }     
+  },  
+  {
     name: 'Stohou',
     imageURL: process.env.PUBLIC_URL + '/Images/Stohou.jpg',
     socialURLs: {
