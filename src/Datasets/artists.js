@@ -314,6 +314,19 @@ const artists = [
     }
   },
   {
+    name: 'Unnholy',
+    imageURL: process.env.PUBLIC_URL + '/Images/Unnholy.png',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/5um0tGaoeKhLVjLjPFG0UX',
+      soundCloud: 'https://soundcloud.com/unnholy ',
+      apple: 'https://itunes.apple.com/gb/artist/unnholy/1340859873',
+      bandcamp: 'https://unnholy.bandcamp.com/',
+      instagram: 'https://www.instagram.com/unnholy69/',
+      facebook: 'https://www.facebook.com/unnholy',
+      twitter: 'https://twitter.com/unnholyPL'
+    }     
+  },  
+  {
     name: 'Shxde',
     imageURL: process.env.PUBLIC_URL + '/Images/Shxde.png',
     socialURLs: {
