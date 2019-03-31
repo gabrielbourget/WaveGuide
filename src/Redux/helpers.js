@@ -4,9 +4,15 @@ import { sortCriteriaEnum } from '../Helpers/generalDataStructures';
 export const searchThroughArtists = (queryToMatch, artists) => {
 
 	// - Shortcut in order to display all artists.
-	if (queryToMatch === 'everyone' 
-			|| queryToMatch === 'Everyone'
-			|| queryToMatch === 'EVERYONE') return artists;
+	if (queryToMatch === 'everyone' || 
+		  queryToMatch === 'Everyone' || 
+		  queryToMatch === 'EVERYONE') return artists;
+
+	if (queryToMatch === 'coldkiss' || queryToMatch === 'Coldkiss') {
+		return artists.filter((artist) => {
+			return artist.name.match('c o l d k i s s');
+		});
+	}
 
 	return artists.filter((artist) => {
 		const regex = new RegExp(queryToMatch, 'gi');
