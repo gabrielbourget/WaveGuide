@@ -554,6 +554,16 @@ const artists = [
       instagram: 'https://www.instagram.com/calicry/',
       facebook: 'https://www.facebook.com/kaseyissocoolunlikeURmom'
     }     
+  },   
+  {
+    name: 'REMNANT.exe',
+    imageURL: process.env.PUBLIC_URL + '/Images/Remnant_exe.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/46q8Ul5r65jpuyZ8LwWPN3',
+      soundCloud: 'https://soundcloud.com/remnantsofyore',
+      bandcamp: 'https://remnantsofyore.bandcamp.com/',
+      twitter: 'https://twitter.com/remnantsofyore'
+    }     
   },    
   {
     name: 'Enjoii',
