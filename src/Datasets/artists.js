@@ -460,6 +460,16 @@ const artists = [
     }   
   },
   {
+    name: 'c o l d k i s s',
+    imageURL: process.env.PUBLIC_URL + '/Images/Coldkiss.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/0sgxjYuUacg9XcYUL9eWo2?si=Sf3cuStwT3GWwh0F4AuJDQ',
+      bandcamp: 'https://coldkiss.bandcamp.com/releases',
+      instagram: 'https://www.instagram.com/coldkiss_music/',
+      facebook: 'https://www.facebook.com/coldkissartist/'
+    }     
+  },  
+  {
     name: 'Kavern',
     imageURL: process.env.PUBLIC_URL + '/Images/Kavern.jpg',
     socialURLs: {
@@ -561,7 +571,7 @@ const artists = [
     socialURLs: {
       spotify: 'https://open.spotify.com/artist/46q8Ul5r65jpuyZ8LwWPN3',
       soundCloud: 'https://soundcloud.com/remnantsofyore',
-      bandcamp: 'https://remnantsofyore.bandcamp.com/',
+      bandcamp: 'https://remnantsofyore.bandcamp.com',
       twitter: 'https://twitter.com/remnantsofyore'
     }     
   },    
