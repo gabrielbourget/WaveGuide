@@ -639,7 +639,14 @@ const artists = [
       instagram: 'https://www.instagram.com/roiily_music/',
       vk: 'https://vk.com/roiilymusic'
     }     
-  },   
+  },  
+  {
+    name: 'dreams47',
+    imageURL: process.env.PUBLIC_URL + '/Images/dreams47.png',
+    socialURLs: {
+      soundCloud: 'https://soundcloud.com/dreams47'
+    }     
+  },    
   {
     name: 'Guilt Chip',
     imageURL: process.env.PUBLIC_URL + '/Images/GuiltChip.png',
