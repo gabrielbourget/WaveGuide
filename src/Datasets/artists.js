@@ -389,6 +389,17 @@ const artists = [
     }
   }, 
   {
+    name: 'Svexx',
+    imageURL: process.env.PUBLIC_URL + '/Images/Svexx.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/3qTBpuMnunLuBypCT2jDPx?si=vuPKVSD0T1SFkqC2iNDTSw',
+      soundCloud: 'https://soundcloud.com/svexx-svexx',
+      apple: 'https://itunes.apple.com/us/artist/svexx/1445611441',
+      instagram: 'https://www.instagram.com/svexx.svexx/',
+      facebook: 'https://www.facebook.com/svexxmusic'
+    }     
+  },  
+  {
     name: 'Martian Moon',
     imageURL: process.env.PUBLIC_URL + '/Images/MartianMoon.png',
     socialURLs: {
