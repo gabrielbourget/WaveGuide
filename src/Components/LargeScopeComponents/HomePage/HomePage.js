@@ -90,7 +90,18 @@ class HomePage extends React.Component {
 										Shxde Selects
 									</a>
 								</p>
-							</li>								
+							</li>	
+							<li>
+								<p>
+									<a 
+										href="https://open.spotify.com/playlist/6inZMdZy0O3v1oVm2CicAi?si=Mgnxa7yaQhymj-6vWzEPvQ"
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										Wave | Future Garage | Dark Trap (maintained by c o l d k i s s)
+									</a>
+								</p>
+							</li>	
 						</ul>							
 					</div>		
 				</div>				
