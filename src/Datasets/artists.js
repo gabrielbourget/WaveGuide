@@ -192,6 +192,15 @@ const artists = [
     }
   }, 
   {
+    name: 'Yama',
+    imageURL: process.env.PUBLIC_URL + '/Images/Yama.jpg',
+    socialURLs: {
+      soundCloud: 'https://soundcloud.com/yamadubs',
+      instagram: 'https://www.instagram.com/yamadubs/',
+      facebook: 'https://www.facebook.com/yamadubs'
+    }     
+  },   
+  {
     name: 'TW1GZ',
     imageURL: process.env.PUBLIC_URL + '/Images/TW1GZ.jpg',
     socialURLs: {
