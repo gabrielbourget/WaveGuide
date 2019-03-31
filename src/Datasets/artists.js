@@ -196,7 +196,7 @@ const artists = [
     imageURL: process.env.PUBLIC_URL + '/Images/Yama.jpg',
     socialURLs: {
       soundCloud: 'https://soundcloud.com/yamadubs',
-      instagram: 'https://www.instagram.com/yamadubs/',
+      instagram: 'https://www.instagram.com/yamadubs',
       facebook: 'https://www.facebook.com/yamadubs'
     }     
   },   
@@ -272,6 +272,16 @@ const artists = [
       youtube: 'https://www.youtube.com/channel/UCt4EImIF34Vkze9L-SnEJfQ'
     }
   }, 
+  {
+    name: 'Sweeper',
+    imageURL: process.env.PUBLIC_URL + '/Images/Sweeper.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/72QavK4L3wZjSV8U7j09wz?si=3gUp3uhwQ-mAaqELqoKV4A',
+      soundCloud: 'https://soundcloud.com/sweeper_1',
+      bandcamp: 'https://sweeper2.bandcamp.com/',
+      instagram: 'https://www.instagram.com/sweeper.music'
+    }     
+  },
   {
     name: 'Skit',
     imageURL: process.env.PUBLIC_URL + '/Images/Skit.jpg',
