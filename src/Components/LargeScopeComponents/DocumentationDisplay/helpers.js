@@ -8,5 +8,5 @@ export const prepareComponent = (context, props, styles) => {
 
 	return {
 		documentationDisplayClasses
-	}
-}
+	};
+};

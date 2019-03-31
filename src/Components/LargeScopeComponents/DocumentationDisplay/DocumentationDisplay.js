@@ -111,8 +111,6 @@ class DocumentationDisplay extends React.Component {
 	}
 }
 
-// <Buttons onThemeSwitch={ this.props.onThemeSwitch }/>
-
 DocumentationDisplay.contextType = ThemeContext;
 
 const DocumentationDisplayWithRouter = withRouter(DocumentationDisplay);
