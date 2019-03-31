@@ -243,6 +243,14 @@ const artists = [
     }
   },
   {
+    name: 'Kissay',
+    imageURL: process.env.PUBLIC_URL + '/Images/Kissay.jpg',
+    socialURLs: {
+      spotify: 'https://open.spotify.com/artist/59hfvESxbtxZfe3f7qF0Bg?si=_2WESKo2T_KtnR4qgOYNFA',
+      soundCloud: 'https://soundcloud.com/kissaymusic'
+    }     
+  },   
+  {
     name: 'MRKRYL',
     imageURL: process.env.PUBLIC_URL + '/Images/MRKRYL.jpg',
     socialURLs: {
@@ -318,7 +326,7 @@ const artists = [
     imageURL: process.env.PUBLIC_URL + '/Images/Unnholy.png',
     socialURLs: {
       spotify: 'https://open.spotify.com/artist/5um0tGaoeKhLVjLjPFG0UX',
-      soundCloud: 'https://soundcloud.com/unnholy ',
+      soundCloud: 'https://soundcloud.com/unnholy',
       apple: 'https://itunes.apple.com/gb/artist/unnholy/1340859873',
       bandcamp: 'https://unnholy.bandcamp.com/',
       instagram: 'https://www.instagram.com/unnholy69/',
