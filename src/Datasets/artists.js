@@ -100,6 +100,16 @@ const artists = [
     }
   },
   {
+    name: 'WHITEMAGE',
+    imageURL: process.env.PUBLIC_URL + '/Images/WHITEMAGE.jpg',
+    socialURLs: {
+      soundCloud: 'https://soundcloud.com/whitemage2k99',
+      instagram: 'https://www.instagram.com/whitemage2k99/',
+      facebook: 'https://www.facebook.com/whitemage2k99',
+      twitter: 'https://twitter.com/whitemage2k99'
+    }     
+  },    
+  {
     name: 'w/Out',
     imageURL: process.env.PUBLIC_URL + '/Images/wOut.jpg',
     socialURLs: {
