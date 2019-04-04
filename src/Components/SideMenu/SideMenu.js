@@ -20,6 +20,7 @@ import CircleDownIconHighlighted from './SVG/CircleDownIcon/CircleDownIcon_Highl
 import CircleUpIconDarkTheme from './SVG/CircleUpIcon/CircleUpIcon_DarkTheme';
 import CircleUpIconLightTheme from './SVG/CircleUpIcon/CircleUpIcon_LightTheme';
 import CircleUpIconHighlighted from './SVG/CircleUpIcon/CircleUpIcon_Highlighted';
+
 // - X Icon
 import { ReactComponent as XIconDarkTheme } from './SVG/XIcon/XIconDarkTheme.svg';
 import { ReactComponent as XIconLightTheme } from './SVG/XIcon/XIconLightTheme.svg';
@@ -75,14 +76,20 @@ class SideMenu extends React.Component {
 						<OutlineButton
 							text='DARK'
 							shape='rounded'
-							onClick={ () => this.props.onThemeSwitch('dark') }
+							onClick={ () => {
+								this.props.onThemeSwitch('dark');
+								this.handleSideMenuButtonClick();
+							}}
 						/>
 					</div>
 					<div className={ styles.optionButton }>
 						<OutlineButton 
 							text='LIGHT'
 							shape='rounded'
-							onClick={ () => this.props.onThemeSwitch('light') }
+							onClick={ () => { 
+								this.props.onThemeSwitch('light');
+								this.handleSideMenuButtonClick();
+							}}
 						/>
 					</div>					
 				</div>
@@ -95,14 +102,14 @@ class SideMenu extends React.Component {
 						<OutlineButton
 							text='Home'
 							shape='rounded'
-							onClick={ () => {} }
+							onClick={ this.handleSideMenuButtonClick }
 						/>
 					</Link>	
 					<Link to='/documentation/'>					
 						<OutlineButton
 							text='Documentation'
 							shape='rounded'
-							onClick={ () => {} }
+							onClick={ this.handleSideMenuButtonClick }
 						/>
 					</Link>	
 				</div>

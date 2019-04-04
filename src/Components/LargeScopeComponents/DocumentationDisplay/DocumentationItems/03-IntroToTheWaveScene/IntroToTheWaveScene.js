@@ -23,7 +23,7 @@ class IntroToTheWaveScene extends React.Component {
 
 					<p>
 						<TextIndent direction='leftToRight'>It</TextIndent> is hard to measure the degree to which a foundational technology such as 
-						the internet has had, and continues to have on our communities and overall way of life. The technologies that make it up are dynamic,
+						the internet has had, and continues to have an effect on our communities and overall way of life. The technologies that make it up are dynamic,
 						ever-shifting and iterating, making it hard to meaningfully quantify their effects. One lens of analysis that can help though, is to look at how the 
 						rise of social networks and streaming platforms have contributed to modifying the ways that we interact with eachother and access people's art. 
 					</p>
