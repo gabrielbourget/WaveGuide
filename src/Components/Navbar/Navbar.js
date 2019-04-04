@@ -28,7 +28,7 @@ class Navbar extends React.Component {
 	// - Once this depends on redux state, the menu and x icon button will sync up
 	// 	 to clicking the backdrop to close the menu. 
 	state = {
-		menuActive: false
+		windowWidth: window.innerWidth
 	};
 
 	static propTypes = {
@@ -40,24 +40,31 @@ class Navbar extends React.Component {
 
 	handleSideMenuButtonClick = () => {
 		this.props.onSideMenuButtonClick();
-		// - This logic gets removed once redux is online.
-		// const prevState = this.state;
-		// this.setState((prevState) => (
-		// 	{ menuActive: !prevState.menuActive }
-		// ));
 	};
 
-	pushToHome = () => {
-		// - Logic to push history to home page and prompt routing change at top level. 
+	handleResize = () => this.setState( {windowWidth: window.innerWidth });
+
+	conditionalButtonRendering = () => {
+		if (this.state.windowWidth >= 600) {
+			return (
+				<Link to='/documentation'>
+					<OutlineButton 
+						text='Documentation'
+						onClick={ () => {} }
+						shape='rounded'
+					/>
+				</Link>
+			);
+		}
+		else return null;
+	};	
+
+	componentDidMount = () => {
+		this.setState( { windowWidth: window.innerWidth } );
+		window.addEventListener('resize', this.handleResize);
 	};
 
-	// pushToAbout = () => {
-	// 	// - Logic to push history to home page and prompt routing change at top level. 
-	// };
-
-	pushToDocumentation = () => {
-		// - Logic to push history to home page and prompt routing change at top level. 
-	}
+	componentWillUnmount = () => window.removeEventListener('resize', this.handleResize);
 
 	render() {
 
@@ -77,9 +84,11 @@ class Navbar extends React.Component {
 				<SearchBarWithRouter
 					// - Active once redux is set up.
 					searchThroughArtists={ this.props.searchThroughArtists }
-					defaultText='Search by artist name. Search "Everyone" to return all artists.'
+					defaultText='"Everyone" -> all artists.'
 				/>
 				<div className={ initObject.rightNavClasses }>
+					
+					{ this.conditionalButtonRendering() }
 
 					<Link to ='/'>
 						<CircleButton
@@ -87,15 +96,7 @@ class Navbar extends React.Component {
 							darkTheme={ <HomeIconDarkTheme/> }
 							lightTheme={ <HomeIconLightTheme/> }
 							highlighted={ <HomeIconHighlighted/> }
-							onClick={ () => this.pushToHome() } 
-						/>
-					</Link>
-
-					<Link to='/documentation'>
-						<OutlineButton 
-							text='Documentation'
-							onClick={ () => this.pushToDocumentation() }
-							shape='rounded'
+							onClick={ () => {} } 
 						/>
 					</Link>
 				</div>

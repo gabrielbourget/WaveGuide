@@ -28,7 +28,7 @@ class SearchBar extends React.Component {
 	};
 
 	static defaultProps = {
-		defaultText: "Search by artist name. Search 'everyone' to return all artists."
+		defaultText: "Search 'everyone' to return all artists."
 	};
 
 	searchInputRef = React.createRef();
