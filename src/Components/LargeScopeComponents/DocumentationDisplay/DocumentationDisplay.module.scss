@@ -7,7 +7,12 @@
 	width: 100%;
 
 	display: grid;	
-	grid-template-columns: 275px 1fr;
+	position: relative; // - So that treeview can float as a fixed position for mobile view.
+ 	grid-template-columns: 275px 1fr;
+
+ 	@media (max-width: 650px) {
+ 		grid-template-columns: 1fr;
+ 	}
 
 	&.darkTheme {
 		background: var(--black);

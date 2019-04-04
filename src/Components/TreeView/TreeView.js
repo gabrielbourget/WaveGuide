@@ -23,6 +23,7 @@ class TreeView extends React.Component {
 				<ContentTree 
 					data={ this.props.data }
 					onSelect={ () => {} }
+					nodeClick={ this.props.nodeClick }
 				/>
 			</div>
 		);

@@ -48,6 +48,8 @@ class TreeNode extends React.Component {
 		level: 0
 	};
 
+	handleClick = () => { this.props.onClick(); }
+
 	render() {
 
 		const { node, getChildNodes, level, onToggle, onNodeSelect } = this.props;
@@ -128,7 +130,10 @@ class TreeNode extends React.Component {
 						<span 
 							className={ initObject.spanClasses }
 							role="button"
-							onClick={ () => { onNodeSelect(node) }}
+							onClick={ () => { 
+								onNodeSelect(node);
+								this.handleClick();
+							}}
 						>
 							{/* getNodeLabel(node) */}
 							{ node.name }

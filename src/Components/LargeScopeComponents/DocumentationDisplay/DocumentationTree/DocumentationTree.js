@@ -16,7 +16,10 @@ class DocumentationTree extends React.Component {
 
 		return (
 			<div className={ initObject.documentationTreeClasses }>
-				<TreeView data={ documentationTree }/>
+				<TreeView 
+					data={ documentationTree }
+					nodeClick={ this.props.nodeClick }
+				/>
 			</div>
 		);
 	}

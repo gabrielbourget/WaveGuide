@@ -10,7 +10,8 @@ import { prepareComponent } from './helpers';
 import styles from './DocumentationDisplay.module.scss';
 
 import FromTheTopCradle from '../../Cradles/FromTheTopCradle/FromTheTopCradle';
-import DocumentationTree from './DocumentationTree/DocumentationTree';   			 
+import DocumentationTree from './DocumentationTree/DocumentationTree';  
+import TreeToggleButton from './TreeToggleButton/TreeToggleButton'; 			 
 
 import routingTable from './routingTable_v2'; // - Holds list of pages and their corresponding ids.
 
@@ -80,6 +81,48 @@ import CardGalleryProblem from './DocumentationItems/96-CardGalleryProblem/CardG
 
 class DocumentationDisplay extends React.Component { 
 
+	state = {
+		treeOpened: false,
+		windowWidth: window.innerWidth
+	};
+
+	handleResize = () => this.setState( {windowWidth: window.innerWidth });
+
+	toggleTree = () => {
+		const prevState = this.state;
+		this.setState( (prevState) => (
+			{ treeOpened: !prevState.treeOpened }
+		));
+	};
+
+	conditionalTreeRender = () => {
+		if (this.state.windowWidth > 650) return <DocumentationTree nodeClick={ this.toggleTree }/>;
+		if (this.state.windowWidth <= 650 && this.state.treeOpened) {
+			return (
+				<React.Fragment>
+					<DocumentationTree nodeClick={ this.toggleTree }/>	
+					<TreeToggleButton 
+						onClick={ this.toggleTree }
+						status='open'
+					/>
+				</React.Fragment>
+			);
+		}
+		else return (
+			<TreeToggleButton 
+				onClick={ this.toggleTree }
+				status='closed'
+			/>
+		);
+	};
+
+  componentDidMount = () => {
+		this.setState( { windowWidth: window.innerWidth } );
+		window.addEventListener('resize', this.handleResize);
+	};
+
+	componentWillUnmount = () => window.removeEventListener('resize', this.handleResize);  
+
 	render() {
 
 		const initObject = prepareComponent(this.context, this.props, styles);
@@ -87,7 +130,9 @@ class DocumentationDisplay extends React.Component {
 		return (
 			<FromTheTopCradle>
 				<div className={ initObject.documentationDisplayClasses }>
-					<DocumentationTree/>
+					
+					{ this.conditionalTreeRender() }
+
 					<Route path='/documentation' exact component={ Overview }/>
 					<Route 
 						path={ `/documentation/:articleId` }
