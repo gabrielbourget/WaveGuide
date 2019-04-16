@@ -102,6 +102,17 @@ class HomePage extends React.Component {
 									</a>
 								</p>
 							</li>	
+							<li>
+								<p>
+									<a 
+										href="https://open.spotify.com/playlist/3HFL4DgkU0pJUN0urkiBNk?fbclid=IwAR1bLey7p4vZ_-6EGyNFzBdei4ZRUPwPPvyCrfWvVjfeuKP_5EPgxXxaCNM&si=-9qIVooxSRGNwZMNUEKf2g"
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										Mindscape (maintained by Mike Atkin)
+									</a>
+								</p>
+							</li>								
 						</ul>							
 					</div>		
 				</div>				
